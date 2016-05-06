@@ -13,19 +13,20 @@ A first-run experience is the experience a user has when opening your add-in for
 * **Video** shows users a video before they start using your add-in. ([PDF](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/FirstRun_VideoPlacemat.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/first-run/video-placemat))
 * **Walkthrough** takes users through a series of features or information before they start using the add-in. ([PDF](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/FirstRun_PagingPanel.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/first-run/walkthrough))
 * The [Office Store](https://msdn.microsoft.com/en-us/library/office/jj220033.aspx) has a system for providing users with a trial version of an add-in, but if you want full control of the UI for a trial experience, use the following templates:
->* **Trial** shows users how to get started with a trial version of your add-in. ([PDF](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/FirstRun_TrialVersion.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/first-run/trial-placemat))
-* **Trial feature** advises users that the feature they are trying to use is not available in the trial version of the add-in. ()[code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/first-run/trial-placemat-feature))
+	* **Trial** shows users how to get started with a trial version of your add-in. ([PDF](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/FirstRun_TrialVersion.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/first-run/trial-placemat))
+	* **Trial feature** advises users that the feature they are trying to use is not available in the trial version of the add-in. ([code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/first-run/trial-placemat-feature))
 
 
 > Note: Consider whether showing users the first-run experience once or many times is important to your scenario. For example, if users use your add-in periodically, they may forget how to use the add-in. Seeing the first-run experience again may be helpful to those users. 
+
  <table>
  <tr><th>Steps to Start</th><th>Value</th><th>Video</th></tr>
- <tr><td><img src="./images/instruction.step.png" alt="instruction steps" style="width: 264px;"/></td><td><img src="./images/value.placemat.png" alt="value placemat" style="width: 264px;"/></td><td><img src="./images/video.placemat.png" alt="video placemat" style="width: 264px;"/></td></tr>
+ <tr><td><img src="./Images/instruction.step.PNG" alt="instruction steps" style="width: 264px;"/></td><td><img src="./Images/value.placemat.PNG" alt="value placemat" style="width: 264px;"/></td><td><img src="./Images/video.placemat.PNG" alt="video placemat" style="width: 264px;"/></td></tr>
  </table>
 
  <table>
  <tr><th>Walkthrough first page</th><th>Trial</th><th>Trial feature</th></tr>
- <tr><td><img src="./images/walkthrough1.png" alt="walkthrough 1" style="width: 264px;"/></td><td><img src="./images/trial.placemat.png" alt="trial placemat" style="width: 264px;"/></td><td><img src="./images/trial.placemat.feature.png" alt="trial placemat feature" style="width: 264px;"/></td></tr>
+ <tr><td><img src="./Images/walkthrough1.PNG" alt="walkthrough 1" style="width: 264px;"/></td><td><img src="./Images/trial.placemat.PNG" alt="trial placemat" style="width: 264px;"/></td><td><img src="./Images/trial.placemat.feature.PNG" alt="trial placemat feature" style="width: 264px;"/></td></tr>
  </table> 
 
 
@@ -35,7 +36,7 @@ A first-run experience is the experience a user has when opening your add-in for
 
 <table>
  <tr><th>Landing</th></tr>
- <tr><td><img src="./images/landing.page.png" alt="landing page" style="width: 264px;"/></td></tr>
+ <tr><td><img src="./Images/landing.page.PNG" alt="landing page" style="width: 264px;"/></td></tr>
  </table>
 
 ## Notifications
@@ -51,12 +52,12 @@ There are a variety of ways that your add-in can notify users of events, such as
 
  <table>
  <tr><th>Embedded dialog</th><th>Inline message</th><th>Message banner</th></tr>
- <tr><td><img src="./images/embedded.dialog.png" alt="embedded dialog" style="width: 264px;"/></td><td><img src="./images/inline.message.png" alt="inline message" style="width: 264px;"/></td><td><img src="./images/message.banner.png" alt="message banner" style="width: 264px;"/></td></tr>
+ <tr><td><img src="./Images/embedded.dialog.PNG" alt="embedded dialog" style="width: 264px;"/></td><td><img src="./Images/inline.message.PNG" alt="inline message" style="width: 264px;"/></td><td><img src="./Images/message.banner.PNG" alt="message banner" style="width: 264px;"/></td></tr>
  </table>
 
  <table>
  <tr><th>Progress bar</th><th>Spinner</th><th>Toast</th></tr>
- <tr><td><img src="./images/progress.bar.png" alt="progress bar" style="width: 264px;"/></td><td><img src="./images/spinner.png" alt="spinner" style="width: 264px;"/></td><td><img src="./images/toast.png" alt="toast" style="width: 264px;"/></td></tr>
+ <tr><td><img src="./Images/progress.bar.PNG" alt="progress bar" style="width: 264px;"/></td><td><img src="./Images/spinner.PNG" alt="spinner" style="width: 264px;"/></td><td><img src="./Images/toast.PNG" alt="toast" style="width: 264px;"/></td></tr>
  </table>
 
 ## Known issues
