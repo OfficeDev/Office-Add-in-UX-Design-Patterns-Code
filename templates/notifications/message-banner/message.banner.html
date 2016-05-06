@@ -1,0 +1,69 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
+<!--
+    This file illustrates how to include the Office Fabric MessageBanner component in a page.
+    -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Notifications - Inline Message</title>
+
+    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+
+    <!-- Template styles -->
+    <link href="../../../common.css" rel="stylesheet" />
+    <link href="message.banner.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js"></script>
+    <script src="https://appsforoffice.microsoft.com/fabric/2.1.0/jquery.fabric.min.js"></script>
+    <script type="text/javascript" src="message.banner.js"></script>
+
+</head>
+<body class="ms-font-l ms-notification-message-banner">
+    <main class="ms-notification-message-banner__main">
+
+        <!-- Tabbed header -->
+        <section class="ms-notification-message-banner__header">
+            <div class="ms-notification-message-banner__header--left">
+                <i class="ms-Icon ms-Icon--chevronThickLeft ms-fontColor-themePrimary"></i>
+            </div>
+            <div class="ms-notification-message-banner__header--right ms-font-m ms-fontWeight-light">
+                <p>Tab 1</p>
+                <p class="ms-notification-message-banner__header--selected ms-fontColor-themePrimary ms-fontWeight-semibold">Tab 2</p>
+            </div>
+        </section>
+        <!-- Message banner -->
+        <div class="ms-MessageBanner">
+            <div class="ms-MessageBanner-content">
+                <div class="ms-MessageBanner-text">
+                    <div class="ms-MessageBanner-clipper">You've reached your total storage on OneDrive. Please upgrade your storage plan if you need more storage.</div>
+                </div>
+                <button class="ms-MessageBanner-expand"> <i class="ms-Icon ms-Icon--chevronsDown"></i> </button>
+            </div>
+            <button class="ms-MessageBanner-close"> <i class="ms-Icon ms-Icon--x"></i> </button>
+        </div>
+        <section class="ms-notification-message-banner__content ms-font-m ms-fontColor-neutralPrimary">
+            <article class="ms-notification-message-banner__content">
+                <div class="ms-font-xl ms-notification-message-banner__content__title">Title</div>
+                <div class="ms-font-l ms-fontWeight-light ms-notification-message-banner__content__subtitle">Subtitle</div>
+                <div class="ms-font-m ms-notification-message-banner__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="ms-notification-message-banner__footer  ms-bgColor-themePrimary">
+        <div class="ms-notification-message-banner__footer--left">
+            <img src="/assets/logo-filled.png" />
+            <h1 class="ms-font-xl ms-fontWeight-semilight ms-fontColor-white">My Add-in Name</h1>
+        </div>
+        <div class="ms-notification-message-banner__footer--right">
+            <i class="ms-Icon ms-Icon--gear ms-fontColor-white"></i>
+        </div>
+    </footer>
+</body>
+</html>

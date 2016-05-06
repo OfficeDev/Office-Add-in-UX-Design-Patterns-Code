@@ -1,0 +1,143 @@
+/* Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. */
+.ms-firstrun-value {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.ms-firstrun-value__header {
+    padding: 20px 0;
+    min-height: 220px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+    .ms-firstrun-value__header h1 {
+        letter-spacing: 5px;
+    }
+
+    .ms-firstrun-value__header p {
+        margin-top: 7px;
+    }
+
+.ms-firstrun-value__title, .ms-firstrun-value__subtitle {
+    padding: 0 20px;
+}
+
+.ms-firstrun-value__logo {
+    width: 100%;
+    height: 100%;
+    flex: 1 1 0;
+    background: transparent no-repeat center center;
+    background-size: contain;
+    background-image: url("../../../../../../assets/logo-background-geometric.png");
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+    .ms-firstrun-value__logo img {
+        height: 80px;
+    }
+
+.ms-firstrun-value__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex: 1 1 0;
+    padding: 20px;
+}
+
+.ms-firstrun-value__content--centered {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.ms-firstrun-value__list {
+    list-style-type: none;
+}
+
+    .ms-firstrun-value__list li {
+        margin-bottom: 20px;
+    }
+
+        .ms-firstrun-value__list li i {
+            position: relative;
+            top: 2px;
+            margin-right: 10px;
+        }
+
+.ms-firstrun-value__action--primary.ms-Button {
+    align-self: center;
+    margin-top: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    -moz-transition: background ease 0.1s, color ease 0.1s;
+    -o-transition: background ease 0.1s, color ease 0.1s;
+    -webkit-transition: background ease 0.1s, color ease 0.1s;
+    transition: background ease 0.1s, color ease 0.1s;
+}
+
+    .ms-firstrun-value__action--primary.ms-Button span.ms-Button-icon {
+        margin-right: 0;
+        color: #0078d7;
+        -moz-transition: background ease 0.1s, color ease 0.1s;
+        -o-transition: background ease 0.1s, color ease 0.1s;
+        -webkit-transition: background ease 0.1s, color ease 0.1s;
+        transition: background ease 0.1s, color ease 0.1s;
+    }
+
+        .ms-firstrun-value__action--primary.ms-Button span.ms-Button-icon:active, .ms-firstrun-value__action--primary.ms-Button span.ms-Button-icon:hover {
+            background: transparent;
+            color: #333333;
+            cursor: pointer;
+        }
+
+        .ms-firstrun-value__action--primary.ms-Button span.ms-Button-icon:active {
+            background: transparent;
+        }
+
+        .ms-firstrun-value__action--primary.ms-Button span.ms-Button-icon.disabled {
+            opacity: 0.6;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+
+            .ms-firstrun-value__action--primary.ms-Button span.ms-Button-icon.disabled:active, .ms-firstrun-value__action--primary.ms-Button span.ms-Button-icon.disabled:hover {
+                background: transparent;
+            }
+
+    .ms-firstrun-value__action--primary.ms-Button span.ms-Button-label {
+        margin-right: 10px;
+        color: #0078d7;
+    }
+
+    .ms-firstrun-value__action--primary.ms-Button:active, .ms-firstrun-value__action--primary.ms-Button:hover {
+        background: #eff6fc;
+        color: #0078d7;
+        cursor: pointer;
+    }
+
+    .ms-firstrun-value__action--primary.ms-Button:active {
+        background: #eff6fc;
+    }
+
+    .ms-firstrun-value__action--primary.ms-Button.disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+        .ms-firstrun-value__action--primary.ms-Button.disabled:active, .ms-firstrun-value__action--primary.ms-Button.disabled:hover {
+            background: transparent;
+        }

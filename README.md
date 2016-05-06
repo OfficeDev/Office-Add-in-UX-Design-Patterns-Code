@@ -1,2 +1,72 @@
-# Office-Add-in-UX-Design-Pattern-Code
-Implementations in HTML and CSS of the design patterns in the repo Office-Add-in-UX-Design-Patterns
+# UX design patterns for Office Add-ins. 
+
+This repository provides sample implementations in HTML and CSS of common UX design patterns for Office Add-ins.
+
+**Please see the detailed introduction at LINK TO DEV.OFFICE.COM TOPIC**
+
+## First-Run
+
+A first-run experience is the experience a user has when opening your add-in for the first time. The following lists the first run design patterns you can include in your add-in. Images of each of them are below.
+
+* **Steps to start** provides users with an ordered list of steps to perform to get started using your add-in. ([PDF](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/FirstRun_StepsToStart.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/first-run/instruction-step))
+* **Value** communicates your add-in's value proposition. ([PDF](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/FirstRun_ValuePlacemat.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/first-run/value-placemat))
+* **Video** shows users a video before they start using your add-in. ([PDF](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/FirstRun_VideoPlacemat.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/first-run/video-placemat))
+* **Walkthrough** takes users through a series of features or information before they start using the add-in. ([PDF](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/FirstRun_PagingPanel.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/first-run/walkthrough))
+* The [Office Store](https://msdn.microsoft.com/en-us/library/office/jj220033.aspx) has a system for providing users with a trial version of an add-in, but if you want full control of the UI for a trial experience, use the following templates:
+>* **Trial** shows users how to get started with a trial version of your add-in. ([PDF](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/FirstRun_TrialVersion.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/first-run/trial-placemat))
+* **Trial feature** advises users that the feature they are trying to use is not available in the trial version of the add-in. ()[code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/first-run/trial-placemat-feature))
+
+
+> Note: Consider whether showing users the first-run experience once or many times is important to your scenario. For example, if users use your add-in periodically, they may forget how to use the add-in. Seeing the first-run experience again may be helpful to those users. 
+ <table>
+ <tr><th>Steps to Start</th><th>Value</th><th>Video</th></tr>
+ <tr><td><img src="./images/instruction.step.png" alt="instruction steps" style="width: 264px;"/></td><td><img src="./images/value.placemat.png" alt="value placemat" style="width: 264px;"/></td><td><img src="./images/video.placemat.png" alt="video placemat" style="width: 264px;"/></td></tr>
+ </table>
+
+ <table>
+ <tr><th>Walkthrough first page</th><th>Trial</th><th>Trial feature</th></tr>
+ <tr><td><img src="./images/walkthrough1.png" alt="walkthrough 1" style="width: 264px;"/></td><td><img src="./images/trial.placemat.png" alt="trial placemat" style="width: 264px;"/></td><td><img src="./images/trial.placemat.feature.png" alt="trial placemat feature" style="width: 264px;"/></td></tr>
+ </table> 
+
+
+## Generic and Branding
+
+* **Landing page** is the first place users navigate to after the first-run experience or after a sign-in process. ([PDF](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Helpful%20Templates/AddIn_Template_Standard_Layout.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/generic/landing-page))
+
+<table>
+ <tr><th>Landing</th></tr>
+ <tr><td><img src="./images/landing.page.png" alt="landing page" style="width: 264px;"/></td></tr>
+ </table>
+
+## Notifications
+
+There are a variety of ways that your add-in can notify users of events, such as errors, or of progress. The following lists these techniques. Images of each of them are below.
+
+* **Embedded dialog**  shows a dialog inside the task pane that provides information and, optionally, an interactive experience, using buttons or other controls. Consider using one to prompt a user to confirm an action. ([PDF](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Embedded_Dialog.pdf "PDF") , [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/notifications/embedded-dialog))
+* **Inline message** indicates error, success, or information, and it can appear at a specified location in the task pane. For example, if a user enters an improperly formatted email address in a text box, an error message appears just below the text box. ([PDF](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Notification_Inline_Message.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/notifications/inline-message))
+* **Message banner** provides information and, optionally, a simple call to action, in a banner that can be collapsed to a single line, expanded to multiple lines, or dismissed. Consider using message banners to report a service update or a helpful tip when the add-in starts. ([PDF](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Notification_messagebanner.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/notifications/message-banner))
+* **Progress bar** indicates the progress of a long-running, synchronous process, such as a configuration task that must complete before the user can take any further action. It is a separate interstitial page that also reinforces the add-in brand. Use a progress bar when the process can send periodic measures of how far along it is back to the add-in. ([PDF](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Notification_progress.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/notifications/progress-bar))
+* **Spinner** indicates that a long-running, synchronous process is underway, but provides no indication of how far along it is. It is a separate interstitial page that also reinforces the add-in brand. Use a spinner when the add-in cannot know reliably how far along a process is. ([PDF](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Notification_progress.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/notifications/spinner))
+* **Toast** provides a brief message that fades away after a few seconds. Since the user might not see the message, use toast only for inessential information. It is a good choice for notifying users of an event in a remote system, such as the receipt of an email. ([PDF](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Notification_toast.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/templates/notifications/toast))
+
+ <table>
+ <tr><th>Embedded dialog</th><th>Inline message</th><th>Message banner</th></tr>
+ <tr><td><img src="./images/embedded.dialog.png" alt="embedded dialog" style="width: 264px;"/></td><td><img src="./images/inline.message.png" alt="inline message" style="width: 264px;"/></td><td><img src="./images/message.banner.png" alt="message banner" style="width: 264px;"/></td></tr>
+ </table>
+
+ <table>
+ <tr><th>Progress bar</th><th>Spinner</th><th>Toast</th></tr>
+ <tr><td><img src="./images/progress.bar.png" alt="progress bar" style="width: 264px;"/></td><td><img src="./images/spinner.png" alt="spinner" style="width: 264px;"/></td><td><img src="./images/toast.png" alt="toast" style="width: 264px;"/></td></tr>
+ </table>
+
+## Known issues
+
+* Running some code files outside of an add-in project throws a JavaScript error. 
+	* Resolution: Ensure you add these files to an Office add-in project. 
+	
+## Additional resources
+
+* [Best practices for developing Office Add-ins](https://dev.office.com/docs/add-ins/design/add-in-development-best-practices)
+* [Office UI Fabric](http://dev.office.com/fabric/)
+
+Copyright (c) Microsoft Corporation 2016. All rights reserved.

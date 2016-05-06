@@ -1,0 +1,58 @@
+/* Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. */
+.ms-notification-progress-determinate {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.ms-notification-progress-determinate__main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex: 1 1 0px;
+    padding: 20px;
+}
+
+.ms-notification-progress-determinate__title {
+    padding: 0 20px;
+}
+
+.ms-notification-progress-determinate__logo {
+    height: 80px;
+    margin-bottom: 7px;
+}
+
+.ms-notification-progress-determinate__footer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ms-progress {
+    padding: 20px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+    .ms-progress .ms-ProgressIndicator-itemDescription,
+    .ms-progress .ms-ProgressIndicator-itemName {
+        color: #FFFFFF;
+    }
+
+    .ms-progress .ms-ProgressIndicator-progressBar {
+        height: 3px;
+        background-color: #FFFFFF;
+    }
+
+    .ms-progress .ms-ProgressIndicator-progressTrack {
+        height: 3px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }

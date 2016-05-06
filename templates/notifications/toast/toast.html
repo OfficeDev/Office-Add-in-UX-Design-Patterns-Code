@@ -1,0 +1,63 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
+<!--
+    This file shows how to use a toast notification on an add-in page.
+    -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Welcome Screen - Trail Placemat</title>
+    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+    <!-- Template styles -->
+    <link href="../../../common.css" rel="stylesheet" />
+    <link href="toast.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="ms-font-l ms-notification-toast">
+    <main class="ms-notification-toast__main">
+        <section class="ms-notification-toast__header ms-bgColor-themeLighter">
+            <div class="ms-notification-toast__header--center ms-font-m ms-fontWeight-light">
+                <p>
+                    <i class="ms-Icon ms-Icon--plus ms-fontColor-themePrimary"></i>
+                    Item 1
+                </p><p>
+                    <i class="ms-Icon ms-Icon--plus ms-fontColor-themePrimary"></i>
+                    Item 2
+                </p>
+            </div>
+            <div class="ms-notification-toast__header--right ms-font-m ms-fontWeight-light">
+                <i class="ms-Icon ms-Icon--reactivate ms-fontColor-themePrimary"></i>
+            </div>
+        </section>
+        <section class="ms-notification-toast__content ms-font-m ms-fontColor-neutralPrimary">
+           
+            <article class="ms-embedded-dialog__content">
+                <div class="ms-font-xl ms-notification-toast__content__title">Title</div>
+                <div class="ms-font-l ms-fontWeight-light ms-notification-toast__content__subtitle">Subtitle</div>
+                <div class="ms-font-m ms-notification-toast__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                
+            </article>
+        </section>
+    </main>
+    <footer class="ms-notification-toast__footer  ms-bgColor-themePrimary">
+        <div class="ms-notification-toast__footer--left">
+            <img src="/assets/logo-filled.png" />
+            <h1 class="ms-font-xl ms-fontWeight-semilight ms-fontColor-white">My Add-in Name</h1>
+        </div>
+        <div class="ms-notification-toast__footer--right">
+            <i class="ms-Icon enlarge ms-Icon--gear ms-fontColor-white"></i>
+        </div>
+    </footer>
+    <script src="toast.js"></script>
+    <script type="text/javascript">
+        if (typeof fabric === "object") {
+            if ('Toast' in fabric) {
+                var component = new fabric['Toast'];
+                component.showToast('Toast header', 'Toast content lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquam quam dolor sit amet adipiscing elit. ');
+            }
+        }
+    </script>
+</body>
+</html>

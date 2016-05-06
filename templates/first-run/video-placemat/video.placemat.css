@@ -1,0 +1,159 @@
+/* Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. */
+.ms-firstrun-video {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    text-align: center;
+}
+
+.ms-firstrun-video__header {
+    padding: 20px;
+    min-height: 160px;
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+    .ms-firstrun-video__header h1 {
+        letter-spacing: 5px;
+    }
+
+    .ms-firstrun-video__header p {
+        margin-top: 7px;
+    }
+
+.ms-firstrun-video__header--skip {
+    text-align: right;
+}
+
+.ms-firstrun-video__header--image {
+    background: transparent no-repeat center center;
+    background-image: url("../../../assets/video-placeholder.png");
+    background-size: cover;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    align-items: stretch;
+    flex: 0 1 0;
+    min-height: 200px;
+}
+
+.ms-firstrun-video__welcome {
+    width: 100%;
+    height: 100%;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+    .ms-firstrun-video__welcome img {
+        height: 100px;
+    }
+
+.ms-firstrun-video__player {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+    .ms-firstrun-video__player img {
+        height: 100%;
+    }
+
+.ms-firstrun-video__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    flex: 1 1 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.ms-firstrun-video__content--centered {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.ms-firstrun-video__content--caption {
+    margin-top: 5px;
+}
+
+.ms-firstrun-video__content--valuestatement {
+    padding-top: 50px;
+}
+
+.ms-firstrun-video__list {
+    list-style-type: none;
+}
+
+    .ms-firstrun-video__list li {
+        margin-bottom: 20px;
+    }
+
+        .ms-firstrun-video__list li i {
+            position: relative;
+            top: 2px;
+            margin-right: 10px;
+        }
+
+.ms-firstrun-video__action--primary.ms-Button {
+    align-self: center;
+    margin-top: 65px;
+    border: solid 2px #FFFFFF;
+    width: calc(100vw - 40px);
+    padding: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    -moz-transition: background ease 0.1s, color ease 0.1s;
+    -o-transition: background ease 0.1s, color ease 0.1s;
+    -webkit-transition: background ease 0.1s, color ease 0.1s;
+    transition: background ease 0.1s, color ease 0.1s;
+}
+
+    .ms-firstrun-video__action--primary.ms-Button span.ms-Button-label {
+        color: #FFFFFF;
+    }
+
+    .ms-firstrun-video__action--primary.ms-Button:active, .ms-firstrun-video__action--primary.ms-Button:hover {
+        background: #FFFFFF;
+        color: #0078d7;
+        cursor: pointer;
+    }
+
+    .ms-firstrun-video__action--primary.ms-Button:active {
+        background: #FFFFFF;
+    }
+
+    .ms-firstrun-video__action--primary.ms-Button.disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+        .ms-firstrun-video__action--primary.ms-Button.disabled:active, .ms-firstrun-video__action--primary.ms-Button.disabled:hover {
+            background: transparent;
+        }
+
+.ms-firstrun-video__button {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}

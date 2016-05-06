@@ -1,0 +1,308 @@
+/* Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. */
+.ms-firstrun-trial-feature {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.ms-firstrun-trial-feature__main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1 1 0;
+    height: 100%;
+}
+
+.ms-firstrun-trial-feature__header {
+    border-bottom: solid 2px #0078d7;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ms-firstrun-trial-feature__header--left {
+    -moz-transition: background ease 0.1s, color ease 0.1s;
+    -o-transition: background ease 0.1s, color ease 0.1s;
+    -webkit-transition: background ease 0.1s, color ease 0.1s;
+    transition: background ease 0.1s, color ease 0.1s;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+    .ms-firstrun-trial-feature__header--left:active, .ms-firstrun-trial-feature__header--left:hover {
+        background: #eff6fc;
+        cursor: pointer;
+    }
+
+    .ms-firstrun-trial-feature__header--left:active {
+        background: #eff6fc;
+        -moz-transform: scale3d(0.98, 0.98, 1);
+        -ms-transform: scale3d(0.98, 0.98, 1);
+        -o-transform: scale3d(0.98, 0.98, 1);
+        -webkit-transform: scale3d(0.98, 0.98, 1);
+        transform: scale3d(0.98, 0.98, 1);
+    }
+
+    .ms-firstrun-trial-feature__header--left.disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+        .ms-firstrun-trial-feature__header--left.disabled:active, .ms-firstrun-trial-feature__header--left.disabled:hover {
+            background: transparent;
+        }
+
+        .ms-firstrun-trial-feature__header--left.disabled:active {
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            -webkit-transform: none;
+            transform: none;
+        }
+
+.ms-firstrun-trial-feature__header--right {
+    flex: 1 0 0px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .ms-firstrun-trial-feature__header--right p {
+        padding: 0 10px;
+        flex: 1 0 0px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: center;
+        cursor: pointer;
+        padding: 10px 20px;
+        -moz-transition: background ease 0.1s, color ease 0.1s;
+        -o-transition: background ease 0.1s, color ease 0.1s;
+        -webkit-transition: background ease 0.1s, color ease 0.1s;
+        transition: background ease 0.1s, color ease 0.1s;
+    }
+
+        .ms-firstrun-trial-feature__header--right p:active, .ms-firstrun-trial-feature__header--right p:hover {
+            background: #eff6fc;
+            cursor: pointer;
+        }
+
+        .ms-firstrun-trial-feature__header--right p:active {
+            background: #eff6fc;
+            -moz-transform: scale3d(0.98, 0.98, 1);
+            -ms-transform: scale3d(0.98, 0.98, 1);
+            -o-transform: scale3d(0.98, 0.98, 1);
+            -webkit-transform: scale3d(0.98, 0.98, 1);
+            transform: scale3d(0.98, 0.98, 1);
+        }
+
+        .ms-firstrun-trial-feature__header--right p.disabled {
+            opacity: 0.6;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+
+            .ms-firstrun-trial-feature__header--right p.disabled:active, .ms-firstrun-trial-feature__header--right p.disabled:hover {
+                background: transparent;
+            }
+
+            .ms-firstrun-trial-feature__header--right p.disabled:active {
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                -webkit-transform: none;
+                transform: none;
+            }
+
+        .ms-firstrun-trial-feature__header--right p:last-child {
+            border-right: none;
+        }
+
+.ms-firstrun-trial-feature__header--selected {
+    background-color: #daeaf8;
+}
+
+.ms-firstrun-trial-feature__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    flex: 1 1 0;
+    min-height: 380px;
+    padding: 20px;
+}
+
+    .ms-firstrun-trial-feature__content h2 {
+        margin-bottom: 20px;
+    }
+
+.ms-firstrun-trial-feature__login-panel {
+    width: 100%;
+    height: 245px;
+    border: solid 1px #0078d7;
+}
+
+    .ms-firstrun-trial-feature__login-panel h3 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        padding: 0 20px;
+    }
+
+.ms-firstrun-trial-feature__label {
+    margin-top: 60px;
+    align-self: center;
+}
+
+.ms-firstrun-trial-feature__input {
+    padding: 0 20px;
+    margin-top: 10px;
+    width: calc(100% - 40px);
+}
+
+    .ms-firstrun-trial-feature__input label {
+        clear: both;
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .ms-firstrun-trial-feature__input input {
+        width: calc(100% - 24px);
+        border: solid 1px #0078d7;
+        padding: 10px;
+    }
+
+.ms-firstrun-trial-feature__footer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ms-firstrun-trial-feature__footer--left {
+    -moz-transition: background ease 0.1s, color ease 0.1s;
+    -o-transition: background ease 0.1s, color ease 0.1s;
+    -webkit-transition: background ease 0.1s, color ease 0.1s;
+    transition: background ease 0.1s, color ease 0.1s;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 0 0px;
+    padding: 20px;
+}
+
+    .ms-firstrun-trial-feature__footer--left:active, .ms-firstrun-trial-feature__footer--left:hover {
+        background: #005ca4;
+        cursor: pointer;
+    }
+
+    .ms-firstrun-trial-feature__footer--left:active {
+        background: #005ca4;
+    }
+
+    .ms-firstrun-trial-feature__footer--left.disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+        .ms-firstrun-trial-feature__footer--left.disabled:active, .ms-firstrun-trial-feature__footer--left.disabled:hover {
+            background: transparent;
+        }
+
+    .ms-firstrun-trial-feature__footer--left img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .ms-firstrun-trial-feature__footer--left h1 {
+        flex: 1 0 0px;
+        margin-left: 15px;
+        text-align: left;
+        width: auto;
+        max-width: auto;
+        overflow: hidden;
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+    }
+
+.ms-firstrun-trial-feature__footer--right {
+    -moz-transition: background ease 0.1s, color ease 0.1s;
+    -o-transition: background ease 0.1s, color ease 0.1s;
+    -webkit-transition: background ease 0.1s, color ease 0.1s;
+    transition: background ease 0.1s, color ease 0.1s;
+    padding: 29px 20px;
+}
+
+    .ms-firstrun-trial-feature__footer--right:active, .ms-firstrun-trial-feature__footer--right:hover {
+        background: #005ca4;
+        cursor: pointer;
+    }
+
+    .ms-firstrun-trial-feature__footer--right:active {
+        background: #005ca4;
+    }
+
+    .ms-firstrun-trial-feature__footer--right.disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+        .ms-firstrun-trial-feature__footer--right.disabled:active, .ms-firstrun-trial-feature__footer--right.disabled:hover {
+            background: transparent;
+        }
+
+.input__submit {
+    width: 100%;
+    height: 30px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    font-weight: 600;
+    margin-bottom: -8px;
+    background-color: #0078d7;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    -moz-transition: background ease 0.1s, color ease 0.1s;
+    -o-transition: background ease 0.1s, color ease 0.1s;
+    -webkit-transition: background ease 0.1s, color ease 0.1s;
+    transition: background ease 0.1s, color ease 0.1s;
+}
+
+    .input__submit:active, .input__submit:hover {
+        background: #006abe;
+        cursor: pointer;
+    }
+
+    .input__submit:active {
+        background: #006abe;
+        -moz-transform: scale3d(0.98, 0.98, 1);
+        -ms-transform: scale3d(0.98, 0.98, 1);
+        -o-transform: scale3d(0.98, 0.98, 1);
+        -webkit-transform: scale3d(0.98, 0.98, 1);
+        transform: scale3d(0.98, 0.98, 1);
+    }
+
+    .input__submit.disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+        .input__submit.disabled:active, .input__submit.disabled:hover {
+            background: transparent;
+        }
+
+        .input__submit.disabled:active {
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            -webkit-transform: none;
+            transform: none;
+        }

@@ -1,0 +1,64 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
+
+<!--
+    This file shows how to design a page that embeds a video about the add-in.
+    -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Welcome Screen - Video Placemat</title>
+    <!-- We reference Office.js on this page because we are using the display dialog. -->
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <!-- For the Office UI Fabric, go to http://dev.office.com/fabric/ to learn more. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+    <!-- Template styles -->
+    <link href="../../../common.css" rel="stylesheet" />
+    <link href="video.placemat.css" rel="stylesheet" type="text/css" />
+    <!-- Video dialog code -->
+    <script src="video.placemat.js"></script>
+</head>
+<body class="ms-font-l">
+    <div class="ms-firstrun-video ms-bgColor-themePrimary">
+        <div class="ms-firstrun-video__header">
+            <div class="ms-firstrun-video__header--skip ms-font-m ms-fontColor-white">
+                Skip<i class="ms-Icon ms-Icon--chevronThickRight"></i>
+            </div>
+            <div class="ms-firstrun-video__welcome">
+                <div>
+                    <h1 class="ms-font-xl ms-fontWeight-light ms-fontColor-white">WELCOME</h1>
+                </div>
+                <div class="ms-font-m ms-fontWeight-light ms-fontColor-white">
+                    <p>Learn the Basics</p>
+                </div>
+            </div>
+        </div>
+        <div id="videoimage" class="ms-firstrun-video__header--image">
+        </div>
+
+        <div class="ms-firstrun-video__content">
+            <div>
+                <div class="ms-font-mi ms-fontColor-white ms-firstrun-video__content--caption">
+                    <p>Watch this video to learn how to use my add-in name.</p>
+                </div>
+                <div class="ms-firstrun-video__content--valuestatement ms-font-m ms-fontWeight-light ms-fontColor-white">
+                    <p>Be productive at work with my add-in name.</p>
+                </div>
+                <div class="ms-firstrun-video__button">
+                    <button id="buttonGetStarted" class="ms-Button  ms-fontColor-white" disabled="true">
+                        <span class="ms-Button-label">
+                            Get Started!
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

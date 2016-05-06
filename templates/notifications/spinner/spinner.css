@@ -1,0 +1,61 @@
+/* Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. */
+.ms-notification-progress-indeterminate {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.ms-notification-progress-indeterminate__main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex: 1 1 0px;
+    padding: 20px;
+}
+
+.ms-notification-progress-indeterminate__title {
+    padding: 0 20px;
+}
+
+.ms-notification-progress-indeterminate__logo {
+    height: 80px;
+    margin-bottom: 7px;
+}
+
+.ms-notification-progress-indeterminate__footer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ms-progress {
+    padding: 20px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+    .ms-progress .ms-ProgressIndicator-itemDescription,
+    .ms-progress .ms-ProgressIndicator-itemName {
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .ms-progress .ms-Spinner {
+        position: relative;
+        bottom: 40px;
+        /* height of the spinner from fabric.spinner.js  */
+        left: 15px;
+        /* standard padding; */
+    }
+
+    .ms-progress .ms-Spinner-circle {
+        background-color: #FFFFFF;
+    }

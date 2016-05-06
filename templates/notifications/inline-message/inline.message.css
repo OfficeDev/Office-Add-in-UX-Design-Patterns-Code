@@ -1,0 +1,246 @@
+/* Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. */
+.ms-notification-inline-message {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.ms-notification-inline-message__main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1 1 0;
+    height: 100%;
+}
+
+.ms-notification-inline-message__header {
+    border-bottom: solid 2px #0078d7;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ms-notification-inline-message__header--left {
+    -moz-transition: background ease 0.1s, color ease 0.1s;
+    -o-transition: background ease 0.1s, color ease 0.1s;
+    -webkit-transition: background ease 0.1s, color ease 0.1s;
+    transition: background ease 0.1s, color ease 0.1s;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+    .ms-notification-inline-message__header--left:active, .ms-notification-inline-message__header--left:hover {
+        background: #eff6fc;
+        cursor: pointer;
+    }
+
+    .ms-notification-inline-message__header--left:active {
+        background: #eff6fc;
+        -moz-transform: scale3d(0.98, 0.98, 1);
+        -ms-transform: scale3d(0.98, 0.98, 1);
+        -o-transform: scale3d(0.98, 0.98, 1);
+        -webkit-transform: scale3d(0.98, 0.98, 1);
+        transform: scale3d(0.98, 0.98, 1);
+    }
+
+    .ms-notification-inline-message__header--left.disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+        .ms-notification-inline-message__header--left.disabled:active, .ms-notification-inline-message__header--left.disabled:hover {
+            background: transparent;
+        }
+
+        .ms-notification-inline-message__header--left.disabled:active {
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            -webkit-transform: none;
+            transform: none;
+        }
+
+.ms-notification-inline-message__header--right {
+    flex: 1 0 0px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .ms-notification-inline-message__header--right p {
+        padding: 0 10px;
+        flex: 1 0 0px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: center;
+        cursor: pointer;
+        padding: 10px 20px;
+        -moz-transition: background ease 0.1s, color ease 0.1s;
+        -o-transition: background ease 0.1s, color ease 0.1s;
+        -webkit-transition: background ease 0.1s, color ease 0.1s;
+        transition: background ease 0.1s, color ease 0.1s;
+    }
+
+        .ms-notification-inline-message__header--right p:active, .ms-notification-inline-message__header--right p:hover {
+            background: #eff6fc;
+            cursor: pointer;
+        }
+
+        .ms-notification-inline-message__header--right p:active {
+            background: #eff6fc;
+            -moz-transform: scale3d(0.98, 0.98, 1);
+            -ms-transform: scale3d(0.98, 0.98, 1);
+            -o-transform: scale3d(0.98, 0.98, 1);
+            -webkit-transform: scale3d(0.98, 0.98, 1);
+            transform: scale3d(0.98, 0.98, 1);
+        }
+
+        .ms-notification-inline-message__header--right p.disabled {
+            opacity: 0.6;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+
+            .ms-notification-inline-message__header--right p.disabled:active, .ms-notification-inline-message__header--right p.disabled:hover {
+                background: transparent;
+            }
+
+            .ms-notification-inline-message__header--right p.disabled:active {
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                -webkit-transform: none;
+                transform: none;
+            }
+
+        .ms-notification-inline-message__header--right p:last-child {
+            border-right: none;
+        }
+
+.ms-notification-inline-message__header--selected {
+    background-color: #daeaf8;
+}
+
+.ms-notification-inline-message__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    flex: 1 1 0;
+    min-height: 180px;
+    padding: 20px;
+}
+
+    .ms-notification-inline-message__content h2, .ms-notification-inline-message__content h3, .ms-notification-inline-message__content p {
+        margin-bottom: 20px;
+    }
+
+.ms-notification-inline-message__input {
+    padding-bottom: 50px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+    .ms-notification-inline-message__input label {
+        clear: both;
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .ms-notification-inline-message__input input {
+        width: calc(100% - 24px);
+        border-style: solid;
+        border-width: 1px;
+        padding: 10px;
+        margin-bottom: 7px;
+    }
+
+.ms-notification-inline-message__span {
+    padding: 5px;
+}
+
+.ms-notification-inline-message__footer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ms-notification-inline-message__footer--left {
+    -moz-transition: background ease 0.1s, color ease 0.1s;
+    -o-transition: background ease 0.1s, color ease 0.1s;
+    -webkit-transition: background ease 0.1s, color ease 0.1s;
+    transition: background ease 0.1s, color ease 0.1s;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 0 0px;
+    padding: 20px;
+}
+
+    .ms-notification-inline-message__footer--left:active, .ms-notification-inline-message__footer--left:hover {
+        background: #005ca4;
+        cursor: pointer;
+    }
+
+    .ms-notification-inline-message__footer--left:active {
+        background: #005ca4;
+    }
+
+    .ms-notification-inline-message__footer--left.disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+        .ms-notification-inline-message__footer--left.disabled:active, .ms-notification-inline-message__footer--left.disabled:hover {
+            background: transparent;
+        }
+
+    .ms-notification-inline-message__footer--left img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .ms-notification-inline-message__footer--left h1 {
+        flex: 1 0 0px;
+        margin-left: 15px;
+        text-align: left;
+        width: auto;
+        max-width: auto;
+        overflow: hidden;
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+    }
+
+.ms-notification-inline-message__footer--right {
+    -moz-transition: background ease 0.1s, color ease 0.1s;
+    -o-transition: background ease 0.1s, color ease 0.1s;
+    -webkit-transition: background ease 0.1s, color ease 0.1s;
+    transition: background ease 0.1s, color ease 0.1s;
+    padding: 29px 20px;
+}
+
+    .ms-notification-inline-message__footer--right:active, .ms-notification-inline-message__footer--right:hover {
+        background: #005ca4;
+        cursor: pointer;
+    }
+
+    .ms-notification-inline-message__footer--right:active {
+        background: #005ca4;
+    }
+
+    .ms-notification-inline-message__footer--right.disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+        .ms-notification-inline-message__footer--right.disabled:active, .ms-notification-inline-message__footer--right.disabled:hover {
+            background: transparent;
+        }

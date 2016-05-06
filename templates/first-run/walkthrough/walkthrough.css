@@ -1,0 +1,114 @@
+/* Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. */
+.ms-firstrun-pages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.ms-firstrun-pages__header {
+    padding: 20px;
+    min-height: 160px;
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+    .ms-firstrun-pages__header h1 {
+        letter-spacing: 5px;
+    }
+
+    .ms-firstrun-pages__header p {
+        margin-top: 25px;
+    }
+
+.ms-firstrun-pages__header--skip {
+    text-align: right;
+}
+
+.ms-firstrun-pages__welcome {
+    width: 100%;
+    height: 100%;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+    .ms-firstrun-pages__welcome img {
+        height: 100px;
+    }
+
+.ms-firstrun-pages__pager {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.ms-firstrun-pages__pager--pagercontrol {
+    width: 100%;
+    height: 100%;
+    max-height: auto;
+    max-width: 310px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+    .ms-firstrun-pages__pager--pagercontrol img {
+        width: 100%;
+        height: 100%;
+        max-height: auto;
+        max-width: 300px;
+    }
+
+.ms-firstrun-pages__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    flex: 1 1 0;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ms-firstrun-pages__content--centered {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ms-firstrun-pages__footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    flex: 1 1 0;
+    padding: 20px;
+    justify-content: flex-end;
+}
+
+.ms-firstrun-pages__footer--centered {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ms-firstrun-pages__footer i {
+    margin-right: 3px;
+}
+
+.change-stage {
+    cursor: pointer;
+}
