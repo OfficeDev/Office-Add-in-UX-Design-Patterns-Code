@@ -2,8 +2,6 @@
 
 This repository provides sample implementations in HTML and CSS of common UX design patterns for Office Add-ins.
 
-**Please see the detailed introduction at LINK TO DEV.OFFICE.COM TOPIC**
-
 ## First-Run
 
 A first-run experience is the experience a user has when opening your add-in for the first time. The following lists the first run design patterns you can include in your add-in. Images of each of them are below.
