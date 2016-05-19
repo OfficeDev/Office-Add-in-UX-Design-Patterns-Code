@@ -1,0 +1,75 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
+<!--
+    This file shows a recommended design for the start page of the add-in; which is the first page
+    the user sees after the first-run experience and usually the first page the user sees on subsquent
+    executions of the add-in..
+    -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Brand Bar</title>
+
+    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+
+    <!-- Template styles -->
+    <link href="../../../common.css" rel="stylesheet" />
+    <link href="brand.bar.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="ms-font-l ms-brand-bar">
+    <main class="ms-brand-bar__main">
+        <section class="ms-brand-bar__header ms-bgColor-themeLighter">
+            <div class="ms-brand-bar__header--center ms-font-m ms-fontWeight-light">
+                <p>
+                    <i class="ms-Icon ms-Icon--plus ms-fontColor-themePrimary"></i>
+                    Item 1
+                </p><p>
+                    <i class="ms-Icon ms-Icon--plus ms-fontColor-themePrimary"></i>
+                    Item 2
+                </p>
+            </div>
+            <div class="ms-brand-bar__header--right ms-font-m ms-fontWeight-light">
+                <i class="ms-Icon ms-Icon--reactivate ms-fontColor-themePrimary"></i>
+            </div>
+        </section>
+        <section class="ms-brand-bar__content ms-font-m ms-fontColor-neutralPrimary">
+            <article class="demo-placeholder">
+                <div class="demo-placeholder__img"></div>
+                <div class="demo-placeholder__text"></div>
+                <div class="demo-placeholder__text"></div>
+                <div class="demo-placeholder__text"></div>
+                <div class="demo-placeholder__text demo-placeholder__text--half"></div>
+            </article>
+            <article class="demo-placeholder">
+                <div class="demo-placeholder__text"></div>
+                <div class="demo-placeholder__text demo-placeholder__text--half"></div>
+            </article>
+            <article class="demo-placeholder">
+                <div class="demo-placeholder__text"></div>
+                <div class="demo-placeholder__text"></div>
+                <div class="demo-placeholder__text"></div>
+                <div class="demo-placeholder__text demo-placeholder__text--half"></div>
+            </article>
+            <article class="demo-placeholder">
+                <div class="demo-placeholder__text demo-placeholder__text--half"></div>
+                <div class="demo-placeholder__text demo-placeholder__text--para"></div>
+            </article>
+            <article class="demo-placeholder">
+                <div class="demo-placeholder__text demo-placeholder__text--half"></div>
+                <div class="demo-placeholder__text demo-placeholder__text--para"></div>
+            </article>
+            <article class="demo-placeholder">
+                <div class="demo-placeholder__button ms-bgColor-themeLight"></div>
+            </article>
+        </section>
+    </main>
+    <footer class="ms-brand-bar__footer">
+        <div class="ms-brand-bar__footer--image"></div>
+</footer>
+</body>
+</html>
+

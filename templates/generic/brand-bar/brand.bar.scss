@@ -1,0 +1,106 @@
+﻿@import '../../../common/variables.scss';
+@import '../../../common/mixins.scss';
+
+
+.ms-brand-bar {
+    @include flex();
+    height: 100%;
+
+    &__main {
+        @include flex();
+        flex: 1 1 0;
+        height: 100%;
+    }
+
+    &__header {
+        border-bottom: solid 2px $ms-fontColor-themePrimary;
+        @include inline-flex();
+
+        &--left {
+            margin-right: $global-spacing;
+            cursor: pointer;
+        }
+
+        &--right {
+            padding: 10px $global-spacing;
+            @include focus-states(#c7e0f4, #000, true);
+            cursor: pointer;
+        }
+
+        &--center {
+            flex: 1 1 auto;
+            @include inline-flex(flex-start, center);
+
+            p {
+                padding: 0 10px;
+                flex: 1 0 0px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                text-align: left;
+                cursor: pointer;
+                @include focus-states(#c7e0f4, #000, true);
+                padding: 10px;
+            }
+        }
+    }
+
+    &__content {
+        @include flex();
+        height: 100%;
+        flex: 1 1 0;
+        padding: $global-spacing;
+
+        h2 {
+            margin-bottom: $global-spacing;
+        }
+    }
+
+    &__footer {
+         @include flex();
+
+        &--image {
+            @include background-fill(cover) {
+                background-image: url('../../../assets/brand-bar.png');
+            }
+
+            margin-top: 15px;
+            flex: 0 1 90px;
+        }       
+    }
+}
+
+.demo-placeholder {
+    margin-bottom: $global-spacing;
+    width: 100%;
+
+    &__img {
+        width: 60px;
+        height: 60px;
+        background-color: $demo-placeholder-color;
+        display: block;
+        margin-bottom: $global-spacing/2;
+    }
+
+    &__text {
+        height: 5px;
+        background-color: $demo-placeholder-color;
+        display: block;
+        margin-bottom: $global-spacing/2;
+
+        &--half {
+            width: 60%;
+        }
+
+        &--para {
+            height: 40px;
+        }
+    }
+
+    &__button {
+        width: 150px;
+        height: 40px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}

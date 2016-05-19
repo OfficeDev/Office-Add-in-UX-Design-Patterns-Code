@@ -1,0 +1,184 @@
+/* Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. */
+.ms-brand-bar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.ms-brand-bar__main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1 1 0;
+    height: 100%;
+}
+
+.ms-brand-bar__header {
+    border-bottom: solid 2px #0078d7;
+    display: inline-flex;
+}
+
+.ms-brand-bar__header--left {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.ms-brand-bar__header--right {
+    padding: 10px 20px;
+    -moz-transition: background ease 0.1s, color ease 0.1s;
+    -o-transition: background ease 0.1s, color ease 0.1s;
+    -webkit-transition: background ease 0.1s, color ease 0.1s;
+    transition: background ease 0.1s, color ease 0.1s;
+    cursor: pointer;
+}
+
+    .ms-brand-bar__header--right:active, .ms-brand-bar__header--right:hover {
+        background: #c7e0f4;
+        color: #000;
+        cursor: pointer;
+    }
+
+    .ms-brand-bar__header--right:active {
+        background: #c7e0f4;
+        -moz-transform: scale3d(0.98, 0.98, 1);
+        -ms-transform: scale3d(0.98, 0.98, 1);
+        -o-transform: scale3d(0.98, 0.98, 1);
+        -webkit-transform: scale3d(0.98, 0.98, 1);
+        transform: scale3d(0.98, 0.98, 1);
+    }
+
+    .ms-brand-bar__header--right.disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+        .ms-brand-bar__header--right.disabled:active, .ms-brand-bar__header--right.disabled:hover {
+            background: transparent;
+        }
+
+        .ms-brand-bar__header--right.disabled:active {
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            -webkit-transform: none;
+            transform: none;
+        }
+
+.ms-brand-bar__header--center {
+    flex: 1 1 auto;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+    .ms-brand-bar__header--center p {
+        padding: 0 10px;
+        flex: 1 0 0px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: left;
+        cursor: pointer;
+        -moz-transition: background ease 0.1s, color ease 0.1s;
+        -o-transition: background ease 0.1s, color ease 0.1s;
+        -webkit-transition: background ease 0.1s, color ease 0.1s;
+        transition: background ease 0.1s, color ease 0.1s;
+        padding: 10px;
+    }
+
+        .ms-brand-bar__header--center p:active, .ms-brand-bar__header--center p:hover {
+            background: #c7e0f4;
+            color: #000;
+            cursor: pointer;
+        }
+
+        .ms-brand-bar__header--center p:active {
+            background: #c7e0f4;
+            -moz-transform: scale3d(0.98, 0.98, 1);
+            -ms-transform: scale3d(0.98, 0.98, 1);
+            -o-transform: scale3d(0.98, 0.98, 1);
+            -webkit-transform: scale3d(0.98, 0.98, 1);
+            transform: scale3d(0.98, 0.98, 1);
+        }
+
+        .ms-brand-bar__header--center p.disabled {
+            opacity: 0.6;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+
+            .ms-brand-bar__header--center p.disabled:active, .ms-brand-bar__header--center p.disabled:hover {
+                background: transparent;
+            }
+
+            .ms-brand-bar__header--center p.disabled:active {
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                -webkit-transform: none;
+                transform: none;
+            }
+
+.ms-brand-bar__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    flex: 1 1 0;
+    padding: 20px;
+}
+
+    .ms-brand-bar__content h2 {
+        margin-bottom: 20px;
+    }
+
+.ms-brand-bar__footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.ms-brand-bar__footer--image {
+    background: transparent no-repeat center center;
+    background-image: url("../../../assets/brand-bar.png");
+    background-size: cover;
+    margin-top: 15px;
+    flex: 0 1 90px;
+}
+
+.demo-placeholder {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.demo-placeholder__img {
+    width: 60px;
+    height: 60px;
+    background-color: #F4F4F4;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.demo-placeholder__text {
+    height: 5px;
+    background-color: #F4F4F4;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.demo-placeholder__text--half {
+    width: 60%;
+}
+
+.demo-placeholder__text--para {
+    height: 40px;
+}
+
+.demo-placeholder__button {
+    width: 150px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
