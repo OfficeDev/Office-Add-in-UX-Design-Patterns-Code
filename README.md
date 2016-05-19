@@ -15,16 +15,18 @@ There are no prerequisites to use these design or code resources. To get started
 * Review the UX design patterns, and identify which ones are important to your add-in. For example, pick one of the first-run experiences.
 * Then do one or more of the following:
 	* Copy the code files to your add-in project and start customizing them to meet your requirements. You will need the [common.js file](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/), the [assets folder](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/assets), and the code folder for the design pattern you choose. See links below.
-	* Take a look at the specs and use them as a guide when creating your own UX design. See links below.
+	* Take a look at the  and use them as a guide when creating your own UX design. See links below.
 	* Download the Adobe Illustrator files and edit them to mock-up your own add-in designs. Get them [here](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Source%20Files).
 
 ## Generic and Branding
 
 * **Landing (or generic) page** is a standard add-in page. Users may be redirected to a landing page after a first-run experience or sign-in process. ([spec](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Helpful%20Templates/AddIn_Template_Standard_Layout.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/generic/landing-page))
+* **Brand image in brand bar** is the landing page with an image in the footer. ([spec](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Brand_Bar.md), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/generic/brand-bar))
 
 <table>
- <tr><th>Landing</th></tr>
- <tr><td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/generic/landing-page"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/landing.page.PNG" alt="landing page" style="width: 264px;"/></A></td></tr>
+ <tr><th>Landing</th><th>Brand Bar</th></tr>
+ <tr><td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/generic/landing-page"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/landing.page.PNG" alt="landing page" style="width: 264px;"/></A></td>
+<td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/generic/brand-bar"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/brand.bar.PNG" alt="brand bar" style="width: 264px;"/></A></td></tr>
  </table>
 
 ## First-Run
