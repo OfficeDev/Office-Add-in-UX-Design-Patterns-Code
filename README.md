@@ -91,6 +91,8 @@ There are a variety of ways that your add-in can notify users of events, such as
 
 * Running some code files outside of an add-in project throws a JavaScript error. 
 	* Resolution: Ensure you add these files to an Office add-in project. 
+* After converting these design patterns to a SPA, all sections of the HTML page become top-aligned and overlaps each other. 
+	* Resolution: When converting from HTML additional wrapper DIVs may be added. Ensure that the height of these additional DIVs are reset properly. For example, if a parent DIV is set to a height of 100%, a child DIV has no height, and a grandchild DIV is set to 100%, you need to set the child DIV to 100% to layout the sections properly.    
 	
 ## Additional resources
 
