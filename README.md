@@ -97,6 +97,6 @@ There are a variety of ways that your add-in can notify users of events, such as
 ## Additional resources
 
 * [Best practices for developing Office Add-ins](https://dev.office.com/docs/add-ins/design/add-in-development-best-practices)
-* [Office UI Fabric](http://dev.office.com/fabric/)
+* [Office UI Fabric](http://dev.office.com/fabric/). This project uses version 2.1.0.
 
 Copyright (c) Microsoft Corporation 2016. All rights reserved.
