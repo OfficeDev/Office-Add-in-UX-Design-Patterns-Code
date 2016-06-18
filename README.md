@@ -23,7 +23,7 @@ There are no prerequisites to use these design or code resources. To get started
 ## Generic and Branding
 
 * **Landing (or generic) page** is a standard add-in page. Users may be redirected to a landing page after a first-run experience or sign-in process. ([spec](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Helpful%20Templates/AddIn_Template_Standard_Layout.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/generic/landing-page))
-* **Brand image in brand bar** is the landing page with an image in the footer. ([spec](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Brand_Bar.md), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/generic/brand-bar))
+* **Brand image in brand bar** is the landing page with an image in the footer that represents your brand. ([spec](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Brand_Bar.md), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/generic/brand-bar))
 
 <table>
  <tr><th>Landing</th><th>Brand Bar</th></tr>
@@ -39,12 +39,14 @@ A first-run experience is the experience a user has when opening your add-in for
 * **Value** communicates your add-in's value proposition. ([spec](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/FirstRun_ValuePlacemat.md), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/first-run/value-placemat))
 * **Video** shows users a video before they start using your add-in. ([spec](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/FirstRun_VideoPlacemat.md), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/first-run/video-placemat))
 * **Walkthrough** takes users through a series of features or information before they start using the add-in. ([spec](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/FirstRun_PagingPanel.md), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/first-run/walkthrough))
-* The [Office Store](https://msdn.microsoft.com/en-us/library/office/jj220033.aspx) has a system for providing users with a trial version of an add-in, but if you want full control of the UI for a trial experience, use the following templates:
+* The [Office Store](https://msdn.microsoft.com/en-us/library/office/jj220033.aspx) has a system that manages trial versions of an add-in, but if you want to control the UI of your addin's trial experience, use the following patterns:
+
 	* **Trial** shows users how to get started with a trial version of your add-in. ([spec](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/FirstRun_TrialVersion.md), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/first-run/trial-placemat))
-	* **Trial feature** advises users that the feature they are trying to use is not available in the trial version of the add-in. ([code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/first-run/trial-placemat-feature))
+	* **Trial feature** advises users that the feature they are trying to use is not available in the trial version of the add-in. Alternatively, if your add-in is free but there's a feature in it that requires a subscription, you should consider using this pattern. You might also consider using this pattern to provide a downgraded experience after a trial has ended. ([code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/first-run/trial-placemat-feature))
 
+> Important:If you decide to manage your own trial, and not use the Office Store to manage the trial, ensure you include the **Additional purchase may be required** tag in the testing notes in the seller dashboard.
 
-> Note: Consider whether showing users the first-run experience once or many times is important to your scenario. For example, if users use your add-in periodically, they may forget how to use the add-in. Seeing the first-run experience again may be helpful to those users. 
+Consider whether showing users the first-run experience once or many times is important to your scenario. For example, if users use your add-in periodically, they may forget how to use the add-in. Seeing the first-run experience again may be helpful to those users. 
 
  <table>
  <tr><th>Steps to Start</th><th>Value</th><th>Video</th></tr>
