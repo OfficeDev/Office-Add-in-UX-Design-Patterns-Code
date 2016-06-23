@@ -1,0 +1,91 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
+<!--
+    This file shows how to design a first-run page that provides step-by-step instructions to the user about how
+    to use the add-in.
+    -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Feedback</title>
+
+    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+
+    <!-- Template styles -->
+    <link href="../../../common.css" rel="stylesheet" />
+    <link href="feedback.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js"></script>
+    <!-- We use Office.js in the JavaScript file. -->
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <script src="https://appsforoffice.microsoft.com/fabric/2.1.0/jquery.fabric.min.js"></script>
+    <script type="text/javascript" src="message.banner.js"></script>    
+    <script type="text/javascript" src="context.menu.js"></script>
+    <script type="text/javascript" src="feedback.js"></script>
+
+    <link href="message.banner.css" rel="stylesheet" type="text/css" />
+        
+</head>
+<body class="ms-font-l ms-landing-page">
+    <main class="ms-landing-page__main">
+        <section class="ms-landing-page__header ms-bgColor-themeLighter">
+            <div class="ms-landing-page__header--center ms-font-m ms-fontWeight-light">
+                <p><i class="ms-Icon ms-Icon--menu ms-fontColor-themePrimary"></i></p>
+                <p>
+                    <i class="ms-Icon ms-Icon--plus ms-fontColor-themePrimary"></i>
+                    Item 1
+                </p><p>
+                    <i class="ms-Icon ms-Icon--plus ms-fontColor-themePrimary"></i>
+                    Item 2
+                </p>
+            </div>
+            <div class="ms-landing-page__header--right ms-font-m ms-fontWeight-light">
+                <i class="ms-Icon ms-Icon--reactivate ms-fontColor-themePrimary"></i>
+            </div>
+        </section>
+
+        <div>
+            <ul class="ms-ContextualMenu" id="navMenu">
+                <li class="ms-ContextualMenu-item"><a class="ms-ContextualMenu-link" href="#">Home</a></li>
+                <li class="ms-ContextualMenu-item"><a class="ms-ContextualMenu-link" href="#">Nav Item 1</a></li>
+                <li class="ms-ContextualMenu-item"><a class="ms-ContextualMenu-link" href="#">Nav Item 2</a></li>
+                <li class="ms-ContextualMenu-item"><a class="ms-ContextualMenu-link" href="#">Nav Item 3</a></li>
+                <li class="ms-ContextualMenu-item" id="feedbackItem">
+                    <a class="ms-ContextualMenu-link" href="#">
+                        <i class="ms-Icon enlarge ms-Icon--smiley menu-icon"></i>Send Feedback</a>
+                </li>
+            </ul>
+        </div>
+        <div id="ReviewMessageBanner" class="ms-MessageBanner " >
+            <div class="ms-MessageBanner-content">
+                <div class="ms-MessageBanner-text">
+                    <div class="ms-MessageBanner-clipper ms-font-m">Review this add-in?</div>
+                </div>
+               
+                <div class="ms-MessageBanner-action ms-notification-message-banner--actionbuttons">
+                    <button class="ms-Button ms-Button--primary" id="btnYes">Yes</button>
+                    <button class="ms-landing-page__action--primary ms-Button" id="btnNo">
+                        <div class="ms-fontColor-themePrimary">No, thanks</div></button>
+                </div>
+            </div>
+            <button class="ms-MessageBanner-close"> <i class="ms-Icon ms-Icon--x"></i> </button>
+        </div>
+       
+
+    </main>
+
+    <footer class="ms-landing-page__footer  ms-bgColor-themePrimary">
+        <div class="ms-landing-page__footer--left">
+            <img src="/assets/logo-filled.png" />
+            <h1 class="ms-font-xl ms-fontWeight-semilight ms-fontColor-white">My Add-in Name</h1>
+        </div>
+        <div class="ms-landing-page__footer--right">
+            <i class="ms-Icon enlarge ms-Icon--smiley ms-fontColor-white"></i>
+        </div>
+    </footer>
+</body>
+</html>

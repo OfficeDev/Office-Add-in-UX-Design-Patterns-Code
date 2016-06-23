@@ -1,0 +1,278 @@
+/* Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto; }
+
+body {
+  position: relative;
+  font-size: 16px; }
+
+main {
+  height: 100%;
+  overflow-y: auto; }
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  padding: 0; }
+
+.clearfix {
+  display: block;
+  clear: both;
+  height: 0; }
+
+.pointerCursor {
+  cursor: pointer; }
+
+.invisible {
+  visibility: hidden; }
+
+.undisplayed {
+  display: none; }
+
+.ms-Icon.enlarge {
+  position: relative;
+  font-size: 20px;
+  top: 4px; }
+
+.ms-navigation-pivot {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%; }
+  .ms-navigation-pivot__main {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    flex-wrap: nowrap;
+    -webkit-box-flex: 1;
+            flex: 1 1 0;
+    height: 100%; }
+  .ms-navigation-pivot__header {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    background-color: #DEECF9; }
+    .ms-navigation-pivot__header--left {
+      -webkit-transition: background ease 0.1s, color ease 0.1s;
+      transition: background ease 0.1s, color ease 0.1s;
+      padding: 4px 20px;
+      cursor: pointer; }
+      .ms-navigation-pivot__header--left:active, .ms-navigation-pivot__header--left:hover {
+        background: #eff6fc;
+        cursor: pointer; }
+      .ms-navigation-pivot__header--left:active {
+        background: #eff6fc;
+        -webkit-transform: scale3d(0.98, 0.98, 1);
+                transform: scale3d(0.98, 0.98, 1); }
+      .ms-navigation-pivot__header--left.disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed; }
+        .ms-navigation-pivot__header--left.disabled:active, .ms-navigation-pivot__header--left.disabled:hover {
+          background: transparent; }
+        .ms-navigation-pivot__header--left.disabled:active {
+          -webkit-transform: none;
+                  transform: none; }
+    .ms-navigation-pivot__header--right {
+      -webkit-box-flex: 1;
+              flex: 1 0 0px;
+      padding-left: 20px;
+      display: -webkit-inline-box;
+      display: inline-flex;
+      -webkit-box-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+              align-items: center; }
+      .ms-navigation-pivot__header--right p {
+        -webkit-box-flex: 1;
+                flex: 1 0 0px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: left;
+        cursor: pointer;
+        padding: 0px; }
+        .ms-navigation-pivot__header--right p:last-child {
+          border-right: none; }
+  .ms-navigation-pivot__content {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    height: 100%;
+    -webkit-box-flex: 1;
+            flex: 1 1 0;
+    min-height: 380px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .ms-navigation-pivot__content h2 {
+      margin-bottom: 10px; }
+  .ms-navigation-pivot__login-panel {
+    width: 100%;
+    height: 245px;
+    border: solid 1px #0078d7; }
+    .ms-navigation-pivot__login-panel h3 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      padding: 0 20px; }
+  .ms-navigation-pivot__label {
+    margin-top: 60px;
+    align-self: center; }
+  .ms-navigation-pivot__input {
+    padding: 0 20px;
+    margin-top: 10px;
+    width: calc(100% - 40px); }
+    .ms-navigation-pivot__input label {
+      clear: both;
+      display: block;
+      width: 100%;
+      margin-bottom: 5px; }
+    .ms-navigation-pivot__input input {
+      width: calc(100% - 24px);
+      border: solid 1px #0078d7;
+      padding: 10px; }
+  .ms-navigation-pivot__footer {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center; }
+    .ms-navigation-pivot__footer--left {
+      -webkit-transition: background ease 0.1s, color ease 0.1s;
+      transition: background ease 0.1s, color ease 0.1s;
+      display: -webkit-inline-box;
+      display: inline-flex;
+      -webkit-box-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-flex: 1;
+              flex: 1 0 0px;
+      padding: 20px; }
+      .ms-navigation-pivot__footer--left:active, .ms-navigation-pivot__footer--left:hover {
+        background: #005ca4;
+        cursor: pointer; }
+      .ms-navigation-pivot__footer--left:active {
+        background: #005ca4; }
+      .ms-navigation-pivot__footer--left.disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed; }
+        .ms-navigation-pivot__footer--left.disabled:active, .ms-navigation-pivot__footer--left.disabled:hover {
+          background: transparent; }
+      .ms-navigation-pivot__footer--left img {
+        width: 40px;
+        height: 40px; }
+      .ms-navigation-pivot__footer--left h1 {
+        -webkit-box-flex: 1;
+                flex: 1 0 0px;
+        margin-left: 15px;
+        text-align: left;
+        width: auto;
+        max-width: auto;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+    .ms-navigation-pivot__footer--right {
+      -webkit-transition: background ease 0.1s, color ease 0.1s;
+      transition: background ease 0.1s, color ease 0.1s;
+      padding: 29px 20px; }
+      .ms-navigation-pivot__footer--right:active, .ms-navigation-pivot__footer--right:hover {
+        background: #005ca4;
+        cursor: pointer; }
+      .ms-navigation-pivot__footer--right:active {
+        background: #005ca4; }
+      .ms-navigation-pivot__footer--right.disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed; }
+        .ms-navigation-pivot__footer--right.disabled:active, .ms-navigation-pivot__footer--right.disabled:hover {
+          background: transparent; }
+
+.input__submit {
+  width: 100%;
+  height: 30px;
+  color: #FFFFFF;
+  margin-top: 20px;
+  font-weight: 600;
+  margin-bottom: -8px;
+  background-color: #0078d7;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  -webkit-transition: background ease 0.1s, color ease 0.1s;
+  transition: background ease 0.1s, color ease 0.1s; }
+  .input__submit:active, .input__submit:hover {
+    background: #006abe;
+    cursor: pointer; }
+  .input__submit:active {
+    background: #006abe;
+    -webkit-transform: scale3d(0.98, 0.98, 1);
+            transform: scale3d(0.98, 0.98, 1); }
+  .input__submit.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+    cursor: not-allowed; }
+    .input__submit.disabled:active, .input__submit.disabled:hover {
+      background: transparent; }
+    .input__submit.disabled:active {
+      -webkit-transform: none;
+              transform: none; }
+
+.ms-Pivot {
+  overflow: hidden; }
+
+.ms-Pivot-content {
+  display: none;
+  margin-top: 0px; }
+
+.ms-Pivot-content.is-selected {
+  display: block; }
+
+.ms-Pivot-link {
+  margin-right: 10px;
+  line-height: 30px; }
+  .ms-Pivot-link:hover {
+    color: #000; }
+  .ms-Pivot-link:focus {
+    color: #000; }
+  .ms-Pivot-link.is-selected {
+    border-bottom: solid 3px #0078d7 !important; }
+
+.ms-Breadcrumb {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 20px; }
+
+.ms-Breadcrumb-itemLink {
+  font-size: 17px; }

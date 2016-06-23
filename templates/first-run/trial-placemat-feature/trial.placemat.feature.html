@@ -16,9 +16,16 @@
     <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
     <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
 
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js"></script>
+
     <!-- Template styles -->
-    <link href="../../../common.css" rel="stylesheet" />
+    
     <link href="trial.placemat.feature.css" rel="stylesheet" type="text/css" />
+
+    <!-- Fabric component -->
+    <script type="text/javascript" src="Pivot.js"></script>
+    <script> $(document).ready(function() { if ($.fn.Pivot) { $('.ms-Pivot').Pivot(); } }); </script>
+
 </head>
 <body class="ms-font-l ms-firstrun-trial-feature">
     <main class="ms-firstrun-trial-feature__main">
@@ -26,29 +33,53 @@
             <div class="ms-firstrun-trial-feature__header--left">
                 <i class="ms-Icon ms-Icon--chevronThickLeft ms-fontColor-themePrimary"></i>
             </div>
-            <div class="ms-firstrun-trial-feature__header--right ms-font-m ms-fontWeight-light">
-                <p>Feature 1</p>
-                <p class="ms-firstrun-trial-feature__header--selected ms-fontColor-themePrimary ms-fontWeight-semibold">Feature 2</p>
+            <div class="ms-Pivot ms-firstrun-trial-feature__header--right ms-font-m ms-fontWeight-light">
+                <p class="ms-Pivot-link is-selected" data-pivotContent="[data-demo='tabs']>.feature1">Feature 1</p>
+                <p class="ms-Pivot-link" data-pivotContent="[data-demo='tabs']>.feature2">Feature 2</p>
             </div>
         </section>
-        <section class="ms-firstrun-trial-feature__content ms-font-m ms-fontColor-neutralPrimary">
-            <h2 class="ms-font-xl ms-fontWeight-light">Feature 2 Title</h2>
-            <div class="ms-firstrun-trial-feature__login-panel">
-                <h3 class="ms-font-l ms-fontColor-themePrimary">Login to access this feature</h3>
-                <form class="ms-firstrun-trial-feature__form">
-                    <p class="ms-firstrun-trial-feature__input ">
-                        <label for="username">Username</label>
-                        <input class="input__username" type="text" name="username" />
-                    </p>
-                    <p class="ms-firstrun-trial-feature__input ">
-                        <label for="password">Password</label>
-                        <input class="input__password" type="password" name="username" />
-                    </p>
-                    <input class="input__submit" type="submit" name="submit" value="Login" />
-                </form>
+        <div data-demo="tabs">
+            <div class="ms-Pivot-content is-selected feature1">
+                <section class="ms-firstrun-trial-feature__content ms-font-m ms-fontColor-neutralPrimary">
+                    <h2 class="ms-font-xl ms-fontWeight-light">Feature 1 Title</h2>
+                    <div class="ms-firstrun-trial-feature__login-panel">
+                        <h3 class="ms-font-l ms-fontColor-themePrimary">Login to access this feature</h3>
+                        <form class="ms-firstrun-trial-feature__form">
+                            <p class="ms-firstrun-trial-feature__input ">
+                                <label for="username">Username</label>
+                                <input class="input__username" type="text" name="username" />
+                            </p>
+                            <p class="ms-firstrun-trial-feature__input ">
+                                <label for="password">Password</label>
+                                <input class="input__password" type="password" name="username" />
+                            </p>
+                            <input class="input__submit" type="submit" name="submit" value="Login" />
+                        </form>
+                    </div>
+                    <p class="ms-firstrun-trial-feature__label ms-font-l ms-fontColor-themePrimary ms-fontWeight-semilight">Start your <span class="ms-fontWeight-semibold">trial</span> to get this feature.</p>
+                </section>
             </div>
-            <p class="ms-firstrun-trial-feature__label ms-font-l ms-fontColor-themePrimary ms-fontWeight-semilight">Start your <span class="ms-fontWeight-semibold">trial</span> to get this feature.</p>
-        </section>
+            <div class="ms-Pivot-content feature2">
+                <section class="ms-firstrun-trial-feature__content ms-font-m ms-fontColor-neutralPrimary">
+                    <h2 class="ms-font-xl ms-fontWeight-light">Feature 2 Title</h2>
+                    <div class="ms-firstrun-trial-feature__login-panel">
+                        <h3 class="ms-font-l ms-fontColor-themePrimary">Login to access this feature</h3>
+                        <form class="ms-firstrun-trial-feature__form">
+                            <p class="ms-firstrun-trial-feature__input ">
+                                <label for="username">Username</label>
+                                <input class="input__username" type="text" name="username" />
+                            </p>
+                            <p class="ms-firstrun-trial-feature__input ">
+                                <label for="password">Password</label>
+                                <input class="input__password" type="password" name="username" />
+                            </p>
+                            <input class="input__submit" type="submit" name="submit" value="Login" />
+                        </form>
+                    </div>
+                    <p class="ms-firstrun-trial-feature__label ms-font-l ms-fontColor-themePrimary ms-fontWeight-semilight">Start your <span class="ms-fontWeight-semibold">trial</span> to get this feature.</p>
+                </section>
+            </div>
+        </div>            
     </main>
     <footer class="ms-firstrun-trial-feature__footer  ms-bgColor-themePrimary">
         <div class="ms-firstrun-trial-feature__footer--left">

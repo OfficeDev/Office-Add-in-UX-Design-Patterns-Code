@@ -1,228 +1,210 @@
 /* Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto; }
+
+body {
+  position: relative;
+  font-size: 16px; }
+
+main {
+  height: 100%;
+  overflow-y: auto; }
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  padding: 0; }
+
+.clearfix {
+  display: block;
+  clear: both;
+  height: 0; }
+
+.pointerCursor {
+  cursor: pointer; }
+
+.invisible {
+  visibility: hidden; }
+
+.undisplayed {
+  display: none; }
+
+.ms-Icon.enlarge {
+  position: relative;
+  font-size: 20px;
+  top: 4px; }
+
 .ms-embedded-dialog {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%; }
+  .ms-embedded-dialog__main {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     flex-wrap: nowrap;
-    height: 100%;
-}
-
-.ms-embedded-dialog__main {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    flex: 1 1 0;
-    height: 100%;
-}
-
-.ms-embedded-dialog__options {
-    visibility: hidden;
-}
-
-.ms-embedded-dialog__header {
+    -webkit-box-flex: 1;
+            flex: 1 1 0;
+    height: 100%; }
+  .ms-embedded-dialog__options {
+    visibility: hidden; }
+  .ms-embedded-dialog__header {
     border-bottom: solid 2px #0078d7;
-    display: inline-flex;
-}
-
-.ms-embedded-dialog__header--left {
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-.ms-embedded-dialog__header--right {
-    padding: 10px 20px;
-    -moz-transition: background ease 0.1s, color ease 0.1s;
-    -o-transition: background ease 0.1s, color ease 0.1s;
-    -webkit-transition: background ease 0.1s, color ease 0.1s;
-    transition: background ease 0.1s, color ease 0.1s;
-    cursor: pointer;
-}
-
-    .ms-embedded-dialog__header--right:active, .ms-embedded-dialog__header--right:hover {
+    display: -webkit-inline-box;
+    display: inline-flex; }
+    .ms-embedded-dialog__header--left {
+      margin-right: 20px;
+      cursor: pointer; }
+    .ms-embedded-dialog__header--right {
+      padding: 10px 20px;
+      -webkit-transition: background ease 0.1s, color ease 0.1s;
+      transition: background ease 0.1s, color ease 0.1s;
+      cursor: pointer; }
+      .ms-embedded-dialog__header--right:active, .ms-embedded-dialog__header--right:hover {
         background: #c7e0f4;
         color: #000;
-        cursor: pointer;
-    }
-
-    .ms-embedded-dialog__header--right:active {
+        cursor: pointer; }
+      .ms-embedded-dialog__header--right:active {
         background: #c7e0f4;
-        -moz-transform: scale3d(0.98, 0.98, 1);
-        -ms-transform: scale3d(0.98, 0.98, 1);
-        -o-transform: scale3d(0.98, 0.98, 1);
         -webkit-transform: scale3d(0.98, 0.98, 1);
-        transform: scale3d(0.98, 0.98, 1);
-    }
-
-    .ms-embedded-dialog__header--right.disabled {
+                transform: scale3d(0.98, 0.98, 1); }
+      .ms-embedded-dialog__header--right.disabled {
         opacity: 0.6;
         pointer-events: none;
-        cursor: not-allowed;
-    }
-
+        cursor: not-allowed; }
         .ms-embedded-dialog__header--right.disabled:active, .ms-embedded-dialog__header--right.disabled:hover {
-            background: transparent;
-        }
-
+          background: transparent; }
         .ms-embedded-dialog__header--right.disabled:active {
-            -moz-transform: none;
-            -ms-transform: none;
-            -o-transform: none;
-            -webkit-transform: none;
-            transform: none;
-        }
-
-.ms-embedded-dialog__header--center {
-    flex: 1 1 auto;
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-    .ms-embedded-dialog__header--center p {
+          -webkit-transform: none;
+                  transform: none; }
+    .ms-embedded-dialog__header--center {
+      -webkit-box-flex: 1;
+              flex: 1 1 auto;
+      display: -webkit-inline-box;
+      display: inline-flex;
+      -webkit-box-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+              align-items: center; }
+      .ms-embedded-dialog__header--center p {
         padding: 0 10px;
-        flex: 1 0 0px;
+        -webkit-box-flex: 1;
+                flex: 1 0 0px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
         text-align: left;
         cursor: pointer;
-        -moz-transition: background ease 0.1s, color ease 0.1s;
-        -o-transition: background ease 0.1s, color ease 0.1s;
         -webkit-transition: background ease 0.1s, color ease 0.1s;
         transition: background ease 0.1s, color ease 0.1s;
-        padding: 10px;
-    }
-
+        padding: 10px; }
         .ms-embedded-dialog__header--center p:active, .ms-embedded-dialog__header--center p:hover {
-            background: #c7e0f4;
-            color: #000;
-            cursor: pointer;
-        }
-
+          background: #c7e0f4;
+          color: #000;
+          cursor: pointer; }
         .ms-embedded-dialog__header--center p:active {
-            background: #c7e0f4;
-            -moz-transform: scale3d(0.98, 0.98, 1);
-            -ms-transform: scale3d(0.98, 0.98, 1);
-            -o-transform: scale3d(0.98, 0.98, 1);
-            -webkit-transform: scale3d(0.98, 0.98, 1);
-            transform: scale3d(0.98, 0.98, 1);
-        }
-
+          background: #c7e0f4;
+          -webkit-transform: scale3d(0.98, 0.98, 1);
+                  transform: scale3d(0.98, 0.98, 1); }
         .ms-embedded-dialog__header--center p.disabled {
-            opacity: 0.6;
-            pointer-events: none;
-            cursor: not-allowed;
-        }
-
-            .ms-embedded-dialog__header--center p.disabled:active, .ms-embedded-dialog__header--center p.disabled:hover {
-                background: transparent;
-            }
-
-            .ms-embedded-dialog__header--center p.disabled:active {
-                -moz-transform: none;
-                -ms-transform: none;
-                -o-transform: none;
-                -webkit-transform: none;
-                transform: none;
-            }
-
-.ms-embedded-dialog__button-center {
+          opacity: 0.6;
+          pointer-events: none;
+          cursor: not-allowed; }
+          .ms-embedded-dialog__header--center p.disabled:active, .ms-embedded-dialog__header--center p.disabled:hover {
+            background: transparent; }
+          .ms-embedded-dialog__header--center p.disabled:active {
+            -webkit-transform: none;
+                    transform: none; }
+  .ms-embedded-dialog__button-center {
     display: inline-block;
     width: calc(50% - 3px);
-    /* half the container's width minus half of the margin between the buttons */
-}
-
-.ms-embedded-dialog__content {
+    /* half the container's width minus half of the margin between the buttons */ }
+  .ms-embedded-dialog__content {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     flex-wrap: nowrap;
     height: 100%;
-    flex: 1 1 0;
+    -webkit-box-flex: 1;
+            flex: 1 1 0;
     min-height: 180px;
-    padding: 20px;
-}
-
-.ms-embedded-dialog__content__title, .ms-embedded-dialog__content__subtitle, .ms-embedded-dialog__content__text {
-    margin-bottom: 20px;
-}
-
-.ms-embedded-dialog__footer {
+    padding: 20px; }
+    .ms-embedded-dialog__content__title, .ms-embedded-dialog__content__subtitle, .ms-embedded-dialog__content__text {
+      margin-bottom: 20px; }
+  .ms-embedded-dialog__footer {
+    display: -webkit-inline-box;
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ms-embedded-dialog__footer--left {
-    -moz-transition: background ease 0.1s, color ease 0.1s;
-    -o-transition: background ease 0.1s, color ease 0.1s;
-    -webkit-transition: background ease 0.1s, color ease 0.1s;
-    transition: background ease 0.1s, color ease 0.1s;
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex: 1 0 0px;
-    padding: 20px;
-}
-
-    .ms-embedded-dialog__footer--left:active, .ms-embedded-dialog__footer--left:hover {
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center; }
+    .ms-embedded-dialog__footer--left {
+      -webkit-transition: background ease 0.1s, color ease 0.1s;
+      transition: background ease 0.1s, color ease 0.1s;
+      display: -webkit-inline-box;
+      display: inline-flex;
+      -webkit-box-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-flex: 1;
+              flex: 1 0 0px;
+      padding: 20px; }
+      .ms-embedded-dialog__footer--left:active, .ms-embedded-dialog__footer--left:hover {
         background: #005ca4;
-        cursor: pointer;
-    }
-
-    .ms-embedded-dialog__footer--left:active {
-        background: #005ca4;
-    }
-
-    .ms-embedded-dialog__footer--left.disabled {
+        cursor: pointer; }
+      .ms-embedded-dialog__footer--left:active {
+        background: #005ca4; }
+      .ms-embedded-dialog__footer--left.disabled {
         opacity: 0.6;
         pointer-events: none;
-        cursor: not-allowed;
-    }
-
+        cursor: not-allowed; }
         .ms-embedded-dialog__footer--left.disabled:active, .ms-embedded-dialog__footer--left.disabled:hover {
-            background: transparent;
-        }
-
-    .ms-embedded-dialog__footer--left img {
+          background: transparent; }
+      .ms-embedded-dialog__footer--left img {
         width: 40px;
-        height: 40px;
-    }
-
-    .ms-embedded-dialog__footer--left h1 {
-        flex: 1 0 0px;
+        height: 40px; }
+      .ms-embedded-dialog__footer--left h1 {
+        -webkit-box-flex: 1;
+                flex: 1 0 0px;
         margin-left: 15px;
         text-align: left;
         width: auto;
         max-width: auto;
         overflow: hidden;
         white-space: nowrap;
-        -ms-text-overflow: ellipsis;
-        -o-text-overflow: ellipsis;
-        text-overflow: ellipsis;
-    }
-
-.ms-embedded-dialog__footer--right {
-    -moz-transition: background ease 0.1s, color ease 0.1s;
-    -o-transition: background ease 0.1s, color ease 0.1s;
-    -webkit-transition: background ease 0.1s, color ease 0.1s;
-    transition: background ease 0.1s, color ease 0.1s;
-    padding: 29px 20px;
-}
-
-    .ms-embedded-dialog__footer--right:active, .ms-embedded-dialog__footer--right:hover {
+        text-overflow: ellipsis; }
+    .ms-embedded-dialog__footer--right {
+      -webkit-transition: background ease 0.1s, color ease 0.1s;
+      transition: background ease 0.1s, color ease 0.1s;
+      padding: 29px 20px; }
+      .ms-embedded-dialog__footer--right:active, .ms-embedded-dialog__footer--right:hover {
         background: #005ca4;
-        cursor: pointer;
-    }
-
-    .ms-embedded-dialog__footer--right:active {
-        background: #005ca4;
-    }
-
-    .ms-embedded-dialog__footer--right.disabled {
+        cursor: pointer; }
+      .ms-embedded-dialog__footer--right:active {
+        background: #005ca4; }
+      .ms-embedded-dialog__footer--right.disabled {
         opacity: 0.6;
         pointer-events: none;
-        cursor: not-allowed;
-    }
-
+        cursor: not-allowed; }
         .ms-embedded-dialog__footer--right.disabled:active, .ms-embedded-dialog__footer--right.disabled:hover {
-            background: transparent;
-        }
+          background: transparent; }

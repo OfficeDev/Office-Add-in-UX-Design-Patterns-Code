@@ -1,85 +1,128 @@
 /* Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. */
-.ms-firstrun-instructionstep {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: 100%;
-    min-height: 600px;
-}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto; }
 
-.ms-firstrun-instructionstep__header {
+body {
+  position: relative;
+  font-size: 16px; }
+
+main {
+  height: 100%;
+  overflow-y: auto; }
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  padding: 0; }
+
+.clearfix {
+  display: block;
+  clear: both;
+  height: 0; }
+
+.pointerCursor {
+  cursor: pointer; }
+
+.invisible {
+  visibility: hidden; }
+
+.undisplayed {
+  display: none; }
+
+.ms-Icon.enlarge {
+  position: relative;
+  font-size: 20px;
+  top: 4px; }
+
+.ms-firstrun-instructionstep {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  min-height: 600px; }
+  .ms-firstrun-instructionstep__header {
     padding: 20px;
     min-height: 20px;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    flex-wrap: nowrap; }
     .ms-firstrun-instructionstep__header h1 {
-        letter-spacing: 5px;
-    }
-
+      letter-spacing: 5px; }
     .ms-firstrun-instructionstep__header p {
-        margin-top: 15px;
-    }
-
-.ms-firstrun-instructionstep__header--image {
-    background: transparent no-repeat center center;
-    background-image: url("../../../assets/generic-placeholder.png");
-    background-size: cover;
-    margin-top: 15px;
+      margin-top: 15px; }
+    .ms-firstrun-instructionstep__header--image {
+      background: transparent no-repeat center center;
+      background-image: url("../../../assets/generic-placeholder.png");
+      background-size: cover;
+      margin-top: 15px;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      flex-wrap: nowrap;
+      -webkit-box-pack: stretch;
+              justify-content: stretch;
+      -webkit-box-align: stretch;
+              align-items: stretch;
+      -webkit-box-flex: 0;
+              flex: 0 1 0;
+      min-height: 200px; }
+  .ms-firstrun-instructionstep__content {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: stretch;
-    align-items: stretch;
-    flex: 0 1 0;
-    min-height: 200px;
-}
-
-.ms-firstrun-instructionstep__content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     height: 100%;
-    flex: 1 1 0;
-    padding: 20px;
-}
-
-.ms-firstrun-instructionstep__content--centered {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-.ms-firstrun-instructionstep .clearfix {
+    -webkit-box-flex: 1;
+            flex: 1 1 0;
+    padding: 20px; }
+    .ms-firstrun-instructionstep__content--centered {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      flex-wrap: nowrap; }
+  .ms-firstrun-instructionstep .clearfix {
     display: block;
     height: 0;
-    clear: both;
-}
-
-.ms-firstrun-instructionstep__welcome-body {
-    padding-left: 20px;
-}
-
-.ms-firstrun-instructionstep__welcome-intro {
+    clear: both; }
+  .ms-firstrun-instructionstep__welcome-body {
+    padding-left: 20px; }
+  .ms-firstrun-instructionstep__welcome-intro {
     padding-top: 6px;
-    padding-bottom: 20px;
-}
-
-.ms-firstrun-instructionstep__list {
-    list-style-type: none;
-}
-
+    padding-bottom: 20px; }
+  .ms-firstrun-instructionstep__list {
+    list-style-type: none; }
     .ms-firstrun-instructionstep__list.ms-List .ms-ListItem {
-        padding: 0;
-        margin: 0;
-        margin-bottom: 20px;
-    }
-
-    .ms-firstrun-instructionstep__list.ms-List .ms-ListItem-primaryText {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 20px; }
+      .ms-firstrun-instructionstep__list.ms-List .ms-ListItem-primaryText {
         color: #0077d6;
         background-color: #c6dff3;
         border-radius: 100%;
@@ -90,10 +133,8 @@
         padding: 0;
         text-align: center;
         position: absolute;
-        /* override fabric positioning */
-    }
-
-    .ms-firstrun-instructionstep__list.ms-List .ms-ListItem-secondaryText {
+        /* override fabric positioning */ }
+      .ms-firstrun-instructionstep__list.ms-List .ms-ListItem-secondaryText {
         color: #333333;
         margin-bottom: 10px;
         position: inherit;
@@ -103,36 +144,26 @@
         /* Offset by 30px + 10px so that large bullets are aligned properly. */
         white-space: normal;
         overflow: auto;
-        line-height: normal;
-    }
-
+        line-height: normal; }
     .ms-firstrun-instructionstep__list li {
-        margin-bottom: 20px;
-    }
-
-        .ms-firstrun-instructionstep__list li i {
-            position: relative;
-            top: 2px;
-            margin-right: 10px;
-        }
-
-.ms-firstrun-instructionstep__action--primary.ms-Button {
+      margin-bottom: 20px; }
+      .ms-firstrun-instructionstep__list li i {
+        position: relative;
+        top: 2px;
+        margin-right: 10px; }
+  .ms-firstrun-instructionstep__action--primary.ms-Button {
     align-self: center;
     margin-top: 20px;
+    display: -webkit-inline-box;
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center; }
     .ms-firstrun-instructionstep__action--primary.ms-Button span.ms-Button-icon {
-        top: 3px;
-    }
-
+      top: 3px; }
     .ms-firstrun-instructionstep__action--primary.ms-Button i {
-        color: #0078d7;
-    }
-
+      color: #0078d7; }
     .ms-firstrun-instructionstep__action--primary.ms-Button span.ms-Button-label {
-        margin-right: 10px;
-        color: #0078d7;
-    }
+      margin-right: 10px;
+      color: #0078d7; }

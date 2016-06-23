@@ -1,61 +1,108 @@
 /* Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto; }
+
+body {
+  position: relative;
+  font-size: 16px; }
+
+main {
+  height: 100%;
+  overflow-y: auto; }
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  padding: 0; }
+
+.clearfix {
+  display: block;
+  clear: both;
+  height: 0; }
+
+.pointerCursor {
+  cursor: pointer; }
+
+.invisible {
+  visibility: hidden; }
+
+.undisplayed {
+  display: none; }
+
+.ms-Icon.enlarge {
+  position: relative;
+  font-size: 20px;
+  top: 4px; }
+
 .ms-notification-progress-indeterminate {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%; }
+  .ms-notification-progress-indeterminate__main {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     flex-wrap: nowrap;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     height: 100%;
-}
-
-.ms-notification-progress-indeterminate__main {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    flex: 1 1 0px;
-    padding: 20px;
-}
-
-.ms-notification-progress-indeterminate__title {
-    padding: 0 20px;
-}
-
-.ms-notification-progress-indeterminate__logo {
+    -webkit-box-flex: 1;
+            flex: 1 1 0px;
+    padding: 20px; }
+  .ms-notification-progress-indeterminate__title {
+    padding: 0 20px; }
+  .ms-notification-progress-indeterminate__logo {
     height: 80px;
-    margin-bottom: 7px;
-}
-
-.ms-notification-progress-indeterminate__footer {
+    margin-bottom: 7px; }
+  .ms-notification-progress-indeterminate__footer {
+    display: -webkit-inline-box;
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center; }
 
 .ms-progress {
-    padding: 20px;
-    margin-bottom: 80px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-    .ms-progress .ms-ProgressIndicator-itemDescription,
-    .ms-progress .ms-ProgressIndicator-itemName {
-        color: #FFFFFF;
-        text-align: center;
-    }
-
-    .ms-progress .ms-Spinner {
-        position: relative;
-        bottom: 40px;
-        /* height of the spinner from fabric.spinner.js  */
-        left: 15px;
-        /* standard padding; */
-    }
-
-    .ms-progress .ms-Spinner-circle {
-        background-color: #FFFFFF;
-    }
+  padding: 20px;
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center; }
+  .ms-progress .ms-ProgressIndicator-itemDescription,
+  .ms-progress .ms-ProgressIndicator-itemName {
+    color: #FFFFFF;
+    text-align: center; }
+  .ms-progress .ms-Spinner {
+    position: relative;
+    bottom: 40px;
+    /* height of the spinner from fabric.spinner.js  */
+    left: 15px;
+    /* standard padding; */ }
+  .ms-progress .ms-Spinner-circle {
+    background-color: #FFFFFF; }
