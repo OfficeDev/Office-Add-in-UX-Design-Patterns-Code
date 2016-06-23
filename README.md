@@ -1,4 +1,4 @@
-# UX design patterns for Office Add-ins. #
+# UX design patterns for Office Add-ins. 
 
 This repository provides sample implementations in HTML and CSS of common UX design patterns for Office Add-ins.
 
@@ -10,17 +10,17 @@ When designing Office Add-ins, the UX design of your add-in should provide compe
 
 > Important: After customizing these design patterns to meet your requirements, be sure to test your add-in on all platforms where your add-in will be available. These UX design patterns were tested using Office 2016 and Windows 10.
 
-## How do I get started using these resources? ##
+## How do I get started using these resources?
 
 There are no prerequisites to use these design or code resources. To get started creating a great UX for your add-in:
 
 * Review the UX design patterns, and identify which ones are important to your add-in. For example, pick one of the first-run experiences.
 * Then do one or more of the following:
-	* Copy the code files to your add-in project and start customizing them to meet your requirements. You will need the [assets folder](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/assets), and the code folder for the design pattern you choose. See links below.
+	* Copy the code files to your add-in project and start customizing them to meet your requirements. You will need the [common.js file](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/), the [assets folder](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/assets), and the code folder for the design pattern you choose. See links below.
 	* Take a look at the  and use them as a guide when creating your own UX design. See links below.
 	* Download the Adobe Illustrator files and edit them to mock-up your own add-in designs. Get them [here](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Source%20Files).
 
-## General ##
+## Generic and Branding
 
 * **Landing (or generic) page** is a standard add-in page. Users may be redirected to a landing page after a first-run experience or sign-in process. ([spec](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Helpful%20Templates/AddIn_Template_Standard_Layout.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/generic/landing-page))
 * **Brand image in brand bar** is the landing page with an image in the footer that represents your brand. ([spec](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Brand_Bar.md), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/generic/brand-bar))
@@ -31,8 +31,7 @@ There are no prerequisites to use these design or code resources. To get started
 <td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/generic/brand-bar"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/brand.bar.PNG" alt="brand bar" style="width: 264px;"/></A></td></tr>
  </table>
 
-
-## First-Run ##
+## First-Run
 
 A first-run experience is the experience a user has when opening your add-in for the first time. The following lists the first run design patterns you can include in your add-in. Images of each of them are below.
 
@@ -40,11 +39,12 @@ A first-run experience is the experience a user has when opening your add-in for
 * **Value** communicates your add-in's value proposition. ([spec](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/FirstRun_ValuePlacemat.md), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/first-run/value-placemat))
 * **Video** shows users a video before they start using your add-in. ([spec](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/FirstRun_VideoPlacemat.md), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/first-run/video-placemat))
 * **Walkthrough** takes users through a series of features or information before they start using the add-in. ([spec](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/FirstRun_PagingPanel.md), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/first-run/walkthrough))
-* The [Office Store](https://msdn.microsoft.com/en-us/library/office/jj220033.aspx) has a system that manages trial versions of an add-in, but if you want to control the UI of your add-in's trial experience, use the following patterns:
+* The [Office Store](https://msdn.microsoft.com/en-us/library/office/jj220033.aspx) has a system that manages trial versions of an add-in, but if you want to control the UI of your addin's trial experience, use the following patterns:
+
 	* **Trial** shows users how to get started with a trial version of your add-in. ([spec](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/FirstRun_TrialVersion.md), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/first-run/trial-placemat))
 	* **Trial feature** advises users that the feature they are trying to use is not available in the trial version of the add-in. Alternatively, if your add-in is free but there's a feature in it that requires a subscription, you should consider using this pattern. You might also consider using this pattern to provide a downgraded experience after a trial has ended. ([code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/first-run/trial-placemat-feature))
 
-> Important: If you decide to manage your own trial, and not use the Office Store to manage the trial, ensure you include the **Additional purchase may be required** tag in the testing notes in the seller dashboard.
+> Important:If you decide to manage your own trial, and not use the Office Store to manage the trial, ensure you include the **Additional purchase may be required** tag in the testing notes in the seller dashboard.
 
 Consider whether showing users the first-run experience once or many times is important to your scenario. For example, if users use your add-in periodically, they may forget how to use the add-in. Seeing the first-run experience again may be helpful to those users. 
 
@@ -64,7 +64,7 @@ Consider whether showing users the first-run experience once or many times is im
 <td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/first-run/trial-placemat-feature"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/trial.placemat.feature.PNG" alt="trial placemat feature" style="width: 264px;"/></A></td></tr>
  </table> 
 
-## Notifications ##
+## Notifications
 
 There are a variety of ways that your add-in can notify users of events, such as errors, or of progress. The following lists these techniques. Images of each of them are below.
 
@@ -89,52 +89,18 @@ There are a variety of ways that your add-in can notify users of events, such as
 <td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/notifications/toast"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/toast.PNG" alt="toast" style="width: 264px;"/></A></td></tr>
  </table>
 
-## Components ##
-
-The following are additional components that you can use in your add-in in a variety of scenarios.  
-
-### Client dialog ###
-
-Client dialogs provide another way for your users to work with your add-in. 
-
-* **Alert dialog** shows an alert box with important information, like errors or notifications beyond the user's control.
-* **Typeramp dialog** shows a dialog box with textual content. Use the typeramp dialog to display elaborative information to the user.
-* **Navigation dialog** shows a dialog box with navigation. Use the navigation dialog to allow users to navigate between different content.
-
-<table>
- <tr><th>Alert dialog</th><th>Typeramp dialog</th></tr>
- <tr><td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/dialog-boxes/alert-dialog"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/alert.dialog.png" alt="alert dialog" style="width: 350px;"/></A></td>
-<td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/dialog-boxes/typeramp-dialog"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/typeramp.dialog.png" alt="typeramp dialog" style="width: 350px;"/></A></td></tr>
-</table>
-
-<table>
- <tr><th>Navigation dialog</th></tr>
- <tr><td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/dialog-boxes/navigation-dialog"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/navigation.dialog.png" alt="navigation dialog" style="width: 350px;"/></A></td></tr>
-</table>
-
-### Feedback and Ratings ###
-
-To improve the visibility and adoption of your add-in, you should provide users with the ability to  rate and review your add-in in the Office Store. This pattern demonstrates how to present feedback and ratings options to users using:
-- Unprompted feedback - using the navigation menu or icon on the footer.
-- Prompted feedback - after the add-in runs 3 times, a user is prompted to provide feedback.
-
-<table>
- <tr><th>Ratings and feedback</th></tr>
- <tr><td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/feedback/office-store"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/feedback.ratings.PNG" alt="Feedback and Ratings" style="width: 350px;"/></A></td></tr>
-</table>
- 
-## Known issues ##
+## Known issues
 
 * Running some code files outside of an add-in project throws a JavaScript error. 
 	* Resolution: Ensure you add these files to an Office add-in project. 
-* After converting these design patterns to a Single Page App (SPA), all sections of the HTML page become top-aligned and overlaps each other. 
+* After converting these design patterns to a SPA, all sections of the HTML page become top-aligned and overlaps each other. 
 	* Resolution: When converting from HTML additional wrapper DIVs may be added. Ensure that the height of these additional DIVs are reset properly. For example, if a parent DIV is set to a height of 100%, a child DIV has no height, and a grandchild DIV is set to 100%, you need to set the child DIV to 100% to layout the sections properly.    
 	
-## Additional resources ##
+## Additional resources
 
 * [Best practices for developing Office Add-ins](https://dev.office.com/docs/add-ins/design/add-in-development-best-practices)
 * [Office UI Fabric](http://dev.office.com/fabric/). This project uses version 2.1.0.
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
 Copyright (c) Microsoft Corporation 2016. All rights reserved.
+
+
