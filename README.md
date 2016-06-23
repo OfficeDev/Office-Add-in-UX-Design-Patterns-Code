@@ -1,4 +1,4 @@
-# UX design patterns for Office Add-ins. 
+# UX design patterns for Office Add-ins. #
 
 This repository provides sample implementations in HTML and CSS of common UX design patterns for Office Add-ins.
 
@@ -10,7 +10,7 @@ When designing Office Add-ins, the UX design of your add-in should provide compe
 
 > Important: After customizing these design patterns to meet your requirements, be sure to test your add-in on all platforms where your add-in will be available. These UX design patterns were tested using Office 2016 and Windows 10.
 
-## How do I get started using these resources?
+## How do I get started using these resources? ##
 
 There are no prerequisites to use these design or code resources. To get started creating a great UX for your add-in:
 
@@ -20,7 +20,7 @@ There are no prerequisites to use these design or code resources. To get started
 	* Take a look at the  and use them as a guide when creating your own UX design. See links below.
 	* Download the Adobe Illustrator files and edit them to mock-up your own add-in designs. Get them [here](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Source%20Files).
 
-## General
+## General ##
 
 * **Landing (or generic) page** is a standard add-in page. Users may be redirected to a landing page after a first-run experience or sign-in process. ([spec](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Helpful%20Templates/AddIn_Template_Standard_Layout.pdf "PDF"), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/generic/landing-page))
 * **Brand image in brand bar** is the landing page with an image in the footer that represents your brand. ([spec](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Brand_Bar.md), [code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/generic/brand-bar))
@@ -31,7 +31,7 @@ There are no prerequisites to use these design or code resources. To get started
 <td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/generic/brand-bar"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/brand.bar.PNG" alt="brand bar" style="width: 264px;"/></A></td></tr>
  </table>
 
-## First-Run
+## First-Run ##
 
 A first-run experience is the experience a user has when opening your add-in for the first time. The following lists the first run design patterns you can include in your add-in. Images of each of them are below.
 
@@ -63,7 +63,7 @@ Consider whether showing users the first-run experience once or many times is im
 <td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/first-run/trial-placemat-feature"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/trial.placemat.feature.PNG" alt="trial placemat feature" style="width: 264px;"/></A></td></tr>
  </table> 
 
-## Notifications
+## Notifications ##
 
 There are a variety of ways that your add-in can notify users of events, such as errors, or of progress. The following lists these techniques. Images of each of them are below.
 
@@ -88,11 +88,11 @@ There are a variety of ways that your add-in can notify users of events, such as
 <td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/notifications/toast"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/toast.PNG" alt="toast" style="width: 264px;"/></A></td></tr>
  </table>
 
-## Components
+## Components ##
 
 The following are additional components that you can use in your add-in in a variety of scenarios.  
 
-### Client dialog
+### Client dialog ###
 
 Client dialogs provide another way for your users to work with your add-in. 
 
@@ -111,7 +111,7 @@ Client dialogs provide another way for your users to work with your add-in.
  <tr><td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/dialog-boxes/navigation-dialog"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/navigation.dialog.png" alt="navigation dialog" style="width: 350px;"/></A></td></tr>
 </table>
 
-### Feedback and Ratings
+### Feedback and Ratings ###
 
 To improve the visibility and adoption of your add-in, you should provide users with the ability to  rate and review your add-in in the Office Store. This pattern demonstrates how to present feedback and ratings options to users using:
 - Unprompted feedback - using the navigation menu or icon on the footer.
@@ -122,14 +122,14 @@ To improve the visibility and adoption of your add-in, you should provide users 
  <tr><td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/feedback/office-store"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/feedback.ratings.PNG" alt="Feedback and Ratings" style="width: 350px;"/></A></td></tr>
 </table>
  
-## Known issues
+## Known issues ##
 
 * Running some code files outside of an add-in project throws a JavaScript error. 
 	* Resolution: Ensure you add these files to an Office add-in project. 
 * After converting these design patterns to a Single Page App (SPA), all sections of the HTML page become top-aligned and overlaps each other. 
 	* Resolution: When converting from HTML additional wrapper DIVs may be added. Ensure that the height of these additional DIVs are reset properly. For example, if a parent DIV is set to a height of 100%, a child DIV has no height, and a grandchild DIV is set to 100%, you need to set the child DIV to 100% to layout the sections properly.    
 	
-## Additional resources
+## Additional resources ##
 
 * [Best practices for developing Office Add-ins](https://dev.office.com/docs/add-ins/design/add-in-development-best-practices)
 * [Office UI Fabric](http://dev.office.com/fabric/). This project uses version 2.1.0.
