@@ -101,11 +101,30 @@ Client dialogs provide another way for your users to work with your add-in.
 * **Typeramp dialog** shows a dialog box with textual content. Use the typeramp dialog to display elaborative information to the user.
 * **Navigation dialog** shows a dialog box with navigation. Use the navigation dialog to allow users to navigate between different content.
 
-### Feedback and Ratings ###
+<table>
+ <tr><th>Alert dialog</th><th>Typeramp dialog</th></tr>
+<tr><td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/dialog/alert"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/alert.dialog.png" alt="alert dialog" style="width: 264px;"/></A></td>
+<td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/dialog/typeramp"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/typeramp.dialog.png" alt="typeramp dialog" style="width: 300px;"/></A></td></tr></tr>
+ </table>
+ 
+ <table>
+ <tr><th>Navigation dialog</th></tr>
+<tr><td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/dialog/navigation"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/navigation.dialog.png" alt="navigation dialog" style="width: 264px;"/></A></td></tr>
+</tr>
+ </table>
+
+
+### Feedback and Ratings
 
 To improve the visibility and adoption of your add-in, you should provide users with the ability to  rate and review your add-in in the Office Store. This pattern demonstrates how to present feedback and ratings options to users using:
 - Unprompted feedback - using the navigation menu or icon on the footer.
 - Prompted feedback - after the add-in runs 3 times, a user is prompted to provide feedback.
+
+ <table>
+ <tr><th>Ratings and feedback</th></tr>
+<tr><td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/feedback/office-store"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/feedback.ratings.PNG" alt="Feedback and Ratings" style="width: 200px;"/></A></td></tr>
+</tr>
+ </table>
 
 ## Known issues
 
