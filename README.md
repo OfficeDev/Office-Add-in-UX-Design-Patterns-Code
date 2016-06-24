@@ -89,6 +89,24 @@ There are a variety of ways that your add-in can notify users of events, such as
 <td><A href="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates/notifications/toast"><img src="https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/blob/master/Images/toast.PNG" alt="toast" style="width: 264px;"/></A></td></tr>
  </table>
 
+## Components
+
+The following are additional components that you can use in your add-in in a variety of scenarios.  
+
+### Client dialog
+
+Client dialogs provide another way for your users to work with your add-in. 
+
+* **Alert dialog** shows an alert box with important information, like errors or notifications beyond the user's control.
+* **Typeramp dialog** shows a dialog box with textual content. Use the typeramp dialog to display elaborative information to the user.
+* **Navigation dialog** shows a dialog box with navigation. Use the navigation dialog to allow users to navigate between different content.
+
+### Feedback and Ratings ###
+
+To improve the visibility and adoption of your add-in, you should provide users with the ability to  rate and review your add-in in the Office Store. This pattern demonstrates how to present feedback and ratings options to users using:
+- Unprompted feedback - using the navigation menu or icon on the footer.
+- Prompted feedback - after the add-in runs 3 times, a user is prompted to provide feedback.
+
 ## Known issues
 
 * Running some code files outside of an add-in project throws a JavaScript error. 
