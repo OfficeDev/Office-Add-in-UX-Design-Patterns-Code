@@ -46,35 +46,34 @@ ul {
   top: 4px; }
 
 .ms-embedded-dialog {
-  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
           flex-direction: column;
-  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+          flex-wrap: nowrap;
   height: 100%; }
   .ms-embedded-dialog__main {
-    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
             flex-direction: column;
-    flex-wrap: nowrap;
-    -webkit-box-flex: 1;
+    -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-flex: 1 1 0;
             flex: 1 1 0;
     height: 100%; }
   .ms-embedded-dialog__options {
     visibility: hidden; }
   .ms-embedded-dialog__header {
     border-bottom: solid 2px #0078d7;
-    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
     display: inline-flex; }
     .ms-embedded-dialog__header--left {
       margin-right: 20px;
       cursor: pointer; }
     .ms-embedded-dialog__header--right {
       padding: 10px 20px;
-      -webkit-transition: background ease 0.1s, color ease 0.1s;
       transition: background ease 0.1s, color ease 0.1s;
       cursor: pointer; }
       .ms-embedded-dialog__header--right:active, .ms-embedded-dialog__header--right:hover {
@@ -85,34 +84,33 @@ ul {
         background: #c7e0f4;
         -webkit-transform: scale3d(0.98, 0.98, 1);
                 transform: scale3d(0.98, 0.98, 1); }
-      .ms-embedded-dialog__header--right.disabled {
+      .ms-embedded-dialog__header--right--disabled {
         opacity: 0.6;
         pointer-events: none;
         cursor: not-allowed; }
-        .ms-embedded-dialog__header--right.disabled:active, .ms-embedded-dialog__header--right.disabled:hover {
+        .ms-embedded-dialog__header--right--disabled:active, .ms-embedded-dialog__header--right--disabled:hover {
           background: transparent; }
-        .ms-embedded-dialog__header--right.disabled:active {
+        .ms-embedded-dialog__header--right--disabled:active {
           -webkit-transform: none;
                   transform: none; }
     .ms-embedded-dialog__header--center {
-      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
               flex: 1 1 auto;
-      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
       display: inline-flex;
-      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
               justify-content: flex-start;
-      -webkit-box-align: center;
+      -webkit-align-items: center;
               align-items: center; }
       .ms-embedded-dialog__header--center p {
         padding: 0 10px;
-        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 0px;
                 flex: 1 0 0px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
         text-align: left;
         cursor: pointer;
-        -webkit-transition: background ease 0.1s, color ease 0.1s;
         transition: background ease 0.1s, color ease 0.1s;
         padding: 10px; }
         .ms-embedded-dialog__header--center p:active, .ms-embedded-dialog__header--center p:hover {
@@ -123,13 +121,13 @@ ul {
           background: #c7e0f4;
           -webkit-transform: scale3d(0.98, 0.98, 1);
                   transform: scale3d(0.98, 0.98, 1); }
-        .ms-embedded-dialog__header--center p.disabled {
+        .ms-embedded-dialog__header--center p--disabled {
           opacity: 0.6;
           pointer-events: none;
           cursor: not-allowed; }
-          .ms-embedded-dialog__header--center p.disabled:active, .ms-embedded-dialog__header--center p.disabled:hover {
+          .ms-embedded-dialog__header--center p--disabled:active, .ms-embedded-dialog__header--center p--disabled:hover {
             background: transparent; }
-          .ms-embedded-dialog__header--center p.disabled:active {
+          .ms-embedded-dialog__header--center p--disabled:active {
             -webkit-transform: none;
                     transform: none; }
   .ms-embedded-dialog__button-center {
@@ -137,36 +135,35 @@ ul {
     width: calc(50% - 3px);
     /* half the container's width minus half of the margin between the buttons */ }
   .ms-embedded-dialog__content {
-    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
             flex-direction: column;
-    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
     height: 100%;
-    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0;
             flex: 1 1 0;
     min-height: 180px;
     padding: 20px; }
     .ms-embedded-dialog__content__title, .ms-embedded-dialog__content__subtitle, .ms-embedded-dialog__content__text {
       margin-bottom: 20px; }
   .ms-embedded-dialog__footer {
-    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
     display: inline-flex;
-    -webkit-box-pack: center;
+    -webkit-justify-content: center;
             justify-content: center;
-    -webkit-box-align: center;
+    -webkit-align-items: center;
             align-items: center; }
     .ms-embedded-dialog__footer--left {
-      -webkit-transition: background ease 0.1s, color ease 0.1s;
       transition: background ease 0.1s, color ease 0.1s;
-      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
       display: inline-flex;
-      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
               justify-content: flex-start;
-      -webkit-box-align: center;
+      -webkit-align-items: center;
               align-items: center;
-      -webkit-box-flex: 1;
+      -webkit-flex: 1 0 0px;
               flex: 1 0 0px;
       padding: 20px; }
       .ms-embedded-dialog__footer--left:active, .ms-embedded-dialog__footer--left:hover {
@@ -174,17 +171,17 @@ ul {
         cursor: pointer; }
       .ms-embedded-dialog__footer--left:active {
         background: #005ca4; }
-      .ms-embedded-dialog__footer--left.disabled {
+      .ms-embedded-dialog__footer--left--disabled {
         opacity: 0.6;
         pointer-events: none;
         cursor: not-allowed; }
-        .ms-embedded-dialog__footer--left.disabled:active, .ms-embedded-dialog__footer--left.disabled:hover {
+        .ms-embedded-dialog__footer--left--disabled:active, .ms-embedded-dialog__footer--left--disabled:hover {
           background: transparent; }
       .ms-embedded-dialog__footer--left img {
         width: 40px;
         height: 40px; }
       .ms-embedded-dialog__footer--left h1 {
-        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 0px;
                 flex: 1 0 0px;
         margin-left: 15px;
         text-align: left;
@@ -194,7 +191,6 @@ ul {
         white-space: nowrap;
         text-overflow: ellipsis; }
     .ms-embedded-dialog__footer--right {
-      -webkit-transition: background ease 0.1s, color ease 0.1s;
       transition: background ease 0.1s, color ease 0.1s;
       padding: 29px 20px; }
       .ms-embedded-dialog__footer--right:active, .ms-embedded-dialog__footer--right:hover {
@@ -202,9 +198,9 @@ ul {
         cursor: pointer; }
       .ms-embedded-dialog__footer--right:active {
         background: #005ca4; }
-      .ms-embedded-dialog__footer--right.disabled {
+      .ms-embedded-dialog__footer--right--disabled {
         opacity: 0.6;
         pointer-events: none;
         cursor: not-allowed; }
-        .ms-embedded-dialog__footer--right.disabled:active, .ms-embedded-dialog__footer--right.disabled:hover {
+        .ms-embedded-dialog__footer--right--disabled:active, .ms-embedded-dialog__footer--right--disabled:hover {
           background: transparent; }

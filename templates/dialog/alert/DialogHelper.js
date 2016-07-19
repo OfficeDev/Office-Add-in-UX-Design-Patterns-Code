@@ -11,17 +11,17 @@
             console.log(asyncResult.error.message);
         }
         else {
-            dialog = asyncResult.value;
+            app.dialog = asyncResult.value;
             /*Messages are sent by developers programatically from the dialog using office.context.ui.messageParent(...)*/
-            dialog.addEventHandler(Microsoft.Office.WebExtension.EventType.DialogMessageReceived, messageHandler);
+            app.dialog.addEventHandler(Microsoft.Office.WebExtension.EventType.DialogMessageReceived, messageHandler);
 
             /*Events are sent by the platform in response to user actions or errors. For example, the dialog is closed via the 'x' button*/
-            dialog.addEventHandler(Microsoft.Office.WebExtension.EventType.DialogEventReceived, eventHandler);
+            app.dialog.addEventHandler(Microsoft.Office.WebExtension.EventType.DialogEventReceived, eventHandler);
         }
     }
 
     function messageHandler(arg) {
-        dialog.close();
+        app.dialog.close();
     }
 
     function eventHandler(arg) {

@@ -1,0 +1,231 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Navigation - Pivot</title>
+
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js" type="text/javascript"></script>
+
+    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.4.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.4.0/fabric.components.min.css">
+
+
+    <!-- Template styles -->
+    <link href="../../../common.css" rel="stylesheet" />
+    <link href="pivot.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="pivot.helper.js"></script>
+
+    <!-- Fabric component -->
+    <script type="text/javascript" src="Pivot.js"></script>
+    <script type="text/javascript" src="Breadcrumb.js"></script>
+
+</head>
+<body class="ms-navigation-pivot">
+    <ul class="ms-navigation-pivot__header ms-Pivot">
+        <li class="ms-navigation-pivot__link ms-Pivot-link is-selected" data-pivotContent="[data-demo='tabs']>.feature1">Page 1</li>
+        <li class="ms-navigation-pivot__link ms-Pivot-link" data-pivotContent="[data-demo='tabs']>.feature2">Page 2</li>
+        <li class="ms-navigation-pivot__link ms-Pivot-link" data-pivotContent="[data-demo='tabs']>.feature3">Page 3</li>
+        <li class="ms-navigation-pivot__link ms-Pivot-link" data-pivotContent="[data-demo='tabs']>.feature4">Page 4</li>
+    </ul>
+    <div data-demo="tabs">
+        <div class="ms-navigation-pivot__content ms-Pivot-content is-selected feature1">
+            <div class="ms-font-m ms-fontColor-neutralPrimary">
+                <h2 class="ms-font-xl ms-fontWeight-light">Page 1 Title</h2>
+            </div>
+            <div class="ms-navigation-pivot__breadcrumb ms-Breadcrumb">
+                <div class="ms-Breadcrumb-overflow">
+                    <div class="ms-Breadcrumb-overflowButton ms-Icon ms-Icon--ellipsis" tabindex="1"></div>
+                    <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                    <div class="ms-Breadcrumb-overflowMenu">
+                        <ul class="ms-ContextualMenu is-open"></ul>
+                    </div>
+                </div>
+                <ul class="ms-Breadcrumb-list">
+                    <li class="ms-Breadcrumb-listItem">
+                        <a class="ms-Breadcrumb-itemLink" href="#" tabindex="2">Files</a>
+                        <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                    </li>
+                    <li class="ms-Breadcrumb-listItem">
+                        <a class="ms-Breadcrumb-itemLink" href="#" tabindex="3">Folder 1</a>
+                        <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                    </li>
+                    <li class="ms-Breadcrumb-listItem">
+                        <a class="ms-Breadcrumb-itemLink" href="#" tabindex="4">Folder 2</a>
+                        <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                    </li>
+                    <li class="ms-Breadcrumb-listItem">
+                        <a class="ms-Breadcrumb-itemLink" href="#" tabindex="5">Folder 3</a>
+                        <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                    </li>
+                    <li class="ms-Breadcrumb-listItem">
+                        <a class="ms-Breadcrumb-itemLink" href="#" tabindex="6">Folder 4</a>
+                        <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                    </li>
+                    <li class="ms-Breadcrumb-listItem">
+                        <a class="ms-Breadcrumb-itemLink" href="#" tabindex="7">Folder 5</a>
+                        <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                    </li>
+                </ul>
+            </div>
+            <p class="ms-font-l ms-fontWeight-semilight">Body Text</p>
+            <ul class="ms-font-m">
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+            </ul>
+        </div>
+        <div class="ms-navigation-pivot__content ms-Pivot-content feature2">
+            <section class="ms-font-m ms-fontColor-neutralPrimary">
+                <h2 class="ms-font-xl ms-fontWeight-light">Page 2 Title</h2>
+                <div class="ms-navigation-pivot__breadcrumb ms-Breadcrumb">
+                    <div class="ms-Breadcrumb-overflow">
+                        <div class="ms-Breadcrumb-overflowButton ms-Icon ms-Icon--ellipsis" tabindex="1"></div>
+                        <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        <div class="ms-Breadcrumb-overflowMenu">
+                            <ul class="ms-ContextualMenu is-open"></ul>
+                        </div>
+                    </div>
+                    <ul class="ms-Breadcrumb-list">
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="2">Files</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="3">Folder 1</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="4">Folder 2</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="5">Folder 3</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="6">Folder 4</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="7">Folder 5</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                    </ul>
+                </div>
+                <p class="ms-font-l ms-fontWeight-semilight">Body Text</p>
+                <ul class="ms-font-m">
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                </ul>
+            </section>
+        </div>
+        <div class="ms-navigation-pivot__content ms-Pivot-content feature3">
+            <section class="ms-font-m ms-fontColor-neutralPrimary">
+                <h2 class="ms-font-xl ms-fontWeight-light">Page 3 Title</h2>
+                <div class="ms-navigation-pivot__breadcrumb ms-Breadcrumb">
+                    <div class="ms-Breadcrumb-overflow">
+                        <div class="ms-Breadcrumb-overflowButton ms-Icon ms-Icon--ellipsis" tabindex="1"></div>
+                        <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        <div class="ms-Breadcrumb-overflowMenu">
+                            <ul class="ms-ContextualMenu is-open"></ul>
+                        </div>
+                    </div>
+                    <ul class="ms-Breadcrumb-list">
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="2">Files</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="3">Folder 1</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="4">Folder 2</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="5">Folder 3</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="6">Folder 4</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="7">Folder 5</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                    </ul>
+                </div>
+                <p class="ms-font-l ms-fontWeight-semilight">Body Text</p>
+                <ul class="ms-font-m">
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                </ul>
+            </section>
+        </div>
+        <div class="ms-navigation-pivot__content ms-Pivot-content feature4">
+            <section class="ms-font-m ms-fontColor-neutralPrimary">
+                <h2 class="ms-font-xl ms-fontWeight-light">Page 4 Title</h2>
+                <div class="ms-navigation-pivot__breadcrumb ms-Breadcrumb">
+                    <div class="ms-Breadcrumb-overflow">
+                        <div class="ms-Breadcrumb-overflowButton ms-Icon ms-Icon--ellipsis" tabindex="1"></div>
+                        <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        <div class="ms-Breadcrumb-overflowMenu">
+                            <ul class="ms-ContextualMenu is-open"></ul>
+                        </div>
+                    </div>
+                    <ul class="ms-Breadcrumb-list">
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="2">Files</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="3">Folder 1</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="4">Folder 2</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="5">Folder 3</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="6">Folder 4</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                        <li class="ms-Breadcrumb-listItem">
+                            <a class="ms-Breadcrumb-itemLink" href="#" tabindex="7">Folder 5</a>
+                            <i class="ms-Breadcrumb-chevron ms-Icon ms-Icon--chevronRight"></i>
+                        </li>
+                    </ul>
+                </div>
+                <p class="ms-font-l ms-fontWeight-semilight">Body Text</p>
+                <ul class="ms-font-m">
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <footer class="ms-navigation-pivot__footer  ms-bgColor-themePrimary">
+        <div class="ms-navigation-pivot__footer--left">
+            <img src="/assets/logo-filled.png" />
+            <h1 class="ms-font-xl ms-fontWeight-semilight ms-fontColor-white">My Add-in Name</h1>
+        </div>
+        <div class="ms-navigation-pivot__footer--right">
+            <i class="ms-Icon enlarge ms-Icon--gear ms-fontColor-white"></i>
+        </div>
+    </footer>
+</body>
+</html>

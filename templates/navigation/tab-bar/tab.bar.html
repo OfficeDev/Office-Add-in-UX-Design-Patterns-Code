@@ -1,0 +1,96 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
+<!--
+    This file shows a recommended design for the start page of the add-in; which is the first page
+    the user sees after the first-run experience and usually the first page the user sees on subsquent
+    executions of the add-in..
+    -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Tab Bar</title>
+
+    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+
+    <!-- Template styles -->
+
+    <link href="tab.bar.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="ms-font-l ms-tab-bar">
+    <nav class="ms-tab-bar__header ms-bgColor-themeLighter">
+        <div class="ms-tab-bar__header--center ms-font-m ms-fontWeight-light ms-fontColor-themePrimary">
+            <div class="ms-tab-bar__header--center"></div>
+            <button class="ms-tab-bar__header--centeritems ms-font-m ms-fontWeight-light ms-fontColor-themePrimary">
+                <i class="ms-font-xl ms-Icon ms-Icon--home ms-fontColor-themePrimary"></i>
+                <div class="ms-tab-bar__header--centeritemstext">
+                    Home
+                </div>
+            </button>
+            <button class="ms-tab-bar__header--centeritems ms-font-m ms-fontWeight-light ms-fontColor-themePrimary">
+                <i class="ms-font-xl ms-Icon ms-Icon--gear ms-fontColor-themePrimary"></i>
+                <div class="ms-tab-bar__header--centeritemstext">
+                    Settings
+                </div>
+            </button>
+            <button class="ms-tab-bar__header--centeritems ms-font-m ms-fontWeight-light ms-fontColor-themePrimary">
+                <i class="ms-font-xl ms-Icon ms-Icon--star ms-fontColor-themePrimary"></i>
+                <div class="ms-tab-bar__header--centeritemstext">
+                    Favorites
+                </div>
+            </button>
+            <button class="ms-tab-bar__header--centeritems ms-font-m ms-fontWeight-light ms-fontColor-themePrimary">
+                <i class="ms-font-xl ms-Icon ms-Icon--person ms-fontColor-themePrimary"></i>
+                <div class="ms-tab-bar__header--centeritemstext">
+                    Account
+                </div>
+            </button>
+            <div class="ms-tab-bar__header--center"></div>
+        </div>
+    </nav>
+
+    <main class="ms-tab-bar__content ms-font-m ms-fontColor-neutralPrimary">
+        <article class="demo-placeholder">
+            <div class="demo-placeholder__img"></div>
+            <div class="demo-placeholder__text"></div>
+            <div class="demo-placeholder__text"></div>
+            <div class="demo-placeholder__text"></div>
+            <div class="demo-placeholder__text demo-placeholder__text--half"></div>
+        </article>
+        <article class="demo-placeholder">
+            <div class="demo-placeholder__text"></div>
+            <div class="demo-placeholder__text demo-placeholder__text--half"></div>
+        </article>
+        <article class="demo-placeholder">
+            <div class="demo-placeholder__text"></div>
+            <div class="demo-placeholder__text"></div>
+            <div class="demo-placeholder__text"></div>
+            <div class="demo-placeholder__text demo-placeholder__text--half"></div>
+        </article>
+        <article class="demo-placeholder">
+            <div class="demo-placeholder__text demo-placeholder__text--half"></div>
+            <div class="demo-placeholder__text demo-placeholder__text--para"></div>
+        </article>
+        <article class="demo-placeholder">
+            <div class="demo-placeholder__text demo-placeholder__text--half"></div>
+            <div class="demo-placeholder__text demo-placeholder__text--para"></div>
+        </article>
+        <article class="demo-placeholder">
+            <div class="demo-placeholder__button ms-bgColor-themeLight"></div>
+        </article>
+    </main>
+
+    <footer class="ms-tab-bar__footer  ms-bgColor-themePrimary">
+        <div class="ms-tab-bar__footer--left">
+            <img src="/assets/logo-filled.png" />
+            <h1 class="ms-font-xl ms-fontWeight-semilight ms-fontColor-white">My Add-in Name</h1>
+        </div>
+        <div class="ms-tab-bar__footer--right">
+            <i class="ms-Icon enlarge ms-Icon--gear ms-fontColor-white"></i>
+        </div>
+    </footer>
+</body>
+</html>

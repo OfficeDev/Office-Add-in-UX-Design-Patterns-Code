@@ -46,26 +46,26 @@ ul {
   top: 4px; }
 
 .ms-notification-progress-determinate {
-  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
           flex-direction: column;
-  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+          flex-wrap: nowrap;
   height: 100%; }
   .ms-notification-progress-determinate__main {
-    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
             flex-direction: column;
-    flex-wrap: nowrap;
-    -webkit-box-pack: center;
+    -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-justify-content: center;
             justify-content: center;
-    -webkit-box-align: center;
+    -webkit-align-items: center;
             align-items: center;
     height: 100%;
-    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0px;
             flex: 1 1 0px;
     padding: 20px; }
   .ms-notification-progress-determinate__title {
@@ -74,25 +74,25 @@ ul {
     height: 80px;
     margin-bottom: 7px; }
   .ms-notification-progress-determinate__footer {
-    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
     display: inline-flex;
-    -webkit-box-pack: center;
+    -webkit-justify-content: center;
             justify-content: center;
-    -webkit-box-align: center;
+    -webkit-align-items: center;
             align-items: center; }
 
 .ms-progress {
   padding: 20px;
   margin-bottom: 80px;
-  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
           flex-direction: column;
-  flex-wrap: nowrap;
-  -webkit-box-pack: center;
+  -webkit-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-justify-content: center;
           justify-content: center;
-  -webkit-box-align: center;
+  -webkit-align-items: center;
           align-items: center; }
   .ms-progress .ms-ProgressIndicator-itemDescription,
   .ms-progress .ms-ProgressIndicator-itemName {

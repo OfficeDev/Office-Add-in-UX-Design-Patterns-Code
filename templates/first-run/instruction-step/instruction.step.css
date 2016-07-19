@@ -46,23 +46,23 @@ ul {
   top: 4px; }
 
 .ms-firstrun-instructionstep {
-  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
           flex-direction: column;
-  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+          flex-wrap: nowrap;
   height: 100%;
   min-height: 600px; }
   .ms-firstrun-instructionstep__header {
     padding: 20px;
     min-height: 20px;
-    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
             flex-direction: column;
-    flex-wrap: nowrap; }
+    -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap; }
     .ms-firstrun-instructionstep__header h1 {
       letter-spacing: 5px; }
     .ms-firstrun-instructionstep__header p {
@@ -72,41 +72,41 @@ ul {
       background-image: url("../../../assets/generic-placeholder.png");
       background-size: cover;
       margin-top: 15px;
-      display: -webkit-box;
+      display: -webkit-flex;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
               flex-direction: column;
-      flex-wrap: nowrap;
-      -webkit-box-pack: stretch;
+      -webkit-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+      -webkit-justify-content: stretch;
               justify-content: stretch;
-      -webkit-box-align: stretch;
+      -webkit-align-items: stretch;
               align-items: stretch;
-      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 0;
               flex: 0 1 0;
       min-height: 200px; }
   .ms-firstrun-instructionstep__content {
-    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
             flex-direction: column;
-    flex-wrap: nowrap;
-    -webkit-box-pack: center;
+    -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-justify-content: center;
             justify-content: center;
-    -webkit-box-align: center;
+    -webkit-align-items: center;
             align-items: center;
     height: 100%;
-    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0;
             flex: 1 1 0;
     padding: 20px; }
     .ms-firstrun-instructionstep__content--centered {
-      display: -webkit-box;
+      display: -webkit-flex;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
               flex-direction: column;
-      flex-wrap: nowrap; }
+      -webkit-flex-wrap: nowrap;
+              flex-wrap: nowrap; }
   .ms-firstrun-instructionstep .clearfix {
     display: block;
     height: 0;
@@ -152,13 +152,14 @@ ul {
         top: 2px;
         margin-right: 10px; }
   .ms-firstrun-instructionstep__action--primary.ms-Button {
-    align-self: center;
+    -webkit-align-self: center;
+            align-self: center;
     margin-top: 20px;
-    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
     display: inline-flex;
-    -webkit-box-pack: center;
+    -webkit-justify-content: center;
             justify-content: center;
-    -webkit-box-align: center;
+    -webkit-align-items: center;
             align-items: center; }
     .ms-firstrun-instructionstep__action--primary.ms-Button span.ms-Button-icon {
       top: 3px; }

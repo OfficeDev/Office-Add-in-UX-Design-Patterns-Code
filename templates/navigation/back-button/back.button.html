@@ -1,0 +1,57 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Navigation - Back Button</title>
+    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+    
+    <!-- Template styles -->
+    <link href="back.button.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js"></script>
+    <script src="https://appsforoffice.microsoft.com/fabric/2.1.0/jquery.fabric.min.js"></script>
+
+</head>
+<body class="ms-font-l ms-navigation-back-button">
+    <main class="ms-navigation-back-button__main">
+        <!-- Tabbed header -->
+        <section class="ms-navigation-back-button__header">
+            <div class="ms-navigation-back-button__header--left">
+                <i class="ms-Icon ms-Icon--chevronThickLeft ms-fontColor-neutralPrimary"></i>
+            </div>
+            <div class="ms-navigation-back-button__header--right ms-font-xl ms-fontWeight-light">
+                <p>Title</p>
+            </div>
+        </section>
+
+        <section class="ms-navigation-back-button__content ms-font-m ms-fontColor-neutralPrimary">
+            <div class="ms-font-xl ms-navigation-back-button__content__title">Page Title</div>
+            <div class="ms-font-l ms-fontWeight-light ms-navigation-back-button__content__subtitle">Subtitle</div>
+            <div class="ms-font-m ms-navigation-back-button__content__text">Body text</div>
+            <ul class="ms-font-m">
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+            </ul>
+            <p align="center">
+                <button class="ms-Button ms-Button--primary"><span class="ms-Button-label">Next Page</span></button>
+            </p>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="ms-navigation-back-button__footer  ms-bgColor-themePrimary">
+        <div class="ms-navigation-back-button__footer--left">
+            <img src="/assets/logo-filled.png" />
+            <h1 class="ms-font-xl ms-fontWeight-semilight ms-fontColor-white">My Add-in Name</h1>
+        </div>
+        <div class="ms-navigation-back-button__footer--right">
+            <i class="ms-Icon ms-Icon--gear ms-fontColor-white"></i>
+        </div>
+    </footer>
+</body>
+</html>
+

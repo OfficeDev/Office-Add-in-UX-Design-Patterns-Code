@@ -46,22 +46,22 @@ ul {
   top: 4px; }
 
 .ms-firstrun-trial {
-  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
           flex-direction: column;
-  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+          flex-wrap: nowrap;
   height: 100%; }
   .ms-firstrun-trial__header {
     min-height: 220px;
     max-height: 300px;
-    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
             flex-direction: column;
-    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
     padding: 20px 0; }
     .ms-firstrun-trial__header h2 {
       letter-spacing: 5px;
@@ -69,48 +69,46 @@ ul {
   .ms-firstrun-trial__title, .ms-firstrun-trial__subtitle {
     padding: 0 20px; }
   .ms-firstrun-trial__logo {
-    width: 100%;
     height: 100%;
-    -webkit-box-flex: 1;
-            flex: 1 1 0;
+    -webkit-flex: 1 1 auto;
+            flex: 1 1 auto;
     background: transparent no-repeat center center;
     background-size: contain;
     background-image: url("../../../../../../../../../assets/logo-background-geometric.png");
-    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
     display: inline-flex;
-    -webkit-box-pack: center;
+    -webkit-justify-content: center;
             justify-content: center;
-    -webkit-box-align: center;
+    -webkit-align-items: center;
             align-items: center; }
     .ms-firstrun-trial__logo img {
       width: 40px;
       margin-right: 20px; }
     .ms-firstrun-trial__logo h1 {
-      -webkit-box-flex: 1;
-              flex: 1 1 0; }
+      display: block; }
   .ms-firstrun-trial__content {
-    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
             flex-direction: column;
-    flex-wrap: nowrap;
-    -webkit-box-pack: center;
+    -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-justify-content: center;
             justify-content: center;
-    -webkit-box-align: center;
+    -webkit-align-items: center;
             align-items: center;
     height: 100%;
-    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0;
             flex: 1 1 0;
     min-height: 250px;
     padding: 20px; }
     .ms-firstrun-trial__content--centered {
-      display: -webkit-box;
+      display: -webkit-flex;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
               flex-direction: column;
-      flex-wrap: nowrap; }
+      -webkit-flex-wrap: nowrap;
+              flex-wrap: nowrap; }
   .ms-firstrun-trial__list {
     list-style-type: none; }
     .ms-firstrun-trial__list li {
@@ -120,17 +118,21 @@ ul {
         top: 2px;
         margin-right: 10px; }
   .ms-firstrun-trial__action--primary.ms-Button {
-    align-self: center;
+    -webkit-align-self: center;
+            align-self: center;
     margin-top: 65px;
     border: solid 2px #FFFFFF;
     width: calc(100vw - 40px);
-    display: -webkit-inline-box;
-    display: inline-flex;
-    -webkit-box-pack: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-justify-content: center;
             justify-content: center;
-    -webkit-box-align: center;
+    -webkit-align-items: center;
             align-items: center;
-    -webkit-transition: background ease 0.1s, color ease 0.1s;
     transition: background ease 0.1s, color ease 0.1s; }
     .ms-firstrun-trial__action--primary.ms-Button span.ms-Button-label {
       color: #FFFFFF; }
@@ -140,9 +142,9 @@ ul {
       cursor: pointer; }
     .ms-firstrun-trial__action--primary.ms-Button:active {
       background: #FFFFFF; }
-    .ms-firstrun-trial__action--primary.ms-Button.disabled {
+    .ms-firstrun-trial__action--primary.ms-Button--disabled {
       opacity: 0.6;
       pointer-events: none;
       cursor: not-allowed; }
-      .ms-firstrun-trial__action--primary.ms-Button.disabled:active, .ms-firstrun-trial__action--primary.ms-Button.disabled:hover {
+      .ms-firstrun-trial__action--primary.ms-Button--disabled:active, .ms-firstrun-trial__action--primary.ms-Button--disabled:hover {
         background: transparent; }

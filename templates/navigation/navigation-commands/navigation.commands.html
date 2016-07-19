@@ -1,0 +1,160 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Navigation and Commands</title>
+
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.js" type="text/javascript"></script>
+
+    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.2.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.2.0/fabric.components.min.css">
+    
+    <!-- Template styles -->
+    <link href="../../../common.css" rel="stylesheet" />
+    <link href="navigation.commands.css" rel="stylesheet" type="text/css" />
+    <script src="navigation.commands.js" type="text/javascript"></script>
+
+    <!-- Fabric componenents-->
+    <script src="CommandBar.js" type="text/javascript"></script>
+    <script src="ContextualMenu.js" type="text/javascript"></script>
+
+</head>
+<body class="ms-navigation-commands">
+    <main class="ms-navigation-commands__main">
+        <section class="ms-navigation-commands__header ms-bgColor-themeLighter">
+            <div class="ms-navigation-commands__header--left ms-font-m ms-fontWeight-light">
+                <!-- Fabric Contextual Menu -->
+                <button class="ms-Button ms-Button--command" id="myButton">
+                    <span class="ms-Button-icon"><i class="ms-CommandBarItem-icon ms-Icon ms-Icon--menu"></i></span>
+                </button>
+                <ul class="ms-ContextualMenu" id="myDropdown">
+                    <li class="ms-ContextualMenu-item"><a class="ms-ContextualMenu-link" href="#">Page 1</a></li>
+                    <li class="ms-ContextualMenu-item">
+                        <a class="ms-ContextualMenu-link ms-ContextualMenu-link--hasMenu" href="#">Page 2</a> <i class="ms-ContextualMenu-subMenuIcon ms-Icon ms-Icon--chevronRight"></i>
+                        <ul class="ms-ContextualMenu">
+                            <li class="ms-ContextualMenu-item">
+                                <a class="ms-ContextualMenu-link" href="#">Page 2.1</a>
+                            </li>
+                            <li class="ms-ContextualMenu-item">
+                                <a class="ms-ContextualMenu-link" href="#">Page 2.2</a>
+                            </li>
+                            <li class="ms-ContextualMenu-item">
+                                <a class="ms-ContextualMenu-link is-selected" href="#">Page 2.3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ms-ContextualMenu-item"><a class="ms-ContextualMenu-link" href="#">Page 3</a></li>
+                    <li class="ms-ContextualMenu-item">
+                        <a class="ms-ContextualMenu-link ms-ContextualMenu-link--hasMenu" href="#">Page 4</a> <i class="ms-ContextualMenu-subMenuIcon ms-Icon ms-Icon--chevronRight"></i>
+                        <ul class="ms-ContextualMenu">
+                            <li class="ms-ContextualMenu-item">
+                                <a class="ms-ContextualMenu-link" href="#">Page 4.1</a>
+                            </li>
+                            <li class="ms-ContextualMenu-item">
+                                <a class="ms-ContextualMenu-link" href="#">Page 4.2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ms-ContextualMenu-item ">
+                        <a class="ms-ContextualMenu-link" href="#">
+                            <span class="ms-Icon ms-Icon--gear"></span> Settings
+                        </a>
+                    </li>
+                    <li class="ms-ContextualMenu-item ">
+                        <a class="ms-ContextualMenu-link" href="#">
+                            <span class="ms-Icon ms-Icon--download"></span> Download
+                        </a>
+                    </li>
+                    <li class="ms-ContextualMenu-item "><a class="ms-ContextualMenu-link" href="#">Sign-out</a></li>
+                </ul>
+            </div>
+            <!-- Fabric Command Bar -->
+            <div class="ms-CommandBar ms-navigation-commands__header--right ms-font-m ms-fontWeight-light">
+                <div class="ms-CommandBarSearch">
+                    <input class="ms-CommandBarSearch-input" type="text" placeholder="Search" tabindex="1">
+                    <div class="ms-CommandBarSearch-iconWrapper ms-CommandBarSearch-iconSearchWrapper"><i class="ms-Icon ms-Icon--search"></i></div>
+                    <div class="ms-CommandBarSearch-iconWrapper ms-CommandBarSearch-iconClearWrapper ms-font-s"><i class="ms-Icon ms-Icon--x"></i></div>
+                </div>
+                <div class="ms-CommandBar-sideCommands ms-navigation-commands__commandbar--sideCommands">
+                    <div class="ms-CommandBarItem ms-navigation-commands__commandbar--item">
+                        <div class="ms-CommandBarItem-linkWrapper ms-navigation-commands__commandbar--linkWrapper">
+                            <a class="ms-CommandBarItem-link ms-navigation-commands__commandbar--link" tabindex="1">
+                                <span class="ms-CommandBarItem-icon ms-Icon ms-Icon--upload"></span>
+                                <span class="ms-CommandBarItem-commandText ms-font-m ms-font-weight-regular">Upload</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ms-CommandBarItem ms-navigation-commands__commandbar--item">
+                        <div class="ms-CommandBarItem-linkWrapper ms-navigation-commands__commandbar--linkWrapper">
+                            <a class="ms-CommandBarItem-link ms-navigation-commands__commandbar--link" tabindex="1">
+                                <span class="ms-CommandBarItem-icon ms-Icon ms-Icon--download"></span>
+                                <span class="ms-CommandBarItem-commandText ms-font-m ms-font-weight-regular">Download</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ms-CommandBar-mainArea ms-navigation-commands__commandbar--mainArea">
+                    <div class="ms-CommandBarItem ms-navigation-commands__commandbar--item">
+                        <div class="ms-CommandBarItem-linkWrapper ms-navigation-commands__commandbar--linkWrapper">
+                            <a class="ms-CommandBarItem-link ms-navigation-commands__commandbar--link" tabindex="1">
+                                <span class="ms-CommandBarItem-icon ms-Icon ms-Icon--pencil"></span>
+                                <span class="ms-CommandBarItem-commandText ms-font-m ms-font-weight-regular">Edit</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ms-CommandBarItem ms-navigation-commands__commandbar--item">
+                        <div class="ms-CommandBarItem-linkWrapper ms-navigation-commands__commandbar--linkWrapper">
+                            <a class="ms-CommandBarItem-link ms-navigation-commands__commandbar--link" tabindex="1">
+                                <span class="ms-CommandBarItem-icon ms-Icon ms-Icon--trash"></span>
+                                <span class="ms-CommandBarItem-commandText ms-font-m ms-font-weight-regular">Recycle</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ms-CommandBarItem ms-navigation-commands__commandbar--item">
+                        <div class="ms-CommandBarItem-linkWrapper ms-navigation-commands__commandbar--linkWrapper">
+                            <a class="ms-CommandBarItem-link ms-navigation-commands__commandbar--link" tabindex="1">
+                                <span class="ms-CommandBarItem-icon ms-Icon ms-Icon--save"></span>
+                                <span class="ms-CommandBarItem-commandText ms-font-m ms-font-weight-regular">Save</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ms-CommandBarItem ms-navigation-commands__commandbar--item">
+                        <div class="ms-CommandBarItem-linkWrapper ms-navigation-commands__commandbar--linkWrapper">
+                            <a class="ms-CommandBarItem-link ms-navigation-commands__commandbar--link" tabindex="1">
+                                <span class="ms-CommandBarItem-icon ms-Icon ms-Icon--link"></span>
+                                <span class="ms-CommandBarItem-commandText ms-font-m ms-font-weight-regular">Link</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Overflow Command -->
+                    <div class="ms-CommandBarItem ms-CommandBarItem--iconOnly ms-CommandBarItem-overflow ms-navigation-commands__commandbar--item">
+                        <div class="ms-CommandBarItem-linkWrapper ms-navigation-commands__commandbar--linkWrapper">
+                            <a class="ms-CommandBarItem-link ms-navigation-commands__commandbar--link" tabindex="2">
+                                <span class="ms-CommandBarItem-icon ms-Icon ms-Icon--ellipsis"></span>
+                                <span class="ms-CommandBarItem-commandText ms-font-m ms-font-weight-regular">Ellipsis</span>
+                                <i class="ms-CommandBarItem-chevronDown ms-Icon ms-Icon--chevronDown"></i>
+                            </a>
+                        </div>
+                        <ul class="ms-CommandBar-overflowMenu ms-ContextualMenu"></ul>
+                    </div>
+                    <!-- End Overflow Command -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="ms-navigation-commands__footer ms-bgColor-themePrimary">
+        <div class="ms-navigation-commands__footer--left">
+            <img src="/assets/logo-filled.png" />
+            <h1 class="ms-font-xl ms-fontWeight-semilight ms-fontColor-white">My Add-in Name</h1>
+        </div>
+        <div class="ms-navigation-commands__footer--right">
+            <i class="ms-Icon enlarge ms-Icon--gear ms-fontColor-white"></i>
+        </div>
+    </footer>
+</body>
+</html>

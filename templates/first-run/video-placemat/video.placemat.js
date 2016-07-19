@@ -20,7 +20,7 @@
 
     // Use the display dialog to open a pop-up and display the video.
     function showVideoDialog() {
-        var fullUrl = "http://localhost:8080/templates/first-run/video-placemat/video.dialog.html";
+        var fullUrl = "https://localhost:3000/templates/first-run/video-placemat/video.dialog.html";
 
         // Height and width are percentages of the size of the parent Office application, e.g. PowerPoint, Excel, Word, etc.
         Office.context.ui.displayDialogAsync(fullUrl,

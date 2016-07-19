@@ -1,0 +1,170 @@
+/* Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto; }
+
+body {
+  position: relative;
+  font-size: 16px; }
+
+main {
+  height: 100%;
+  overflow-y: auto; }
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  padding: 0; }
+
+.clearfix {
+  display: block;
+  clear: both;
+  height: 0; }
+
+.pointerCursor {
+  cursor: pointer; }
+
+.invisible {
+  visibility: hidden; }
+
+.undisplayed {
+  display: none; }
+
+.ms-Icon.enlarge {
+  position: relative;
+  font-size: 20px;
+  top: 4px; }
+
+.ms-navigation {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  height: 100%; }
+  .ms-navigation__header {
+    overflow: hidden;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #DEECF9;
+    height: 40px; }
+  .ms-navigation__content {
+    -webkit-flex: 1 0 0px;
+            flex: 1 0 0px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0px; }
+    .ms-navigation__content p {
+      padding-top: 10px; }
+    .ms-navigation__content ul {
+      list-style: none; }
+    .ms-navigation__content__title, .ms-navigation__content__subtitle, .ms-navigation__content__text {
+      margin-bottom: 20px; }
+  .ms-navigation__link {
+    margin-right: 10px; }
+    .ms-navigation__link:hover {
+      color: #000; }
+    .ms-navigation__link:focus {
+      color: #000; }
+  .ms-navigation__breadcrumb {
+    margin-top: 10px;
+    margin-bottom: 0;
+    height: auto;
+    font-size: 14px; }
+  .ms-navigation__footer {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+    position: absolute;
+    bottom: 0; }
+    .ms-navigation__footer--left {
+      transition: background ease 0.1s, color ease 0.1s;
+      display: -webkit-inline-flex;
+      display: inline-flex;
+      -webkit-justify-content: flex-start;
+              justify-content: flex-start;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-flex: 1 0 0px;
+              flex: 1 0 0px;
+      padding: 20px; }
+      .ms-navigation__footer--left:active, .ms-navigation__footer--left:hover {
+        background: #005ca4;
+        cursor: pointer; }
+      .ms-navigation__footer--left:active {
+        background: #005ca4; }
+      .ms-navigation__footer--left--disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed; }
+        .ms-navigation__footer--left--disabled:active, .ms-navigation__footer--left--disabled:hover {
+          background: transparent; }
+      .ms-navigation__footer--left img {
+        width: 40px;
+        height: 40px; }
+      .ms-navigation__footer--left h1 {
+        -webkit-flex: 1 0 0px;
+                flex: 1 0 0px;
+        margin-left: 15px;
+        text-align: left;
+        width: auto;
+        max-width: auto;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+    .ms-navigation__footer--right {
+      transition: background ease 0.1s, color ease 0.1s;
+      padding: 29px 20px; }
+      .ms-navigation__footer--right:active, .ms-navigation__footer--right:hover {
+        background: #005ca4;
+        cursor: pointer; }
+      .ms-navigation__footer--right:active {
+        background: #005ca4; }
+      .ms-navigation__footer--right--disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed; }
+        .ms-navigation__footer--right--disabled:active, .ms-navigation__footer--right--disabled:hover {
+          background: transparent; }
+
+.ms-Button.ms-Button--command {
+  transition: background ease 0.1s, color ease 0.1s;
+  padding-top: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 40px; }
+  .ms-Button.ms-Button--command:active, .ms-Button.ms-Button--command:hover {
+    background: #eff6fc;
+    cursor: pointer; }
+  .ms-Button.ms-Button--command:active {
+    background: #eff6fc;
+    -webkit-transform: scale3d(0.98, 0.98, 1);
+            transform: scale3d(0.98, 0.98, 1); }
+  .ms-Button.ms-Button--command--disabled {
+    opacity: 0.6;
+    pointer-events: none;
+    cursor: not-allowed; }
+    .ms-Button.ms-Button--command--disabled:active, .ms-Button.ms-Button--command--disabled:hover {
+      background: transparent; }
+    .ms-Button.ms-Button--command--disabled:active {
+      -webkit-transform: none;
+              transform: none; }
+
+.ms-ContextualMenu-link.ms-ContextualMenu-link--hasMenu ~ .ms-ContextualMenu {
+  left: 20px;
+  top: 40px; }

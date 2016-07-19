@@ -87,13 +87,13 @@ ul {
       background: #F4F4F4;
       -webkit-transform: scale3d(0.98, 0.98, 1);
               transform: scale3d(0.98, 0.98, 1); }
-    .ms-navigation-dialog__tab-link.disabled {
+    .ms-navigation-dialog__tab-link--disabled {
       opacity: 0.6;
       pointer-events: none;
       cursor: not-allowed; }
-      .ms-navigation-dialog__tab-link.disabled:active, .ms-navigation-dialog__tab-link.disabled:hover {
+      .ms-navigation-dialog__tab-link--disabled:active, .ms-navigation-dialog__tab-link--disabled:hover {
         background: transparent; }
-      .ms-navigation-dialog__tab-link.disabled:active {
+      .ms-navigation-dialog__tab-link--disabled:active {
         -webkit-transform: none;
                 transform: none; }
     .ms-navigation-dialog__tab-link:focus:before {
