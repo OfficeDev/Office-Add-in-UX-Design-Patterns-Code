@@ -1,0 +1,185 @@
+/* Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto; }
+
+body {
+  position: relative;
+  font-size: 16px; }
+
+main {
+  height: 100%;
+  overflow-y: auto; }
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  padding: 0; }
+
+.clearfix {
+  display: block;
+  clear: both;
+  height: 0; }
+
+.pointerCursor {
+  cursor: pointer; }
+
+.invisible {
+  visibility: hidden; }
+
+.undisplayed {
+  display: none; }
+
+.ms-Icon.enlarge {
+  position: relative;
+  font-size: 20px;
+  top: 4px; }
+
+.ms-settings {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  height: 100%; }
+  .ms-settings__main {
+    margin-bottom: 90px; }
+  .ms-settings__header {
+    overflow: hidden;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #EAEAEA;
+    height: 40px; }
+  .ms-settings__content {
+    -webkit-flex: 1 0 0px;
+            flex: 1 0 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0px; }
+    .ms-settings__content__title {
+      padding-top: 15px;
+      padding-bottom: 10px; }
+    .ms-settings__content__subtitle {
+      padding-top: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #EAEAEA; }
+    .ms-settings__content__text {
+      padding-top: 10px; }
+    .ms-settings__content--link {
+      padding-bottom: 10px;
+      padding-top: 10px;
+      color: #0078d7; }
+    .ms-settings__content a {
+      color: #0078d7;
+      text-decoration: none; }
+  .ms-settings__footer {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+    position: absolute;
+    bottom: 0; }
+    .ms-settings__footer--left {
+      transition: background ease 0.1s, color ease 0.1s;
+      display: -webkit-inline-flex;
+      display: inline-flex;
+      -webkit-justify-content: flex-start;
+              justify-content: flex-start;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-flex: 1 0 0px;
+              flex: 1 0 0px;
+      padding: 20px; }
+      .ms-settings__footer--left:active, .ms-settings__footer--left:hover {
+        background: #005ca4;
+        cursor: pointer; }
+      .ms-settings__footer--left:active {
+        background: #005ca4; }
+      .ms-settings__footer--left--disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed; }
+        .ms-settings__footer--left--disabled:active, .ms-settings__footer--left--disabled:hover {
+          background: transparent; }
+      .ms-settings__footer--left img {
+        width: 40px;
+        height: 40px; }
+      .ms-settings__footer--left h1 {
+        -webkit-flex: 1 0 0px;
+                flex: 1 0 0px;
+        margin-left: 15px;
+        text-align: left;
+        width: auto;
+        max-width: auto;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+    .ms-settings__footer--right {
+      transition: background ease 0.1s, color ease 0.1s;
+      padding: 29px 20px; }
+      .ms-settings__footer--right:active, .ms-settings__footer--right:hover {
+        background: #005ca4;
+        cursor: pointer; }
+      .ms-settings__footer--right:active {
+        background: #005ca4; }
+      .ms-settings__footer--right--disabled {
+        opacity: 0.6;
+        pointer-events: none;
+        cursor: not-allowed; }
+        .ms-settings__footer--right--disabled:active, .ms-settings__footer--right--disabled:hover {
+          background: transparent; }
+
+.ms-Button.ms-Button--command {
+  transition: background ease 0.1s, color ease 0.1s;
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px; }
+  .ms-Button.ms-Button--command:active, .ms-Button.ms-Button--command:hover {
+    background: #C8C8C8;
+    cursor: pointer; }
+  .ms-Button.ms-Button--command:active {
+    background: #C8C8C8;
+    -webkit-transform: scale3d(0.98, 0.98, 1);
+            transform: scale3d(0.98, 0.98, 1); }
+  .ms-Button.ms-Button--command--disabled {
+    opacity: 0.6;
+    pointer-events: none;
+    cursor: not-allowed; }
+    .ms-Button.ms-Button--command--disabled:active, .ms-Button.ms-Button--command--disabled:hover {
+      background: transparent; }
+    .ms-Button.ms-Button--command--disabled:active {
+      -webkit-transform: none;
+              transform: none; }
+
+.ms-ContextualMenu-link.ms-ContextualMenu-link--hasMenu ~ .ms-ContextualMenu {
+  left: 20px;
+  top: 40px; }
+
+.ms-Toggle {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.ms-Toggle-description {
+  font-size: 14px;
+  margin-bottom: 10px; }
+
+.ms-Toggle .ms-Label {
+  font-size: 14px; }
+
+.ms-ChoiceField-field {
+  margin-top: 10px; }
