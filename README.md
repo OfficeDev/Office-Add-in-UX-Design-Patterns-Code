@@ -8,19 +8,20 @@ When designing Office Add-ins, the UX design of your add-in should provide compe
 * Office Fabric components and styles.
 * Add-ins that look like a natural extension of the default Office UI. 
 
+For overview information and the types of UX design patterns available, see [UX design pattern templates for Office Add-ins](https://dev.office.com/docs/add-ins/design/ux-design-patterns).
+
 > Important: After customizing these design patterns to meet your requirements, be sure to test your add-in on all platforms where your add-in will be available. These UX design patterns were tested using Office 2016 and Windows 10.
 
-## How do I get started using these resources?
+## Using the UX design patterns
 
-There are no prerequisites to use these design or code resources. To get started creating a great UX for your add-in:
+You can use the [UX designer specifications](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Source%20Files) as a guide when you create your own UX design, or you can add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates) directly to your project. To add the source code:
 
-* Review the UX design patterns, and identify which ones are important to your add-in. 
-* Then do one or more of the following:
-	* Copy the code files to your add-in project and start customizing them to meet your requirements. You will need the [assets folder](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/assets), and the code folder for the design pattern you choose.
-	* Take a look at the [specs](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns) and use them as a guide when creating your own UX design. 
-	* Download the Adobe Illustrator files and edit them to mock-up your own add-in designs. Get them [here](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Source%20Files).
-
-For more information about the availabe UX design patterns, see [UX design pattern templates for Office Add-ins](https://dev.office.com/docs/add-ins/design/ux-design-patterns).
+1. Clone this repo. 
+2. Copy the [assets folder](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/assets), and the code folder for the individual pattern you choose to your add-in project.  
+3. Incorporate the individual pattern into your add-in. For example:
+	- Edit the source location or add-in command URL in the manifest.
+	- Use the UX design pattern as a template for other pages.
+	- Link to or from the UX design pattern.
 
 ## Known issues
 
@@ -32,7 +33,7 @@ For more information about the availabe UX design patterns, see [UX design patte
 ## Additional resources
 
 * [Best practices for developing Office Add-ins](https://dev.office.com/docs/add-ins/overview/add-in-development-best-practices)
-* [Office UI Fabric](http://dev.office.com/fabric/). This project uses version 2.1.0.
+* [Office UI Fabric](http://dev.office.com/fabric/). This project uses version 2.1.0 or higher.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
