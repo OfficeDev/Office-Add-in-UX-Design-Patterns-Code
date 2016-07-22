@@ -14,7 +14,7 @@ When designing Office Add-ins, the UX design of your add-in should provide compe
 
 There are no prerequisites to use these design or code resources. To get started creating a great UX for your add-in:
 
-* Review the UX design patterns, and identify which ones are important to your add-in. For example, pick one of the first-run experiences.
+* Review the UX design patterns, and identify which ones are important to your add-in. 
 * Then do one or more of the following:
 	* Copy the code files to your add-in project and start customizing them to meet your requirements. You will need the [assets folder](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/assets), and the code folder for the design pattern you choose.
 	* Take a look at the [specs](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns) and use them as a guide when creating your own UX design. 
