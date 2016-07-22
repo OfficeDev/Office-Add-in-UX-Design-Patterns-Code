@@ -9,8 +9,6 @@ This repository provides sample HTML, CSS, and JavaScript implementations of com
 
 For an overview of the templates, see [UX design pattern templates](http://dev.office.com/docs/add-ins/design/ux-design-patterns).
 
-> Important: After you customize these templates to meet your needs, be sure to test your add-in on all platforms where your add-in will be available. These UX design patterns were tested using Office 2016 and Windows 10.
-
 ## Get started
 
 You can get started with these design and code resources right away. To use these patterns in your Office Add-in:
@@ -21,6 +19,7 @@ You can get started with these design and code resources right away. To use thes
 	* Take a look at the [specs](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/tree/master/Patterns/PDF) and use them as a guide when you create your UX design. 
 	* Download the [Adobe Illustrator](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Source%20Files) files and edit them to mock-up your own add-in designs.
 
+> **Important:** After you customize these templates to meet your needs, be sure to test your add-in on all platforms on which it will run. We tested these templates on Office 2016 running on Windows 10. 
 
 ## Known issues
 
