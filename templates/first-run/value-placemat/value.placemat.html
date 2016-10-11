@@ -1,4 +1,4 @@
-﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
+<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
 
 <!--
     This file shows how to design a simple welcome page that tells users the value of the add-in.
@@ -12,9 +12,9 @@
     <title>Welcome Screen - Value Placemat</title>
 
     <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
-    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/fabric-core/4.0.0/fabric.min.css">
     <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
-
+    
     <!-- Template styles -->
     
     <link href="value.placemat.css" rel="stylesheet" type="text/css" />
@@ -22,27 +22,26 @@
 
 <body>
     <main class="ms-firstrun-value">
-        <section class="ms-firstrun-value__header ms-bgColor-themePrimary">
+        <section class="ms-firstrun-value__header ms-bgColor-neutralLighter">
             <div class="ms-firstrun-value__logo">
-                <img src="/assets/logo.png" />
+                <img src="/assets/logo_black.png" />
             </div>
             <div class="ms-firstrun-value__title">
-                <h1 class="ms-font-xl ms-fontWeight-light ms-fontColor-white">WELCOME</h1>
-            </div>
-            <div class="ms-firstrun-value__subtitle ms-font-m ms-fontWeight-light ms-fontColor-white">
-                <p>This add-in helps you be productive at work!</p>
+                <h1 class="ms-font-su ms-fontWeight-light ms-fontColor-neutralPrimary">Welcome</h1>
             </div>
         </section>
         <section class="ms-firstrun-value__content">
-            <div class="ms-font-m ms-fontColor-themePrimary ms-firstrun-value__content--centered">
-                <ul class="ms-firstrun-value__list ms-fontWeight-regular">
-                    <li><span><i class="ms-Icon enlarge ms-Icon--coffee"></i>Helps you produce fast</span></li>
-                    <li><span><i class="ms-Icon enlarge ms-Icon--ribbon"></i>Adds value to your work</span></li>
-                    <li><span><i class="ms-Icon enlarge ms-Icon--glasses"></i>Enables you to be creative</span></li>
+           <div class="ms-firstrun-value__subtitle ms-font-xl ms-fontWeight-semilight ms-fontColor-neutralPrimary">
+                <p>Discover what this add-in can do!</p>
+            </div>
+            <div class="ms-font-m ms-fontColor-neutralPrimary ms-firstrun-value__content--centered">
+                <ul class="ms-firstrun-value__list ms-font-l ms-fontWeight-semilight">
+                    <li><i class="ms-Icon enlarge ms-Icon--PartyLeader"></i><span>Achieve more with Office integration</span></li>
+                    <li><i class="ms-Icon enlarge ms-Icon--Like"></i><span>Unlock features and functionality</span></li>
+                    <li><i class="ms-Icon enlarge ms-Icon--Camera"></i><span>Create and visualize like a pro</span></li>
                 </ul>
-                <button class="ms-firstrun-value__action--primary ms-bgColor-themePrimary ms-Button ms-Button--command ms-fontColor-white ms-font-m">
-                    <span class="ms-Button-label">Get Started!</span>
-                    <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--chevronThickRight"></i></span>
+                <button class="ms-firstrun-value__action--primary ms-bgColor-themePrimary ms-Button ms-Button--command ms-font-xl">
+                    <span class="ms-Button-label">Get Started! <i class="ms-Icon ms-Icon--ChevronRightMed ms-font-l"></i></span>
                 </button>
             </div>
         </section>
