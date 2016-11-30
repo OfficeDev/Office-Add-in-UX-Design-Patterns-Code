@@ -73,7 +73,9 @@ fabric.Toast = function (timer) {
             // remove the toast object from the body when the animation completes
             setTimeout(function () {
                 var el = document.querySelector('#' + toast.id);
-                el.parentNode.removeChild(el);
+                if (el != null) {
+                    el.parentNode.removeChild(el);
+                }
             }, 300);
         }
     }
