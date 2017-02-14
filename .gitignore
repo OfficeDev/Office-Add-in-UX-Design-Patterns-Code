@@ -51,12 +51,6 @@ $RECYCLE.BIN/
 obj/**
 bin/**
 *.user
-temp
-test
 node_modules/**
-typings/**
 npm-debug.log
 dist/**
-dts/**
-bundle/**
-demo/**

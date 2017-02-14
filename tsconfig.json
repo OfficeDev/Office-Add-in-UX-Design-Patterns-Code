@@ -9,12 +9,12 @@
         "allowUnusedLabels": false,
         "noImplicitReturns": true,
         "noUnusedParameters": true,
+        "noImplicitAny": true,
         "noUnusedLocals": true,
         "sourceMap": true,
         "rootDir": "./src",
         "outDir": "./dist",
-        "declarationDir": "./dts",
-        "declaration": true,
+        "declaration": false,
         "lib": [
             "dom",
             "es2015"
