@@ -1,0 +1,84 @@
+@import '../../../common/common.scss';
+
+.ms-navigation-pivot {
+    @include flex();
+    height: 100%;
+
+    &__header {
+        overflow: hidden;
+        padding-left: 20px;
+        padding-right: 0px;
+        background-color: #DEECF9;
+        height: 40px;
+    }
+
+    &__content {
+        flex: 1 0 0px;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: none;
+        margin-top: 0px;
+
+        &.is-selected {
+            display: block;
+        }
+
+        p {
+            padding-top: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+    }
+
+    &__link {
+        margin-right: 10px;
+
+        &:hover {
+            color: #000;
+        }
+
+        &:focus {
+            color: #000;
+        }
+    }
+
+    &__breadcrumb {
+        margin-top: 10px;
+        margin-bottom: 0;
+        height: auto;
+        font-size: 14px;
+    }
+
+    &__footer {
+        @include inline-flex(center, center);
+        position: absolute;
+        bottom: 0;
+
+        &--left {
+            @include focus-states(darken($ms-fontColor-themePrimary, 10%), null, false);
+            @include inline-flex(flex-start, center);
+            flex: 1 0 0px;
+            padding: $global-spacing;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+
+            h1 {
+                flex: 1 0 0px;
+                margin-left: 15px;
+                text-align: left;
+                @include ellipsis();
+            }
+        }
+
+        &--right {
+            @include focus-states(darken($ms-fontColor-themePrimary, 10%), null, false);
+            padding: 29px $global-spacing;
+        }
+    }
+}

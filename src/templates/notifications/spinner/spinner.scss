@@ -1,0 +1,48 @@
+﻿@import '../../../common/common.scss';
+
+.ms-notification-progress-indeterminate {
+    @include flex();
+    height: 100%;
+
+    &__main {
+        @include center-flex();
+        height: 100%;
+        flex: 1 1 0px;
+        padding: $global-spacing;
+    }
+
+    &__title {
+        padding: 0 $global-spacing;
+    }
+
+    &__logo {
+        height: 80px;
+        margin-bottom: 7px;
+    }
+
+    &__footer {
+        @include inline-flex(center, center);
+    }
+}
+
+.ms-progress {
+    padding: 20px;
+    margin-bottom: 80px;
+    @include center-flex();
+
+    .ms-ProgressIndicator-itemDescription,
+    .ms-ProgressIndicator-itemName {
+        color: $ms-fontColor-white;
+        text-align: center;
+    }
+
+    .ms-Spinner {
+        position: relative;
+        bottom: 40px; /* height of the spinner from fabric.spinner.js  */
+        left: 15px; /* standard padding; */
+    }
+
+    .ms-Spinner-circle {
+        background-color: $ms-fontColor-white;
+    }
+}

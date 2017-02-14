@@ -1,0 +1,119 @@
+﻿@import '../../common/common.scss';
+
+
+.ms-settings-privacy {
+    @include flex();
+    height: 100%;
+    
+    &__main {
+        @include flex();
+        flex: 1 1 0;
+        padding-bottom: 80px;
+    }
+
+    &__header {
+        background-color: #EFF6FC;
+        @include inline-flex(center, center);
+
+        &--left {
+            padding: 12px 15px 12px 15px;
+            cursor: pointer;
+            background-color: #EFF6FC;
+            
+            &:active, &:hover {
+                background: #c7e0f4;
+            }
+        }
+
+        &--right {
+            flex: 1 0 0px;            
+            @include inline-flex(center, center);
+            background-color: #EFF6FC;
+
+            p {
+                padding-right: 45px;              
+                flex: 1 0 0px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                text-align: center;
+                cursor: pointer;      
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
+
+    &__content {
+        height: 100%;
+        flex: 1 1 0;
+        /*min-height: 180px;*/
+        padding: $global-spacing;
+
+        h2 {
+            margin-bottom: $global-spacing;
+        }
+
+        a {
+            color: #0078d7;
+            padding-bottom: 10px;
+            text-decoration: none;
+        }
+        &__title {
+            padding-bottom: 25px;
+        } 
+        &__subtitle {
+            padding-top: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #EAEAEA;
+        } 
+        &__text {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 0;
+            margin-bottom: $global-spacing;
+        }
+    }
+
+    &__footer {
+        @include inline-flex(center, center);
+
+        &--left {
+            @include focus-states(darken($ms-fontColor-themePrimary, 10%), null, false);
+            @include inline-flex(flex-start, center);
+            flex: 1 0 0px;
+            padding: $global-spacing;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+
+            h1 {
+                flex: 1 0 0px;
+                margin-left: 15px;
+                text-align: left;
+                @include ellipsis();
+            }
+        }
+
+        &--right {
+            @include focus-states(darken($ms-fontColor-themePrimary, 10%), null, false);
+            padding: 29px $global-spacing;
+        }
+    }
+}
+
+.ms-Icon--print {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.ms-Icon--arrowUp {
+    padding-left: 5px;
+}

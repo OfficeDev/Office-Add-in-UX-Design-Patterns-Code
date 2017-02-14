@@ -1,0 +1,56 @@
+﻿html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+body {
+    position: relative;
+    font-size: 16px;
+}
+
+main {
+    height: 100%;
+    overflow-y: auto;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+.clearfix {
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.pointerCursor {
+    cursor: pointer;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.undisplayed {
+    display: none;
+}
+
+.ms-Icon.enlarge {
+    position: relative;
+    font-size: 20px;
+    top: 4px;
+}

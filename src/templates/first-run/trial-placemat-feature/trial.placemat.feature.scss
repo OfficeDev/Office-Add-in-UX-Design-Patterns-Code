@@ -1,0 +1,165 @@
+﻿@import '../../../common/common.scss';
+
+.ms-firstrun-trial-feature {
+    @include flex();
+    height: 100%;
+
+    &__main {
+        @include flex();
+        flex: 1 1 0;
+        height: 100%;
+    }
+
+    &__header {
+        border-bottom: solid 2px $ms-fontColor-themePrimary;
+        @include inline-flex(center, center);
+        padding-left: 0px;
+        padding-right: 0px;
+        &--left {
+            @include focus-states(#eff6fc, null, true);
+            padding: 4px $global-spacing;
+            cursor: pointer;
+        }
+
+        &--right {
+            flex: 1 0 0px;
+            @include inline-flex(center, center);
+
+            p {
+                
+                flex: 1 0 0px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                text-align: center;
+                cursor: pointer;
+                
+                @include focus-states(#eff6fc, null, true);
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+
+        &--selected {
+            background-color: darken(#eff6fc, 5%);
+        }
+    }
+
+    &__content {
+        @include flex(column, nowrap, center, flex-start);
+        height: 100%;
+        flex: 1 1 0;
+        min-height: 380px;
+        padding: $global-spacing;
+
+        h2 {
+            margin-bottom: $global-spacing;
+        }
+    }
+
+    &__login-panel {
+        width: 100%;
+        height: 245px;
+        border: solid 1px $ms-fontColor-themePrimary;
+
+        h3 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            padding: 0 $global-spacing;
+        }
+    }
+
+    &__label {
+        margin-top: 60px;
+        align-self: center;
+    }
+
+    &__form {
+    }
+
+    &__input {
+        padding: 0 $global-spacing;
+        margin-top: 10px;
+        width: calc(100% - 40px);
+
+        label {
+            clear: both;
+            display: block;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: calc(100% - 24px);
+            border: solid 1px $ms-fontColor-themePrimary;
+            padding: 10px;
+        }
+    }
+
+    &__footer {
+        @include inline-flex(center, center);
+
+        &--left {
+            @include focus-states(darken($ms-fontColor-themePrimary, 10%), null, false);
+            @include inline-flex(flex-start, center);
+            flex: 1 0 0px;
+            padding: $global-spacing;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+
+            h1 {
+                flex: 1 0 0px;
+                margin-left: 15px;
+                text-align: left;
+                @include ellipsis();
+            }
+        }
+
+        &--right {
+            @include focus-states(darken($ms-fontColor-themePrimary, 10%), null, false);
+            padding: 29px $global-spacing;
+        }
+    }
+}
+
+
+.input {
+    &__submit {
+        width: 100%;
+        height: 30px;
+        color: $ms-fontColor-white;
+        margin-top: 20px;
+        font-weight: 600;
+        margin-bottom: -8px;
+        background-color: $ms-fontColor-themePrimary;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        @include focus-states(darken($ms-fontColor-themePrimary, 5%), null, true);
+    }
+}
+
+.ms-Pivot {
+    overflow: hidden;
+}
+.ms-Pivot-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.ms-Pivot-content.is-selected {
+    display: block;
+}
+
+.ms-Pivot-link {
+    margin-right: 0px;
+    line-height: 30px;
+    &.is-selected {
+        @extend .ms-firstrun-trial-feature__header--selected;
+    }
+}

@@ -1,0 +1,64 @@
+@import '../../../common/common.scss';
+
+.ms-navigation-dialog {
+    @include flex();
+    height: 100%;
+
+    &__header {
+        @include inline-flex();
+        margin-left: $global-spacing;
+        margin-right: $global-spacing;
+        padding-top: 0px;
+        cursor: pointer;
+        flex: 1 1 auto;
+        background: none;
+        border-bottom: solid 2px #EAEAEA;
+        height: auto;
+    }
+
+    &__content {
+        height: 100%;
+        flex: 1 1 0;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+
+        h2 {
+            margin-bottom: $global-spacing;
+        }
+    }
+
+    &__tab-link {
+        height: 37px;
+        padding: 0 0 2px 1px;
+        text-decoration: none;
+        @include focus-states(#F4F4F4);
+        
+        &:focus {
+            
+            &:before {
+                border: none;
+            }
+        }
+        &--active {
+            
+            border: none;
+            border-bottom: solid 2px #0078d7;
+        }
+    }
+
+    &__actions {
+        position: absolute !important;
+        bottom: 20px !important;
+        right: 20px !important;
+    }
+
+    &__tabcontent {
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
+}

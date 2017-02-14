@@ -1,0 +1,5 @@
+﻿@mixin background-fill($type: contain, $fill-color: transparent) {
+    background: $fill-color no-repeat center center;
+    @content;
+    background-size: $type;
+}

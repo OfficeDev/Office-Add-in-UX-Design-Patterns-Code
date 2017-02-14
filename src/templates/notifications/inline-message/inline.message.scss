@@ -1,0 +1,115 @@
+﻿@import '../../../common/common.scss';
+
+.ms-notification-inline-message {
+    @include flex();
+    height: 100%;
+
+    &__main {
+        @include flex();
+        flex: 1 1 0;
+        height: 100%;
+    }
+
+    &__header {
+        border-bottom: solid 2px $ms-fontColor-themePrimary;
+        @include inline-flex(center, center);
+
+        &--left {
+            @include focus-states(#eff6fc, null, true);
+            padding: 8px $global-spacing;
+            cursor: pointer;
+        }
+
+        &--right {
+            flex: 1 0 0px;
+            @include inline-flex(center, center);
+
+            p {
+                padding: 0 10px;
+                flex: 1 0 0px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                text-align: center;
+                cursor: pointer;
+                padding: 10px $global-spacing;
+                @include focus-states(#eff6fc, null, true);
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+
+        &--selected {
+            background-color: darken(#eff6fc, 5%);
+        }
+    }
+
+    &__content {
+        @include flex(column, nowrap, null, null);
+        height: 100%;
+        flex: 1 1 0;
+        min-height: 180px;
+        padding: $global-spacing;
+
+        h2, h3, p {
+            margin-bottom: $global-spacing;
+        }
+    }
+
+    &__input {
+        padding-bottom: 50px;
+        margin-top: 10px;
+        width: 100%;
+
+        label {
+            clear: both;
+            display: block;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: calc(100% - 24px);
+            border-style: solid;
+            border-width: 1px;
+            padding: 10px;
+            margin-bottom: 7px;
+        }
+    }
+
+    &__span {
+        padding: 5px;
+    }
+
+
+
+    &__footer {
+        @include inline-flex(center, center);
+
+        &--left {
+            @include focus-states(darken($ms-fontColor-themePrimary, 10%), null, false);
+            @include inline-flex(flex-start, center);
+            flex: 1 0 0px;
+            padding: $global-spacing;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+
+            h1 {
+                flex: 1 0 0px;
+                margin-left: 15px;
+                text-align: left;
+                @include ellipsis();
+            }
+        }
+
+        &--right {
+            @include focus-states(darken($ms-fontColor-themePrimary, 10%), null, false);
+            padding: 29px $global-spacing;
+        }
+    }
+}

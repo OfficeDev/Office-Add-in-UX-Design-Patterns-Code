@@ -1,0 +1,40 @@
+﻿@import '../../../common/common.scss';
+
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+.ms-alert-dialog {
+    padding: 5px;
+
+    &__grid {
+        padding: 0px;
+    }
+
+    &__row {
+        padding: 0px 15px 5px 15px;
+        margin: 0px;
+    }
+
+    &__col {
+        padding: 0px;
+
+        &--text {
+            padding-top: 5px;
+            padding-left: 6px;
+            padding-bottom: 0px;
+        }
+    }
+}
+
+.ms-Icon--alert {
+    color: #ffb900;
+    font-size: 33px;
+}
+
+.ms-Button {
+    margin: auto;
+    display: block;
+    margin-bottom: 15px !important;
+}
