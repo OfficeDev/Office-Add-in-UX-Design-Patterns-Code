@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": false,
+        "allowUnusedLabels": false,
+        "noImplicitReturns": true,
+        "noUnusedParameters": true,
+        "noUnusedLocals": true,
+        "sourceMap": true,
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "declarationDir": "./dts",
+        "declaration": true,
+        "lib": [
+            "dom",
+            "es2015"
+        ]
+    },
+    "include": [
+        "src/**/*",
+        "typings/index.d.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

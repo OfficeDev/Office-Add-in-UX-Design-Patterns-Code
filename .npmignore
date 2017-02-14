@@ -1,0 +1,9 @@
+!dist/**
+!src/**
+!LICENSE.md
+.gitattributes
+.gitignore
+.travis.yml
+CONTRIBUTING.md
+tsconfig.json
+typings.json
