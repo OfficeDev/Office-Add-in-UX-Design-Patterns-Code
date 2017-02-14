@@ -1,11 +1,10 @@
 {
-  "name": "design-templates",
+  "name": "@microsoft/office-design-templates",
   "description": "Design Templates for Office Add-ins",
   "version": "1.0.0",
   "author": {
     "name": "Microsoft Corporation"
   },
-  "private": true,
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
