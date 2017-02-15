@@ -1,15 +1,30 @@
 ﻿@import '../../../common/common.scss';
 
-body {
-    overflow: hidden;
-    margin: 0;
+body.dp-dialog {
+    min-height: auto;
+    min-width: auto;
+}
+
+.dp-typeramp {
+    &__message {
+        text-align: center;
+        margin: $global-spacing*2 0 $global-spacing;
+        white-space: pre-line;
+        padding: 0 $global-spacing;
+        @include inline-flex(center, center);
+    }
+
+    .ms-Button {
+        margin: auto;
+        display: block;
+    }
 }
 
 .ms-typeramp-dialog {
     padding: 10px 10px 20px 15px;
 
     p {
-        text-align: left;        
+        text-align: left;
         margin-top: 0px;
         margin-bottom: 0px;
         margin-right: 0px;
