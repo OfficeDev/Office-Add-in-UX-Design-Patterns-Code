@@ -3,7 +3,7 @@
 .dp-alert {
     &__message {
         text-align: center;
-        margin: $global-spacing*2 0;
+        margin: $global-spacing*2 0 $global-spacing;
         white-space: pre-line;
         padding: 0 $global-spacing;
         @include inline-flex(center, center);
@@ -12,7 +12,7 @@
     .ms-Icon--IncidentTriangle {
         color: #ffb900;
         font-size: 33px;
-        margin-right: $global-spacing; 
+        margin-right: $global-spacing;
     }
 
     .ms-Button {

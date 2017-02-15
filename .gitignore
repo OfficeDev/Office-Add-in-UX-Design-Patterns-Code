@@ -48,7 +48,6 @@ $RECYCLE.BIN/
 
 # Ignore the following folders
 .vs/**
-.vscode/**
 obj/**
 bin/**
 *.user
