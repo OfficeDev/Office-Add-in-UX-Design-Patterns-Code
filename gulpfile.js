@@ -50,6 +50,7 @@ gulp.task('manifest', () => {
     let files = walk(path.resolve('src/templates')).sort();
     files = files.filter(file => /\.html$/i.test(file));
     let processedFiles = files.map(stripNames);
+    processedFiles=processedFiles.filter(file=>!(file==null));
     let groupedFiles = _.groupBy(processedFiles, 'source');
     let groups = _.map(groupedFiles, (commands, key) => {
         return {
@@ -106,9 +107,12 @@ const stripNames = (file) => {
     let root = filepath.create(path.resolve('src/templates'));
     let strippedPath = currentFile.toString().replace(root.toString(), '');
     let [drive, source, group, filename] = filepath.create(strippedPath).split();
-    let baseUrl = 'https:/localhost:3000/templates/';
+    let baseUrl = 'https://localhost:3000/templates/';
     let url = baseUrl + source + '/' + group;
     if (filename) {
+        if(filename.indexOf('dialog') != -1) {
+            return null;
+        }
         url += '/' + filename;
     }
     let name = _.startCase(group), safeName = group;

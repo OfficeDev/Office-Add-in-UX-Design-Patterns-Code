@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <title>Alert Dialog Example</title>
+    <title>Alert</title>
 
     <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.js" type="text/javascript"></script>
@@ -17,20 +17,29 @@
     <!-- Template styles -->
     <link href="../../../common.css" rel="stylesheet" />
     <link href="alert.css" rel="stylesheet" type="text/css" />
-
-    <script src="alert.taskpane.js" type="text/javascript"></script>
-    <script src="DialogHelper.js" type="text/javascript"></script>
-
+    
+    <script src="alert.js" type="text/javascript"></script>
+    
 </head>
-<body>
-    <main class="ms-alert-dialog">
-        <div class="ms-font-l ms-fontColor-neutral" style="text-align: center">Click the button to open the alert dialog box.</div>
-        <br />
-        <button class="ms-Button ms-Button--primary" id="action-button">
+<body>  
+    <main class="ms-alert-dialog">        
+        <div class="ms-alert-dialog__grid ms-Grid">
+            <div class="ms-alert-dialog__row ms-Grid-row">
+                <div class="ms-alert-dialog__col ms-Grid-col">
+                    <i class="ms-Icon ms-Icon--alert" aria-hidden="true"></i>
+                </div>
+                <div class="ms-alert-dialog__col ms-Grid-col">
+                    <div class="ms-alert-dialog__col--text ms-font-m">
+                        Deleting this cell will cancel the current document analysis.
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <button id="ok-button" class="ms-Button ms-Button--primary">
             <span class="ms-Button-icon"></span>
-            <span class="ms-Button-label">Open Dialog</span>
-            <span class="ms-Button-description">Click to open an alert dialog box.</span>
+            <span class="ms-Button-label">OK</span>
+            <span class="ms-Button-description">Click OK to cancel</span>
         </button>
-    </main>
+    </main>   
 </body>
 </html>

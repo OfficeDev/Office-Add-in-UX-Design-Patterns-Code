@@ -34,7 +34,7 @@
             <CustomTab id="DesignPatternsTab">
               <Label resid="DP.TabLabel"/>
               {{#groups}}
-              <Group id="DP.PlayGroup">
+              <Group id="DP.{{safeName}}Group">
                 <Label resid="DP.{{safeName}}" />
                 <Icon>
                   <bt:Image size="16" resid="DP.Icon.16" />
@@ -46,7 +46,7 @@
                   <Label resid="DP.{{safeName}}.Label" />
                   <Supertip>
                     <Title resid="DP.{{safeName}}.Tip" />
-                    <Description resid="DP.{{safeName}}.Tip" />
+                    <Description resid="DP.Tip.Desc" />
                   </Supertip>
                   <Icon>
                     <bt:Image size="16" resid="DP.Icon.16" />
@@ -75,7 +75,7 @@
       <bt:Urls>
         {{#groups}}
         {{#commands}}
-        <bt:Url id="DP.{{safeName}}.Url" DefaultValue="{{url}}" />
+        <bt:Url id="DP.{{safeName}}.Url" DefaultValue="{{{url}}}" />
         {{/commands}}
         {{/groups}}
       </bt:Urls>
@@ -90,6 +90,7 @@
         {{/groups}}
       </bt:ShortStrings>
       <bt:LongStrings>
+        <bt:String id="DP.Tip.Desc" DefaultValue="Open the Design Pattern." />
         <bt:String id="DP.Description" DefaultValue="View all the Design Patterns." />
       </bt:LongStrings>
     </Resources>
