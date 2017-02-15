@@ -67,7 +67,7 @@ gulp.task('manifest', () => {
 });
 
 gulp.task('copy', () =>
-    gulp.src('./src/**/!(*.ts|*.scss)')
+    gulp.src('./src/**/!(*.ts|*.scss|*.xml)')
         .pipe(gulp.dest('./dist'))
 );
 

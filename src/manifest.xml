@@ -10,8 +10,8 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Design Patterns" />
   <Description DefaultValue="UX Design Patterns for Office Add-ins." />
-  <IconUrl DefaultValue="https://localhost:3000/assets/images/icon-32.png" />
-  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/images/icon-64.png" />
+  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-80.png" />
   <AppDomains>
     <AppDomain>https://youtube.com</AppDomain>
   </AppDomains>
@@ -73,9 +73,9 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="DP.Icon.16" DefaultValue="https://localhost:3000/assets/images/icon-16.png" />
-        <bt:Image id="DP.Icon.32" DefaultValue="https://localhost:3000/assets/images/icon-32.png" />
-        <bt:Image id="DP.Icon.80" DefaultValue="https://localhost:3000/assets/images/icon-80.png" />
+        <bt:Image id="DP.Icon.16" DefaultValue="https://localhost:3000/assets/icon-16.png" />
+        <bt:Image id="DP.Icon.32" DefaultValue="https://localhost:3000/assets/icon-32.png" />
+        <bt:Image id="DP.Icon.80" DefaultValue="https://localhost:3000/assets/icon-80.png" />
       </bt:Images>
       <bt:Urls>
         {{#groups}}
