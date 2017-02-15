@@ -14,12 +14,6 @@ body.dp-dialog {
         @include inline-flex(center, center);
     }
 
-    .ms-Icon--IncidentTriangle {
-        color: #ffb900;
-        font-size: 33px;
-        margin-right: $global-spacing;
-    }
-
     .ms-Button {
         margin: auto;
         display: block;

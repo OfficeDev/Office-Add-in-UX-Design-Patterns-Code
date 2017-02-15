@@ -2,16 +2,16 @@
 /// <reference path="../../../../node_modules/@microsoft/office-js-helpers/dist/office.helpers.d.ts" />
 declare var fabric: any;
 
-(() => {
-    Office.initialize = () => {
-        $(document).ready(() => {
+(($) => {
+    $(document).ready(() => {
+        Office.initialize = () => {
             $('#ok').click(() => OfficeHelpers.Dialog.close('OK'));
             $('#cancel').click(() => OfficeHelpers.Dialog.close('Cancel'));
             initializePivot();
-        });
-    };
+        };
 
-    function initializePivot() {
-        $('.ms-Pivot').map((i, pivot) => new fabric['Pivot'](pivot));
-    }
-})();
+        function initializePivot() {
+            $('.ms-Pivot').map((i, pivot) => new fabric['Pivot'](pivot));
+        }
+    });
+})(jQuery);
