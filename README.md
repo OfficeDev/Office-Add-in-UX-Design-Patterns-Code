@@ -12,6 +12,18 @@ For overview information and the types of UX design patterns available, see [UX 
 
 > Important: After customizing these design patterns to meet your requirements, be sure to test your add-in on all platforms where your add-in will be available. These UX design patterns were tested using Office 2016 and Windows 10.
 
+## Contributing to the UX design patterns
+1. Clone this repo.
+2. Run `npm install`.
+3. Run `npm start`.
+4. Next steps:
+	- An instance of `browser-sync` is launched to help you get started. Make sure you trust the certificate.
+	- All the source files are located in the `src` folder.
+	- The compiled files are generated in the `dist` folder. Note: Please don't make any changes here as these files are wiped clean.
+	- Inside of the `dist` folder, you'll find a generated `manifest.xml`. Please sideload it to help debug inside of Office.
+	- Upon sideloading, you should see a `Design Patterns` tab inside of the Office application.
+	- Find your listed template and launch it. Note: If you get an error during this step, double check if you have trusted the certificate. If the error persists, make sure the path is correct in the generated manifest. If not, please log an `issue`.
+
 ## Using the UX design patterns
 
 You can use the [UX designer specifications](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Source%20Files) as a guide when you create your own UX design, or you can add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates) directly to your project. To add the source code:

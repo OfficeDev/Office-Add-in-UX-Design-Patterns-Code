@@ -42,7 +42,8 @@ let config = {
                 '/node_modules': 'node_modules'
             }
         }
-    }
+    },
+    hosts: ['Document', 'Workbook', 'Presentation', 'Notebook']
 };
 
 gulp.task('clean', (done) => rimraf('dist', done));
@@ -61,8 +62,10 @@ gulp.task('manifest', () => {
         };
     });
 
+    let hosts = config.hosts.map(value => ({ host: value }));
+
     return gulp.src(config.manifest.source)
-        .pipe(mustache({ groups }))
+        .pipe(mustache({ groups, hosts }))
         .pipe(gulp.dest(config.manifest.destination));
 });
 

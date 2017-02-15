@@ -16,9 +16,9 @@
     <AppDomain>https://youtube.com</AppDomain>
   </AppDomains>
   <Hosts>
-    <Host Name="Workbook" />
-    <Host Name="Document" />
-    <Host Name="Presentation"/>
+    {{#hosts}}
+    <Host Name="{{host}}" />
+    {{/hosts}}
   </Hosts>
   <DefaultSettings>
     <SourceLocation DefaultValue="https://localhost:3000" />
@@ -28,7 +28,8 @@
     xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
     <Description resid="DP.Description" />
     <Hosts>
-      <Host xsi:type="Workbook">
+      {{#hosts}}
+      <Host xsi:type="{{host}}">
         <DesktopFormFactor>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <CustomTab id="DesignPatternsTab">
@@ -70,6 +71,7 @@
           </ExtensionPoint>
         </DesktopFormFactor>
       </Host>
+      {{/hosts}}
     </Hosts>
     <Resources>
       <bt:Images>
