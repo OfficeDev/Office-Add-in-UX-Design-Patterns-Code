@@ -6,7 +6,9 @@
     "name": "Microsoft Corporation"
   },
   "scripts": {
-    "start": "./node_modules/.bin/gulp manifest"
+    "manifest": "./node_modules/.bin/gulp manifest",
+    "start": "./node_modules/.bin/gulp serve",
+    "build": "./node_modules/.bin/gulp build"
   },
   "dependencies": {
     "@microsoft/office-js-helpers": "^0.5.0",
@@ -20,11 +22,13 @@
     "browser-sync": "^2.18.8",
     "typescript": "^2.1.6",
     "gulp-postcss": "^6.3.0",
+    "gulp-debug": "^3.1.0",
     "gulp-mustache": "^2.3.0",
     "rimraf": "^2.5.4",
     "filepath": "^1.1.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
+    "run-sequence": "^1.2.2",
     "gulp-typescript": "^3.1.4",
     "gulp-plumber": "^1.1.0",
     "autoprefixer": "^6.7.2",

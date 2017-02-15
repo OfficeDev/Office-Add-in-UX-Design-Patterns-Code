@@ -4,9 +4,11 @@ let filepath = require('filepath');
 let path = require('path');
 let gulp = require('gulp');
 let rimraf = require('rimraf');
+let runSeqeunce = require('run-sequence');
 let browserSync = require('browser-sync');
 let mustache = require('gulp-mustache');
 let plumber = require('gulp-plumber');
+let debug = require('gulp-debug');
 let sass = require('gulp-sass');
 let postcss = require('gulp-postcss');
 let autoprefixer = require('autoprefixer');
@@ -46,28 +48,10 @@ let config = {
 gulp.task('clean', (done) => rimraf('dist', done));
 
 gulp.task('manifest', () => {
-    console.log(chalk.bold.yellow('Loading patterns...'));
+    console.log(chalk.bold.yellow('\tGenerating manifest...'));
     let files = walk(path.resolve('src/templates')).sort();
     files = files.filter(file => /\index\.html$/i.test(file));
-    let processedFiles = files.map((file) => {
-        let currentFile = filepath.create(file);
-        let root = filepath.create(path.resolve('src/templates'));
-        let strippedPath = currentFile.toString().replace(root.toString(), '');
-        let [drive, source, group, filename] = filepath.create(strippedPath).split();
-        let baseUrl = 'https://localhost:3000/templates/';
-        let url = baseUrl + source + '/' + group;
-        if (filename) {
-            url += '/' + filename;
-        }
-        let name = _.startCase(group), safeName = group;
-        if (filename == null) {
-            name = _.startCase(source);
-            safeName = source;
-        }
-        return { source, name, safeName, url };
-    });
-    
-    processedFiles = processedFiles.filter(file => !(file == null));
+    let processedFiles = files.map(process);
     let groupedFiles = _.groupBy(processedFiles, 'source');
     let groups = _.map(groupedFiles, (commands, key) => {
         return {
@@ -82,27 +66,34 @@ gulp.task('manifest', () => {
         .pipe(gulp.dest(config.manifest.destination));
 });
 
-gulp.task('compileStyles', () => {
+gulp.task('copy', () =>
+    gulp.src('./src/**/!(*.ts|*.scss)')
+        .pipe(gulp.dest('./dist'))
+);
+
+gulp.task('compile-styles', () => {
     let plugins = [
         autoprefixer(config.autoprefixer),
         perfectionist
     ];
 
-    return gulp.src(config.styles.source, { base: './' })
+    return gulp.src(config.styles.source)
         .pipe(plumber(errorHandler))
         .pipe(sass())
         .pipe(postcss(plugins))
+        // .pipe(debug({ title: 'SASS:\t' }))
         .pipe(gulp.dest(config.styles.destination))
         .pipe(browserSync.stream());
 });
 
-gulp.task('watch', () => {
-    return gulp.watch(config.styles.source, ['compile-styles']);
+gulp.task('browser-sync', (done) => browserSync.init(config.browserSync, done));
+
+gulp.task('build', (done) => runSeqeunce('clean', ['manifest', 'compile-styles', 'copy'], done));
+
+gulp.task('serve', ['browser-sync', 'build'], () => {
+    gulp.watch(config.styles.source, ['compile-styles']);
+    gulp.watch('./src/**/!(*.ts|*.scss)', ['copy'], browserSync.reload);
 });
-
-gulp.task('default', ['clean', 'compile-styles', 'watch']);
-
-gulp.task('serve', ['default'], (done) => browserSync.init(config.browserSync, done));
 
 const walk = (dir, files = []) => {
     fs.readdirSync(dir).forEach(file =>
@@ -114,7 +105,25 @@ const walk = (dir, files = []) => {
     return files;
 }
 
-function errorHandler(error) {
+const process = (file) => {
+    let currentFile = filepath.create(file);
+    let root = filepath.create(path.resolve('src/templates'));
+    let strippedPath = currentFile.toString().replace(root.toString(), '');
+    let [drive, source, group, filename] = filepath.create(strippedPath).split();
+    let baseUrl = 'https://localhost:3000/templates/';
+    let url = baseUrl + source + '/' + group;
+    if (filename) {
+        url += '/' + filename;
+    }
+    let name = _.startCase(group), safeName = group;
+    if (filename == null) {
+        name = _.startCase(source);
+        safeName = source;
+    }
+    return { source, name, safeName, url };
+}
+
+const errorHandler = (error) => {
     console.log(error);
     this.emit('end');
 };
