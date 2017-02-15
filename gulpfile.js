@@ -48,9 +48,26 @@ gulp.task('clean', (done) => rimraf('dist', done));
 gulp.task('manifest', () => {
     console.log(chalk.bold.yellow('Loading patterns...'));
     let files = walk(path.resolve('src/templates')).sort();
-    files = files.filter(file => /\.html$/i.test(file));
-    let processedFiles = files.map(stripNames);
-    processedFiles=processedFiles.filter(file=>!(file==null));
+    files = files.filter(file => /\index\.html$/i.test(file));
+    let processedFiles = files.map((file) => {
+        let currentFile = filepath.create(file);
+        let root = filepath.create(path.resolve('src/templates'));
+        let strippedPath = currentFile.toString().replace(root.toString(), '');
+        let [drive, source, group, filename] = filepath.create(strippedPath).split();
+        let baseUrl = 'https://localhost:3000/templates/';
+        let url = baseUrl + source + '/' + group;
+        if (filename) {
+            url += '/' + filename;
+        }
+        let name = _.startCase(group), safeName = group;
+        if (filename == null) {
+            name = _.startCase(source);
+            safeName = source;
+        }
+        return { source, name, safeName, url };
+    });
+    
+    processedFiles = processedFiles.filter(file => !(file == null));
     let groupedFiles = _.groupBy(processedFiles, 'source');
     let groups = _.map(groupedFiles, (commands, key) => {
         return {
@@ -101,33 +118,3 @@ function errorHandler(error) {
     console.log(error);
     this.emit('end');
 };
-
-const stripNames = (file) => {
-    let currentFile = filepath.create(file);
-    let root = filepath.create(path.resolve('src/templates'));
-    let strippedPath = currentFile.toString().replace(root.toString(), '');
-    let [drive, source, group, filename] = filepath.create(strippedPath).split();
-    let baseUrl = 'https://localhost:3000/templates/';
-    let url = baseUrl + source + '/' + group;
-    if (filename) {
-        if(filename.indexOf('dialog') != -1) {
-            return null;
-        }
-        url += '/' + filename;
-    }
-    let name = _.startCase(group), safeName = group;
-    if (filename == null) {
-        name = _.startCase(source);
-        safeName = source;
-    }
-    return { source, name, safeName, url };
-}
-
-// fs.mkdirSync(path.resolve('playlists'));
-
-// _.each(groupedFiles, (items, group) => {
-//     let pluckedItems = _.map(items, 'meta');
-//     let contents = jsYaml.safeDump(pluckedItems);
-//     fs.writeFileSync(path.resolve(`playlists/${group}.yaml`), contents);
-//     console.log(chalk.bold.yellow(`\nCreated ${group}.yaml`));
-// });

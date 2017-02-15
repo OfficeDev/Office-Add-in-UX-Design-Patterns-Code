@@ -10,7 +10,7 @@
     $(document).ready(function () {
 
         // replace the following URL with a relative URL. 
-        var strURL = "https://localhost:3000/templates/feedback/office-store/dialog.redirect.html";
+        var strURL = "https://localhost:3000/templates/feedback/office-store/dialog.html";
 
         if ($.fn.ContextualMenu) {
             $('.ms-ContextualMenu').ContextualMenu();

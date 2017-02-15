@@ -8,6 +8,6 @@
     };
 
     function handleButton() {
-        app.openDialog("https://localhost:3000/templates/dialog/navigation/navigation.html", 50, 50);
+        app.openDialog("https://localhost:3000/templates/dialog/navigation/dialog.html", 50, 50);
     }
 })();

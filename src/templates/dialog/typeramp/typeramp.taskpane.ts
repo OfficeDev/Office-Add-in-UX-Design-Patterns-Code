@@ -8,6 +8,6 @@
     };
 
     function handleButton() {
-        app.openDialog("https://localhost:3000/templates/dialog/typeramp/typeramp.html", 50, 50);
+        app.openDialog("https://localhost:3000/templates/dialog/typeramp/dialog.html", 50, 50);
     }
 })();
