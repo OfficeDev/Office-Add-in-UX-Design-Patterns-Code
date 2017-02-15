@@ -1,4 +1,6 @@
-# UX design patterns for Office Add-ins 
+# UX design patterns for Office Add-ins
+
+[![Build Status](https://travis-ci.org/OfficeDev/Office-Add-in-UX-Design-Patterns-Code.svg?branch=dev)](https://travis-ci.org/OfficeDev/office-js-helpers)
 
 This repository provides sample implementations in HTML, CSS, and JavaScript of common UX design patterns for Office Add-ins.
 
@@ -6,7 +8,7 @@ When designing Office Add-ins, the UX design of your add-in should provide compe
 
 * Common UX design patterns based on best practices.
 * Office Fabric components and styles.
-* Add-ins that look like a natural extension of the default Office UI. 
+* Add-ins that look like a natural extension of the default Office UI.
 
 For overview information and the types of UX design patterns available, see [UX design pattern templates for Office Add-ins](https://dev.office.com/docs/add-ins/design/ux-design-patterns).
 
@@ -28,8 +30,8 @@ For overview information and the types of UX design patterns available, see [UX 
 
 You can use the [UX designer specifications](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Source%20Files) as a guide when you create your own UX design, or you can add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates) directly to your project. To add the source code:
 
-1. Clone this repo. 
-2. Copy the [assets folder](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/assets), and the code folder for the individual pattern you choose to your add-in project.  
+1. Clone this repo.
+2. Copy the [assets folder](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/assets), and the code folder for the individual pattern you choose to your add-in project.
 3. Incorporate the individual pattern into your add-in. For example:
 	- Edit the source location or add-in command URL in the manifest.
 	- Use the UX design pattern as a template for other pages.
@@ -37,11 +39,11 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
 
 ## Known issues
 
-* Running some code files outside of an add-in project throws a JavaScript error. 
-	* Resolution: Ensure you add these files to an Office add-in project. 
-* After converting these design patterns to a Single Page App (SPA), all sections of the HTML page become top-aligned and overlaps each other. 
-	* Resolution: When converting from HTML additional wrapper DIVs may be added. Ensure that the height of these additional DIVs are reset properly. For example, if a parent DIV is set to a height of 100%, a child DIV has no height, and a grandchild DIV is set to 100%, you need to set the child DIV to 100% to layout the sections properly.    
-	
+* Running some code files outside of an add-in project throws a JavaScript error.
+	* Resolution: Ensure you add these files to an Office add-in project.
+* After converting these design patterns to a Single Page App (SPA), all sections of the HTML page become top-aligned and overlaps each other.
+	* Resolution: When converting from HTML additional wrapper DIVs may be added. Ensure that the height of these additional DIVs are reset properly. For example, if a parent DIV is set to a height of 100%, a child DIV has no height, and a grandchild DIV is set to 100%, you need to set the child DIV to 100% to layout the sections properly.
+
 ## Additional resources
 
 * [Best practices for developing Office Add-ins](https://dev.office.com/docs/add-ins/overview/add-in-development-best-practices)
