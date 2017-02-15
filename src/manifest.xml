@@ -58,7 +58,7 @@
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <SourceLocation resid="DP.{{safeName}}.Url" />
-                    <Title resid="DP.{{safeName}}.Title" />
+                    <Title resid="DP.{{safeName}}.Label" />
                   </Action>
                 </Control>
                
