@@ -1,5 +1,10 @@
 ﻿@import '../../../common/common.scss';
 
+body.dp-dialog {
+    min-height: auto;
+    min-width: auto;
+}
+
 .dp-alert {
     &__message {
         text-align: center;

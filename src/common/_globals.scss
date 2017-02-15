@@ -10,11 +10,6 @@ body {
     position: relative;
     min-height: 450px;
     min-width: 320px;
-
-    &.dp-dialog {
-        min-height: auto;
-        min-width: auto;
-    }
 }
 
 main {
