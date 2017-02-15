@@ -7,13 +7,16 @@ let rimraf = require('rimraf');
 let runSeqeunce = require('run-sequence');
 let browserSync = require('browser-sync');
 let mustache = require('gulp-mustache');
+let ts = require('gulp-typescript');
 let plumber = require('gulp-plumber');
 let debug = require('gulp-debug');
 let sass = require('gulp-sass');
 let postcss = require('gulp-postcss');
 let autoprefixer = require('autoprefixer');
 let perfectionist = require('perfectionist');
+let sourcemaps = require('gulp-sourcemaps');
 let _ = require('lodash');
+let tsProject = ts.createProject('tsconfig.json');
 
 let config = {
     manifest: {
@@ -24,7 +27,7 @@ let config = {
         source: './src/**/*.scss',
         destination: './dist'
     },
-    ts: {
+    scripts: {
         source: './src/**/*.ts',
         destination: './dist'
     },
@@ -89,13 +92,25 @@ gulp.task('compile-styles', () => {
         .pipe(browserSync.stream());
 });
 
+gulp.task('compile-scripts', () => {
+    let tsResult = gulp.src(config.scripts.source)
+        .pipe(sourcemaps.init())
+        .pipe(tsProject());
+
+    return tsResult.js
+        // .pipe(debug({ title: 'TS:\t' }))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(config.scripts.destination));
+});
+
 gulp.task('browser-sync', (done) => browserSync.init(config.browserSync, done));
 
-gulp.task('build', (done) => runSeqeunce('clean', ['manifest', 'compile-styles', 'copy'], done));
+gulp.task('build', (done) => runSeqeunce('clean', ['manifest', 'compile-styles', 'compile-scripts', 'copy'], done));
 
 gulp.task('serve', ['browser-sync', 'build'], () => {
     gulp.watch(config.styles.source, ['compile-styles']);
-    gulp.watch('./src/**/!(*.ts|*.scss)', ['copy'], browserSync.reload);
+    gulp.watch(config.scripts.source, ['compile-scripts']).on('change', browserSync.reload);
+    gulp.watch('./src/**/!(*.ts|*.scss)', ['copy']).on('change', browserSync.reload);
 });
 
 const walk = (dir, files = []) => {
