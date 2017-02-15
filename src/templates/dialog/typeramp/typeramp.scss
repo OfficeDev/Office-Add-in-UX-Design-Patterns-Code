@@ -3,6 +3,13 @@
 body.dp-dialog {
     min-height: auto;
     min-width: auto;
+    padding: $global-spacing;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+
+    p {
+        margin-bottom: 20px;
+    }
 }
 
 .dp-typeramp {
@@ -18,22 +25,4 @@ body.dp-dialog {
         margin: auto;
         display: block;
     }
-}
-
-.ms-typeramp-dialog {
-    padding: 10px 10px 20px 15px;
-
-    p {
-        text-align: left;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-right: 0px;
-        padding-bottom: 20px;
-    }
-}
-
-.ms-Button {
-    margin: auto;
-    display: block;
-    margin-bottom: 15px !important;
 }
