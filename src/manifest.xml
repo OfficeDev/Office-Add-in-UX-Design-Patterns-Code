@@ -1,23 +1,97 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
-<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
-  <Id>9b5c5cc3-6e6e-4353-90e7-ec6dfe986d8d</Id>
-  <Version>1.1.0.0</Version>
+<OfficeApp
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>28e70748-c9ef-49cb-909d-2f7a648e347c</Id>
+  <Version>1.0.0.0</Version>
   <ProviderName>Microsoft</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="DesignTemplates" />
-  <Description DefaultValue="DesignTemplates"/>
+  <DisplayName DefaultValue="Design Patterns" />
+  <Description DefaultValue="UX Design Patterns for Office Add-ins." />
+  <IconUrl DefaultValue="https://localhost:3000/assets/images/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/images/icon-64.png" />
   <AppDomains>
-    <AppDomain>https://www.youtube.com</AppDomain>
+    <AppDomain>https://youtube.com</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook" />
-    <Host Name="Presentation" />
-    <Host Name="Project" />
     <Host Name="Document" />
+    <Host Name="Presentation"/>
   </Hosts>
   <DefaultSettings>
     <SourceLocation DefaultValue="https://localhost:3000" />
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides
+    xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Description resid="DP.Description" />
+    <Hosts>
+      <Host xsi:type="Workbook">
+        <DesktopFormFactor>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <CustomTab id="DesignPatternsTab">
+              <Label resid="DP.TabLabel"/>
+              {{#groups}}
+              <Group id="DP.PlayGroup">
+                <Label resid="DP.{{safeName}}" />
+                <Icon>
+                  <bt:Image size="16" resid="DP.Icon.16" />
+                  <bt:Image size="32" resid="DP.Icon.32" />
+                  <bt:Image size="80" resid="DP.Icon.80" />
+                </Icon>
+                {{#commands}}
+                <Control xsi:type="Button" id="DP.{{safeName}}.Command">
+                  <Label resid="DP.{{safeName}}.Label" />
+                  <Supertip>
+                    <Title resid="DP.{{safeName}}.Tip" />
+                    <Description resid="DP.{{safeName}}.Tip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="DP.Icon.16" />
+                    <bt:Image size="32" resid="DP.Icon.32" />
+                    <bt:Image size="80" resid="DP.Icon.80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="DP.{{safeName}}.Url" />
+                    <Title resid="DP.{{safeName}}.Title" />
+                  </Action>
+                </Control>
+                {{/commands}}
+              </Group>
+              {{/groups}}
+            </CustomTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="DP.Icon.16" DefaultValue="https://localhost:3000/assets/images/icon-16.png" />
+        <bt:Image id="DP.Icon.32" DefaultValue="https://localhost:3000/assets/images/icon-32.png" />
+        <bt:Image id="DP.Icon.80" DefaultValue="https://localhost:3000/assets/images/icon-80.png" />
+      </bt:Images>
+      <bt:Urls>
+        {{#groups}}
+        {{#commands}}
+        <bt:Url id="DP.{{safeName}}.Url" DefaultValue="{{url}}" />
+        {{/commands}}
+        {{/groups}}
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="DP.TabLabel" DefaultValue="Design Patterns" />
+        {{#groups}}
+        <bt:String id="DP.{{safeName}}" DefaultValue="{{name}}" />
+        {{#commands}}
+        <bt:String id="DP.{{safeName}}.Label" DefaultValue="{{name}}" />
+        <bt:String id="DP.{{safeName}}.Tip" DefaultValue="View the {{name}} Design Pattern" />
+        {{/commands}}
+        {{/groups}}
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="DP.Description" DefaultValue="View all the Design Patterns." />
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
 </OfficeApp>

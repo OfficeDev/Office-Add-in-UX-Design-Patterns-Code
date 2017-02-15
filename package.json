@@ -1,6 +1,6 @@
 {
-  "name": "@microsoft/office-design-templates",
-  "description": "Design Templates for Office Add-ins",
+  "name": "@microsoft/office-design-patterns",
+  "description": "UX Design Patterns for Office Add-ins",
   "version": "1.0.0",
   "author": {
     "name": "Microsoft Corporation"
@@ -8,13 +8,28 @@
   "dependencies": {
     "@microsoft/office-js-helpers": "^0.5.0",
     "office-ui-fabric-js": "^1.4.0",
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "core-js": "^2.4.1"
   },
   "devDependencies": {
-    "concurrently": "^3.3.0",
-    "browser-sync": "^2.13.0",
+    "lodash": "^4.17.4",
+    "chalk": "^1.1.3",
+    "browser-sync": "^2.18.8",
     "typescript": "^2.1.6",
+    "gulpclass": "^0.1.1",
+    "gulp-postcss": "^6.3.0",
+    "gulp-mustache": "^2.3.0",
+    "rimraf": "^2.5.4",
+    "filepath": "^1.1.0",
+    "gulp": "^3.9.1",
+    "@types/gulp": "^3.8.32",
+    "gulp-sass": "^3.1.0",
+    "gulp-typescript": "^3.1.4",
+    "gulp-plumber": "^1.1.0",
+    "autoprefixer": "^6.7.2",
+    "perfectionist": "^2.4.0",
     "@types/jquery": "^2.0.40",
-    "@types/office-js": "^0.0.37"
+    "@types/office-js": "^0.0.37",
+    "@types/lodash": "^4.14.52"
   }
 }
