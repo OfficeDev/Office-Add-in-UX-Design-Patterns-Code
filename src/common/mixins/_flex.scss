@@ -33,13 +33,5 @@
 }
 
 @mixin inline-flex($horizontal-alignment: null, $vertical-alignment: null) {
-    display: inline-flex;
-
-    @if $horizontal-alignment {
-        justify-content: $horizontal-alignment;
-    }
-
-    @if $vertical-alignment {
-        align-items: $vertical-alignment;
-    }
+    @include flex(row, nowrap, $horizontal-alignment, $vertical-alignment);    
 }

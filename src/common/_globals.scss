@@ -8,7 +8,8 @@
 
 body {
     position: relative;
-    font-size: 16px;
+    min-height: 500px;
+    min-width: 320px;
 }
 
 main {
@@ -35,18 +36,6 @@ ul {
     display: block;
     clear: both;
     height: 0;
-}
-
-.pointerCursor {
-    cursor: pointer;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.undisplayed {
-    display: none;
 }
 
 .ms-Icon.enlarge {

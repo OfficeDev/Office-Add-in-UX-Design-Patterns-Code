@@ -2,44 +2,36 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <title>Alert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design Pattern - Alert Dialog</title>
 
     <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.js" type="text/javascript"></script>
 
     <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
-    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
-    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
-
-    <!-- Template styles -->
-    <link href="../../../common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.min.css" />
+    <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.components.min.css" />
     <link href="alert.css" rel="stylesheet" type="text/css" />
-    
-    <script src="alert.js" type="text/javascript"></script>
-    
 </head>
-<body>  
-    <main class="ms-alert-dialog">        
-        <div class="ms-alert-dialog__grid ms-Grid">
-            <div class="ms-alert-dialog__row ms-Grid-row">
-                <div class="ms-alert-dialog__col ms-Grid-col">
-                    <i class="ms-Icon ms-Icon--alert" aria-hidden="true"></i>
-                </div>
-                <div class="ms-alert-dialog__col ms-Grid-col">
-                    <div class="ms-alert-dialog__col--text ms-font-m">
-                        Deleting this cell will cancel the current document analysis.
-                    </div>
-                </div>
-            </div>
-        </div>        
-        <button id="ok-button" class="ms-Button ms-Button--primary">
-            <span class="ms-Button-icon"></span>
+
+<body>
+    <main class="dp-alert">
+        <p class="dp-alert__message ms-font-l ms-fontColor-neutral">
+            <i class="ms-Icon ms-Icon--IncidentTriangle" aria-hidden="true"></i>
+            <span>this cell will cancel the current document analysis.</span>
+        </p>
+        <button id="open" class="ms-Button ms-Button--primary">
             <span class="ms-Button-label">OK</span>
-            <span class="ms-Button-description">Click OK to cancel</span>
         </button>
-    </main>   
+    </main>
+
+    <script src="../../../../node_modules/core-js/client/core.min.js"></script>
+    <script src="../../../../node_modules/@microsoft/office-js-helpers/dist/office.helpers.min.js"></script>
+    <script src="../../../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="alert.dialog.js"></script>
 </body>
+
 </html>
