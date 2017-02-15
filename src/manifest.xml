@@ -33,7 +33,9 @@
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <CustomTab id="DesignPatternsTab">
               <Label resid="DP.TabLabel"/>
+              
               {{#groups}}
+              <!-- Command Group: {{name}} -->  
               <Group id="DP.{{safeName}}Group">
                 <Label resid="DP.{{safeName}}" />
                 <Icon>
@@ -41,6 +43,7 @@
                   <bt:Image size="32" resid="DP.Icon.32" />
                   <bt:Image size="80" resid="DP.Icon.80" />
                 </Icon>
+                
                 {{#commands}}
                 <Control xsi:type="Button" id="DP.{{safeName}}.Command">
                   <Label resid="DP.{{safeName}}.Label" />
@@ -58,8 +61,10 @@
                     <Title resid="DP.{{safeName}}.Title" />
                   </Action>
                 </Control>
+               
                 {{/commands}}
               </Group>
+
               {{/groups}}
             </CustomTab>
           </ExtensionPoint>
@@ -74,18 +79,24 @@
       </bt:Images>
       <bt:Urls>
         {{#groups}}
+        <!-- Urls Group: {{name}} -->
         {{#commands}}
         <bt:Url id="DP.{{safeName}}.Url" DefaultValue="{{{url}}}" />
         {{/commands}}
+
         {{/groups}}
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="DP.TabLabel" DefaultValue="Design Patterns" />
+
         {{#groups}}
+        <!-- Strings Group: {{name}} -->        
         <bt:String id="DP.{{safeName}}" DefaultValue="{{name}}" />
+        
         {{#commands}}
         <bt:String id="DP.{{safeName}}.Label" DefaultValue="{{name}}" />
         <bt:String id="DP.{{safeName}}.Tip" DefaultValue="View the {{name}} Design Pattern" />
+        
         {{/commands}}
         {{/groups}}
       </bt:ShortStrings>
