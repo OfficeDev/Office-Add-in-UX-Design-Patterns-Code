@@ -19,6 +19,7 @@ let _ = require('lodash');
 let tsProject = ts.createProject('tsconfig.json');
 
 let config = {
+    files: './src/**/!(*.ts|*.scss|*.xml)',
     manifest: {
         source: './src/manifest.xml',
         destination: './dist'
@@ -73,7 +74,7 @@ gulp.task('manifest', () => {
 });
 
 gulp.task('copy', () =>
-    gulp.src('./src/**/!(*.ts|*.scss|*.xml)')
+    gulp.src(config.files)
         .pipe(gulp.dest('./dist'))
 );
 
@@ -110,7 +111,7 @@ gulp.task('build', (done) => runSeqeunce('clean', ['manifest', 'compile-styles',
 gulp.task('serve', ['browser-sync', 'build'], () => {
     gulp.watch(config.styles.source, ['compile-styles']);
     gulp.watch(config.scripts.source, ['compile-scripts']).on('change', browserSync.reload);
-    gulp.watch('./src/**/!(*.ts|*.scss)', ['copy']).on('change', browserSync.reload);
+    gulp.watch(config.files, ['copy']).on('change', browserSync.reload);
 });
 
 const walk = (dir, files = []) => {

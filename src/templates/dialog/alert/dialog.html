@@ -17,13 +17,13 @@
     <link href="alert.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body class="dp-dialog">
     <main class="dp-alert">
         <p class="dp-alert__message ms-font-l ms-fontColor-neutral">
             <i class="ms-Icon ms-Icon--IncidentTriangle" aria-hidden="true"></i>
-            <span>this cell will cancel the current document analysis.</span>
+            <span>This cell will cancel the current document analysis.</span>
         </p>
-        <button id="open" class="ms-Button ms-Button--primary">
+        <button id="ok" class="ms-Button ms-Button--primary">
             <span class="ms-Button-label">OK</span>
         </button>
     </main>
@@ -31,7 +31,7 @@
     <script src="../../../../node_modules/core-js/client/core.min.js"></script>
     <script src="../../../../node_modules/@microsoft/office-js-helpers/dist/office.helpers.min.js"></script>
     <script src="../../../../node_modules/jquery/dist/jquery.js"></script>
-    <script src="alert.dialog.js"></script>
+    <script src="dialog.js"></script>
 </body>
 
 </html>

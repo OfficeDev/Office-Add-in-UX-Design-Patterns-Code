@@ -5,10 +5,9 @@
     Office.initialize = () => {
         $(document).ready(() => {
             $('#open').click(() => {
-                let dialog = new OfficeHelpers.Dialog(`${location.origin}/templates/dialog/alert/dialog.html`, 150, 75);
+                let dialog = new OfficeHelpers.Dialog(`${location.origin}/templates/dialog/alert/dialog.html`, 300, 100);
                 return dialog.result;
             });
         });
     };
-
 })();

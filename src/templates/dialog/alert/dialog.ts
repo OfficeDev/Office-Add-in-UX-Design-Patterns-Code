@@ -4,7 +4,7 @@
 (() => {
     Office.initialize = () => {
         $(document).ready(() => {
-            $('#ok-button').click(() => OfficeHelpers.Dialog.close('OK'));
+            $('#ok').click(() => OfficeHelpers.Dialog.close('OK'));
         });
     };
 })();
