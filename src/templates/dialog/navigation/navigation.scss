@@ -1,64 +1,50 @@
 @import '../../../common/common.scss';
 
-.ms-navigation-dialog {
-    @include flex();
-    height: 100%;
+body.dp-dialog {
+    min-height: auto;
+    min-width: auto;
+}
 
-    &__header {
-        @include inline-flex();
-        margin-left: $global-spacing;
+.dp-navigation {
+    &__message {
+        text-align: center;
+        margin: $global-spacing*2 0 $global-spacing;
+        white-space: pre-line;
+        padding: 0 $global-spacing;
+        @include inline-flex(center, center);
+    }
+
+    .ms-Icon--IncidentTriangle {
+        color: #ffb900;
+        font-size: 33px;
         margin-right: $global-spacing;
-        padding-top: 0px;
-        cursor: pointer;
-        flex: 1 1 auto;
-        background: none;
-        border-bottom: solid 2px #EAEAEA;
-        height: auto;
     }
 
-    &__content {
+    .ms-Button {
+        margin: auto;
+        display: block;
+    }
+
+    &-dialog {
+        @include flex();
         height: 100%;
-        flex: 1 1 0;
-        padding-top: 15px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
 
-        h2 {
-            margin-bottom: $global-spacing;
-        }
-    }
+        .ms-Pivot {
+            flex: 1 0 auto;
 
-    &__tab-link {
-        height: 37px;
-        padding: 0 0 2px 1px;
-        text-decoration: none;
-        @include focus-states(#F4F4F4);
-        
-        &:focus {
-            
-            &:before {
-                border: none;
+            &-links {
+                padding: $global-spacing - 8;
+                font-weight: 200;
+            }
+
+            &-content {
+                padding: 0 $global-spacing;
             }
         }
-        &--active {
-            
-            border: none;
-            border-bottom: solid 2px #0078d7;
-        }
-    }
 
-    &__actions {
-        position: absolute !important;
-        bottom: 20px !important;
-        right: 20px !important;
-    }
-
-    &__tabcontent {
-        display: none;
-
-        &--active {
-            display: block;
+        .ms-Dialog-actions {
+            flex: 0 0 auto;
+            margin: $global-spacing;
         }
     }
 }

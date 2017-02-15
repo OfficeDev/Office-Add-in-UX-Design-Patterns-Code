@@ -2,68 +2,56 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Navigation</title>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design Pattern - Navigation Dialog</title>
+
     <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.js" type="text/javascript"></script>
 
     <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
-    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.2.0/fabric.min.css">
-    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.2.0/fabric.components.min.css">
-
-    <link href="../../../common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.min.css" />
+    <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.components.min.css" />
     <link href="navigation.css" rel="stylesheet" type="text/css" />
-
-    <script src="navigation.js" type="text/javascript"></script>
-    <script src="navigation.helper.js" type="text/javascript"></script>
-
 </head>
-<body>
-    <main class="ms-navigation-dialog">
-        <section class="ms-navigation-dialog__header ms-CommandBar">
-            <div class="ms-navigation-dialog__tab ms-CommandBarItem">
-                <a href="#" class="ms-navigation-dialog__tab-link ms-navigation-dialog__tab-link--active ms-CommandBarItem-link ms-font-m ms-font-weight-light" data-tab="Page1" tabindex="1">Page 1</a>
-            </div>
-            <div class="ms-navigation-dialog__tab ms-CommandBarItem">
-                <a href="#" class="ms-navigation-dialog__tab-link ms-CommandBarItem-link ms-font-m ms-font-weight-light" data-tab="Page2" tabindex="1"> Page 2</a>
-            </div>
-            <div class="ms-navigation-dialog__tab ms-CommandBarItem">
-                <a href="#" class="ms-navigation-dialog__tab-link ms-CommandBarItem-link ms-font-m ms-font-weight-light" data-tab="Page3" tabindex="1"> Page 3 </a>
-            </div>
-            <div class="ms-navigation-dialog__tab ms-CommandBarItem">
-                <a href="#" class="ms-navigation-dialog__tab-link ms-CommandBarItem-link ms-font-m ms-font-weight-light" data-tab="Page4" tabindex="1"> Page 4</a>
-            </div>
-        </section>
-        <section class="ms-navigation-dialog__content">
-            <div id="Page1" class="ms-navigation-dialog__tabcontent ms-navigation-dialog__tabcontent--active">
-                <p class="ms-font-xl">Page 1 Title</p>
-            </div>
 
-            <div id="Page2" class="ms-navigation-dialog__tabcontent">
-                <p class="ms-font-xl">Page 2 Title</p>
+<body class="dp-dialog">
+    <main class="dp-navigation-dialog">
+        <div class="ms-Pivot ms-Pivot--large">
+            <ul class="ms-Pivot-links">
+                <li class="ms-Pivot-link is-selected" data-content="page-1" tabindex="1">Page 1</li>
+                <li class="ms-Pivot-link " data-content="page-2" tabindex="1">Page 2</li>
+                <li class="ms-Pivot-link " data-content="page-3" tabindex="1">Page 3</li>
+            </ul>
+            <div class="ms-Pivot-content" data-content="page-1">
+                This is page 1.
             </div>
-
-            <div id="Page3" class="ms-navigation-dialog__tabcontent">
-                <p class="ms-font-xl">Page 3 Title</p>
+            <div class="ms-Pivot-content" data-content="page-2">
+                This is page 2.
             </div>
-
-            <div id="Page4" class="ms-navigation-dialog__tabcontent">
-                <p class="ms-font-xl">Page 4 Title</p>
+            <div class="ms-Pivot-content" data-content="page-3">
+                This is page 3.
             </div>
-        </section>
-        <div class="ms-navigation-dialog__actions ms-Dialog-actions">
+        </div>
+        <div class="ms-Dialog-actions">
             <div class="ms-Dialog-actionsRight">
-                <button class="ms-Dialog-action ms-Button ms-Button--primary" id="ok-button">
+                <button id="ok" class="ms-Dialog-action ms-Button ms-Button--primary">
                     <span class="ms-Button-label">OK</span>
-                    <span class="ms-Button-description">Click OK to continue</span>
                 </button>
-                <button class="ms-Dialog-action ms-Button" id="cancel-button">
+                <button id="cancel" class="ms-Dialog-action ms-Button">
                     <span class="ms-Button-label">Cancel</span>
-                    <span class="ms-Button-description">Click to cancel</span>
                 </button>
             </div>
         </div>
-    </main>    
+    </main>
+
+    <script src="../../../../node_modules/core-js/client/core.min.js"></script>
+    <script src="../../../../node_modules/@microsoft/office-js-helpers/dist/office.helpers.min.js"></script>
+    <script src="../../../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../../../node_modules/office-ui-fabric-js/dist/js/fabric.js"></script>
+    <script src="dialog.js"></script>
 </body>
+
 </html>
