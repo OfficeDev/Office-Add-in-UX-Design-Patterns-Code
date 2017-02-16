@@ -57,14 +57,20 @@
     &__footer {
          @include flex();
 
-        &--image {
-            @include background-fill(cover) {
-                background-image: url('../../../assets/brand-bar.png');
-            }
+        // &--image {
+        //     @include background-fill(cover) {
+        //         background-image: url('../../../assets/brand-bar.png');
+        //     }
 
-            margin-top: 15px;
-            flex: 0 1 90px;
-        }       
+        //     margin-top: 15px;
+        //     flex: 0 1 90px;
+        // }       
+        &--left {  
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
     }
 }
 

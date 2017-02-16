@@ -13,11 +13,13 @@
     <title>Brand Bar</title>
 
     <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
-    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
-    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+    <!--<link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">-->
+    <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.min.css" />
+    <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.components.min.css" />
 
     <!-- Template styles -->
-    <link href="../../../common.css" rel="stylesheet" />
+    <!--<link href="../../../common.css" rel="stylesheet" />-->
     <link href="brand.bar.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="ms-font-l ms-brand-bar">
@@ -38,38 +40,22 @@
         </section>
         <section class="ms-brand-bar__content ms-font-m ms-fontColor-neutralPrimary">
             <article class="demo-placeholder">
-                <div class="demo-placeholder__img"></div>
                 <div class="demo-placeholder__text"></div>
                 <div class="demo-placeholder__text"></div>
                 <div class="demo-placeholder__text"></div>
-                <div class="demo-placeholder__text demo-placeholder__text--half"></div>
-            </article>
-            <article class="demo-placeholder">
-                <div class="demo-placeholder__text"></div>
-                <div class="demo-placeholder__text demo-placeholder__text--half"></div>
-            </article>
-            <article class="demo-placeholder">
-                <div class="demo-placeholder__text"></div>
-                <div class="demo-placeholder__text"></div>
-                <div class="demo-placeholder__text"></div>
-                <div class="demo-placeholder__text demo-placeholder__text--half"></div>
-            </article>
-            <article class="demo-placeholder">
-                <div class="demo-placeholder__text demo-placeholder__text--half"></div>
-                <div class="demo-placeholder__text demo-placeholder__text--para"></div>
-            </article>
-            <article class="demo-placeholder">
-                <div class="demo-placeholder__text demo-placeholder__text--half"></div>
-                <div class="demo-placeholder__text demo-placeholder__text--para"></div>
-            </article>
-            <article class="demo-placeholder">
-                <div class="demo-placeholder__button ms-bgColor-themeLight"></div>
             </article>
         </section>
     </main>
     <footer class="ms-brand-bar__footer">
-        <div class="ms-brand-bar__footer--image"></div>
-</footer>
+        <div class="ms-brand-bar__footer--left">
+            <img src="../../../assets/square-logo.png" />
+            <h1 class="ms-font-xl ms-fontWeight-semilight ms-fontColor-neutralPrimary">My Add-in Name</h1>
+        </div>
+        <div class="ms-brand-bar__footer--right"></div>
+    </footer>
+    <script src="../../../../node_modules/core-js/client/core.min.js"></script>
+    <script src="../../../../node_modules/@microsoft/office-js-helpers/dist/office.helpers.min.js"></script>
+    <script src="../../../../node_modules/jquery/dist/jquery.js"></script>
 </body>
 </html>
 
