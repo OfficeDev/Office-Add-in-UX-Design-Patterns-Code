@@ -1,4 +1,4 @@
-﻿//@import '../../../common/common.scss';
+﻿@import '../../../common/common.scss';
 
 .ms-brand-bar {
     @include flex();
@@ -55,8 +55,9 @@
     }
 
     &__footer {
-         @include flex();
-         border-top: 1px solid #b3b2b3; //This isn't a fabric color.
+        @include inline-flex(null, center);
+        height: 44px;
+         border-top: 1px solid #b3b2b3; //This is not a Fabric color.
         // &--image {
         //     @include background-fill(cover) {
         //         background-image: url('../../../assets/brand-bar.png');
@@ -66,10 +67,21 @@
         //     flex: 0 1 90px;
         // }       
         &--left {  
+            width: 100%;
+            @include inline-flex(null, center);
+            padding-left: 20px;
             img {
                 width: 32px;
                 height: 32px;
             }
+            h1 {
+                margin-left: 10px;
+            }
+        }
+        &--right {
+            width: 40px;
+            padding-right: 20px;
+            @include inline-flex(flex-end);
         }
     }
 }
