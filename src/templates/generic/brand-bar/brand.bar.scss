@@ -1,4 +1,4 @@
-﻿@import '../../../common/common.scss';
+﻿//@import '../../../common/common.scss';
 
 .ms-brand-bar {
     @include flex();
@@ -56,7 +56,7 @@
 
     &__footer {
          @include flex();
-
+         border-top: 1px solid #b3b2b3; //This isn't a fabric color.
         // &--image {
         //     @include background-fill(cover) {
         //         background-image: url('../../../assets/brand-bar.png');
