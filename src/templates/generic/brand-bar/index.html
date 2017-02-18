@@ -15,74 +15,43 @@
     <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
 
     <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
-    <!--<link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
-    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">-->
     <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.min.css" />
     <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.components.min.css" />
 
     <!-- Template styles -->
-    <!--<link href="../../../common.css" rel="stylesheet" />-->
     <link href="brand.bar.css" rel="stylesheet" type="text/css" />
 </head>
-<body class="ms-font-l ms-brand-bar">
-    <main class="ms-brand-bar__main">
-        <section class="ms-brand-bar__header ms-bgColor-themeLighter">
-            <div class="ms-brand-bar__header--center ms-font-m ms-fontWeight-light">
-                <p>
-                    <i class="ms-Icon ms-Icon--plus ms-fontColor-themePrimary"></i>
-                    Item 1
-                </p><p>
-                    <i class="ms-Icon ms-Icon--plus ms-fontColor-themePrimary"></i>
-                    Item 2
-                </p>
+<body>
+    <main class="add-in-ui">
+        <header class="placeholder__header ms-borderColor-neutralLight">
+            <div class="placeholder__header--left">
+                <nav class="ms-bgColor-neutralLighter"></nav>
             </div>
-            <div class="ms-brand-bar__header--right ms-font-m ms-fontWeight-light">
-                <i class="ms-Icon ms-Icon--reactivate ms-fontColor-themePrimary"></i>
+            <div class="placeholder__header--right">
+                <div class="placeholder__header--right--cmd ms-bgColor-neutralLighter"></div>
+                <div class="placeholder__header--right--text ms-bgColor-neutralLighter"></div>
+                <div class="placeholder__header--right--cmd ms-bgColor-neutralLighter"></div>
+                <div class="placeholder__header--right--text ms-bgColor-neutralLighter"></div>
+                <div class="placeholder__header--right--cmd ms-bgColor-neutralLighter"></div>
+                <div class="placeholder__header--right--text ms-bgColor-neutralLighter"></div>
             </div>
-        </section>
-        <section class="ms-brand-bar__content ms-font-m ms-fontColor-neutralPrimary">
-            <article class="demo-placeholder">
-                <div class="demo-placeholder__text"></div>
-                <div class="demo-placeholder__text"></div>
-                <div class="demo-placeholder__text"></div>
-            </article>
-            <article class="demo-placeholder">
-                <div class="demo-placeholder__text"></div>
-                <div class="demo-placeholder__text"></div>
-                <div class="demo-placeholder__text"></div>
-            </article>
-            <article class="demo-placeholder">
-                <div class="demo-placeholder__text"></div>
-                <div class="demo-placeholder__text"></div>
-                <div class="demo-placeholder__text"></div>
-            </article>
-            <article class="demo-placeholder">
-                <div class="demo-placeholder__text"></div>
-                <div class="demo-placeholder__text"></div>
-                <div class="demo-placeholder__text"></div>
-            </article>
-            <article class="demo-placeholder">
-                <div class="demo-placeholder__text"></div>
-                <div class="demo-placeholder__text"></div>
-                <div class="demo-placeholder__text"></div>
-            </article>
-            <article class="demo-placeholder">
-                <div class="demo-placeholder__text"></div>
-                <div class="demo-placeholder__text"></div>
-                <div class="demo-placeholder__text"></div>
-            </article>
-            <article class="demo-placeholder">
-                <div class="demo-placeholder__text"></div>
-            </article>
+        </header>
+        <section class="placeholder__content">
+            <div class="placeholder__content--textTitle ms-bgColor-neutralLighter"></div>
+            <div class="placeholder__content--textBody ms-bgColor-neutralLighter"></div>
+            <div class="placeholder__content--textBody ms-bgColor-neutralLighter"></div>
+            <div class="placeholder__content--textBody ms-bgColor-neutralLighter"></div>
+            <div class="placeholder__content--textBody ms-bgColor-neutralLighter"></div>
         </section>
     </main>
-    <footer class="ms-brand-bar__footer">
-        <div class="ms-brand-bar__footer--left">
+    <footer class="ms-brand-bar ms-borderColor-neutralTertiary ms-bgColor-white">
+        <a href="#" class="ms-brand-bar--left">
             <img src="../../../assets/square-logo.png" />
-            <h1 class="ms-fontSize-m ms-fontWeight-semibold ms-fontColor-neutralPrimary">Contoso, Ltd</h1>
-        </div>
-        <div class="ms-brand-bar__footer--right">
-            <i class="ms-Icon ms-Icon--Settings" aria-hidden="true"></i>
+            <h1 class="ms-font-m ms-fontWeight-semibold ms-fontColor-neutralPrimary">Contoso, Ltd</h1>
+        </a>
+        <!-- Optional location to display a Settings menu -->
+        <div class="ms-brand-bar--right">
+            <i class="ms-Icon ms-Icon--Settings ms-fontColor-neutralPrimary" aria-hidden="true"></i>
         </div>
     </footer>
     <script src="../../../../node_modules/core-js/client/core.min.js"></script>

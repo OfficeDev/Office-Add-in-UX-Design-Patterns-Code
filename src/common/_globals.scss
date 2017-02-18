@@ -10,6 +10,8 @@ body {
     position: relative;
     min-height: 450px;
     min-width: 320px;
+    // @include flex();
+    // height: 100%;
 }
 
 main {
