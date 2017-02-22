@@ -17,6 +17,7 @@
     <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
     <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.min.css" />
     <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.components.min.css" />
+    <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/js/fabric.min.js"></script>
 
     <!-- Template styles -->
     <link href="brand.bar.css" rel="stylesheet" type="text/css" />
@@ -51,12 +52,28 @@
         </a>
         <!-- Optional location to display a Settings menu -->
         <div class="ms-brand-bar--right">
-            <i class="ms-Icon ms-Icon--Settings ms-fontColor-neutralPrimary" aria-hidden="true"></i>
+            <button class="ms-brand-bar--right__button ms-bgColor-neutralLighter--hover">
+                <i class="ms-Icon ms-Icon--Settings ms-fontColor-neutralPrimary" aria-hidden="true"></i>
+            </button>
+            <ul class="ms-ContextualMenu is-hidden">
+                <li class="ms-ContextualMenu-item">
+                <a class="ms-ContextualMenu-link" tabindex="1">Settings</a> 
+                </li>
+            </ul>
         </div>
     </footer>
     <script src="../../../../node_modules/core-js/client/core.min.js"></script>
     <script src="../../../../node_modules/@microsoft/office-js-helpers/dist/office.helpers.min.js"></script>
     <script src="../../../../node_modules/jquery/dist/jquery.js"></script>
+
+    <script type="text/javascript">
+        var ContextualMenuElements = document.querySelectorAll(".ms-brand-bar--right");
+        for (var i = 0; i < ContextualMenuElements.length; i++) {
+            var ButtonElement = ContextualMenuElements[i].querySelector(".ms-brand-bar--right__button");
+            var ContextualMenuElement = ContextualMenuElements[i].querySelector(".ms-ContextualMenu");
+            new fabric['ContextualMenu'](ContextualMenuElement, ButtonElement);
+        }
+    </script>
 </body>
 </html>
 

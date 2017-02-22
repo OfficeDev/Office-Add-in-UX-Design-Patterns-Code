@@ -28,7 +28,22 @@
     &--right {
         width: 57px;
         height: 100%;
-        padding-right: $global-spacing;
-        @include inline-flex(flex-end, center);
+
+        &__button {
+            width: 100%;        
+            height: 100%;
+            padding: 0 20px;
+            font-size: 17px;
+            background: none repeat scroll 0 0 transparent;
+            border: 0px none;  
+            line-height: 1;
+            cursor: pointer;
+        }
     }
+}
+
+// This is not good practice. 
+.ms-ContextualHost.is-positioned.is-open {
+    top: 450px !important;
+    left: 139px !important;
 }
