@@ -23,7 +23,7 @@
     <link href="brand.bar.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <main class="add-in-ui">
+    <main class="placeholder">
         <header class="placeholder__header ms-borderColor-neutralLight">
             <div class="placeholder__header--left">
                 <nav class="ms-bgColor-neutralLighter"></nav>
@@ -45,19 +45,22 @@
             <div class="placeholder__content--textBody ms-bgColor-neutralLighter"></div>
         </section>
     </main>
-    <footer class="ms-brand-bar ms-borderColor-neutralTertiary ms-bgColor-white">
-        <a href="#" class="ms-brand-bar--left">
+    <footer class="dp-brand-bar ms-borderColor-neutralTertiary ms-bgColor-white">
+        <a href="#" class="dp-brand-bar--left">
             <img src="../../../assets/square-logo.png" />
             <h1 class="ms-font-m ms-fontWeight-semibold ms-fontColor-neutralPrimary">Contoso, Ltd</h1>
         </a>
         <!-- Optional location to display a Settings menu -->
-        <div class="ms-brand-bar--right">
-            <button class="ms-brand-bar--right__button ms-bgColor-neutralLighter--hover">
+        <div class="dp-brand-bar--right">
+            <button id="open" class="dp-brand-bar--right__button ms-bgColor-neutralLighter--hover">
                 <i class="ms-Icon ms-Icon--Settings ms-fontColor-neutralPrimary" aria-hidden="true"></i>
             </button>
             <ul class="ms-ContextualMenu is-hidden">
                 <li class="ms-ContextualMenu-item">
                 <a class="ms-ContextualMenu-link" tabindex="1">Settings</a> 
+                </li>
+                <li class="ms-ContextualMenu-item">
+                <a class="ms-ContextualMenu-link" tabindex="2">Log Out</a> 
                 </li>
             </ul>
         </div>
@@ -65,15 +68,6 @@
     <script src="../../../../node_modules/core-js/client/core.min.js"></script>
     <script src="../../../../node_modules/@microsoft/office-js-helpers/dist/office.helpers.min.js"></script>
     <script src="../../../../node_modules/jquery/dist/jquery.js"></script>
-
-    <script type="text/javascript">
-        var ContextualMenuElements = document.querySelectorAll(".ms-brand-bar--right");
-        for (var i = 0; i < ContextualMenuElements.length; i++) {
-            var ButtonElement = ContextualMenuElements[i].querySelector(".ms-brand-bar--right__button");
-            var ContextualMenuElement = ContextualMenuElements[i].querySelector(".ms-ContextualMenu");
-            new fabric['ContextualMenu'](ContextualMenuElement, ButtonElement);
-        }
-    </script>
+    <script src="brand.bar.js"></script>
 </body>
 </html>
-

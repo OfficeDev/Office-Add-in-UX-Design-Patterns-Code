@@ -1,6 +1,6 @@
 ﻿@import '../../../common/common.scss';
 
-.ms-brand-bar {
+.dp-brand-bar {
     @include inline-flex(null, center);
     height: 44px;
     border-top-width: 1px;
@@ -42,8 +42,7 @@
     }
 }
 
-// This is not good practice. 
 .ms-ContextualHost.is-positioned.is-open {
-    top: 450px !important;
-    left: 139px !important;
+    right: 0 !important;
+    left: initial !important;
 }
