@@ -102,7 +102,7 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
   * [PowerPoint iPad](src/assets/helpful-templates/AddIn_Template_PowerPoint_iPad_reference.pdf)
 * Outlook Mobile
   * [iOS](src/assets/helpful-templates/outlook-mobile/iOS-Addins-Components-Final.sketch)
-* Store Experience Toolkit [(In Progress)](/AddIn_Templates_StoreExperience.md)
+* Store Experience Toolkit (In Progress)
 
 
 ## Known issues
@@ -119,6 +119,6 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-Copyright (c) Microsoft Corporation 2016. All rights reserved.
+Copyright © 2017 Microsoft Corporation. All rights reserved.
 
 
