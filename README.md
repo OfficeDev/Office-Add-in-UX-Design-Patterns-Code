@@ -67,7 +67,7 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
 #### Authorization
 
   * [Authentication Dialog Single Identity](/src/templates/auth/authentication-dialog-single-id) - Present a single identity authentication screen to your end users.
-  * [Authentication Dialog Multiple Identity](src/templates/auth/authentication-dialog-multiple-id) - Present a multi authentication screen to your end users.
+  * [Authentication Dialog Multiple Identity](src/templates/auth/authentication-dialog-multiple-id/) - Present a multi authentication screen to your end users.
   <!--* [Base Styles and Typography Ramp](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Base_styles_typeramp.md) - Basic guidelines for typography and padding.-->
   <!--* [Commands](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Commands.md) - Shows how to present the command bar in your add-in.-->
   <!--* [Multi-Section](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/MultiSection.md) - Displays a common layout and set of tools that may be used within an add-in.-->
