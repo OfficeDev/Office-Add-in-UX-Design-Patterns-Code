@@ -56,12 +56,12 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
  
 #### First-Run
 
-  * [Multi Page Value Proposition](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_PagingPanel.md) - Takes users through a series of features or information before they start using the add-in.
-  * [Value Proposition with Instructional Steps](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_StepsToStart.md) - Provides users with an ordered list of steps to perform to get started using your add-in.
-  * [Paid Feature Sign Up](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_TrialFeature.md) - Allows unlocking a feature in an add-in, and signing-up for a trial version of the add-in.
-  * [Trial Sign Up](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_TrialVersion.md) - Shows users how to get started with a trial version of your add-in.
-  * [Value Proposition with List Items](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_ValuePlacemat.md) - Communicates your add-in's value proposition.
-  * [Informational Video](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_VideoPlacemat.md) - Shows users a video before they start using your add-in.
+  * [Multi Page Value Proposition](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_PagingPanel.md) - Takes users through a series of features or information before they start.
+  * [Value Proposition with Instructional Steps](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_StepsToStart.md) - Provides users with an ordered list of instructions to get started.
+  * [Paid Feature Sign Up](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_TrialFeature.md) - Allows users to sign up for a trial for a specific feature.
+  * [Trial Sign Up](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_TrialVersion.md) - Allows users to sign up for a trial.
+  * [Value Proposition with List Items](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_ValuePlacemat.md) - Provides a clear value proposition and list of features.
+  * [Informational Video](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_VideoPlacemat.md) - Provides value through video content.
 
 <!--#### General-->
 #### Authorization
