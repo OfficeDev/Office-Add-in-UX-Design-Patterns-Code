@@ -90,18 +90,18 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
 
 ## Design Resources
 
-* [Icon Production Template](Icon_production.pdf), *Open the pdf as reference, use the AI file for production*
-* [Office UI Fabric Icon Master Sheet](/OfficeUIFabric_icon_mastersheet.pdf), *Open the pdf as reference, use the AI file for production*
+* [Icon Production Template](src/assets/helpful-templates/Icon_production.pdf), *Open the pdf as reference, use the AI file for production*
+* [Office UI Fabric Icon Master Sheet](src/assets/helpful-templates/OfficeUIFabric_icon_mastersheet.pdf), *Open the pdf as reference, use the AI file for production*
 * Office Add-in Templates for Desktop
-  * [Word Desktop](/AddIn_Template_Word_Desktop_reference.pdf)
-  * [Excel Desktop](/AddIn_Template_Excel_Desktop_reference.pdf)
-  * [PowerPoint Desktop](/AddIn_Template_PowerPoint_Desktop_reference.pdf)
+  * [Word Desktop](src/assets/helpful-templates/AddIn_Template_Word_Desktop_reference.pdf)
+  * [Excel Desktop](src/assets/helpful-templates/AddIn_Template_Excel_Desktop_reference.pdf)
+  * [PowerPoint Desktop](src/assets/helpful-templates/AddIn_Template_PowerPoint_Desktop_reference.pdf)
 * Office Add-in Templates for iPad
-  * [Word iPad](/AddIn_Template_Word_iPad_reference.pdf)
-  * [Excel iPad](/AddIn_Template_Excel_iPad_reference.pdf)
-  * [PowerPoint iPad](/AddIn_Template_PowerPoint_iPad_reference.pdf)
+  * [Word iPad](src/assets/helpful-templates/AddIn_Template_Word_iPad_reference.pdf)
+  * [Excel iPad](src/assets/helpful-templates/AddIn_Template_Excel_iPad_reference.pdf)
+  * [PowerPoint iPad](src/assets/helpful-templates/AddIn_Template_PowerPoint_iPad_reference.pdf)
 * Outlook Mobile
-  * [iOS](/src/assets/helpful-templates/outlook-mobile/)
+  * [iOS](src/assets/helpful-templates/outlook-mobile/iOS-Addins-Components-Final.sketch)
 * Store Experience Toolkit [(In Progress)](/AddIn_Templates_StoreExperience.md)
 
 
