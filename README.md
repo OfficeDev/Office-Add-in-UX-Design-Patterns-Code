@@ -63,14 +63,10 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
   * [Value Proposition with List Items](src/templates/first-run/value-placemat/) - Provides a clear value proposition and list of features.
   * [Informational Video](src/templates/first-run/video-placemat/) - Provides value through video content.
 
-<!--#### General-->
 #### Authorization
 
   * [Authentication Dialog Single Identity](src/templates/auth/authentication-dialog-single-id/) - Present a single identity authentication screen to your end users.
   * [Authentication Dialog Multiple Identity](src/templates/auth/authentication-dialog-multiple-id/) - Present a multi authentication screen to your end users.
-  <!--* [Base Styles and Typography Ramp](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Base_styles_typeramp.md) - Basic guidelines for typography and padding.-->
-  <!--* [Commands](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Commands.md) - Shows how to present the command bar in your add-in.-->
-  <!--* [Multi-Section](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/MultiSection.md) - Displays a common layout and set of tools that may be used within an add-in.-->
 
 #### Utility
 
@@ -85,19 +81,11 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
 #### Navigation
 
   * [Back Button](src/templates/navigation/back-button) - Shows a task pane with Back and Next Page buttons. 
-  <!--* [Navigation](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Navigation.md) - Shows a hamburger menu in a task pane. -->
-  <!--* [Navigation & Commands](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Navigation_%26_Commands.md) - Displays navigation and command options together.-->
-  <!--* [Pivot](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Pivot.md) - Displays navigational links in a bar at the top of the add-in space.-->
   * [Tab Bar](src/templates/navigation/tab-bar/) - Shows navigation links at the top of the add-in space using icons and labels.
   
 #### Notifications
 
-  <!--* [Client Dialog](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Client_Dialog.md) - Displays a dialog in the main space of the Office application.-->
   * [Embedded Dialog](src/templates/notifications/embedded-dialog/) - Displays a dialog inside of the task pane or content add-in.
-  <!--* [Feedback](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Notification_Feedback.md) - Allows an add-in to ask for customer feedback.-->
-  <!--* [Status Messages](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Notification_Inline_Message.md) - Indicates error, success, or information.-->
-  <!--* [Message Banner](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Notification_MessageBanner.md) - Provides information in a collapsible, dismissable banner.-->
-  <!--* [Progress](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Notification_Progress.md) - Shows how to indicate the progress of a long-running process.-->
   * [Toast](src/templates/notifications/toast/) - Provides a brief message that fades away after a few seconds.
 
 ## Design Resources
