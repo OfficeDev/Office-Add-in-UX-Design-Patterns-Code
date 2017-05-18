@@ -50,7 +50,12 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
 
 ## Patterns list
 
-#### Brand
+#### Authorization
+
+  * [Authentication Dialog Single Identity](src/templates/auth/authentication-dialog-single-id/) - Present a single identity authentication screen to your end users.
+  * [Authentication Dialog Multiple Identity](src/templates/auth/authentication-dialog-multiple-id/) - Present a multi authentication screen to your end users.
+
+#### Branding
 
   * [Splash Screen](src/templates/generic/splashscreen/) - This is a screen to display your company branding while the add-in is loading.
  
@@ -62,11 +67,6 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
   * [Trial Sign Up](src/templates/first-run/trial-placemat/) - Allows users to sign up for a trial.
   * [Value Proposition with List Items](src/templates/first-run/value-placemat/) - Provides a clear value proposition and list of features.
   * [Informational Video](src/templates/first-run/video-placemat/) - Provides value through video content.
-
-#### Authorization
-
-  * [Authentication Dialog Single Identity](src/templates/auth/authentication-dialog-single-id/) - Present a single identity authentication screen to your end users.
-  * [Authentication Dialog Multiple Identity](src/templates/auth/authentication-dialog-multiple-id/) - Present a multi authentication screen to your end users.
 
 #### Utility
 
