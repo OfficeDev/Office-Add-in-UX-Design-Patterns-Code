@@ -9,5 +9,5 @@ Current Fabric Version Used: [2.6.1](https://github.com/OfficeDev/office-ui-fabr
 
 ***
 
-![Back Button - Specifications for desktop task pane](https://raw.githubusercontent.com/OfficeDev/Office-Add-in-UX-Design-Patterns/master/Patterns/Assets/Back_Button/Back_Button_Desktop%20Task%20Pane%20Callouts.png)
+![Back Button - Specifications for desktop task pane](../../../assets/markdown-images/Back_Button_DesktopTaskPaneCallouts.png)
 Specifications for desktop task pane 

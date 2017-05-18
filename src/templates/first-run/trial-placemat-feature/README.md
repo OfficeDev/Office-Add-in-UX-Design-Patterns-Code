@@ -9,6 +9,6 @@ Current Fabric Version Used: [2.6.1](https://github.com/OfficeDev/office-ui-fabr
 
 ***
 
-![First Run - Trial Feature - Specifications for desktop task pane](https://raw.githubusercontent.com/OfficeDev/Office-Add-in-UX-Design-Patterns/master/Patterns/Assets/FirstRun_TrialFeature/FirstRun_TrialFeature_Desktop_TaskPane_Callouts.jpg)
+![First Run - Trial Feature - Specifications for desktop task pane](../../../assets/markdown-images/FirstRun_TrialFeature_Desktop_TaskPane_Callouts.jpg)
 Specifications for desktop task pane
 

@@ -9,6 +9,6 @@ Current Fabric Version Used: [2.6.1](https://github.com/OfficeDev/office-ui-fabr
 
 ***
 
-![First Run - Video Placemat - Specifications for desktop task pane](https://raw.githubusercontent.com/OfficeDev/Office-Add-in-UX-Design-Patterns/master/Patterns/Assets/FirstRun_VideoPlacemat/FirstRun_VideoPlacemat_Desktop%20Task%20Pane%20Callouts.png)
+![First Run - Video Placemat - Specifications for desktop task pane](../../../assets/markdown-images/FirstRun_VideoPlacemat_DesktopTaskPaneCallouts.png)
 Specifications for desktop task pane 
 
