@@ -52,7 +52,7 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
 
 #### Brand
 
-  * [Splash Screen](src/templates/splashscreen/) - This is a screen to display your company branding while the add-in is loading.
+  * [Splash Screen](src/templates/generic/splashscreen/) - This is a screen to display your company branding while the add-in is loading.
  
 #### First-Run
 
