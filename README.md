@@ -56,12 +56,12 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
  
 #### First-Run
 
-  * [Multi Page Value Proposition](src/templates/walkthrough/) - Takes users through a series of features or informational steps before they start.
-  * [Value Proposition with Instructional Steps](src/templates/instruction-step) - Provides users with an ordered list of instructions to get started.
-  * [Paid Feature Sign Up](src/templates/trial-placemat-feature) - Allows users to sign up for a trial for a specific feature.
-  * [Trial Sign Up](src/templates/trial-placemat) - Allows users to sign up for a trial.
-  * [Value Proposition with List Items](src/templates/value-placemat) - Provides a clear value proposition and list of features.
-  * [Informational Video](src/templates/video-placemat) - Provides value through video content.
+  * [Multi Page Value Proposition](src/templates/first-run/walkthrough/) - Takes users through a series of features or informational steps before they start.
+  * [Value Proposition with Instructional Steps](src/templates/first-run/instruction-step/) - Provides users with an ordered list of instructions to get started.
+  * [Paid Feature Sign Up](src/templates/first-run/trial-placemat-feature/) - Allows users to sign up for a trial for a specific feature.
+  * [Trial Sign Up](src/templates/first-run/trial-placemat/) - Allows users to sign up for a trial.
+  * [Value Proposition with List Items](src/templates/first-run/value-placemat/) - Provides a clear value proposition and list of features.
+  * [Informational Video](src/templates/first-run/video-placemat/) - Provides value through video content.
 
 <!--#### General-->
 #### Authorization
@@ -74,7 +74,7 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
 
 #### Utility
 
-  * [Settings](src/templates/) - Displays common components that may be used within an add-in's settings menu.
+  * [Settings](src/templates/settings/) - Displays common components that may be used within an add-in's settings menu.
 
 ## Add-in Specific Interface Elements
 
@@ -84,21 +84,21 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
 
 #### Navigation
 
-  * [Back Button](src/templates/) - Shows a task pane with Back and Next Page buttons. 
+  * [Back Button](src/templates/navigation/back-button) - Shows a task pane with Back and Next Page buttons. 
   <!--* [Navigation](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Navigation.md) - Shows a hamburger menu in a task pane. -->
   <!--* [Navigation & Commands](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Navigation_%26_Commands.md) - Displays navigation and command options together.-->
   <!--* [Pivot](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Pivot.md) - Displays navigational links in a bar at the top of the add-in space.-->
-  * [Tab Bar](src/templates/) - Shows navigation links at the top of the add-in space using icons and labels.
+  * [Tab Bar](src/templates/navigation/tab-bar/) - Shows navigation links at the top of the add-in space using icons and labels.
   
 #### Notifications
 
   <!--* [Client Dialog](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Client_Dialog.md) - Displays a dialog in the main space of the Office application.-->
-  * [Embedded Dialog](src/templates/) - Displays a dialog inside of the task pane or content add-in.
+  * [Embedded Dialog](src/templates/notifications/embedded-dialog/) - Displays a dialog inside of the task pane or content add-in.
   <!--* [Feedback](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Notification_Feedback.md) - Allows an add-in to ask for customer feedback.-->
   <!--* [Status Messages](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Notification_Inline_Message.md) - Indicates error, success, or information.-->
   <!--* [Message Banner](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Notification_MessageBanner.md) - Provides information in a collapsible, dismissable banner.-->
   <!--* [Progress](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Notification_Progress.md) - Shows how to indicate the progress of a long-running process.-->
-  * [Toast](src/templates/) - Provides a brief message that fades away after a few seconds.
+  * [Toast](src/templates/notifications/toast/) - Provides a brief message that fades away after a few seconds.
 
 ## Design Resources
 
