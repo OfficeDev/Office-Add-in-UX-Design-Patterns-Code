@@ -19,7 +19,7 @@ For overview information and the types of UX design patterns available, see [UX 
 - [Contributing to the UX design patterns](#user-content-contributing-to-the-ux-design-patterns)
 - [Using the UX design patterns](#user-content-using-the-ux-design-patterns)
 - [Patterns list](#user-content-patterns-list)
-- [Helpful Templates](#user-content-helpful-templates)
+- [Design Resources](#user-content-design-resources)
 - [Known issues](#user-content-known-issues)
 - [Additional Resources](#user-content-additional-resources)
 
@@ -71,7 +71,6 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
   <!--* [Base Styles and Typography Ramp](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Base_styles_typeramp.md) - Basic guidelines for typography and padding.-->
   <!--* [Commands](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Commands.md) - Shows how to present the command bar in your add-in.-->
   <!--* [Multi-Section](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/MultiSection.md) - Displays a common layout and set of tools that may be used within an add-in.-->
-  * [Settings](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Settings.md) - Displays common components that may be used within an add-in's settings menu.
   
 #### Navigation
 
@@ -91,7 +90,10 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
   <!--* [Progress](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Notification_Progress.md) - Shows how to indicate the progress of a long-running process.-->
   * [Toast](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Notification_Toast.md) - Provides a brief message that fades away after a few seconds.
 
-## Helpful Templates
+#### Utility
+  * [Settings](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Settings.md) - Displays common components that may be used within an add-in's settings menu.
+
+## Desgin Resources
 
 * [Icon Production Template](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Helpful%20Templates/Icon_production.pdf), *Open the pdf as reference, use the AI file for production*
 * [Office UI Fabric Icon Master Sheet](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Helpful%20Templates/OfficeUIFabric_icon_mastersheet.pdf), *Open the pdf as reference, use the AI file for production*
