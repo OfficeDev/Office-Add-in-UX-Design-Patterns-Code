@@ -19,6 +19,7 @@ For overview information and the types of UX design patterns available, see [UX 
 - [Contributing to the UX design patterns](#user-content-contributing-to-the-ux-design-patterns)
 - [Using the UX design patterns](#user-content-using-the-ux-design-patterns)
 - [Patterns list](#user-content-patterns-list)
+- [Add-in Specific Interface Elements](#user-content-add-in-specific-interface-elements)
 - [Design Resources](#user-content-design-resources)
 - [Known issues](#user-content-known-issues)
 - [Additional Resources](#user-content-additional-resources)
@@ -51,17 +52,16 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
 
 #### Brand
 
-  * [Brand Bar](src/templates/generic/brand-bar) - The brand bar is a space in the footer to include your brand name and logo.
-  * [Splash Screen](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Brand_Splashscreen.md) - This is a screen for displaying your branding while the add-in is loading.
+  * [Splash Screen](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Brand_Splashscreen.md) - This is a screen to display your company branding while the add-in is loading.
  
 #### First-Run
 
-  * [Paging Panel](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_PagingPanel.md) - Takes users through a series of features or information before they start using the add-in.
-  * [Steps to Start](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_StepsToStart.md) - Provides users with an ordered list of steps to perform to get started using your add-in.
-  * [Trial Feature](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_TrialFeature.md) - Allows unlocking a feature in an add-in, and signing-up for a trial version of the add-in.
-  * [Trial Version](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_TrialVersion.md) - Shows users how to get started with a trial version of your add-in.
-  * [Value Placemat](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_ValuePlacemat.md) - Communicates your add-in's value proposition.
-  * [Video Placemat](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_VideoPlacemat.md) - Shows users a video before they start using your add-in.
+  * [Multi Page Value Proposition](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_PagingPanel.md) - Takes users through a series of features or information before they start using the add-in.
+  * [Value Proposition with Instructional Steps](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_StepsToStart.md) - Provides users with an ordered list of steps to perform to get started using your add-in.
+  * [Paid Feature Sign Up](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_TrialFeature.md) - Allows unlocking a feature in an add-in, and signing-up for a trial version of the add-in.
+  * [Trial Sign Up](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_TrialVersion.md) - Shows users how to get started with a trial version of your add-in.
+  * [Value Proposition with List Items](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_ValuePlacemat.md) - Communicates your add-in's value proposition.
+  * [Informational Video](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/FirstRun_VideoPlacemat.md) - Shows users a video before they start using your add-in.
 
 <!--#### General-->
 #### Authorization
@@ -71,7 +71,17 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
   <!--* [Base Styles and Typography Ramp](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Base_styles_typeramp.md) - Basic guidelines for typography and padding.-->
   <!--* [Commands](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Commands.md) - Shows how to present the command bar in your add-in.-->
   <!--* [Multi-Section](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/MultiSection.md) - Displays a common layout and set of tools that may be used within an add-in.-->
-  
+
+#### Utility
+
+  * [Settings](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Settings.md) - Displays common components that may be used within an add-in's settings menu.
+
+## Add-in Specific Interface Elements
+
+#### Brand
+
+  * [Brand Bar](src/templates/generic/brand-bar) - A space in the footer to include your brand name, logo and an optional settings access location.
+
 #### Navigation
 
   * [Back Button](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Back_Button.md) - Shows a task pane with Back and Next Page buttons. 
@@ -83,15 +93,12 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
 #### Notifications
 
   <!--* [Client Dialog](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Client_Dialog.md) - Displays a dialog in the main space of the Office application.-->
-  * [Embedded Dialog](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Embedded_Dialog.md) - Displays a dialog inside of the add-in space.
+  * [Embedded Dialog](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Embedded_Dialog.md) - Displays a dialog inside of the task pane or content add-in.
   <!--* [Feedback](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Notification_Feedback.md) - Allows an add-in to ask for customer feedback.-->
-  * [Inline Message](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Notification_Inline_Message.md) - Indicates error, success, or information.
+  * [Status Messages](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Notification_Inline_Message.md) - Indicates error, success, or information.
   * [Message Banner](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Notification_MessageBanner.md) - Provides information in a collapsible, dismissable banner.
   <!--* [Progress](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Notification_Progress.md) - Shows how to indicate the progress of a long-running process.-->
   * [Toast](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Notification_Toast.md) - Provides a brief message that fades away after a few seconds.
-
-#### Utility
-  * [Settings](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Settings.md) - Displays common components that may be used within an add-in's settings menu.
 
 ## Desgin Resources
 
