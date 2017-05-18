@@ -52,11 +52,11 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
 
 #### Brand
 
-  * [Splash Screen](src/templates/splashscreen) - This is a screen to display your company branding while the add-in is loading.
+  * [Splash Screen](src/templates/splashscreen/) - This is a screen to display your company branding while the add-in is loading.
  
 #### First-Run
 
-  * [Multi Page Value Proposition](src/templates/walkthrough) - Takes users through a series of features or informational steps before they start.
+  * [Multi Page Value Proposition](src/templates/walkthrough/) - Takes users through a series of features or informational steps before they start.
   * [Value Proposition with Instructional Steps](src/templates/instruction-step) - Provides users with an ordered list of instructions to get started.
   * [Paid Feature Sign Up](src/templates/trial-placemat-feature) - Allows users to sign up for a trial for a specific feature.
   * [Trial Sign Up](src/templates/trial-placemat) - Allows users to sign up for a trial.
