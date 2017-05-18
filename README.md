@@ -18,7 +18,7 @@ For overview information and the types of UX design patterns available, see [UX 
 
 - [Contributing to the UX design patterns](#user-content-contributing-to-the-ux-design-patterns)
 - [Using the UX design patterns](#user-content-using-the-ux-design-patterns)
-- [Patterns list](#user-content-patterns-list)
+- [Patterns list](#user-content-patterns)
 - [Add-in Specific Interface Elements](#user-content-add-in-specific-interface-elements)
 - [Design Resources](#user-content-design-resources)
 - [Known issues](#user-content-known-issues)
@@ -48,7 +48,7 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
 	- Use the UX design pattern as a template for other pages.
 	- Link to or from the UX design pattern.
 
-## Patterns list
+## Patterns
 
 #### Authorization
 
