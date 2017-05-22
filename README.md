@@ -4,7 +4,7 @@
 
 This repository provides sample implementations in HTML, CSS, and JavaScript of common UX design patterns for Office Add-ins.
 
-When designing Office Add-ins, the UX design of your add-in should provide compelling experiences that extend Office. For example, your add-in should provide a first-run experience, a first-class UX experience, and smooth transitions between pages, among other things. Providing a clean, modern UX experience increases user retention and adoption of your add-in. This repo has UX resources for developers that implement:
+When designing Office Add-ins, the UX design of your add-in should provide compelling experiences that extend Office. For example, your add-in should provide a first-run experience, a first-class UX, and smooth transitions between pages, among other things. Providing a clean, modern User Experience increases user retention and adoption of your add-in. This repo has UX resources for developers that implement:
 
 * Common UX design patterns based on best practices.
 * Office Fabric components and styles.
@@ -18,7 +18,7 @@ For overview information and the types of UX design patterns available, see [UX 
 
 - [Contributing to the UX design patterns](#user-content-contributing-to-the-ux-design-patterns)
 - [Using the UX design patterns](#user-content-using-the-ux-design-patterns)
-- [Patterns list](#user-content-patterns)
+- [Patterns](#user-content-patterns)
 - [Add-in Specific Interface Elements](#user-content-add-in-specific-interface-elements)
 - [Design Resources](#user-content-design-resources)
 - [Known issues](#user-content-known-issues)
@@ -39,7 +39,7 @@ For overview information and the types of UX design patterns available, see [UX 
 
 ## Using the UX design patterns
 
-You can use the [UX designer specifications](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Source%20Files) as a guide when you create your own UX design, or you can add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates) directly to your project. To add the source code:
+You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates) directly to your project. To add the source code:
 
 1. Clone this repo.
 2. Copy the [assets folder](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/assets), and the code folder for the individual pattern you choose to your add-in project.
@@ -50,7 +50,7 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
 
 ## Patterns
 
-#### Authorization
+#### Authentication
 
   * [Authentication Dialog Single Identity](src/templates/auth/authentication-dialog-single-id/) - Present a single identity authentication screen to your end users.
   * [Authentication Dialog Multiple Identity](src/templates/auth/authentication-dialog-multiple-id/) - Present a multi authentication screen to your end users.
@@ -61,12 +61,12 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
  
 #### First-Run
 
-  * [Multi Page Value Proposition](src/templates/first-run/walkthrough/) - Takes users through a series of features or informational steps before they start.
-  * [Value Proposition with Instructional Steps](src/templates/first-run/instruction-step/) - Provides users with an ordered list of instructions to get started.
-  * [Paid Feature Sign Up](src/templates/first-run/trial-placemat-feature/) - Allows users to sign up for a trial for a specific feature.
-  * [Trial Sign Up](src/templates/first-run/trial-placemat/) - Allows users to sign up for a trial.
-  * [Value Proposition with List Items](src/templates/first-run/value-placemat/) - Provides a clear value proposition and list of features.
-  * [Informational Video](src/templates/first-run/video-placemat/) - Provides value through video content.
+  * [Carousel](src/templates/first-run/walkthrough/) - Takes users through a series of features or informational steps before they start.
+  * [Steps to Start](src/templates/first-run/instruction-step/) - Provides users with an ordered list of instructions to get started.
+  * [Trial Feature](src/templates/first-run/trial-placemat-feature/) - Allows users to sign up for a trial for a specific feature.
+  * [Trial](src/templates/first-run/trial-placemat/) - Allows users to sign up for a trial.
+  * [Value](src/templates/first-run/value-placemat/) - Provides a clear value proposition and list of features.
+  * [Video](src/templates/first-run/video-placemat/) - Provides value through video content.
 
 #### Utility
 
