@@ -74,7 +74,7 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
 
 ## Add-in Specific Interface Elements
 
-#### Brand
+#### Branding
 
   * [Brand Bar](src/templates/generic/brand-bar) - A space in the footer to include your brand name, logo and an optional settings access location.
 
@@ -85,25 +85,34 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
   
 #### Notifications
 
-  * [Embedded Dialog](src/templates/notifications/embedded-dialog/) - Displays a dialog inside of the task pane or content add-in.
   * [Toast](src/templates/notifications/toast/) - Provides a brief message that fades away after a few seconds.
+
+#### Utility
+
+  * [Embedded Dialog](src/templates/notifications/embedded-dialog/) - Displays a dialog inside of the task pane or content add-in.
+
+## Fabric Components in Standard Add-in Layout
+
+#### Navigation
+
+  * [Nav](src/templates/notifications/embedded-dialog/) - Displays a dialog inside of the task pane or content add-in.
+  * [Pivot](src/templates/notifications/embedded-dialog/) - Displays a dialog inside of the task pane or content add-in.
+
+#### Notification
+
+  * [ProgressIndicator](src/templates/notifications/embedded-dialog/) - Displays a dialog inside of the task pane or content add-in.
+  * [Spinner](src/templates/notifications/embedded-dialog/) - Displays a dialog inside of the task pane or content add-in.
+
+#### Utility
+
+  * [CommandBar](src/templates/notifications/embedded-dialog/) - Displays a dialog inside of the task pane or content add-in.
+  * [Dialog](src/templates/dialog/alert/) - Displays a dialog inside of the task pane or content add-in.
+
 
 ## Design Resources
 
-* [Icon Production Template](src/assets/helpful-templates/Icon_production.pdf), *Open the pdf as reference, use the AI file for production*
-* [Office UI Fabric Icon Master Sheet](src/assets/helpful-templates/OfficeUIFabric_icon_mastersheet.pdf), *Open the pdf as reference, use the AI file for production*
-* Office Add-in Templates for Desktop
-  * [Word Desktop](src/assets/helpful-templates/AddIn_Template_Word_Desktop_reference.pdf)
-  * [Excel Desktop](src/assets/helpful-templates/AddIn_Template_Excel_Desktop_reference.pdf)
-  * [PowerPoint Desktop](src/assets/helpful-templates/AddIn_Template_PowerPoint_Desktop_reference.pdf)
-* Office Add-in Templates for iPad
-  * [Word iPad](src/assets/helpful-templates/AddIn_Template_Word_iPad_reference.pdf)
-  * [Excel iPad](src/assets/helpful-templates/AddIn_Template_Excel_iPad_reference.pdf)
-  * [PowerPoint iPad](src/assets/helpful-templates/AddIn_Template_PowerPoint_iPad_reference.pdf)
 * Outlook Mobile
   * [iOS](src/assets/helpful-templates/outlook-mobile/iOS-Addins-Components-Final.sketch)
-* Store Experience Toolkit (In Progress)
-
 
 ## Known issues
 
