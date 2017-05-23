@@ -20,6 +20,7 @@ For overview information and the types of UX design patterns available, see [UX 
 - [Using the UX design patterns](#user-content-using-the-ux-design-patterns)
 - [Patterns](#user-content-patterns)
 - [Add-in Specific Interface Elements](#user-content-add-in-specific-interface-elements)
+- [Fabric Components in Standard Add-in Layout](#user-content-fabric-components-in-standard-add-in-layout)
 - [Design Resources](#user-content-design-resources)
 - [Known issues](#user-content-known-issues)
 - [Additional Resources](#user-content-additional-resources)
