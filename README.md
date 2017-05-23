@@ -95,13 +95,13 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
 
 #### Navigation
 
-  * [Nav](src/templates/notifications/embedded-dialog/) - Displays a dialog inside of the task pane or content add-in.
-  * [Pivot](src/templates/notifications/embedded-dialog/) - Displays a dialog inside of the task pane or content add-in.
+  * [Nav](src/templates/navigation/nav/) - Displays a dialog inside of the task pane or content add-in.
+  * [Pivot](src/templates/navigation/pivot/) - Displays a dialog inside of the task pane or content add-in.
 
 #### Notification
 
-  * [ProgressIndicator](src/templates/notifications/embedded-dialog/) - Displays a dialog inside of the task pane or content add-in.
-  * [Spinner](src/templates/notifications/embedded-dialog/) - Displays a dialog inside of the task pane or content add-in.
+  * [ProgressIndicator](src/templates/notifications/progress-bar/) - Displays a dialog inside of the task pane or content add-in.
+  * [Spinner](src/templates/notifications/spinner/) - Displays a dialog inside of the task pane or content add-in.
 
 #### Utility
 
