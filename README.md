@@ -95,18 +95,18 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
 
 #### Navigation
 
-  * [Nav](src/templates/navigation/nav/) - Displays a dialog inside of the task pane or content add-in.
-  * [Pivot](src/templates/navigation/pivot/) - Displays a dialog inside of the task pane or content add-in.
+  * [Nav](src/templates/navigation/nav/) - Provides links to the main areas of an add-in. Also called "left nav" or "navigation pane."
+  * [Pivot](src/templates/navigation/pivot/) - Allows users to navigate between different content.
 
 #### Notification
 
-  * [ProgressIndicator](src/templates/notifications/progress-bar/) - Displays a dialog inside of the task pane or content add-in.
-  * [Spinner](src/templates/notifications/spinner/) - Displays a dialog inside of the task pane or content add-in.
+  * [ProgressIndicator](src/templates/notifications/progress-bar/) - Shows the completion status of an operation lasting more than 2 seconds.
+  * [Spinner](src/templates/notifications/spinner/) - Indicates to the user that things are processing.
 
 #### Utility
 
-  * [CommandBar](src/templates/notifications/embedded-dialog/) - Displays a dialog inside of the task pane or content add-in.
-  * [Dialog](src/templates/dialog/alert/) - Displays a dialog inside of the task pane or content add-in.
+  * [CommandBar](src/templates/notifications/embedded-dialog/) - A surface that houses commands that operate on the content or parent region it resides above.
+  * [Dialog](src/templates/dialog/alert/) - Modal UI overlay that generally provides contextual app information or requires user confirmation/input.
 
 
 ## Design Resources
