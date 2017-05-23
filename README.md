@@ -53,8 +53,8 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
 
 #### Authentication
 
-  * [Authentication Dialog Single Identity](src/templates/auth/authentication-dialog-single-id/) - Present a single identity authentication screen to your end users.
   * [Authentication Dialog Multiple Identity](src/templates/auth/authentication-dialog-multiple-id/) - Present a multi authentication screen to your end users.
+  * [Authentication Dialog Single Identity](src/templates/auth/authentication-dialog-single-id/) - Present a single identity authentication screen to your end users.
 
 #### Branding
 
@@ -64,8 +64,8 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
 
   * [Carousel](src/templates/first-run/walkthrough/) - Takes users through a series of features or informational steps before they start.
   * [Steps to Start](src/templates/first-run/instruction-step/) - Provides users with an ordered list of instructions to get started.
-  * [Trial Feature](src/templates/first-run/trial-placemat-feature/) - Allows users to sign up for a trial for a specific feature.
   * [Trial](src/templates/first-run/trial-placemat/) - Allows users to sign up for a trial.
+  * [Trial Feature](src/templates/first-run/trial-placemat-feature/) - Allows users to sign up for a trial for a specific feature.
   * [Value](src/templates/first-run/value-placemat/) - Provides a clear value proposition and list of features.
   * [Video](src/templates/first-run/video-placemat/) - Provides value through video content.
 
