@@ -18,9 +18,7 @@ For overview information and the types of UX design patterns available, see [UX 
 
 - [Contributing to the UX design patterns](#user-content-contributing-to-the-ux-design-patterns)
 - [Using the UX design patterns](#user-content-using-the-ux-design-patterns)
-- [Patterns](#user-content-patterns)
-- [Add-in Specific Interface Elements](#user-content-add-in-specific-interface-elements)
-- [Fabric Components in Standard Add-in Layout](#user-content-fabric-components-in-standard-add-in-layout)
+- [UX design patterns list](#user-content-ux-design-patterns-list)
 - [Design Resources](#user-content-design-resources)
 - [Known issues](#user-content-known-issues)
 - [Additional Resources](#user-content-additional-resources)
@@ -49,7 +47,7 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
 	- Use the UX design pattern as a template for other pages.
 	- Link to or from the UX design pattern.
 
-## Patterns
+## UX design patterns list
 
 #### Authentication
 
@@ -57,7 +55,8 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
   * [Authentication Dialog Single Identity](src/templates/auth/authentication-dialog-single-id/) - Present a single identity authentication screen to your end users.
 
 #### Branding
-
+  
+  * [Brand Bar](src/templates/generic/brand-bar) - A space in the footer to include your brand name, logo and an optional settings access location.
   * [Splash Screen](src/templates/generic/splashscreen/) - This is a screen to display your company branding while the add-in is loading.
  
 #### First-Run
@@ -69,46 +68,25 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
   * [Value](src/templates/first-run/value-placemat/) - Provides a clear value proposition and list of features.
   * [Video](src/templates/first-run/video-placemat/) - Provides value through video content.
 
-#### Utility
-
-  * [Settings](src/templates/settings/) - Displays common components that may be used within an add-in's settings menu.
-
-## Add-in Specific Interface Elements
-
-#### Branding
-
-  * [Brand Bar](src/templates/generic/brand-bar) - A space in the footer to include your brand name, logo and an optional settings access location.
-
 #### Navigation
 
-  * [Back Button](src/templates/navigation/back-button) - Shows a task pane with Back and Next Page buttons. 
-  * [Tab Bar](src/templates/navigation/tab-bar/) - Shows navigation links at the top of the add-in space using icons and labels.
-  
-#### Notifications
-
-  * [Toast](src/templates/notifications/toast/) - Provides a brief message that fades away after a few seconds.
-
-#### Utility
-
-  * [Embedded Dialog](src/templates/notifications/embedded-dialog/) - Displays a dialog inside of the task pane or content add-in.
-
-## Fabric Components in Standard Add-in Layout
-
-#### Navigation
-
+  * [Back Button](src/templates/navigation/back-button) - Shows a task pane with Back and Next Page buttons.
   * [Nav](src/templates/navigation/nav/) - Provides links to the main areas of an add-in. Also called "left nav" or "navigation pane."
-  * [Pivot](src/templates/navigation/pivot/) - Allows users to navigate between different content.
-
-#### Notification
-
-  * [ProgressIndicator](src/templates/notifications/progress-bar/) - Shows the completion status of an operation lasting more than 2 seconds.
-  * [Spinner](src/templates/notifications/spinner/) - Indicates to the user that things are processing.
+  * [Pivot](src/templates/navigation/pivot/) - Allows users to navigate between different content. 
+  * [Tab Bar](src/templates/navigation/tab-bar/) - Shows navigation links at the top of the add-in space using icons and labels.
 
 #### Utility
 
   * [CommandBar](src/templates/notifications/embedded-dialog/) - A surface that houses commands that operate on the content or parent region it resides above.
   * [Dialog](src/templates/dialog/alert/) - Modal UI overlay that generally provides contextual app information or requires user confirmation/input.
+  * [Embedded Dialog](src/templates/notifications/embedded-dialog/) - Displays a dialog inside of the task pane or content add-in.
+  * [Settings](src/templates/settings/) - Displays common components that may be used within an add-in's settings menu.
+  
+#### Notification
 
+  * [ProgressIndicator](src/templates/notifications/progress-bar/) - Shows the completion status of an operation lasting more than 2 seconds.
+  * [Spinner](src/templates/notifications/spinner/) - Indicates to the user that things are processing.
+  * [Toast](src/templates/notifications/toast/) - Provides a brief message that fades away after a few seconds.
 
 ## Design Resources
 
