@@ -90,8 +90,11 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
 
 ## Design Resources
 
+* Prototyping
+  * [Components](src/assets/design-resources/AddinUXDesign_UIComponents.ai)
+  * [Patterns](src/assets/design-resources/AddinUXDesign_UXPatterns.ai)
 * Outlook Mobile
-  * [iOS](src/assets/helpful-templates/outlook-mobile/iOS-Addins-Components-Final.sketch)
+  * [iOS](src/assets/design-resources/iOS-Addins-Components-Final.sketch)
 
 ## Known issues
 
