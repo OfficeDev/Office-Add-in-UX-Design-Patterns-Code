@@ -51,42 +51,42 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
 
 #### Authentication
 
-  * [Authentication Dialog Multiple Identity](src/templates/auth/authentication-dialog-multiple-id/) - Present a multi authentication screen to your end users.
-  * [Authentication Dialog Single Identity](src/templates/auth/authentication-dialog-single-id/) - Present a single identity authentication screen to your end users.
+  * [Authentication Dialog Multiple Identity](src/docs/auth-multi.md) - Present a multi authentication screen to your end users.
+  * [Authentication Dialog Single Identity](src/docs/auth-single.md) - Present a single identity authentication screen to your end users.
 
 #### Branding
   
-  * [Brand Bar](src/templates/generic/brand-bar) - A space in the footer to include your brand name, logo and an optional settings access location.
-  * [Splash Screen](src/templates/generic/splashscreen/) - This is a screen to display your company branding while the add-in is loading.
+  * [Brand Bar](src/docs/brand-bar.md) - A space in the footer to include your brand name, logo and an optional settings access location.
+  * [Splash Screen](src/docs/splash.md) - This is a screen to display your company branding while the add-in is loading.
  
 #### First-Run
 
-  * [Carousel](src/templates/first-run/walkthrough/) - Takes users through a series of features or informational steps before they start.
-  * [Steps to Start](src/templates/first-run/instruction-step/) - Provides users with an ordered list of instructions to get started.
-  * [Trial](src/templates/first-run/trial-placemat/) - Allows users to sign up for a trial.
-  * [Trial Feature](src/templates/first-run/trial-placemat-feature/) - Allows users to sign up for a trial for a specific feature.
-  * [Value](src/templates/first-run/value-placemat/) - Provides a clear value proposition and list of features.
-  * [Video](src/templates/first-run/video-placemat/) - Provides value through video content.
+  * [Carousel](src/docs/walkthrough.md) - Takes users through a series of features or informational steps before they start.
+  * [Steps to Start](src/docs/instruction-step.md) - Provides users with an ordered list of instructions to get started.
+  * [Trial](src/docs/trial.md) - Allows users to sign up for a trial.
+  * [Trial Feature](src/docs/trial-feature.md) - Allows users to sign up for a trial for a specific feature.
+  * [Value](src/docs/value.md) - Provides a clear value proposition and list of features.
+  * [Video](src/docs/video.md) - Provides value through video content.
 
 #### Navigation
 
-  * [Back Button](src/templates/navigation/back-button) - Shows a task pane with Back and Next Page buttons.
-  * [Nav](src/templates/navigation/nav/) - Provides links to the main areas of an add-in. Also called "left nav" or "navigation pane."
-  * [Pivot](src/templates/navigation/pivot/) - Allows users to navigate between different content. 
-  * [Tab Bar](src/templates/navigation/tab-bar/) - Shows navigation links at the top of the add-in space using icons and labels.
+  * [Back Button](src/docs/back-btn.md) - Shows a task pane with Back and Next Page buttons.
+  * [Nav](src/docs/nav.md) - Provides links to the main areas of an add-in. Also called "left nav" or "navigation pane."
+  * [Pivot](src/docs/pivot.md) - Allows users to navigate between different content. 
+  * [Tab Bar](src/docs/tab-bar.md) - Shows navigation links at the top of the add-in space using icons and labels.
 
 #### Utility
 
-  * [CommandBar](src/templates/notifications/embedded-dialog/) - A surface that houses commands that operate on the content or parent region it resides above.
-  * [Dialog](src/templates/dialog/alert/) - Modal UI overlay that generally provides contextual app information or requires user confirmation/input.
-  * [Embedded Dialog](src/templates/notifications/embedded-dialog/) - Displays a dialog inside of the task pane or content add-in.
-  * [Settings](src/templates/settings/) - Displays common components that may be used within an add-in's settings menu.
+  * [CommandBar](src/docs/commands.md) - A surface that houses commands that operate on the content or parent region it resides above.
+  * [Dialog](src/docs/dialog.md) - Modal UI overlay that generally provides contextual app information or requires user confirmation/input.
+  * [Embedded Dialog](src/docs/embedded-dialog.md) - Displays a dialog inside of the task pane or content add-in.
+  * [Settings](src/docs/settings.md) - Displays common components that may be used within an add-in's settings menu.
   
 #### Notification
 
-  * [ProgressIndicator](src/templates/notifications/progress-bar/) - Shows the completion status of an operation lasting more than 2 seconds.
-  * [Spinner](src/templates/notifications/spinner/) - Indicates to the user that things are processing.
-  * [Toast](src/templates/notifications/toast/) - Provides a brief message that fades away after a few seconds.
+  * [ProgressIndicator](src/docs/progress.md) - Shows the completion status of an operation lasting more than 2 seconds.
+  * [Spinner](src/docs/spinner.md) - Indicates to the user that things are processing.
+  * [Toast](src/docs/toast.md) - Provides a brief message that fades away after a few seconds.
 
 ## Design Resources
 
