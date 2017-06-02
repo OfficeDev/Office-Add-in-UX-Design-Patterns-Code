@@ -8,5 +8,5 @@ Current Fabric Version Used: [2.6.1](https://github.com/OfficeDev/office-ui-fabr
 
 ***
 
-![Brand Splashscreen - Specifications for desktop task pane](../../../assets/markdown-images/Brand_splashscreen_DesktopTaskPaneCallouts.png)
+![Brand Splashscreen - Specifications for desktop task pane](../assets/markdown-images/Brand_splashscreen_DesktopTaskPaneCallouts.png)
 Specifications for desktop task pane 

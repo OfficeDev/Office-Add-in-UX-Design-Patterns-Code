@@ -12,11 +12,11 @@ Current Fabric Version Used: [2.6.1](https://github.com/OfficeDev/office-ui-fabr
 
 ***
 
-![Client Dialog - Alert - Specifications for desktop](https://raw.githubusercontent.com/OfficeDev/Office-Add-in-UX-Design-Patterns/master/Patterns/Assets/Client_Dialog/ClientDialog_Alert_Desktop%20Task%20Pane%20Callouts.png)
+![Client Dialog - Alert - Specifications for desktop](../assets/markdown-images/ClientDialog_Alert_DesktopTaskPaneCallouts.png)
 Client Dialog - Alert - Specifications for desktop 
 
-![Client Dialog - Generic with Typeramp - Specifications for desktop](https://raw.githubusercontent.com/OfficeDev/Office-Add-in-UX-Design-Patterns/master/Patterns/Assets/Client_Dialog/ClientDialog_Alert_Desktop%20Content%20Window%20Callouts.png)
+![Client Dialog - Generic with Typeramp - Specifications for desktop](../assets/markdown-images/ClientDialog_Alert_DesktopContentWindowCallouts.png)
 Client Dialog - Generic with Typeramp  - Specifications for desktop
 
-![Client Dialog - Generic with Navigation - Specifications for desktop](https://raw.githubusercontent.com/OfficeDev/Office-Add-in-UX-Design-Patterns/master/Patterns/Assets/Client_Dialog/ClientDialog_Alert_Desktop%20Content%20Window.png)
+![Client Dialog - Generic with Navigation - Specifications for desktop](../assets/markdown-images/ClientDialog_Alert_DesktopContentWindow.png)
 Client Dialog - Generic with Navigation - Specifications for desktopß

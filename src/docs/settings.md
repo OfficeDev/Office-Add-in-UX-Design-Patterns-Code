@@ -9,10 +9,10 @@ Current Fabric Version Used: [2.6.1](https://github.com/OfficeDev/office-ui-fabr
 
 ***
 
-![Settings - Specifications for desktop task pane](../../assets/markdown-images/Settings_Desktop_Task_Pane_Callouts.png)
+![Settings - Specifications for desktop task pane](../assets/markdown-images/Settings_Desktop_Task_Pane_Callouts.png)
 Specifications for desktop task pane 
 
-![Settings - Specifications for desktop task pane](../../assets/markdown-images/Settings_Desktop_Task_Pane_Callouts_2.png)
+![Settings - Specifications for desktop task pane](../assets/markdown-images/Settings_Desktop_Task_Pane_Callouts_2.png)
 Specifications for desktop task pane continued
 
 

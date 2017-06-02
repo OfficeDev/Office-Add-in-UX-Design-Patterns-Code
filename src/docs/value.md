@@ -9,5 +9,5 @@ Current Fabric Version Used: [2.6.1](https://github.com/OfficeDev/office-ui-fabr
 
 ***
 
-![First Run - Value Placemat - Specifications for desktop task pane](../../../assets/markdown-images/FirstRun_ValuePlacemat_Desktop%20Task%20Pane%20Callouts.png)
+![First Run - Value Placemat - Specifications for desktop task pane](../assets/markdown-images/FirstRun_ValuePlacemat_Desktop%20Task%20Pane%20Callouts.png)
 Specifications for desktop task pane 

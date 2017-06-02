@@ -13,6 +13,6 @@ Current Fabric Version Used: [2.6.1](https://github.com/OfficeDev/office-ui-fabr
 
 ***
 
-![Notification - Progress - Specifications for desktop task pane](https://raw.githubusercontent.com/OfficeDev/Office-Add-in-UX-Design-Patterns/master/Patterns/Assets/Notification_Progress/Notification_progress_Desktop%20Task%20Pane%20Callouts.png)
+![Notification - Progress - Specifications for desktop task pane](https://raw.githubusercontent.com/OfficeDev/Office-Add-in-UX-Design-Patterns/master/Patterns/Assets/Notification_Progress/Notification_progress_DesktopTaskPaneCallouts.png)
 Specifications for desktop task pane
 

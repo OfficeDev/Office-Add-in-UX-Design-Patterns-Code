@@ -8,5 +8,5 @@ Current Fabric Version Used: [2.6.1](https://github.com/OfficeDev/office-ui-fabr
 
 ***
 
-![Commands - Specifications for desktop task pane](https://raw.githubusercontent.com/OfficeDev/Office-Add-in-UX-Design-Patterns/master/Patterns/Assets/Commands/Commands_Desktop%20Task%20Pane%20Callouts.png)
+![Commands - Specifications for desktop task pane](../assets/markdown-images/Commands_DesktopTaskPaneCallouts.png)
 Specifications for desktop task pane 

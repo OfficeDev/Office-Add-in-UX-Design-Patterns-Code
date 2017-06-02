@@ -9,5 +9,5 @@ Current Fabric Version Used: [2.6.1](https://github.com/OfficeDev/office-ui-fabr
 
 ***
 
-![Notification - Toast - Specifications for desktop task pane](../../../assets/markdown-images/Notification_toast_DesktopTaskPaneCallouts.png)
+![Notification - Toast - Specifications for desktop task pane](../assets/markdown-images/Notification_toast_DesktopTaskPaneCallouts.png)
 Specifications for desktop task pane

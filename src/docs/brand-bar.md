@@ -9,5 +9,5 @@ Current Fabric Version Used: [2.6.1](https://github.com/OfficeDev/office-ui-fabr
 
 ***
 
-![Brand Bar - Specifications for desktop task pane](../../../assets/markdown-images/Brand_bar_DesktopTaskPaneCallouts.png)
+![Brand Bar - Specifications for desktop task pane](../assets/markdown-images/Brand_bar_DesktopTaskPaneCallouts.png)
 Specifications for desktop task pane 

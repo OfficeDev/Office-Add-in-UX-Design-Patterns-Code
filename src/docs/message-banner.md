@@ -9,5 +9,5 @@ Current Fabric Version Used: [2.6.1](https://github.com/OfficeDev/office-ui-fabr
 
 ***
 
-![Notification - MessageBanner - Specifications for desktop task pane](https://raw.githubusercontent.com/OfficeDev/Office-Add-in-UX-Design-Patterns/master/Patterns/Assets/Notifications_MessageBanner/Notification_messagebanner_Desktop%20Task%20Pane%20Callouts.png)
+![Notification - MessageBanner - Specifications for desktop task pane](../assets/markdown-images/Notification_messagebanner_DesktopTaskPaneCallouts.png)
 Specifications for desktop task pane

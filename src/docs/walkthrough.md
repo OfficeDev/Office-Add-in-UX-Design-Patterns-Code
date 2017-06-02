@@ -9,5 +9,5 @@ Current Fabric Version Used: [2.6.1](https://github.com/OfficeDev/office-ui-fabr
 
 ***
 
-![First Run - Paging Panel - Specifications for desktop task pane](../../../assets/markdown-images/FirstRun_PagingPanel_DesktopTaskPaneCallouts.png)
+![First Run - Paging Panel - Specifications for desktop task pane](../assets/markdown-images/FirstRun_PagingPanel_DesktopTaskPaneCallouts.png)
 Specifications for desktop task pane 
