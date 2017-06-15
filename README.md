@@ -51,8 +51,8 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
 
 #### Authentication
 
-  * [Authentication Dialog Multiple Identity](src/docs/auth-multi.md) - Present a multi authentication screen to your end users.
-  * [Authentication Dialog Single Identity](src/docs/auth-single.md) - Present a single identity authentication screen to your end users.
+  * [Authentication Dialog Flow - Multiple Identity](src/docs/auth-multi.md) - Present a multi authentication screen to your end users.
+  * [Authentication Dialog Flow - Single Identity](src/docs/auth-single.md) - Present a single identity authentication screen to your end users.
 
 #### Branding
   
@@ -62,11 +62,11 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
 #### First-Run
 
   * [Carousel](src/docs/carousel.md) - Takes users through a series of features or informational steps before they start.
-  * [Steps to Start](src/docs/instruction-step.md) - Provides users with an ordered list of instructions to get started.
+  * [Instruction Step](src/docs/instruction-step.md) - Provides users with an ordered list of instructions to get started.
   * [Trial](src/docs/trial.md) - Allows users to sign up for a trial.
   * [Trial Feature](src/docs/trial-feature.md) - Allows users to sign up for a trial for a specific feature.
-  * [Value](src/docs/value-placemat.md) - Provides a clear value proposition and list of features.
-  * [Video](src/docs/video-placemat.md) - Provides value through video content.
+  * [Value Placemat](src/docs/value-placemat.md) - Provides a clear value proposition and list of features.
+  * [Video Placemat](src/docs/video-placemat.md) - Provides value through video content.
 
 #### Navigation
 
@@ -84,7 +84,7 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
   
 #### Notification
 
-  * [ProgressIndicator](src/docs/progress-indicator.md) - Shows the completion status of an operation lasting more than 2 seconds.
+  * [Progress Indicator](src/docs/progress-indicator.md) - Shows the completion status of an operation lasting more than 2 seconds.
   * [Spinner](src/docs/spinner.md) - Indicates to the user that things are processing.
   * [Toast](src/docs/toast.md) - Provides a brief message that fades away after a few seconds.
 
