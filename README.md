@@ -79,7 +79,7 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
 
   * [CommandBar](src/docs/command-bar.md) - A surface that houses commands that operate on the content or parent region it resides above.
   * [Embedded Dialog](src/docs/embedded-dialog.md) - Displays a dialog inside of the task pane or content add-in.
-  * [Landing Page](src/docs/landing-page.md)
+  * [Landing Page](src/docs/landing-page.md) - A generic layout, which can be utilized as a starting point for add-ins.
   * [Settings](src/docs/settings.md) - Displays common components that may be used within an add-in's settings menu.
   
 #### Notification
