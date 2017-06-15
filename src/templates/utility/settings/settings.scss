@@ -1,7 +1,7 @@
-@import '../../common/variables.scss';
-@import '../../common/mixins.scss';
+@import '../../../common/variables.scss';
+@import '../../../common/mixins.scss';
 
-@import '../../common/common.scss';
+@import '../../../common/common.scss';
 
 .ms-settings {
     @include flex();
