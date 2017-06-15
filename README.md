@@ -57,34 +57,34 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
 #### Branding
   
   * [Brand Bar](src/docs/brand-bar.md) - A space in the footer to include your brand name, logo and an optional settings access location.
-  * [Splash Screen](src/docs/splash.md) - This is a screen to display your company branding while the add-in is loading.
+  * [Splash Screen](src/docs/splash-screen.md) - This is a screen to display your company branding while the add-in is loading.
  
 #### First-Run
 
-  * [Carousel](src/docs/walkthrough.md) - Takes users through a series of features or informational steps before they start.
+  * [Carousel](src/docs/carousel.md) - Takes users through a series of features or informational steps before they start.
   * [Steps to Start](src/docs/instruction-step.md) - Provides users with an ordered list of instructions to get started.
   * [Trial](src/docs/trial.md) - Allows users to sign up for a trial.
   * [Trial Feature](src/docs/trial-feature.md) - Allows users to sign up for a trial for a specific feature.
-  * [Value](src/docs/value.md) - Provides a clear value proposition and list of features.
-  * [Video](src/docs/video.md) - Provides value through video content.
+  * [Value](src/docs/value-placemat.md) - Provides a clear value proposition and list of features.
+  * [Video](src/docs/video-placemat.md) - Provides value through video content.
 
 #### Navigation
 
-  * [Back Button](src/docs/back-btn.md) - Shows a task pane with Back and Next Page buttons.
-  * [Nav](src/docs/nav.md) - Provides links to the main areas of an add-in. Also called "left nav" or "navigation pane."
+  * [Back Button](src/docs/back-button.md) - Shows a task pane with Back and Next Page buttons.
+  * [Contextual Menu](src/docs/contextual-menu.md) - Provides links to the main areas of an add-in. Also called "left nav" or "navigation pane."
   * [Pivot](src/docs/pivot.md) - Allows users to navigate between different content. 
   * [Tab Bar](src/docs/tab-bar.md) - Shows navigation links at the top of the add-in space using icons and labels.
 
 #### Utility
 
-  * [CommandBar](src/docs/commands.md) - A surface that houses commands that operate on the content or parent region it resides above.
-  * [Dialog](src/docs/dialog.md) - Modal UI overlay that generally provides contextual app information or requires user confirmation/input.
+  * [CommandBar](src/docs/command-bar.md) - A surface that houses commands that operate on the content or parent region it resides above.
   * [Embedded Dialog](src/docs/embedded-dialog.md) - Displays a dialog inside of the task pane or content add-in.
+  * [Landing Page](src/docs/landing-page.md)
   * [Settings](src/docs/settings.md) - Displays common components that may be used within an add-in's settings menu.
   
 #### Notification
 
-  * [ProgressIndicator](src/docs/progress.md) - Shows the completion status of an operation lasting more than 2 seconds.
+  * [ProgressIndicator](src/docs/progress-indicator.md) - Shows the completion status of an operation lasting more than 2 seconds.
   * [Spinner](src/docs/spinner.md) - Indicates to the user that things are processing.
   * [Toast](src/docs/toast.md) - Provides a brief message that fades away after a few seconds.
 
