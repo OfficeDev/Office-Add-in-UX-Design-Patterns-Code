@@ -1,0 +1,70 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
+
+<!--
+    This file shows how to design a first-run experience that enables a user to page through stages of content.
+    -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Welcome Pages - Page 1</title>
+    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+    <!-- Template styles -->
+    
+    <link href="walkthrough.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="walkthrough.js"></script>
+</head>
+<body>
+    <div class="ms-firstrun-pages ms-bgColor-themePrimary">
+        <div class="ms-firstrun-pages__header">
+            <div class="ms-firstrun-pages__header--skip ms-font-m ms-fontColor-white">
+                <span class="pointerCursor" id="goToHomeLabel">Skip </span><i class="pointerCursor ms-Icon ms-Icon--chevronThickRight"></i>
+            </div>
+            <div class="ms-firstrun-pages__welcome">
+                <div>
+                    <h1 id="welcomeHeadline" class="ms-font-xl ms-fontWeight-light ms-fontColor-white">WELCOME</h1>
+                </div>
+            </div>
+        </div>
+        <div class="ms-firstrun-pages__pager">
+            <div class="ms-firstrun-pages__pager--pagercontrol">
+                <span id="previous" class="change-stage invisible ms-font-m ms-fontColor-white"><i class="ms-Icon ms-Icon--chevronThickLeft" title="Previous page"></i></span>
+                <div>
+                    <img class="page1" src="../../../assets/pager-1.png" />
+                    <img class="page2 undisplayed" src="../../../assets/pager-2.png" />
+                    <img class="page3 undisplayed" src="../../../assets/pager-3.png" />
+                    <!-- Add an element like the following for each addtional page. -->
+                    <!-- <img class="page4 undisplayed" src="../../../assets/pager-4.png" /> -->
+                </div>
+                <span id="next" class="change-stage ms-font-m ms-fontColor-white"><i class="ms-Icon ms-Icon--chevronThickRight" title="Next page"></i></span>
+            </div>
+        </div>
+        <div class="ms-firstrun-pages__content">
+            <div class="ms-firstrun-pages__content--centered ms-font-m ms-fontColor-white">
+                <p class="page1"><span class="ms-fontWeight-light">When you need to </span><span class="ms-fontWeight-semibold">focus on priorities</span></p>
+                <p class="page2 undisplayed"><span class="ms-fontWeight-light">When you need to </span><span class="ms-fontWeight-semibold">measure productivity</span></p>
+                <p class="page3 undisplayed"><span class="ms-fontWeight-light">When you need to </span><span class="ms-fontWeight-semibold">be very organized</span></p>
+                <!-- Add an element like the following for each addtional page. -->
+                <!-- <p class="page4 undisplayed"><span class="ms-fontWeight-light">Text for 4th page </span><span class="ms-fontWeight-semibold">emphatic 4th page text</span></p> -->
+            </div>
+        </div>
+        <footer class="ms-firstrun-pages__footer">
+            <div class="ms-firstrun-pages__footer--centered">
+                <p class="ms-font-mi" id="pageMarkers">
+                    <span id="page1Marker" class="ms-fontColor-white"><i class="ms-Icon ms-Icon--circleFilled" aria-hidden="true"></i></span>
+                    <span id="page2Marker" class="ms-fontColor-themeTertiary"><i class="ms-Icon ms-Icon--circleFilled" aria-hidden="true"></i></span>
+                    <span id="page3Marker" class="ms-fontColor-themeTertiary"><i class="ms-Icon ms-Icon--circleFilled" aria-hidden="true"></i></span>
+                    <!-- Add an element like the following for each addtional page. -->
+                    <!-- <span id="page4Marker" class="ms-fontColor-themeTertiary"><i class="ms-Icon ms-Icon--circleFilled" aria-hidden="true"></i></span> -->
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

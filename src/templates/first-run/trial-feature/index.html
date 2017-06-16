@@ -1,0 +1,94 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
+
+<!--
+    This file shows how to design a page that prompts users to either sign in to the add-in or sign up for a trial
+    before they can access an advanced feature of the add-in.
+    -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Welcome Screen - Trial Placemat</title>
+
+    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js"></script>
+
+    <!-- Template styles -->
+    
+    <link href="trial.placemat.feature.css" rel="stylesheet" type="text/css" />
+
+    <!-- Fabric component -->
+    <script type="text/javascript" src="Pivot.js"></script>
+    <script> $(document).ready(function() { if ($.fn.Pivot) { $('.ms-Pivot').Pivot(); } }); </script>
+
+</head>
+<body class="ms-font-l ms-firstrun-trial-feature">
+    <main class="ms-firstrun-trial-feature__main">
+        <section class="ms-firstrun-trial-feature__header">
+            <div class="ms-firstrun-trial-feature__header--left">
+                <i class="ms-Icon ms-Icon--chevronThickLeft ms-fontColor-themePrimary"></i>
+            </div>
+            <div class="ms-Pivot ms-firstrun-trial-feature__header--right ms-font-m ms-fontWeight-light">
+                <p class="ms-Pivot-link is-selected" data-pivotContent="[data-demo='tabs']>.feature1">Feature 1</p>
+                <p class="ms-Pivot-link" data-pivotContent="[data-demo='tabs']>.feature2">Feature 2</p>
+            </div>
+        </section>
+        <div data-demo="tabs">
+            <div class="ms-Pivot-content is-selected feature1">
+                <section class="ms-firstrun-trial-feature__content ms-font-m ms-fontColor-neutralPrimary">
+                    <h2 class="ms-font-xl ms-fontWeight-light">Feature 1 Title</h2>
+                    <div class="ms-firstrun-trial-feature__login-panel">
+                        <h3 class="ms-font-l ms-fontColor-themePrimary">Login to access this feature</h3>
+                        <form class="ms-firstrun-trial-feature__form">
+                            <p class="ms-firstrun-trial-feature__input ">
+                                <label for="username">Username</label>
+                                <input class="input__username" type="text" name="username" />
+                            </p>
+                            <p class="ms-firstrun-trial-feature__input ">
+                                <label for="password">Password</label>
+                                <input class="input__password" type="password" name="username" />
+                            </p>
+                            <input class="input__submit" type="submit" name="submit" value="Login" />
+                        </form>
+                    </div>
+                    <p class="ms-firstrun-trial-feature__label ms-font-l ms-fontColor-themePrimary ms-fontWeight-semilight">Start your <span class="ms-fontWeight-semibold">trial</span> to get this feature.</p>
+                </section>
+            </div>
+            <div class="ms-Pivot-content feature2">
+                <section class="ms-firstrun-trial-feature__content ms-font-m ms-fontColor-neutralPrimary">
+                    <h2 class="ms-font-xl ms-fontWeight-light">Feature 2 Title</h2>
+                    <div class="ms-firstrun-trial-feature__login-panel">
+                        <h3 class="ms-font-l ms-fontColor-themePrimary">Login to access this feature</h3>
+                        <form class="ms-firstrun-trial-feature__form">
+                            <p class="ms-firstrun-trial-feature__input ">
+                                <label for="username">Username</label>
+                                <input class="input__username" type="text" name="username" />
+                            </p>
+                            <p class="ms-firstrun-trial-feature__input ">
+                                <label for="password">Password</label>
+                                <input class="input__password" type="password" name="username" />
+                            </p>
+                            <input class="input__submit" type="submit" name="submit" value="Login" />
+                        </form>
+                    </div>
+                    <p class="ms-firstrun-trial-feature__label ms-font-l ms-fontColor-themePrimary ms-fontWeight-semilight">Start your <span class="ms-fontWeight-semibold">trial</span> to get this feature.</p>
+                </section>
+            </div>
+        </div>            
+    </main>
+    <footer class="ms-firstrun-trial-feature__footer  ms-bgColor-themePrimary">
+        <div class="ms-firstrun-trial-feature__footer--left">
+            <img src="/assets/logo-filled.png" />
+            <h1 class="ms-font-xl ms-fontWeight-semilight ms-fontColor-white">My Add-in Name</h1>
+        </div>
+        <div class="ms-firstrun-trial-feature__footer--right">
+            <i class="ms-Icon enlarge ms-Icon--gear ms-fontColor-white"></i>
+        </div>
+    </footer>
+</body>
+</html>

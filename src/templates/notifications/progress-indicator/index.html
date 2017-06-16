@@ -1,0 +1,55 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
+<!--
+    This file shows how to display a progress bar in an add-in page.
+    -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Notifications - Progress Determinate</title>
+
+    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+
+    <!-- Template styles -->
+    
+    <link href="progress.bar.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="ms-notification-progress-determinate">
+    <main class="ms-notification-progress-determinate__main ms-bgColor-themePrimary ms-fontColor-white">
+        <img class="ms-notification-progress-determinate__logo" src="/assets/logo.png" />
+        <h1 class="ms-firstrun-value__title ms-font-xl ms-fontColor-white ms-fontWeight-light">My Add-in</h1>
+    </main>
+    <footer class="ms-notification-progress-determinate__footer ms-bgColor-themePrimary ms-fontColor-white">
+        <div class="ms-progress">
+            <div class="ms-ProgressIndicator">
+                <div class="ms-ProgressIndicator-itemName">Example.jpg</div>
+                <div class="ms-ProgressIndicator-itemProgress">
+                    <div class="ms-ProgressIndicator-progressTrack"></div>
+                    <div class="ms-ProgressIndicator-progressBar"></div>
+                </div>
+                <div class="ms-ProgressIndicator-itemDescription">My Progress Description</div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js"></script>
+    <script src="fabric.progress.indicator.js"></script>
+    <script type="text/javascript">
+        if (typeof fabric === "object") {
+            if ('ProgressIndicator' in fabric) {
+                var element = document.querySelector('.ms-ProgressIndicator');
+                var component = new fabric['ProgressIndicator'](element);
+
+                component.setName('Process name');
+                component.setDescription('My progress description');
+                component.setTotal(100);
+                component.setProgress(75);
+            }
+        }
+    </script>
+</body>
+</html>

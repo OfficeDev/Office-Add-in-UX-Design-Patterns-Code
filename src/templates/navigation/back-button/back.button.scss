@@ -1,99 +1,36 @@
 @import '../../../common/common.scss';
 
-.ms-navigation-back-button {
-    @include flex();
-    height: 100%;
+.dp-back-button {
+    @include inline-flex(null, center);
+    height: 44px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    position: relative;
 
-    &__main {
-        @include flex();
-        flex: 1 1 0;
+    &--left {
+        width: 50px;
         height: 100%;
+        @include inline-flex(null, center);
+        position: absolute;
+
+            &__button {
+                width: 100%;
+                height: 100%;
+                font-size: 16px;
+                background: none repeat scroll 0 0 transparent;
+                border: 0px none;  
+                line-height: 1;
+                cursor: pointer;
+            }
     }
 
-    &__header {
-        background-color: #EFF6FC;
+    &--right {
+        width: 100%;
+        height: 100%;
         @include inline-flex(center, center);
 
-        &--left {
-            padding: 12px 15px 12px 15px;
-            cursor: pointer;
-            background-color: #EFF6FC;
-            
-            &:active, &:hover {
-                background: #c7e0f4;
-            }
-        }
-
-        &--right {
-            flex: 1 0 0px;            
-            @include inline-flex(center, center);
-            background-color: #EFF6FC;
-
-            p {
-                padding-right: 45px;              
-                flex: 1 0 0px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                text-align: center;
-                cursor: pointer;      
-                &:last-child {
-                    border-right: none;
-                }
-            }
-        }
-    }
-
-    &__content {
-        @include flex(column, nowrap, null, null);
-        height: 100%;
-        flex: 1 1 0;
-        min-height: 180px;
-        padding: $global-spacing;
-
-        h2 {
-            margin-bottom: $global-spacing;
-        }
-
-        &__title, &__subtitle, &__text {
-            margin-bottom: $global-spacing;
-        }
-
-        ul {
-            list-style: none;
-            margin-top: 0;
-            margin-bottom: $global-spacing;
-        }
-    }
-
-
-
-
-    &__footer {
-        @include inline-flex(center, center);
-
-        &--left {
-            @include focus-states(darken($ms-fontColor-themePrimary, 10%), null, false);
-            @include inline-flex(flex-start, center);
-            flex: 1 0 0px;
-            padding: $global-spacing;
-
-            img {
-                width: 40px;
-                height: 40px;
-            }
-
-            h1 {
-                flex: 1 0 0px;
-                margin-left: 15px;
-                text-align: left;
-                @include ellipsis();
-            }
-        }
-
-        &--right {
-            @include focus-states(darken($ms-fontColor-themePrimary, 10%), null, false);
-            padding: 29px $global-spacing;
+        &__title {
+            margin-bottom: 5px;
         }
     }
 }

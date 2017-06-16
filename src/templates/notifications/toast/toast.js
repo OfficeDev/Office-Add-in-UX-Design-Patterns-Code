@@ -21,18 +21,18 @@ fabric.Toast = function (timer) {
     // toast message template
     var _template = '<div class="ms-toast" id="{{id}}">'
                     + '<div class="ms-toast__header">'
-                    + '<h4 class="ms-toast__title ms-font-l ms-fontColor-themePrimary ms-fontWeight-semibold">{{title}}</h4>'
-                    + '<i class="ms-toast__close ms-Icon ms-Icon--x"></i>'
+                    + '<h4 class="ms-toast__title ms-font-l ms-fontColor-neutralPrimary">{{title}}</h4>'
+                    + '<i class="ms-toast__close ms-Icon ms-Icon--Cancel"></i>'
                     + '</div>'
                     + '<div class="ms-toast__content">'
-                    + '<i class="ms-toast__info ms-Icon ms-Icon--infoCircle ms-fontColor-themePrimary enlarge"></i>'
-                    + '<p class="ms-toast__message ms-font-m">{{message}}</p>'
+                    + '<i class="ms-toast__info ms-Icon ms-Icon--Info ms-fontColor-neutralPrimary"></i>'
+                    + '<p class="ms-toast__message ms-font-m">{{message}} <a class="ms-Link" href="#" title="Learn more here">Learn more</a></p>'
                     + '</div>'
                     + '</div>';
     var _maxLength = 150;
     var _closeButton;
     var _errorBanner;
-    var _timer = timer || 5;
+    var _timer = timer || 7;
     var _id = 0;
     var _body = document.querySelector('body');
 

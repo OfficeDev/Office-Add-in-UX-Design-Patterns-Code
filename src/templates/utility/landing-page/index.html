@@ -1,0 +1,81 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
+
+<!--
+    This file shows a recommended design for the start page of the add-in; which is the first page 
+    the user sees after the first-run experience and usually the first page the user sees on subsquent 
+    executions of the add-in..
+    -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Landing Page</title>
+
+    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+
+    <!-- Template styles -->
+    
+    <link href="landing.page.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="ms-font-l ms-landing-page">
+    <main class="ms-landing-page__main">
+        <section class="ms-landing-page__header ms-bgColor-themeLighter">
+            <div class="ms-landing-page__header--center ms-font-m ms-fontWeight-light">
+                <p>
+                    <i class="ms-Icon ms-Icon--plus ms-fontColor-themePrimary"></i>
+                    Item 1
+                </p><p>
+                    <i class="ms-Icon ms-Icon--plus ms-fontColor-themePrimary"></i>
+                    Item 2
+                </p>       
+            </div>
+            <div class="ms-landing-page__header--right ms-font-m ms-fontWeight-light">
+                <i class="ms-Icon ms-Icon--reactivate ms-fontColor-themePrimary"></i>
+            </div>
+        </section>
+        <section class="ms-landing-page__content ms-font-m ms-fontColor-neutralPrimary">
+            <article class="demo-placeholder">
+                <div class="demo-placeholder__img"></div>
+                <div class="demo-placeholder__text"></div>
+                <div class="demo-placeholder__text"></div>
+                <div class="demo-placeholder__text"></div>
+                <div class="demo-placeholder__text demo-placeholder__text--half"></div>
+            </article>
+            <article class="demo-placeholder">
+                <div class="demo-placeholder__text"></div>
+                <div class="demo-placeholder__text demo-placeholder__text--half"></div>
+            </article>
+            <article class="demo-placeholder">
+                <div class="demo-placeholder__text"></div>
+                <div class="demo-placeholder__text"></div>
+                <div class="demo-placeholder__text"></div>
+                <div class="demo-placeholder__text demo-placeholder__text--half"></div>
+            </article>
+            <article class="demo-placeholder">
+                <div class="demo-placeholder__text demo-placeholder__text--half"></div>
+                <div class="demo-placeholder__text demo-placeholder__text--para"></div>
+            </article>
+            <article class="demo-placeholder">
+                <div class="demo-placeholder__text demo-placeholder__text--half"></div>
+                <div class="demo-placeholder__text demo-placeholder__text--para"></div>
+            </article>
+            <article class="demo-placeholder">
+                <div class="demo-placeholder__button ms-bgColor-themeLight"></div>
+            </article>
+        </section>
+    </main>
+    <footer class="ms-landing-page__footer  ms-bgColor-themePrimary">
+        <div class="ms-landing-page__footer--left">
+            <img src="/assets/logo-filled.png" />
+            <h1 class="ms-font-xl ms-fontWeight-semilight ms-fontColor-white">My Add-in Name</h1>
+        </div>
+        <div class="ms-landing-page__footer--right">
+            <i class="ms-Icon enlarge ms-Icon--gear ms-fontColor-white"></i>
+        </div>
+    </footer>
+</body>
+</html>
