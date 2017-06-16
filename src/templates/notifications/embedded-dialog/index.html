@@ -10,17 +10,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <title>Welcome Screen - Embedded Dialog</title>
+    <title>Embedded Dialog</title>
 
-    <!-- jQuery is used to change various items in the UI. -->
+    <!-- jQuery is used to change various items in the UI. 
     <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js"></script>
 
-    <!-- We use Office.js in the JavaScript file. -->
+     We use Office.js in the JavaScript file. 
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+     For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. 
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">-->
+
     <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
 
     <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
-    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
-    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+    <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.min.css" />
+    <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.components.min.css" />
+    <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/js/fabric.min.js"></script>
 
     <!-- Template styles -->
     
@@ -29,7 +36,7 @@
     <!-- Embed the JavaScript file to manipulate the UI. -->
     <script src="embedded.dialog.js"></script>
    
-
+    <script src="https://localhost:1337/vorlon.js"></script>
 </head>
 <body class="ms-font-l ms-embedded-dialog">
     

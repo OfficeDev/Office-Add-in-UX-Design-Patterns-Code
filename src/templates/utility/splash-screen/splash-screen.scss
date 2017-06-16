@@ -1,0 +1,31 @@
+﻿@import '../../../common/common.scss';
+
+.dp-splash-screen {
+    @include flex();
+    height: 100%;
+
+    &--main {
+        @include center-flex();
+       
+        &__logo {
+            padding-bottom: 10px;
+        }
+
+        &__name {
+            padding-bottom: 120px;
+        }
+
+        //This is overwriting the default styling of the Spinner.
+        .ms-Spinner--large {
+            .ms-Spinner-label {
+                left: -7px;
+                top: 48px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.ms-spinner-circle {
+    border-radius: 0;
+}
