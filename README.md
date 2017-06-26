@@ -63,8 +63,6 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
 
   * [Carousel](src/docs/carousel.md) - Takes users through a series of features or informational steps before they start.
   * [Instruction Step](src/docs/instruction-step.md) - Provides users with an ordered list of instructions to get started.
-  * [Trial](src/docs/trial.md) - Allows users to sign up for a trial.
-  * [Trial Feature](src/docs/trial-feature.md) - Allows users to sign up for a trial for a specific feature.
   * [Value Placemat](src/docs/value-placemat.md) - Provides a clear value proposition and list of features.
   * [Video Placemat](src/docs/video-placemat.md) - Provides value through video content.
 
@@ -79,7 +77,6 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
 
   * [Command Bar](src/docs/command-bar.md) - A surface that houses commands that operate on the content or parent region it resides above.
   * [Embedded Dialog](src/docs/embedded-dialog.md) - Displays a dialog inside of the task pane or content add-in.
-  * [Landing Page](src/docs/landing-page.md) - A generic layout, which can be utilized as a starting point for add-ins.
   * [Settings](src/docs/settings.md) - Displays common components that may be used within an add-in's settings menu.
   
 #### Notification

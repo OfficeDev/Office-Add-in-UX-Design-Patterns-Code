@@ -7,5 +7,5 @@ Value Placemat communicates your add-in's value proposition.
 
 ***
 
-![First Run - Value Placemat - Specifications for desktop task pane](../assets/markdown-images/FirstRun_ValuePlacemat_DesktopTaskPaneCallouts.png)
+![First Run - Value Placemat - Specifications for desktop task pane](../assets/markdown-images/valuePlacemat_taskPaneCallouts.png)
 Specifications for desktop task pane 

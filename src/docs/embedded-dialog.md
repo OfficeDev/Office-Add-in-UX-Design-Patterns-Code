@@ -7,5 +7,5 @@ Embedded dialog shows a dialog inside the task pane that provides information an
 
 ***
 
-![Embedded Dialog - Specifications for desktop task pane](../assets/markdown-images/Embedded_Dialog_DesktopTaskPaneCallouts.png)
+![Embedded Dialog - Specifications for desktop task pane](../assets/markdown-images/embeddedDialog_taskPaneCallouts.png)
 Specifications for desktop task pane

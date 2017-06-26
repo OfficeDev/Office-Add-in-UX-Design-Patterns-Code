@@ -7,5 +7,5 @@ Toast provides a brief message that fades away after a few seconds. Since the us
 
 ***
 
-![Notification - Toast - Specifications for desktop task pane](../assets/markdown-images/Notification_toast_DesktopTaskPaneCallouts.png)
+![Notification - Toast - Specifications for desktop task pane](../assets/markdown-images/toast_taskPaneCallouts.png)
 Specifications for desktop task pane
