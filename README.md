@@ -62,7 +62,6 @@ You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Des
 #### First-Run
 
   * [Carousel](src/docs/carousel.md) - Takes users through a series of features or informational steps before they start.
-  * [Instruction Step](src/docs/instruction-step.md) - Provides users with an ordered list of instructions to get started.
   * [Value Placemat](src/docs/value-placemat.md) - Provides a clear value proposition and list of features.
   * [Video Placemat](src/docs/video-placemat.md) - Provides value through video content.
 
