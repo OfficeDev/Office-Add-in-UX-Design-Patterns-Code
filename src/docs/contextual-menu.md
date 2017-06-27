@@ -8,7 +8,7 @@ A menu originating from a command bar, a cursor or focus. This helps users remem
 ***
 
 
-![Navigation - Specifications for desktop task pane](../assets/markdown-images/Navigation_DesktopTaskPaneCallouts.png)
+![Navigation - Specifications for desktop task pane](../assets/markdown-images/contextualMenu_taskPaneCallouts.png)
 Callouts for desktop task pane 
 
 

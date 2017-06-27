@@ -7,5 +7,5 @@ The back button allows users to recover from a drill down navigational action. T
 
 ***
 
-![Back Button - Specifications for desktop task pane](../assets/markdown-images/Back_Button_DesktopTaskPaneCallouts.png)
+![Back Button - Specifications for desktop task pane](../assets/markdown-images/backButton_taskPaneCallouts.png)
 Specifications for desktop task pane 

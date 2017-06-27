@@ -9,31 +9,23 @@ Use dialogs to present authentication screens to your end users. Consider this U
 - **Dialog Sizing** - Target your dialogs to a few key widths or breakpoints for better responsive design. [Learn more](https://msdn.microsoft.com/windows/uwp/layout/screen-sizes-and-breakpoints-for-responsive-design)
 
 ***
-![Authentication Dialog Single Identity - Flowchart](../assets/markdown-images/single-id-titlepage.jpg)
+![Authentication Dialog Single Identity - Flowchart](../assets/markdown-images/auth_single_flow.png)
 Recommended screen flow for when using a single identity provider in your add-in.
 
-![Authentication Flow - First run placemat](../assets/markdown-images/auth_dialog_singleid_fre.jpg)
+![Authentication Flow - First run placemat](../assets/markdown-images/auth_single_taskPaneCallouts.png)
 1. First Run Placemat - Place the branded sign-in button as a clear call-to action inside your add-in's UI.
 
 
-![Authentication Dialog Single Identity - Provider Sign-in](../assets/markdown-images/auth_dialog_singleid_providerui.jpg)
+![Authentication Dialog Single Identity - Provider Sign-in](../assets/markdown-images/auth_single_taskPaneCallouts2.png)
 2. Provider Sign-in - The identity provider will have their own UI. Microsoft Azure Active Directory allows customization of sign-in and access panel pages for consistent look and feel with your service. [Learn More](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-company-branding/).
 
 
-![Authentication Dialog Single Identity - Progress](../assets/markdown-images/auth_dialog_singleid_progress.jpg)
+![Authentication Dialog Single Identity - Progress](../assets/markdown-images/auth_single_taskPaneCallouts3.png)
 3. Progress - Indicate progress while settings and UI load.
 
-![Authentication Dialog Single Identity - Home Page](../assets/markdown-images/auth_dialog_singleid_homepage.jpg)
+![Authentication Dialog Single Identity - Home Page](../assets/markdown-images/auth_single_taskPaneCallouts4.png)
 4. Home Page - Land your users on a useful home page to begin their add-in experience.
 
-![Authentication Dialog Single Identity - Sign-out](../assets/markdown-images/auth_dialog_singleid_signout.jpg)
+![Authentication Dialog Single Identity - Sign-out](../assets/markdown-images/auth_single_taskPaneCallouts5.png)
 5. Sign-out - Include a discoverable entry point for users to manage their profile.
 
-![Authentication Dialog Single Identity - Variant First Run Placemat](../assets/markdown-images/auth_dialog_singleid_variantfre.jpg)
-6. Variant First Run Placemat - Without UI space for a branded sign-in button, add-ins can begin authentication in a dialog. Above illustrates an add-in where a first run experience is launched from an add-in comand.
-
-![Authentication Dialog Single Identity - Variant Provider Sign-in](../assets/markdown-images/auth_dialog_singleid_variantproviderui.jpg)
-7. Variant Provider Sign-in - Continue the sign-in experience with provider UI in a dialog.
-
-![Authentication Dialog Single Identity - Variant Progress](../assets/markdown-images/auth_dialog_singleid_variantprogress.jpg)
-8. Variant Progress  - Indicate progress while settings and UI load. Close the dialog on complete.

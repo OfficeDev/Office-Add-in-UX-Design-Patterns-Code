@@ -7,5 +7,5 @@ The brand bar is a space in the footer to include your brand name and logo. It a
 
 ***
 
-![Brand Bar - Specifications for desktop task pane](../assets/markdown-images/Brand_bar_DesktopTaskPaneCallouts.png)
+![Brand Bar - Specifications for desktop task pane](../assets/markdown-images/brandBar_taskPaneCallouts.png)
 Specifications for desktop task pane 

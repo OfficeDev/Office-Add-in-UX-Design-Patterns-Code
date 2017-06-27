@@ -7,5 +7,5 @@ CommandBar is a surface that houses commands that operate on the content of the 
 
 ***
 
-![Commands - Specifications for desktop task pane](../assets/markdown-images/Commands_DesktopTaskPaneCallouts.png)
+![Commands - Specifications for desktop task pane](../assets/markdown-images/commandBar_taskPaneCallouts.png)
 Specifications for desktop task pane 
