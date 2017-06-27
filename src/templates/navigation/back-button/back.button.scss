@@ -12,6 +12,8 @@
         height: 100%;
         @include inline-flex(null, center);
         position: absolute;
+        top: 0;
+        left: 0;
 
             &__button {
                 width: 100%;
