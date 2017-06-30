@@ -12,85 +12,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <title>Tab Bar</title>
 
+    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more.-->
+
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
     <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
-    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
-    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+    <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.min.css" />
+    <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.components.min.css" />
+    <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/js/fabric.min.js"></script>
 
     <!-- Template styles -->
-
     <link href="tab.bar.css" rel="stylesheet" type="text/css" />
 </head>
-<body class="ms-font-l ms-tab-bar">
-    <nav class="ms-tab-bar__header ms-bgColor-themeLighter">
-        <div class="ms-tab-bar__header--center ms-font-m ms-fontWeight-light ms-fontColor-themePrimary">
-            <div class="ms-tab-bar__header--center"></div>
-            <button class="ms-tab-bar__header--centeritems ms-font-m ms-fontWeight-light ms-fontColor-themePrimary">
-                <i class="ms-font-xl ms-Icon ms-Icon--home ms-fontColor-themePrimary"></i>
-                <div class="ms-tab-bar__header--centeritemstext">
+    <body class="placeholder">
+        <nav class="dp-tab-bar">
+            <button class="dp-tab-bar--active dp-tab-bar__button ms-bgColor-neutralLighterAlt--hover" onclick="location.href='#'">
+                <i class="ms-font-l ms-Icon ms-Icon--Home ms-fontColor-themePrimary"></i>
+                <div class="ms-fontWeight-semibold ms-font-s dp-tab-bar__button--text">
                     Home
                 </div>
             </button>
-            <button class="ms-tab-bar__header--centeritems ms-font-m ms-fontWeight-light ms-fontColor-themePrimary">
-                <i class="ms-font-xl ms-Icon ms-Icon--gear ms-fontColor-themePrimary"></i>
-                <div class="ms-tab-bar__header--centeritemstext">
+            <button class="dp-tab-bar__button ms-bgColor-neutralLighterAlt--hover" onclick="location.href='#'">
+                <i class="ms-font-l ms-Icon ms-Icon--Settings ms-fontColor-themePrimary"></i>
+                <div class="ms-font-s dp-tab-bar__button--text">
                     Settings
                 </div>
             </button>
-            <button class="ms-tab-bar__header--centeritems ms-font-m ms-fontWeight-light ms-fontColor-themePrimary">
-                <i class="ms-font-xl ms-Icon ms-Icon--star ms-fontColor-themePrimary"></i>
-                <div class="ms-tab-bar__header--centeritemstext">
+            <button class="dp-tab-bar__button ms-bgColor-neutralLighterAlt--hover" onclick="location.href='#'">
+                <i class="ms-font-l ms-Icon ms-Icon--Heart ms-fontColor-themePrimary"></i>
+                <div class="ms-font-s dp-tab-bar__button--text">
                     Favorites
                 </div>
             </button>
-            <button class="ms-tab-bar__header--centeritems ms-font-m ms-fontWeight-light ms-fontColor-themePrimary">
-                <i class="ms-font-xl ms-Icon ms-Icon--person ms-fontColor-themePrimary"></i>
-                <div class="ms-tab-bar__header--centeritemstext">
+            <button class="dp-tab-bar__button ms-bgColor-neutralLighterAlt--hover" onclick="location.href='#'">
+                <i class="ms-font-l ms-Icon ms-Icon--Contact ms-fontColor-themePrimary"></i>
+                <div class="ms-font-s dp-tab-bar__button--text">
                     Account
                 </div>
             </button>
-            <div class="ms-tab-bar__header--center"></div>
-        </div>
-    </nav>
-
-    <main class="ms-tab-bar__content ms-font-m ms-fontColor-neutralPrimary">
-        <article class="demo-placeholder">
-            <div class="demo-placeholder__img"></div>
-            <div class="demo-placeholder__text"></div>
-            <div class="demo-placeholder__text"></div>
-            <div class="demo-placeholder__text"></div>
-            <div class="demo-placeholder__text demo-placeholder__text--half"></div>
-        </article>
-        <article class="demo-placeholder">
-            <div class="demo-placeholder__text"></div>
-            <div class="demo-placeholder__text demo-placeholder__text--half"></div>
-        </article>
-        <article class="demo-placeholder">
-            <div class="demo-placeholder__text"></div>
-            <div class="demo-placeholder__text"></div>
-            <div class="demo-placeholder__text"></div>
-            <div class="demo-placeholder__text demo-placeholder__text--half"></div>
-        </article>
-        <article class="demo-placeholder">
-            <div class="demo-placeholder__text demo-placeholder__text--half"></div>
-            <div class="demo-placeholder__text demo-placeholder__text--para"></div>
-        </article>
-        <article class="demo-placeholder">
-            <div class="demo-placeholder__text demo-placeholder__text--half"></div>
-            <div class="demo-placeholder__text demo-placeholder__text--para"></div>
-        </article>
-        <article class="demo-placeholder">
-            <div class="demo-placeholder__button ms-bgColor-themeLight"></div>
-        </article>
-    </main>
-
-    <footer class="ms-tab-bar__footer  ms-bgColor-themePrimary">
-        <div class="ms-tab-bar__footer--left">
-            <img src="/assets/logo-filled.png" />
-            <h1 class="ms-font-xl ms-fontWeight-semilight ms-fontColor-white">My Add-in Name</h1>
-        </div>
-        <div class="ms-tab-bar__footer--right">
-            <i class="ms-Icon enlarge ms-Icon--gear ms-fontColor-white"></i>
-        </div>
-    </footer>
-</body>
+        </nav>
+        <!-- Start placeholder Body content-->
+        <section class="placeholder__content">
+            <div class="placeholder__content--textTitle ms-bgColor-neutralLighter"></div>
+            <div class="placeholder__content--textBody ms-bgColor-neutralLighter"></div>
+            <div class="placeholder__content--textBody ms-bgColor-neutralLighter"></div>
+            <div class="placeholder__content--textBody ms-bgColor-neutralLighter"></div>
+            <div class="placeholder__content--textBody ms-bgColor-neutralLighter"></div>
+        </section>
+        <!-- End placeholder Body content-->
+        <!-- Start placeholder footer -->
+        <footer class="placeholder__footer ms-borderColor-neutralLight ms-bgColor-white">
+            <div class="placeholder__footer--left">
+                <div class="placeholder__footer--left--logo ms-bgColor-neutralLighter"></div>
+                <div class="placeholder__footer--left--text ms-bgColor-neutralLighter"></div>
+            </div>
+            <div class="placeholder__footer--right">
+                <div class="placeholder__footer--right--cmd ms-bgColor-neutralLighter"></div>
+            </div>
+        </footer>
+        <!-- End placeholder footer -->
+        <script src="../../../../node_modules/core-js/client/core.min.js"></script>
+    <script src="../../../../node_modules/@microsoft/office-js-helpers/dist/office.helpers.min.js"></script>
+    <script src="../../../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="tab.bar.js"></script>
+    </body>
 </html>
