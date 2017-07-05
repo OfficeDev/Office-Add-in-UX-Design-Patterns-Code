@@ -1,0 +1,39 @@
+﻿@import '../../../common/common.scss';
+
+.dp-contextual-menu {
+    @include inline-flex(null, center);
+    height: 44px;
+
+    &--left {
+        width: 50px;
+        height: 100%;
+
+        &__button {
+            width: 100%;
+            height: 100%;
+            background: none repeat scroll 0 0 transparent;
+            border: 0px none;  
+            line-height: 1;
+            cursor: pointer;
+        }
+    }
+}
+
+.ms-ContextualMenu .ms-Icon {
+    margin-right: 10px;
+    
+}
+
+// .ms-Button.ms-Button--command {
+//     @include focus-states(#eff6fc, null, true);
+//     padding-top: 4px;
+//     padding-left: 20px;
+//     padding-right: 20px;
+//     height: 40px;
+// }
+
+// .ms-ContextualMenu-link.ms-ContextualMenu-link--hasMenu ~ .ms-ContextualMenu {
+//     left: 20px;
+//     top: 40px;
+// }
+
