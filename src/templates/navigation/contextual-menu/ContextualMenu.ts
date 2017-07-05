@@ -13,7 +13,5 @@ declare var fabric: any;
             let $button = $('#mainMenu');            
             $('.ms-ContextualMenu').map((i, menu)=>{ new fabric['ContextualMenu'](menu, $button[0])});
         }
-
-        //$('.ms-ContextualMenu-link:has(.ms-Icon)').css('lineHeight', '0')
     });
 })(jQuery);
