@@ -1,0 +1,39 @@
+@import '../../../common/common.scss';
+
+.dp-back-button {
+    @include inline-flex(null, center);
+    height: 44px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    position: relative;
+
+    &--left {
+        width: 50px;
+        height: 100%;
+        @include inline-flex(null, center);
+        position: absolute;
+        top: 0;
+        left: 0;
+
+            &__button {
+                width: 100%;
+                height: 100%;
+                font-size: 16px;
+                background: none repeat scroll 0 0 transparent;
+                border: 0px none;  
+                line-height: 1;
+                cursor: pointer;
+            }
+    }
+
+    &--right {
+        width: 100%;
+        height: 100%;
+        @include inline-flex(center, center);
+
+        &__title {
+            margin-bottom: 5px;
+        }
+    }
+}
+

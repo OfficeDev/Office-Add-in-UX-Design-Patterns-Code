@@ -1,116 +1,39 @@
-@import '../../../common/variables.scss';
-@import '../../../common/mixins.scss';
-
 @import '../../../common/common.scss';
 
-.ms-settings {
-    @include flex();
-    height: 100%;
+.dp-settings {
+    padding: $global-spacing;
 
-    &__main {
-        margin-bottom: 90px;
+    &__message {
+        margin-bottom: 10px;
     }
 
-    &__header {
-        overflow: hidden;
-        padding-left: 0px;
-        padding-right: 0px;
-        background-color: #EAEAEA;
-        height: 40px;
+    .ms-Label {
+        //This is a Fabric JS override to match the new updated Fabric styling.
+        font-size: 14px;
     }
 
-    &__content {
-        flex: 1 0 0px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 0px;
-
-        &__title {
-            padding-top: 15px;
-            padding-bottom: 10px;
-        }
-
-        &__subtitle {
-            padding-top: 25px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #EAEAEA;
-        }
-
-        &__text {
-            padding-top: 10px;
-        }
-
-        &--link {
-            padding-bottom: 10px;
-            padding-top: 10px;
-            color: $ms-fontColor-themePrimary;
-        }
-
-        a {
-            color: #0078d7;
-            text-decoration: none;
-        }
+    &__dropdown {
+        margin-bottom: 35px;
     }
 
-    &__footer {
-        @include inline-flex(center, center);
-        position: absolute;
-        bottom: 0;
-
-        &--left {
-            @include focus-states(darken($ms-fontColor-themePrimary, 10%), null, false);
-            @include inline-flex(flex-start, center);
-            flex: 1 0 0px;
-            padding: $global-spacing;
-
-            img {
-                width: 40px;
-                height: 40px;
-            }
-
-            h1 {
-                flex: 1 0 0px;
-                margin-left: 15px;
-                text-align: left;
-                @include ellipsis();
-            }
-        }
-
-        &--right {
-            @include focus-states(darken($ms-fontColor-themePrimary, 10%), null, false);
-            padding: 29px $global-spacing;
-        }
+    &__toggle {
+        margin-bottom: 35px;
     }
-}
 
-.ms-Button.ms-Button--command {
-    @include focus-states(#C8C8C8, null, true);
-    padding-top: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 40px;
-}
+    &__heading {
+        margin-bottom: 10px;
+    }
 
-.ms-ContextualMenu-link.ms-ContextualMenu-link--hasMenu ~ .ms-ContextualMenu {
-    left: 20px;
-    top: 40px;
-}
+    &__button {
+        margin-bottom: 35px;
+    }
 
-.ms-Toggle {
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+    &__about {
+        margin-bottom: $global-spacing;
+    }
 
-.ms-Toggle-description {
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.ms-Toggle .ms-Label {
-    font-size: 14px;
-}
-
-.ms-ChoiceField-field {
-    margin-top: 10px;
+    &__link {
+        display: block;
+        margin-bottom: $global-spacing;
+    }
 }
