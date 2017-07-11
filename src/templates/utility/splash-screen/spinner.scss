@@ -1,8 +1,7 @@
 ﻿@import '../../../common/common.scss';
 
 .dp-spinner {
-    @include center-flex();
-    height: 100%;
+    @include flex();
 
     &__circle {
         border: 3px solid #c7e0f4; /* Light grey */
@@ -11,6 +10,7 @@
         height: 28px;
         border-radius: 50%;
         animation: spin 2s linear infinite;
+        margin: 0 auto;
     }
 
     &__label {
@@ -27,3 +27,4 @@
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
 }
+
