@@ -15,9 +15,8 @@
     transition: transform ease-in-out 0.3s;
     @include flex();
 
-    &__content,
     &__header {
-        @include inline-flex(flex-start, flex-start);
+        @include inline-flex(space-between, flex-start);
 
         h4 {
             flex: 1 0 0px;
@@ -37,13 +36,16 @@
                 margin-top: 4px;
             }
         }
-
-        p {
-            margin-left: 7px;
-        }
     }
 
     &__content {
+        @include inline-flex(flex-start, flex-start);
         margin-top: 7px;
+
+        .ms-Icon {
+            margin-top: 3px;
+        }
+
+        p {padding-left: 10px;}
     }
 }

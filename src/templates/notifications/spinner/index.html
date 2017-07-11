@@ -5,44 +5,30 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <title>Notifications - Progress Determinate</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <title>Spinner</title>
 
-    <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
-    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
-    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+        <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more.
+        <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+        <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css"-->
 
-    <!-- Template styles -->
-    
-    <link href="spinner.css" rel="stylesheet" type="text/css" />
-</head>
-<body class="ms-notification-progress-indeterminate">
-    <main class="ms-notification-progress-indeterminate__main ms-bgColor-themePrimary ms-fontColor-white">
-        <img class="ms-notification-progress-indeterminate__logo" src="/assets/logo.png" />
-        <h1 class="ms-firstrun-value__title ms-font-xl ms-fontColor-white ms-fontWeight-light">My Add-in</h1>
-    </main>
-    <footer class="ms-notification-progress-indeterminate__footer ms-bgColor-themePrimary ms-fontColor-white">
-        <div class="ms-progress">
-            <div class="ms-ProgressIndicator">
-                <div class="ms-Spinner large"></div>
-                <div class="ms-ProgressIndicator-itemName">Task name</div>
-                <div class="ms-ProgressIndicator-itemDescription">Additional text</div>
-            </div>
+        <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+        <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+        <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.min.css" />
+        <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.components.min.css" />
+        <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/js/fabric.min.js"></script>
+
+        <!-- Template styles -->
+        
+        <link href="spinner.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="dp-spinner">
+            <div class="dp-spinner__circle"></div>
+            <p class="dp-spinner__label ms-font-m ms-fontColor-themePrimary">Loading...</p>
         </div>
-    </footer>
-
-    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js"></script>    
-    <script type="text/javascript" src="fabric.spinner.js"></script>    
-    <script type="text/javascript">
-        if (typeof fabric === "object") {
-            if ('Spinner' in fabric) {
-                var element = document.querySelector('.ms-Spinner');
-                var component = new fabric['Spinner'](element);
-                component.start();
-            }
-        }
-    </script>
-</body>
+    </body>
 </html>
