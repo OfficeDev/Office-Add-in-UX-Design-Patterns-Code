@@ -1,0 +1,71 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <title>ContextualMenu</title>
+        
+        <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more.-->
+
+        <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+        <!-- For the Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+        <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.min.css" />
+        <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.components.min.css" />
+        <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/js/fabric.min.js"></script>
+
+        <!-- Template styles -->
+        <link href="contextualMenu.css" rel="stylesheet" type="text/css" />
+
+    </head>
+    <body class="placeholder">
+        <nav class="dp-contextual-menu ms-borderColor-neutralTertiary ms-bgColor-neutralLighter">
+            <div class="dp-contextual-menu--left">
+                <button id="mainMenu" class="dp-contextual-menu--left__button ms-bgColor-neutralLight--hover">
+                    <i class="ms-Icon ms-Icon--GlobalNavButton ms-fontColor-themePrimary" aria-hidden="true"></i>
+                </button>
+                <ul class="ms-ContextualMenu is-hidden">
+                    <li class="ms-ContextualMenu-item">
+                        <a class="ms-ContextualMenu-link" tabindex="1">Home</a> 
+                    </li>
+                    <li class="ms-ContextualMenu-item">
+                        <a class="ms-ContextualMenu-link" tabindex="2">Activity</a> 
+                    </li>
+                    <li class="ms-ContextualMenu-item">
+                        <a class="ms-ContextualMenu-link" tabindex="3">Documents</a> 
+                    </li>
+                    <li class="ms-ContextualMenu-item">
+                        <a class="ms-ContextualMenu-link" tabindex="4">Pages</a> 
+                    </li>
+                    <li class="ms-ContextualMenu-item">
+                        <a class="ms-ContextualMenu-link ms-fontColor-themePrimary" tabindex="5"><i class="ms-Icon ms-Icon--OutOfOffice ms-fontColor-themePrimary" aria-hidden="true"></i>Sign out</a> 
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="placeholder__content">
+            <div class="placeholder__content--textTitle ms-bgColor-neutralLighter"></div>
+            <div class="placeholder__content--textBody ms-bgColor-neutralLighter"></div>
+            <div class="placeholder__content--textBody ms-bgColor-neutralLighter"></div>
+            <div class="placeholder__content--textBody ms-bgColor-neutralLighter"></div>
+            <div class="placeholder__content--textBody ms-bgColor-neutralLighter"></div>
+        </section>
+        <!-- Start placeholder footer -->
+        <footer class="placeholder__footer ms-borderColor-neutralLight ms-bgColor-white">
+            <div class="placeholder__footer--left">
+                <div class="placeholder__footer--left--logo ms-bgColor-neutralLighter"></div>
+                <div class="placeholder__footer--left--text ms-bgColor-neutralLighter"></div>
+            </div>
+            <div class="placeholder__footer--right">
+                <div class="placeholder__footer--right--cmd ms-bgColor-neutralLighter"></div>
+            </div>
+        </footer>
+        <!-- End placeholder footer -->
+        <script src="../../../../node_modules/core-js/client/core.min.js"></script>
+        <script src="../../../../node_modules/@microsoft/office-js-helpers/dist/office.helpers.min.js"></script>
+        <script src="../../../../node_modules/jquery/dist/jquery.js"></script>
+        <script src="contextualMenu.js"></script>
+    </body>
+</html>

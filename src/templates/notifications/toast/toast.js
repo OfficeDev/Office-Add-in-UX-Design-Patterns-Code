@@ -21,11 +21,11 @@ fabric.Toast = function (timer) {
     // toast message template
     var _template = '<div class="ms-toast" id="{{id}}">'
                     + '<div class="ms-toast__header">'
-                    + '<h4 class="ms-toast__title ms-font-l ms-fontColor-themePrimary ms-fontWeight-semibold">{{title}}</h4>'
-                    + '<i class="ms-toast__close ms-Icon ms-Icon--x"></i>'
+                    + '<h4 class="ms-toast__title ms-font-m ms-fontColor-neutralPrimary">{{title}}</h4>'
+                    + '<i class="ms-toast__close ms-Icon ms-Icon--Cancel"></i>'
                     + '</div>'
                     + '<div class="ms-toast__content">'
-                    + '<i class="ms-toast__info ms-Icon ms-Icon--infoCircle ms-fontColor-themePrimary enlarge"></i>'
+                    + '<i class="ms-toast__info ms-Icon ms-Icon--Info ms-fontColor-neutralPrimary"></i>'
                     + '<p class="ms-toast__message ms-font-m">{{message}}</p>'
                     + '</div>'
                     + '</div>';

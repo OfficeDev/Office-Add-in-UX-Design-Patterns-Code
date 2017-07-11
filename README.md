@@ -4,7 +4,7 @@
 
 This repository provides sample implementations in HTML, CSS, and JavaScript of common UX design patterns for Office Add-ins.
 
-When designing Office Add-ins, the UX design of your add-in should provide compelling experiences that extend Office. For example, your add-in should provide a first-run experience, a first-class UX experience, and smooth transitions between pages, among other things. Providing a clean, modern UX experience increases user retention and adoption of your add-in. This repo has UX resources for developers that implement:
+When designing Office Add-ins, the UX design of your add-in should provide compelling experiences that extend Office. For example, your add-in should provide a first-run experience, a first-class UX, and smooth transitions between pages, among other things. Providing a clean, modern User Experience increases user retention and adoption of your add-in. This repo has UX resources for developers that implement:
 
 * Common UX design patterns based on best practices.
 * Office Fabric components and styles.
@@ -14,7 +14,17 @@ For overview information and the types of UX design patterns available, see [UX 
 
 > Important: After customizing these design patterns to meet your requirements, be sure to test your add-in on all platforms where your add-in will be available. These UX design patterns were tested using Office 2016 and Windows 10.
 
+## Table of contents
+
+- [Contributing to the UX design patterns](#user-content-contributing-to-the-ux-design-patterns)
+- [Using the UX design patterns](#user-content-using-the-ux-design-patterns)
+- [UX design patterns list](#user-content-ux-design-patterns-list)
+- [Design Resources](#user-content-design-resources)
+- [Known issues](#user-content-known-issues)
+- [Additional Resources](#user-content-additional-resources)
+
 ## Contributing to the UX design patterns
+
 1. Clone this repo.
 2. Run `npm install`.
 3. Run `npm start`.
@@ -28,7 +38,7 @@ For overview information and the types of UX design patterns available, see [UX 
 
 ## Using the UX design patterns
 
-You can use the [UX designer specifications](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Source%20Files) as a guide when you create your own UX design, or you can add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates) directly to your project. To add the source code:
+You can  add the [source code](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates) directly to your project. To add the source code:
 
 1. Clone this repo.
 2. Copy the [assets folder](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/assets), and the code folder for the individual pattern you choose to your add-in project.
@@ -36,6 +46,51 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
 	- Edit the source location or add-in command URL in the manifest.
 	- Use the UX design pattern as a template for other pages.
 	- Link to or from the UX design pattern.
+
+## UX design patterns list
+
+#### Authentication
+
+  * [Authentication Dialog Flow - Multiple Identity](src/docs/auth-multi.md) - Present a multi authentication screen to your end users.
+  * [Authentication Dialog Flow - Single Identity](src/docs/auth-single.md) - Present a single identity authentication screen to your end users.
+
+#### Branding
+  
+  * [Brand Bar](src/docs/brand-bar.md) - A space in the footer to include your brand name, logo and an optional settings access location.
+  * [Splash Screen](src/docs/splash-screen.md) - This is a screen to display your company branding while the add-in is loading.
+ 
+#### First-Run
+
+  * [Carousel](src/docs/carousel.md) - Takes users through a series of features or informational steps before they start.
+  * [Value Placemat](src/docs/value-placemat.md) - Provides a clear value proposition and list of features.
+  * [Video Placemat](src/docs/video-placemat.md) - Provides value through video content.
+
+#### Navigation
+
+  * [Back Button](src/docs/back-button.md) - Shows a task pane with Back and Next Page buttons.
+  * [Contextual Menu](src/docs/contextual-menu.md) - Provides links to the main areas of an add-in. Also called "left nav" or "navigation pane."
+  * [Pivot](src/docs/pivot.md) - Allows users to navigate between different content. 
+  * [Tab Bar](src/docs/tab-bar.md) - Shows navigation links at the top of the add-in space using icons and labels.
+
+#### Utility
+
+  * [Command Bar](src/docs/command-bar.md) - A surface that houses commands that operate on the content or parent region it resides above.
+  * [Embedded Dialog](src/docs/embedded-dialog.md) - Displays a dialog inside of the task pane or content add-in.
+  * [Settings](src/docs/settings.md) - Displays common components that may be used within an add-in's settings menu.
+  
+#### Notification
+
+  * [Progress Indicator](src/docs/progress-indicator.md) - Shows the completion status of an operation lasting more than 2 seconds.
+  * [Spinner](src/docs/spinner.md) - Indicates to the user that things are processing.
+  * [Toast](src/docs/toast.md) - Provides a brief message that fades away after a few seconds.
+
+## Design Resources
+
+* Prototyping
+  * [Components](src/assets/design-resources/AddinUXDesign_UIComponents.ai)
+  * [Patterns](src/assets/design-resources/AddinUXDesign_UXPatterns.ai)
+* Outlook Mobile
+  * [iOS](src/assets/design-resources/iOS-Addins-Components-Final.sketch)
 
 ## Known issues
 
@@ -47,10 +102,10 @@ You can use the [UX designer specifications](https://github.com/OfficeDev/Office
 ## Additional resources
 
 * [Best practices for developing Office Add-ins](https://dev.office.com/docs/add-ins/overview/add-in-development-best-practices)
-* [Office UI Fabric](http://dev.office.com/fabric/). This project uses version 2.1.0 or higher.
+* [Office UI Fabric](http://dev.office.com/fabric/)
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-Copyright (c) Microsoft Corporation 2016. All rights reserved.
+Copyright © 2017 Microsoft Corporation. All rights reserved.
 
 

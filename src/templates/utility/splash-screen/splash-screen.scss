@@ -1,0 +1,17 @@
+﻿@import '../../../common/common.scss';
+
+.dp-splash-screen {
+    @include center-flex();
+
+      &__brand {
+        @include center-flex();
+
+        img {
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            padding-bottom: 120px;
+        }
+      }
+}

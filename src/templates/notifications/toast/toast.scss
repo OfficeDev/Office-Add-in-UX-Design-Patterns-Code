@@ -1,127 +1,5 @@
 ﻿@import '../../../common/common.scss';
 
-.ms-notification-toast {
-    @include flex();
-    height: 100%;
-
-    &__main {
-        @include flex();
-        flex: 1 1 0;
-        height: 100%;
-    }
-
-    &__header {
-        border-bottom: solid 2px $ms-fontColor-themePrimary;
-        @include inline-flex();
-
-        &--left {
-            margin-right: $global-spacing;
-            cursor: pointer;
-        }
-
-        &--right {
-            padding: 10px $global-spacing;
-            @include focus-states(#c7e0f4, #000, true);
-            cursor: pointer;
-        }
-
-        &--center {
-            flex: 1 1 auto;
-            @include inline-flex(flex-start, center);
-
-            p {
-                padding: 0 10px;
-                flex: 1 0 0px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                text-align: left;
-                cursor: pointer;
-                @include focus-states(#c7e0f4, #000, true);
-                padding: 10px;
-            }
-        }
-    }
-
-    &__content {
-        @include flex();
-        height: 100%;
-        flex: 1 1 0;
-        min-height: 180px;
-        padding: $global-spacing;
-
-        h2 {
-            margin-bottom: $global-spacing;
-        }
-
-         &__title, &__subtitle, &__text {
-            margin-bottom: $global-spacing;
-        }
-    }
-
-    &__footer {
-        @include inline-flex(center, center);
-
-        &--left {
-            @include focus-states(darken($ms-fontColor-themePrimary, 10%), null, false);
-            @include inline-flex(flex-start, center);
-            flex: 1 0 0px;
-            padding: $global-spacing;
-
-            img {
-                width: 40px;
-                height: 40px;
-            }
-
-            h1 {
-                flex: 1 0 0px;
-                margin-left: 15px;
-                text-align: left;
-                @include ellipsis();
-            }
-        }
-
-        &--right {
-            @include focus-states(darken($ms-fontColor-themePrimary, 10%), null, false);
-            padding: 29px $global-spacing;
-        }
-    }
-}
-
-.demo-placeholder {
-    margin-bottom: $global-spacing;
-    width: 100%;
-
-    &__img {
-        width: 60px;
-        height: 60px;
-        background-color: $demo-placeholder-color;
-        display: block;
-        margin-bottom: $global-spacing/2;
-    }
-
-    &__text {
-        height: 5px;
-        background-color: $demo-placeholder-color;
-        display: block;
-        margin-bottom: $global-spacing/2;
-
-        &--half {
-            width: 60%;
-        }
-
-        &--para {
-            height: 40px;
-        }
-    }
-
-    &__button {
-        width: 150px;
-        height: 40px;
-        margin: 0 auto;
-    }
-}
-
 .ms-toast {
     padding: 10px;
     box-shadow: 0 0 5px 1px rgba(0,0,0,0.4);
@@ -135,12 +13,10 @@
     -o-transition: transform ease-in-out 0.3s;
     -webkit-transition: transform ease-in-out 0.3s;
     transition: transform ease-in-out 0.3s;
-
     @include flex();
 
-    &__content,
     &__header {
-        @include inline-flex(flex-start, flex-start);
+        @include inline-flex(space-between, flex-start);
 
         h4 {
             flex: 1 0 0px;
@@ -150,19 +26,26 @@
         }
 
         .ms-Icon {
-            &.ms-Icon--x {
+            &.ms-Icon--Cancel {
                 color: #666;
             }
 
             @include focus-states(transparent, $ms-fontColor-themePrimary);
-        }
 
-        p {
-            margin-left: 7px;
+            &--Info {
+                margin-top: 4px;
+            }
         }
     }
 
     &__content {
+        @include inline-flex(flex-start, flex-start);
         margin-top: 7px;
+
+        .ms-Icon {
+            margin-top: 3px;
+        }
+
+        p {padding-left: 10px;}
     }
 }

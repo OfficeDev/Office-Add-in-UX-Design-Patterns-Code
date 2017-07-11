@@ -1,0 +1,97 @@
+@import 'mixins/flex.scss';
+
+.placeholder {
+    @include flex();
+    flex: 1 1 0;
+    height: 100%;
+
+    
+    &__header {
+        @include inline-flex(null, center);
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        height: 44px;
+        width: 100%;
+
+        &--left {
+            @include inline-flex(center);
+            width: 44px;
+            
+            nav {
+                width: 14px;
+                height: 14px;
+            }
+        }
+
+        &--right {
+            @include inline-flex(null, center);
+
+            &--cmd {
+                width: 14px;
+                height: 14px;
+                border-radius: 100%;
+            }
+
+            &--text {
+                width: 30px;
+                height: 10px;
+                margin: auto 10px auto 6px;
+            } 
+        }
+    }
+
+    &__content {
+        padding: $global-spacing;
+
+        &--textTitle {
+            min-width: 280px;
+            height: 32px;
+            margin-bottom: $global-spacing;
+        }
+
+        &--textBody {
+            min-width: 280px;
+            height: 64px;
+            margin-bottom: $global-spacing;
+        }
+    }
+
+    &__footer {
+        @include inline-flex(null, center);
+        height: 44px;
+        border-top-width: 1px;
+        border-top-style: solid;
+        position: absolute;
+        bottom: 0;
+
+        &--left {  
+            width: 100%;
+            height: 100%;
+            @include inline-flex(null, center);
+            padding-left: $global-spacing;
+
+            &--logo {
+                width: 32px;
+                height: 32px;
+            }
+            &--text {
+                min-width: 160px;
+                height: 14px;
+                margin-left: 7px;
+            }
+        }
+
+        &--right {
+            max-width: 100%;
+            height: 100%;
+            @include inline-flex(null, center);
+
+            &--cmd {
+                width: 14px;
+                height: 14px;
+                border-radius: 100%;
+                margin: 0 $global-spacing;
+            }
+        }
+    }
+}

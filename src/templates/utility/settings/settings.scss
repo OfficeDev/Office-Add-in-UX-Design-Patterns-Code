@@ -1,0 +1,39 @@
+@import '../../../common/common.scss';
+
+.dp-settings {
+    padding: $global-spacing;
+
+    &__message {
+        margin-bottom: 10px;
+    }
+
+    .ms-Label {
+        //This is a Fabric JS override to match the new updated Fabric styling.
+        font-size: 14px;
+    }
+
+    &__dropdown {
+        margin-bottom: 35px;
+    }
+
+    &__toggle {
+        margin-bottom: 35px;
+    }
+
+    &__heading {
+        margin-bottom: 10px;
+    }
+
+    &__button {
+        margin-bottom: 35px;
+    }
+
+    &__about {
+        margin-bottom: $global-spacing;
+    }
+
+    &__link {
+        display: block;
+        margin-bottom: $global-spacing;
+    }
+}
