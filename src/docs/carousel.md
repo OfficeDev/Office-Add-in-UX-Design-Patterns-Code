@@ -1,5 +1,8 @@
 # Carousel
 
+## Content Disclaimer
+This UX pattern has been renamed from **Paging Panel**.
+
 Carousel takes users through a series of features or information pages before they start using the add-in.
 
 #### Code sample
