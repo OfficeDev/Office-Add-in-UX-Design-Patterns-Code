@@ -7,5 +7,5 @@ Shows Pivot navigation inside of a task pane. Use pivot navigation to allow user
 
 ***
 
-![Pivot - Specifications for desktop task pane](../assets/markdown-images/pivot_taskPaneCallouts.png)
+![Pivot - Specifications for desktop task pane](../images/pivot_taskPaneCallouts.png)
 Specifications for desktop task pane

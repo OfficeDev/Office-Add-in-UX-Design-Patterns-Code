@@ -7,5 +7,5 @@ This is a screen for displaying your branding while the add-in is loading.
 
 ***
 
-![Brand Splashscreen - Specifications for desktop task pane](../assets/markdown-images/splashScreen_taskPaneCallouts.png)
+![Brand Splashscreen - Specifications for desktop task pane](../images/splashScreen_taskPaneCallouts.png)
 Specifications for desktop task pane 

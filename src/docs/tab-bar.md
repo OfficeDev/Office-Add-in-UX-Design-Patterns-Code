@@ -7,7 +7,7 @@ Shows navigation using buttons with vertically stacked text and icons. Use the t
 
 ***
 
-![Tab Bar - Specifications for desktop task pane](../assets/markdown-images/tabBar_taskPaneCallouts.png)
+![Tab Bar - Specifications for desktop task pane](../images/tabBar_taskPaneCallouts.png)
 Specifications for desktop task pane
 
 

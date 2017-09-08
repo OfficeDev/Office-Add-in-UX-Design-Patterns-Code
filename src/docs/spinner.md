@@ -7,6 +7,6 @@ Spinner indicates that a long-running, synchronous process is underway, but prov
 
 ***
 
-![Notification - Progress - Specifications for desktop task pane](../assets/markdown-images/spinner_taskPaneCallouts.png)
+![Notification - Progress - Specifications for desktop task pane](../images/spinner_taskPaneCallouts.png)
 Specifications for desktop task pane
 

@@ -7,6 +7,6 @@ Progress Indicator shows the progress of a long-running, synchronous process, su
 
 ***
 
-![Notification - Progress - Specifications for desktop task pane](../assets/markdown-images/progressBar_taskPaneCallouts.png)
+![Notification - Progress - Specifications for desktop task pane](../images/progressBar_taskPaneCallouts.png)
 Specifications for desktop task pane
 
