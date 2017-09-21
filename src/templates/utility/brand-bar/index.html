@@ -1,0 +1,83 @@
+﻿<!-- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license in root of repo. -->
+
+<!--
+    This file includes the Brand Bar component used to display your company
+    brand as well as an optional access point for the settings menu. 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Brand Bar</title>
+
+    <!-- For more info on Office UI Fabric, go to http://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.min.css" />
+    <link rel="stylesheet" href="../../../../node_modules/office-ui-fabric-js/dist/css/fabric.components.min.css" />
+
+    <!-- Template styles -->
+    <link href="brand.bar.css" rel="stylesheet" type="text/css" />
+
+    <!-- Required JS -->
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/js/fabric.min.js"></script>
+</head>
+<body>
+    <!-- Begin placeholder elements -->
+    <main class="placeholder">
+        <!-- Begin placeholder header -->
+        <header class="placeholder__header ms-borderColor-neutralLight">
+            <div class="placeholder__header--left">
+                <nav class="ms-bgColor-neutralLighter"></nav>
+            </div>
+            <div class="placeholder__header--right">
+                <div class="placeholder__header--right--cmd ms-bgColor-neutralLighter"></div>
+                <div class="placeholder__header--right--text ms-bgColor-neutralLighter"></div>
+                <div class="placeholder__header--right--cmd ms-bgColor-neutralLighter"></div>
+                <div class="placeholder__header--right--text ms-bgColor-neutralLighter"></div>
+                <div class="placeholder__header--right--cmd ms-bgColor-neutralLighter"></div>
+                <div class="placeholder__header--right--text ms-bgColor-neutralLighter"></div>
+            </div>
+        </header>
+        <!-- End placeholder header -->
+        <!-- Begin placeholder Body -->
+        <section class="placeholder__content">
+            <div class="placeholder__content--textTitle ms-bgColor-neutralLighter"></div>
+            <div class="placeholder__content--textBody ms-bgColor-neutralLighter"></div>
+            <div class="placeholder__content--textBody ms-bgColor-neutralLighter"></div>
+            <div class="placeholder__content--textBody ms-bgColor-neutralLighter"></div>
+            <div class="placeholder__content--textBody ms-bgColor-neutralLighter"></div>
+        </section>
+    </main>
+    <!-- End placeholder body -->
+    <!-- End placeholder elements -->
+    <!-- Begin Brand Bar -->
+    <footer class="dp-brand-bar ms-borderColor-neutralTertiary ms-bgColor-white">
+        <a href="#" class="dp-brand-bar--left">
+            <!-- Replace the image with your company logomark. We recommend a 32px by 32px png. -->
+            <img src="../../../assets/square-logo.png" />
+            <!-- Replace the string with your company name -->
+            <h1 class="ms-font-m ms-fontWeight-semibold ms-fontColor-neutralPrimary">Contoso, Ltd</h1>
+        </a>
+        <!-- Optional location to display a Settings access point or log out -->
+        <div class="dp-brand-bar--right">
+            <button id="settingsMenu" class="dp-brand-bar--right__button ms-bgColor-neutralLighter--hover">
+                <i class="ms-Icon ms-Icon--Settings ms-fontColor-neutralPrimary" aria-hidden="true"></i>
+            </button>
+            <ul class="ms-ContextualMenu is-hidden">
+                <li class="ms-ContextualMenu-item">
+                <a class="ms-ContextualMenu-link" tabindex="1">Settings</a> 
+                </li>
+                <li class="ms-ContextualMenu-item">
+                <a class="ms-ContextualMenu-link" tabindex="2">Log Out</a> 
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- End Brand Bar -->
+    <!-- Required JS -->
+    <script src="../../../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="brand.bar.js"></script>
+</body>
+</html>
