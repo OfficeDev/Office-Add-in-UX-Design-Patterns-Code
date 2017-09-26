@@ -1,123 +1,178 @@
 ﻿@import '../../../common/common.scss';
 
-.ms-firstrun-video {
+.dp-video-placemat {
     @include flex();
     height: 100%;
     text-align: center;
+    position: relative;
 
-    &__header {
-        padding: $global-spacing;
-        min-height: 160px;
-        max-height: 250px;
-        @include flex();
-
-        h1 {
-            letter-spacing: 5px;
-        }
-
-        p {
-            margin-top: 7px;
-        }
-
-        &--skip {
-            text-align: right;
-        }
-
-        &--image {
-            @include background-fill(cover) {
-                background-image: url('../../../assets/video-placeholder.png');
-            }
-
-            margin-top: 15px;
-            @include stretch-flex();
-            @include focus-states(url('../../../assets/video-placeholder.png') center center no-repeat/cover);
-
-            flex: 0 1 0;
-            min-height: 200px;
-        }
+    &--skip {
+        height: 44px;
+        @include inline-flex(flex-end, center);
     }
 
-
-    &__welcome {
-        width: 100%;
-        height: 100%;
-        flex: 1 1 0;
-        @include center-flex();
-
-        img {
-            height: 100px;
-        }
+    #skip {
+        background: none repeat scroll 0 0 transparent;
+        border: 0px none;  
+        line-height: 1;
+        cursor: pointer;
+        margin-right: 20px;
+        padding: 0;
     }
 
-    &__player {
-        width: 100%;
-        height: 100%;
-        @include stretch-flex();
+    &--content {
 
-        img {
-            height: 100%;
-        }
-    }
+        &__intro {
+            padding: 35px $global-spacing 30px;
 
-
-    &__content {
-        @include flex();
-        height: 100%;
-        flex: 1 1 0;
-        padding-left: $global-spacing;
-        padding-right: $global-spacing;
-        padding-bottom: $global-spacing;
-
-        &--centered {
-            @include flex();
-        }
-
-        &--caption {
-            margin-top: 5px;
-        }
-
-        &--valuestatement {
-            padding-top: 50px;
-        }
-    }
-
-    &__list {
-        list-style-type: none;
-
-        li {
-            margin-bottom: $global-spacing;
-
-            i {
-                position: relative;
-                top: 2px;
-                margin-right: 10px;
+            p {
+                margin-top: 30px;
+                line-height: 1.5;
             }
         }
-    }
 
+        #videoImage {
+            cursor: pointer;
+        }
 
-
-    &__action {
-        &--primary {
-            &.ms-Button {
-                align-self: center;
-                margin-top: 65px;
-                border: solid 2px $ms-fontColor-white;
-                width: calc(100vw - 40px);
-                padding: 10px;
-                @include inline-flex(center, center);
-
-                span.ms-Button-label {
-                    color: $ms-fontColor-white;
-                }
-
-                @include focus-states(#FFFFFF, $ms-fontColor-themePrimary, false);
-            }
+        &__caption {
+            padding: 10px $global-spacing 0;
         }
     }
 
-    &__button {
-        padding-top: $global-spacing;
-        @include center-flex();
+    &--button {
+        margin-top: 50px;
     }
 }
+
+.ms-MessageBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+    z-index: 99;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+//     &__header {
+//         padding: $global-spacing;
+//         min-height: 160px;
+//         max-height: 250px;
+//         @include flex();
+
+//         h1 {
+//             letter-spacing: 5px;
+//         }
+
+//         p {
+//             margin-top: 7px;
+//         }
+
+//         &--skip {
+//             text-align: right;
+//         }
+
+//         &--image {
+//             @include background-fill(cover) {
+//                 background-image: url('../../../assets/video-placeholder.png');
+//             }
+
+//             margin-top: 15px;
+//             @include stretch-flex();
+//             @include focus-states(url('../../../assets/video-placeholder.png') center center no-repeat/cover);
+
+//             flex: 0 1 0;
+//             min-height: 200px;
+//         }
+//     }
+
+
+//     &__welcome {
+//         width: 100%;
+//         height: 100%;
+//         flex: 1 1 0;
+//         @include center-flex();
+
+//         img {
+//             height: 100px;
+//         }
+//     }
+
+//     &__player {
+//         width: 100%;
+//         height: 100%;
+//         @include stretch-flex();
+
+//         img {
+//             height: 100%;
+//         }
+//     }
+
+
+//     &__content {
+//         @include flex();
+//         height: 100%;
+//         flex: 1 1 0;
+//         padding-left: $global-spacing;
+//         padding-right: $global-spacing;
+//         padding-bottom: $global-spacing;
+
+//         &--centered {
+//             @include flex();
+//         }
+
+//         &--caption {
+//             margin-top: 5px;
+//         }
+
+//         &--valuestatement {
+//             padding-top: 50px;
+//         }
+//     }
+
+//     &__list {
+//         list-style-type: none;
+
+//         li {
+//             margin-bottom: $global-spacing;
+
+//             i {
+//                 position: relative;
+//                 top: 2px;
+//                 margin-right: 10px;
+//             }
+//         }
+//     }
+
+
+
+//     &__action {
+//         &--primary {
+//             &.ms-Button {
+//                 align-self: center;
+//                 margin-top: 65px;
+//                 border: solid 2px $ms-fontColor-white;
+//                 width: calc(100vw - 40px);
+//                 padding: 10px;
+//                 @include inline-flex(center, center);
+
+//                 span.ms-Button-label {
+//                     color: $ms-fontColor-white;
+//                 }
+
+//                 @include focus-states(#FFFFFF, $ms-fontColor-themePrimary, false);
+//             }
+//         }
+//     }
+
+//     &__button {
+//         padding-top: $global-spacing;
+//         @include center-flex();
+//     }
+// }
