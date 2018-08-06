@@ -8,7 +8,7 @@ When designing Office Add-ins, the UX design of your add-in should provide compe
 * Office Fabric components and styles.
 * Add-ins that look like a natural extension of the default Office UI. 
 
-For overview information and the types of UX design patterns available, see [UX design pattern templates for Office Add-ins](https://dev.office.com/docs/add-ins/design/ux-design-patterns).
+For overview information and the types of UX design patterns available, see [UX design pattern templates for Office Add-ins](https://docs.microsoft.com/en-us/office/dev/add-ins/design/ux-design-pattern-templates).
 
 > Important: After customizing these design patterns to meet your requirements, be sure to test your add-in on all platforms where your add-in will be available. These UX design patterns were tested using Office 2016 and Windows 10.
 
