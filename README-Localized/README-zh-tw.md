@@ -1,42 +1,46 @@
-# <a name="ux-design-patterns-for-office-add-ins"></a>Office 增益集的 UX 設計模式 
+# <a name="php-calendar-api-sample"></a>PHP 行事曆 API 範例 #
 
-此儲存機制提供 Office 增益集的一般 UX 設計模式的 HTML、CSS 和 JavaScript 中的範例實作。
+[日本 (日本語)](https://github.com/jasonjoh/php-calendar/blob/master/loc/readme-ja.md) (Japanese)
 
-設計 Office 增益集時，增益集的 UX 設計應提供可擴充 Office 的絕佳體驗。例如，您的增益集應該提供初次執行體驗、最出色 UX 經驗，以及能夠流暢地在其他頁面間轉換。提供簡潔、最新的 UX 體驗能夠提升使用者忠誠度並讓更多人採用您的增益集。這個儲存機制具有開發人員的 UX 資源，會實作：
+本範例顯示如何使用 PHP 的[行事曆 API](https://msdn.microsoft.com/office/office365/APi/calendar-rest-operations)。 該範例應用程式是一個虛構社區劇院莎士比亞節的「即將演出」應用程式。 使用者可以連線至其 Office 365 帳戶，並將事件新增到他們的行事曆以記下要參加的演出時間。 使用者可以選擇邀請朋友，這將會傳送會議邀請給每位受邀朋友。 
 
-* 根據最佳作法的一般 UX 設計模式。
-* Office Fabric 元件與樣式。
-* 看起來像預設 Office UI 自然擴充的增益集。 
+## <a name="api-features-used"></a>使用的 API 功能 ##
 
-如需可用的 UX 設計模式概觀資訊及類型，請參閱 [Office 增益集的 UX 設計模式範本](https://dev.office.com/docs/add-ins/design/ux-design-patterns)。
+- 在使用者的預設行事曆上建立事件
+- 新增附件至事件
+- 新增出席者至事件
+- 使用[行事曆檢視](https://msdn.microsoft.com/office/office365/APi/calendar-rest-operations#GetCalendarView)展開週期性事件，並顯示一天內的所有約會。
 
-> 重要事項：自訂這些設計模式以符合您的需求之後，一定要在您的增益集可用的所有平台上測試增益集。使用 Office 2016 和 Windows 10 測試這些 UX 設計模式。
+## <a name="required-software"></a>必要的軟體 ##
 
-## <a name="using-the-ux-design-patterns"></a>使用 UX 設計模式
+- [PHP 5.6](http://php.net/downloads.php)
+- 支援 PHP 的網頁伺服器。
 
-當您要建立自己的 UX 設計時，可以使用 [UX 設計工具的規格](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns)做為指引，或可以直接將[原始程式碼](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates)新增至您的專案。若要新增原始原始碼︰
+在測試中，我使用了安裝在 Windows 8.1 筆記本電腦上的 IIS 8。 我使用 [Web 平台安裝程式](http://www.microsoft.com/web/downloads/platform.aspx)安裝了 PHP 5.6.0 (僅限 Windows/IIS)。
 
-1. 複製此儲存機制。 
-2. 將[資產資料夾](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/assets)及您所選的個別模式的程式碼資料夾，複製到您的增益集專案。  
-3. 將個別模式納入您的增益集。例如：
-    - 編輯資訊清單中的來源位置或增益集命令 URL。
-    - 使用 UX 設計模式作為其他網頁的範本。
-    - 從 UX 設計模式連結或連結至 UX 設計模式。
+## <a name="running-the-sample"></a>執行範例 ##
 
-## <a name="known-issues"></a>已知問題
+假設您在啟動之前已安裝了 PHP，並且網路伺服器已設定為處理和服務 PHP 檔案。 
 
-* 執行增益集專案以外的某些程式碼檔案會擲回 JavaScript 錯誤。 
-    * 解決方案：請確定您在 Office 增益集專案中加入這些檔案。 
-* 將這些設計模式轉換為單一頁面應用程式 (SPA) 之後，HTML 網頁的所有區段會變成靠上對齊，並與彼此重疊。 
-    * 解決方案：從 HTML 轉換時，可能會新增其他包裝函式 DIV。請確定適當重設這些額外的 DIV 的高度。例如，如果父系 DIV 設為 100% 的高度，子系 DIV 沒有高度，孫系 DIV 設為 100%，則您需要將子系 DIV 設為 100%，以適當地配置區段。    
-    
-## <a name="additional-resources"></a>其他資源
+1. 下載或分岔範例專案。
+1. 在網路根目錄中建立名為 `php-calendar` 的新目錄。 將檔案從存放庫複製到這個目錄中。
+1. [在 Azure Active Directory 中註冊應用程式](https://github.com/jasonjoh/office365-azure-guides/blob/master/RegisterAnAppInAzure.md). 該應用程式應註冊為具有 `http://localhost/php-calendar` 登入 URL 的網路應用程式，並應獲得「具有使用者行事曆完整存取權」權限，該權限可在「委派的權限」下拉式清單中找到。
+1. 編輯 `.\o365\ClientReg.php` 檔案。 
+    1. 複製在應用程式註冊期間取得的應用程式用戶端識別碼，並將其貼為 `$clientId` 變數的值。 
+    1. 複製在應用程式註冊期間建立的機碼，並將其貼為 `$clientSecret` 變數的值。
+    1. 儲存檔案。
+1. 如果您的 PHP 安裝未設定更新的 CA 憑證以驗證 SSL，除非您在伺服器上執行 Fiddler 並將 `Office365Service.php`中的 `$enableFiddler` 變數設定為 `true`，否則要求會失敗。 或者，您可以在呼叫 `curl_exec` 之前插入下行。 **不過，** 請注意，這麼做會停用任何 SSL 驗證，因此您不應在生產環境中執行此操作。
 
-* [開發 Office 增益集的最佳做法](https://dev.office.com/docs/add-ins/overview/add-in-development-best-practices)
-* [Office UI 結構](http://dev.office.com/fabric/)。此專案會使用版本 2.1.0 或更新版本。
+    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
+1. 開啟網頁瀏覽器並瀏覽至 `http://localhost/php-calendar/home.php`。
+1. 您應該會看到一份各個莎士比亞戲劇即將演出的時間表。 按下任一個 [連線我的行事曆] 按鈕以登入 Office 365。
+1. 登入後，您將會重新導向至首頁，而按鈕現在會顯示為 [新增到行事曆]。 按一下指定演出時間旁的按鈕，以將它新增至您的行事曆。 「必要的憑證」欄位為「是」的事件將包含作為事件附件的憑證。
 
-此專案已採用 [Microsoft 開放原始碼執行](https://opensource.microsoft.com/codeofconduct/)。如需詳細資訊，請參閱[程式碼執行常見問題集](https://opensource.microsoft.com/codeofconduct/faq/)，如果有其他問題或意見，請連絡 [opencode@microsoft.com](mailto:opencode@microsoft.com)。
+## <a name="copyright"></a>著作權 ##
 
-Copyright (c) Microsoft Corporation 2016.著作權所有，並保留一切權利。
+Copyright (c) Microsoft.著作權所有，並保留一切權利。
 
+----------
+跟隨我的推特 ([@JasonJohMSFT](https://twitter.com/JasonJohMSFT))
 
+請追蹤 [Exchange 開發人員部落格](http://blogs.msdn.com/b/exchangedev/)

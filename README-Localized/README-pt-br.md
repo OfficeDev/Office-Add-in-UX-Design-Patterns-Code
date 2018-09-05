@@ -1,42 +1,46 @@
-# <a name="ux-design-patterns-for-office-add-ins"></a>Padrões de design da experiência do usuário para suplementos do Office 
+# <a name="php-calendar-api-sample"></a>Exemplo de API de Calendário PHP #
 
-Este repositório fornece implementações de exemplo em HTML, CSS e JavaScript de padrões de design comuns da experiência do usuário para suplementos do Office.
+[日本 (日本語)](https://github.com/jasonjoh/php-calendar/blob/master/loc/readme-ja.md) (japonês)
 
-Ao criar suplementos do Office, o design da experiência do usuário do suplemento deve fornecer experiências atraentes que estendam as funcionalidades do Office. Por exemplo, o suplemento deve fornecer uma tela de apresentação, uma experiência do usuário de primeira classe e transições suaves entre as páginas, entre outros itens. Fornecer uma experiência do usuário simples e moderna aumenta a retenção de usuários e a adoção do suplemento. Esse repositório dispõe de recursos da experiência do usuário para desenvolvedores que implementam:
+Este exemplo mostra como usar a [API de Calendário](https://msdn.microsoft.com/office/office365/APi/calendar-rest-operations) no PHP. O exemplo é um aplicativo de "espetáculos futuros" destinado a um festival shakespeariano de uma comunidade fictícia de teatro. Os usuários podem conectar as respectivas contas do Office 365 e adicionar eventos ao calendário com os horários dos espetáculos em que vão participar. O usuário tem a opção de convidar amigos, que envia uma solicitação de reunião a cada amigo convidado. 
 
-* Padrões de design comuns da experiência do usuário com base nas práticas recomendadas.
-* Estilos e componentes do Office Fabric.
-* Suplementos que parecem uma extensão natural da interface do usuário padrão do Office. 
+## <a name="api-features-used"></a>Recursos usados da API ##
 
-Para obter informações gerais e os tipos de padrões de design de experiência do usuário disponíveis, confira o artigo [Modelos de padrão de design de experiência do usuário para suplementos do Office](https://dev.office.com/docs/add-ins/design/ux-design-patterns).
+- Como criar eventos em um calendário padrão do usuário
+- Como adicionar anexos aos eventos
+- Como adicionar participantes aos eventos
+- Usando o [modo de exibição Calendário](https://msdn.microsoft.com/office/office365/APi/calendar-rest-operations#GetCalendarView) para expandir os eventos recorrentes e exibir todos os compromissos de um único dia.
 
-> Importante: Após personalizar esses padrões de design para atender às suas necessidades, lembre-se de testar seu suplemento em todas as plataformas onde seu suplemento estará disponível. Esses padrões de design da experiência do usuário foram testados usando o Office 2016 e Windows 10.
+## <a name="required-software"></a>Software necessário ##
 
-## <a name="using-the-ux-design-patterns"></a>Usar os padrões de design da experiência do usuário
+- [PHP 5.6](http://php.net/downloads.php)
+- Um servidor Web compatível com PHP.
 
-Você pode usar as [especificações de design da experiência do usuário](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns) como um guia para criar um design personalizado da experiência do usuário ou pode adicionar o [código-fonte](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates) diretamente no projeto. Para adicionar o código-fonte:
+Em meus testes, usei o IIS 8 instalado em um laptop com Windows 8.1. Instalei o PHP 5.6.0 usando o [Web Platform Installer](http://www.microsoft.com/web/downloads/platform.aspx) (somente para Windows/IIS).
 
-1. Clone este repositório. 
-2. Copie a [pasta de ativos](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/assets) e a pasta de código do padrão específico que você escolheu para o projeto do seu suplemento.  
-3. Incorpore o padrão individual ao seu suplemento. Por exemplo:
-    - Edite o local de origem ou a URL de comando do suplemento no manifesto.
-    - Use o padrão de design da experiência do usuário como modelo para outras páginas.
-    - Crie um link para o padrão de design da experiência do usuário.
+## <a name="running-the-sample"></a>Execução do exemplo ##
 
-## <a name="known-issues"></a>Problemas conhecidos
+Presumimos que você já instalou o PHP antes de começar, e que configurou o servidor Web para processar e servir arquivos do PHP. 
 
-* A execução de alguns arquivos de código fora de um projeto de suplemento gera um erro de JavaScript. 
-    * Resolução: Adicione esses arquivos a um projeto de suplemento do Office. 
-* Após a conversão desses padrões de design para um Aplicativo de Página Única (SPA), todas as seções da página HTML ficam alinhadas na parte superior e se sobrepõem umas às outras. 
-    * Resolução: Ao converter de HTML, DIVs de invólucro adicionais podem ser adicionados. Certifique-se de que a altura desses DIVs adicionais sejam redefinidas corretamente. Por exemplo, se um DIV pai estiver definido com uma altura de 100%, um DIV filho não tiver altura e um DIV neto for definido como 100%, será necessário definir o DIV filho como 100% para realizar o layout das seções corretamente.    
-    
-## <a name="additional-resources"></a>Recursos adicionais
+1. Baixe ou bifurque o projeto de exemplo.
+1. Crie um novo diretório, no diretório raiz da Web, chamado `php-calendar`. Copie os arquivos do repositório para este diretório.
+1. [Registre o aplicativo no Azure Active Directory](https://github.com/jasonjoh/office365-azure-guides/blob/master/RegisterAnAppInAzure.md). É necessário registrar o aplicativo como um aplicativo Web usando a URL de Entrada do `http://localhost/php-calendar` e atribuir a ele a permissão "Ter acesso total aos calendários dos usuários", que está disponível na lista suspensa "Permissões delegadas".
+1. Edite o arquivo `.\o365\ClientReg.php`. 
+    1. Copie a ID do cliente obtida durante o registro do aplicativo e cole-a como o valor da variável `$clientId`. 
+    1. Copie a chave criada durante o registro do aplicativo e cole-a como o valor da variável `$clientSecret`.
+    1. Salve o arquivo.
+1. Se não configurou a instalação do PHP com um Certificado de Autoridade de Certificação atualizado para verificar o SSL, as solicitações falharão, a menos que você execute o Fiddler no servidor e defina a variável `$enableFiddler` como `true`, no `Office365Service.php`. Como alternativa, insira a seguinte linha, imediatamente antes das chamadas para `curl_exec`. **No entanto**, ao fazê-lo, desabilitará as verificações de SSL, o que NÃO deve ser feito durante a produção.
 
-* [Práticas recomendadas para desenvolvimento de suplementos do Office](https://dev.office.com/docs/add-ins/overview/add-in-development-best-practices)
-* [Office UI Fabric](http://dev.office.com/fabric/). Este projeto usa a versão 2.1.0 ou superior.
+    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
+1. Abra um navegador da Web e navegue até `http://localhost/php-calendar/home.php`.
+1. Você verá uma lista de horários de espetáculos futuros para várias peças do festival shakespeariano. Clique em um dos botões "Conectar meu Calendário" para entrar no Office 365.
+1. Depois de entrar, você será redirecionado para a home page, e os botões estarão exibidos com o texto "Adicionar ao Calendário". Clique no botão ao lado de um horário de espetáculo específico para adicioná-lo ao calendário. Os eventos com um campo "Cupom obrigatório" definido como Sim incluirão o cupom como anexo no evento.
 
-Este projeto adotou o [Código de Conduta do Código Aberto da Microsoft](https://opensource.microsoft.com/codeofconduct/). Para saber mais, confira as [Perguntas frequentes do Código de Conduta](https://opensource.microsoft.com/codeofconduct/faq/) ou contate [opencode@microsoft.com](mailto:opencode@microsoft.com) se tiver outras dúvidas ou comentários.
+## <a name="copyright"></a>Direitos autorais ##
 
-Copyright (c) Microsoft Corporation 2016. Todos os direitos reservados.
+Copyright (c) Microsoft. Todos os direitos reservados.
 
+----------
+Conecte-se comigo no Twitter [@JasonJohMSFT](https://twitter.com/JasonJohMSFT)
 
+Siga o [Blog de desenvolvedores do Exchange](http://blogs.msdn.com/b/exchangedev/)
