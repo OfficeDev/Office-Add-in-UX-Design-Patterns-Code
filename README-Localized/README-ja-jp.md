@@ -1,43 +1,46 @@
-﻿# Office アドインの UX 設計パターン 
+# <a name="php-calendar-api-sample"></a>PHP 予定表 API のサンプル #
 
-このリポジトリは、Office アドイン用の共通 UX 設計パターンの HTML、CSS、JavaScript のサンプル実装を提供します。
+[日本 (日本語)](https://github.com/jasonjoh/php-calendar/blob/master/loc/readme-ja.md) (日本語)
 
-Office アドインを設計する場合、作成するアドインの UX 設計は、Office を拡張する魅力的なエクスペリエンスを提供する必要があります。たとえば、アドインは初回実行時エクスペリエンス、ファーストクラスの UX エクスペリエンス、ページ間のスムーズな移動などを提供する必要があります。クリーンでモダンな UX エクスペリエンスを提供すると、ユーザーによるアドインの保持や採用が増加します。このリポジトリは、以下を実装する開発者のための UX リソースを提供します。
+このサンプルは、PHP の[予定表 API](https://msdn.microsoft.com/office/office365/APi/calendar-rest-operations) を使用する方法を示しています。サンプル アプリは、架空のコミュニティ劇場のシェークスピア祭の「今後の公演」アプリです。ユーザーは、Office 365 アカウントに接続し、参加する公演について予定表にイベントを追加することができます。ユーザーには、友人を招待して、招待した友人それぞれに会議出席依頼を送信するオプションがあります。 
 
-* ベスト プラクティスに基づく共通 UX 設計パターン。
-* Office のファブリック コンポーネントとスタイル。
-* 既定の Office UI の自然な拡張機能に見えるアドイン。 
+## <a name="api-features-used"></a>使用する API の機能 ##
 
-使用可能な UX 設計パターン概要と種類については、「[Office アドイン用の UX 設計パターン テンプレート](https://dev.office.com/docs/add-ins/design/ux-design-patterns)」を参照してください。
+- ユーザーの既定の予定表にイベントを作成する
+- イベントに添付ファイルを追加する
+- イベントに出席者を追加する
+- [予定表ビュー](https://msdn.microsoft.com/office/office365/APi/calendar-rest-operations#GetCalendarView)を使用して、定期的なイベントを展開し、1 日のすべての予定を表示します。
 
-> 重要事項:要件を満たすようにこれらの設計パターンをカスタマイズした後、アドインが使用可能となるすべてのプラットフォームでアドインのテストを実行してください。これらの UX 設計パターンは、Office 2016 と Windows 10 を使用してテストされました。
+## <a name="required-software"></a>必要なソフトウェア ##
 
-## UX 設計パターンの使用
+- [PHP 5.6](http://php.net/downloads.php)
+- PHP に対応可能な Web サーバーです。
 
-[UX デザイナー仕様](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Source%20Files)を独自の UX 設計を作成する際のガイドとして使用することも、[ソース コード](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates)をプロジェクトに直接追加することもできます。ソース コードを追加するには、次のようにします。
+私のテストでは、Windows 8.1 ノート PC にインストールされている IIS 8 を使用しました。[Web Platform インストーラー](http://www.microsoft.com/web/downloads/platform.aspx) (Windows/IIS のみ) を使用して、PHP 5.6.0 をインストールしました。
 
-1. このリポジトリの複製を作成します。 
-2. [資産フォルダー](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/assets)と、アドイン プロジェクトに対して選ぶ個々のパターンのコード フォルダーをコピーします。  
-3. 個々のパターンをアドインに組み込みます。たとえば次のようにします。
-	- マニフェスト内で、ソースの場所またはアドイン コマンドの URL を編集します。
-	- 他のページのテンプレートとして、UX 設計パターンを使用します。
-	- UX 設計パターンとの間にリンクを設定します。
+## <a name="running-the-sample"></a>サンプルの実行 ##
 
-## 既知の問題
+開始する前に PHP がインストールされていること、および Web サーバーが処理用に構成され、サーバーの PHP ファイルが構成されていることが前提となっています。 
 
-* アドイン プロジェクトの外部でコード ファイルを実行すると、JavaScript エラーがスローされます。 
-	* 解決方法:これらのファイルが Office アドイン プロジェクトに追加されていることを確認します。 
-* これらの設計パターンを単一ページ アプリ (SPA) に変換すると、HTML ページのすべてのセクションが上詰めになり、互いに重なってしまいます。 
-	* 解決方法:HTML から変換する場合、追加のラッパー DIV を追加できます。これら追加した DIV の高さが正しくリセットされることを確認します。たとえば、親 DIV を高さ 100%、子 DIV を高さなし、孫 DIV を 100% に設定した場合、子 DIV を 100% に設定し、セクションのレイアウトを適切に設定する必要があります。    
-	
-## その他の技術情報
+1. サンプル プロジェクトをダウンロードまたは分岐します。
+1. `php-calendar` という Web のルート ディレクトリに新しいディレクトリを作成します。このディレクトリに、リポジトリからファイルをコピーします。
+1. [Azure Active Directory にアプリを登録](https://github.com/jasonjoh/office365-azure-guides/blob/master/RegisterAnAppInAzure.md)します。アプリは、サインオン URL が `http://localhost/php-calendar` の Web アプリとして登録されている必要があります。また、[ユーザーの予定表へのフル アクセス] のアクセス許可が付与されている必要があります。このアクセス許可は、[代理アクセス許可] ドロップダウン リストから使用できます。
+1. `.\o365\ClientReg.php` ファイルを編集します。 
+    1. アプリの登録時に取得したアプリのクライアント ID をコピーし、`$clientId` 変数の値として貼り付けます。 
+    1. アプリの登録時に作成したキーをコピーし、`$clientSecret` 変数の値として貼り付けます。
+    1. ファイルを保存します。
+1. PHP のインストールが SSL を検証するための更新された CA 証明書以外で構成されている場合、サーバーで Fiddler を実行し、かつ `$enableFiddler` で変数 `true` を `Office365Service.php` に設定するというのでない限り、要求は失敗します。代わりに、`curl_exec` への呼び出しの直前に次の行を挿入することができます。**ただし、** そのようにすると、SSL 検証がすべて無効になるため、運用環境では実行しないほうがよいことに注意してください。
 
-* [Office アドインの設計のベスト プラクティス](https://dev.office.com/docs/add-ins/overview/add-in-development-best-practices)
-* [Office UI ファブリック](http://dev.office.com/fabric/)。このプロジェクトは、バージョン 2.1.0 以降を使用します。
+    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
+1. Web ブラウザーを開き、`http://localhost/php-calendar/home.php` を参照します。
+1. 今後のさまざまなシェークスピア演劇の上演時間が一覧表示されていることが分かります。いずれかの [予定表に接続] ボタンをクリックすると、Office 365 にサインインします。
+1. サインインすると、ホーム ページにリダイレクトされ、ボタンは [予定表に追加] に変わります。特定の上演時間の横にあるボタンをクリックすると、その時間が予定表に追加されます。[はい] の [伝票が必要] フィールドがあるイベントには、イベントの添付ファイルとして伝票が含まれています。
 
-このプロジェクトでは、[Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/) が採用されています。詳細については、「[規範に関する FAQ](https://opensource.microsoft.com/codeofconduct/faq/)」を参照してください。または、その他の質問やコメントがあれば、[opencode@microsoft.com](mailto:opencode@microsoft.com) までにお問い合わせください。
+## <a name="copyright"></a>著作権 ##
 
-Copyright (c) Microsoft Corporation 2016. All rights reserved.
+Copyright (c) Microsoft. All rights reserved.
 
+----------
+Twitter ([@JasonJohMSFT](https://twitter.com/JasonJohMSFT)) をぜひフォローしてください。
 
-
+[Exchange 開発ブログ](http://blogs.msdn.com/b/exchangedev/)をフォローする

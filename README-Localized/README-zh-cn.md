@@ -1,43 +1,46 @@
-﻿# 适用于 Office 外接程序的 UX 设计模式 
+# <a name="php-calendar-api-sample"></a>PHP 日历 API 示例 #
 
-此存储库为 Office 外接程序提供了常见 UX 设计模式的 HTML、CSS 和 JavaScript 中的示例实现。
+[日本 (日本語)](https://github.com/jasonjoh/php-calendar/blob/master/loc/readme-ja.md) (Japanese)
 
-在设计 Office 外接程序时，外接程序的 UX 设计应该提供引人注目的扩展 Office 体验。例如，外接程序应该提供首次运行体验、一流的 UX 体验以及页面之间与其他功能之间的流畅切换。提供干净、现代的 UX 体验增加用户留存率和外接程序的采用率。本存储库为开发人员提供了 UX 资源，以实现：
+本示例演示如何从 PHP 使用[日历 API](https://msdn.microsoft.com/office/office365/APi/calendar-rest-operations)。 该示例应用是一个虚构的社区剧院莎士比亚节的“预告节目”应用。 用户可以连接自己的 Office 365 帐户，并将事件添加到自己的日历中，以了解他们要参与的节目时间。 用户可以选择邀请朋友，这将向每个受邀朋友发送会议请求。 
 
-* 基于最佳实践的常见 UX 设计模式。
-* Office 结构组件和样式。
-* 类似于默认 Office UI 自然延伸的外接程序。 
+## <a name="api-features-used"></a>使用的 API 功能 ##
 
-有关概述信息以及可用的 UX 设计模式的类型，请参阅 [UX design pattern templates for Office Add-ins](https://dev.office.com/docs/add-ins/design/ux-design-patterns)（适用于 Office 外接程序的 UX 设计模式模板）。
+- 在用户的默认日历上创建事件
+- 将附件添加到事件
+- 将参加者添加到事件
+- 使用[日历视图](https://msdn.microsoft.com/office/office365/APi/calendar-rest-operations#GetCalendarView)展开定期事件并显示一天的所有约会。
 
-> 重要说明：自定义这些设计模式以满足你的需求后，请确保在你的外接程序可用的所有平台上测试你的外接程序。使用 Office 2016 和 Windows 10 对这些 UX 设计模式进行了测试。
+## <a name="required-software"></a>所需软件 ##
 
-## 使用 UX 设计模式
+- [PHP 5.6](http://php.net/downloads.php)
+- 能够提供 PHP 服务的 Web 服务器。
 
-在创建你自己的 UX 设计时，可以使用 [UX 设计器规范](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Source%20Files)作为指南，或者直接将[源代码](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates)添加到你的项目。添加源代码：
+在我的测试中，我使用了安装在 Windows 8.1 笔记本电脑上的 IIS 8。 我使用 [Web 平台安装程序](http://www.microsoft.com/web/downloads/platform.aspx)安装了 PHP 5.6.0（仅限Windows/IIS）。
 
-1. 克隆该存储库。 
-2. 将 [assets 文件夹](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/assets)和所选的个人模式的代码文件夹复制到外接程序项目。  
-3. 将个人模式纳入到外接程序中。例如：
-	- 编辑清单中的源位置或外接程序命令 URL。
-	- 将 UX 设计模式用作其他页面的模板。
-	- 链接至 UX 设计模式。
+## <a name="running-the-sample"></a>运行示例 ##
 
-## 已知问题
+假设你在启动之前安装了 PHP，并且 Web 服务器已配置为进程和服务器 PHP 文件。 
 
-* 运行外接程序项目外的某些代码文件会引发 JavaScript 错误。 
-	* 解决方案：确保将这些文件添加到 Office 外接程序项目。 
-* 在这些设计模式转换为单页应用 (SPA) 后，HTML 页的所有部分变为顶部对齐并相互重叠。 
-	* 解决方案：从 HTML 进行转换时，可能添加额外包装 DIV。确保正确重置这些额外 DIV 的高度。例如，若父级 DIV 设置为 100% 高度，子级 DIV 无高度，而孙级 DIV 设置为 100%，则你需要将子级 DIV 设置为 100% 以正确对部分进行布局。    
-	
-## 其他资源
+1. 下载示例项目或为其创建分支。
+1. 在名为 `php-calendar` 的 Web 根目录中创建新目录。 将文件从存储库复制到此目录。
+1. [在 Azure Active Directory 中注册应用](https://github.com/jasonjoh/office365-azure-guides/blob/master/RegisterAnAppInAzure.md)。 该应用应注册为登录 URL 为 `http://localhost/php-calendar` 的 Web 应用，并应获得“能够完全访问用户日历”的权限，该权限可在“委派权限”下拉列表中找到。
+1. 编辑 `.\o365\ClientReg.php` 文件。 
+    1. 复制在应用注册期间获取的应用的客户端 ID，并将其粘贴为 `$clientId` 变量的值。 
+    1. 复制在应用注册期间创建的密钥，并将其粘贴为 `$clientSecret` 变量的值。
+    1. 保存文件。
+1. 如果 PHP 安装未配置更新的 CA 证书以验证 SSL，请求将会失败，除非你在服务器上运行 Fiddler 并在 `Office365Service.php` 中将 `$enableFiddler` 变量设置为 `true`。 或者，可以在对 `curl_exec` 进行任何调用之前直接插入以下行。 **但是，** 应注意，这样做会禁用任何 SSL 验证，这不应在生产中完成。
 
-* [开发 Office 外接程序的最佳实践](https://dev.office.com/docs/add-ins/overview/add-in-development-best-practices)
-* [Office UI 结构](http://dev.office.com/fabric/)。此项目使用 2.1.0 版或更高版本。
+    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
+1. 打开 Web 浏览器，浏览到 `http://localhost/php-calendar/home.php`。
+1. 应能看到各种莎士比亚戏剧预告节目的时间列表。 单击任何“连接我的日历”按钮，登录到 Office 365。
+1. 登录后，应该会将你重定向回主页，并且按钮现在应显示为“添加到日历”。 单击特定节目时间旁的按钮，将其添加到日历。 如果某个事件的“需要凭证”字段为“是”，它将包含凭证作为事件的附件。
 
-此项目采用 [Microsoft 开源行为准则](https://opensource.microsoft.com/codeofconduct/)。有关详细信息，请参阅 [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)（行为准则常见问题解答），有任何其他问题或意见，也可联系 [opencode@microsoft.com](mailto:opencode@microsoft.com)。
+## <a name="copyright"></a>版权 ##
 
-Copyright (C) Microsoft Corporation 2016。保留所有权利。
+版权所有 (c) Microsoft。保留所有权利。
 
+----------
+在 Twitter 上通过 [@JasonJohMSFT](https://twitter.com/JasonJohMSFT) 与我联系
 
-
+关注 [Exchange 开发人员博客](http://blogs.msdn.com/b/exchangedev/)

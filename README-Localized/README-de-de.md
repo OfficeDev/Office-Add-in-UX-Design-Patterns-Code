@@ -1,44 +1,46 @@
-﻿# UX-Entwurfsmuster für Office-Add-Ins 
+# <a name="php-calendar-api-sample"></a>Beispiel für PHP-Kalender-API #
 
-Dieses Repository bietet Beispielimplementierungen von allgemeinen UX-Entwurfsmustern für Office Add-Ins in HTML-, CSS- und JavaScript-Code.
+[日本 (日本語)](https://github.com/jasonjoh/php-calendar/blob/master/loc/readme-ja.md) (Japanisch)
 
-Beim Entwerfen von Office-Add-Ins sollte das UX-Design des Add-Ins eine überzeugende Leistung bieten, durch die Office erweitert wird. Das Add-In sollte beispielsweise unter anderem eine Anpassung für das erste Ausführen, eine herausragende UX-Erfahrung sowie nahtlose Übergänge zwischen Seiten bieten. Eine übersichtliche und moderne UX-Funktionalität steigert die Benutzerbindung und die Akzeptanz Ihres Add-Ins. Dieses Repository stellt UX-Ressourcen für Entwickler dar, die Folgendes implementieren:
+In diesem Beispiel wird gezeigt, wie Sie die [Kalender-API](https://msdn.microsoft.com/office/office365/APi/calendar-rest-operations) von PHP verwenden. Die Beispiel-App ist eine App für „kommende Vorstellungen“ bei einem Shakespeare-Festival eines fiktiven Laientheaters. Benutzer können ihre Office 365-Konten mit dem Kalender verbinden und Veranstaltungen für die Shows hinzufügen, die sie sich ansehen. Der Benutzer hat die Möglichkeit, Freunde einzuladen, wodurch jeder eingeladene Freund eine Besprechungsanfrage erhält. 
 
-* Allgemeine UX-Entwurfsmuster basierend auf bewährten Methoden
-* Office-Fabric-Komponenten und -Formen
-* Add-Ins, die wie eine natürliche Erweiterung der standardmäßigen Office-Benutzeroberfläche aussehen 
+## <a name="api-features-used"></a>Verwendete API-Funktionen ##
 
-Allgemeine Informationen sowie Informationen zu den verfügbaren Typen von UX-Entwurfsmustern finden Sie unter [UX-Entwurfsmustervorlagen für Office-Add-Ins](https://dev.office.com/docs/add-ins/design/ux-design-patterns).
+- Erstellen von Ereignissen im Standardkalender eines Benutzers
+- Hinzufügen von Anlagen zu Ereignissen
+- Hinzufügen von Teilnehmern zu Ereignissen
+- Verwenden einer [Kalenderansicht](https://msdn.microsoft.com/office/office365/APi/calendar-rest-operations#GetCalendarView) zum Erweitern der Ereignisserien und zum Anzeigen aller Termine für einen einzelnen Tag.
 
+## <a name="required-software"></a>Erforderliche Software ##
 
-> Wichtig: Nach Anpassung dieser Entwurfsmuster an ihre Anforderungen müssen Sie das Add-In auf allen Plattformen testen, auf denen das Add-In verfügbar sein soll. Diese UX-Entwurfsmuster wurden mithilfe von Office 2016 und Windows 10 getestet.
+- [PHP 5.6](http://php.net/downloads.php)
+- Ein PHP-fähiger Webserver.
 
-## Verwenden der UX-Entwurfsmuster
+Bei meinen Tests habe ich IIS 8 auf einem Windows 8.1-Laptop verwendet. Ich habe PHP 5.6.0 mithilfe des [Webplattform-Installers](http://www.microsoft.com/web/downloads/platform.aspx) (nur Windows/IIS) installiert.
 
-Sie können die [UX-Entwurfsspezifikationen](https://github.com/OfficeDev/Office-Add-in-Design-Patterns/blob/master/Patterns/Source%20Files) als Hilfe beim Erstellen Ihres eigenen UX-Entwurfs verwenden, oder Sie können den [Quellcode](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns-Code/tree/master/templates) direkt zu Ihrem Projekt hinzufügen. So fügen Sie den Quellcode hinzu
+## <a name="running-the-sample"></a>Ausführen des Beispiels ##
 
-1. Klonen Sie dieses Repository. 
-2. Kopieren Sie den [Objektordner](https://github.com/OfficeDev/Office-Add-in-UX-Design-Pattern-Code/tree/master/assets) und den Codeordner für das einzelne Muster, das Sie für Ihr Add-In-Projekt ausgewählt haben.  
-3. Integrieren Sie das einzelne Muster in Ihr Add-In. Beispiel:
-	- Bearbeiten Sie den Quellspeicherort oder die Add-In-Befehls-URL im Manifest.
-	- Verwenden Sie das UX-Entwurfsmuster als Vorlage für andere Seiten.
-	- Stellen Sie eine Verknüpfung zu oder von dem UX-Entwurfsmuster her.
+Es wird davon ausgegangen, dass Sie PHP installiert haben, bevor Sie beginnen, und dass Ihr Webserver zur Verarbeitung von PHP-Dateien konfiguriert ist. 
 
-## Bekannte Probleme
+1. Laden Sie das Beispielprojekt herunter.
+1. Erstellen Sie ein neues Verzeichnis in Ihrem Webstammverzeichnis mit dem Namen `php-calendar`. Kopieren Sie die Dateien aus dem Repository in dieses Verzeichnis.
+1. [Registrieren Sie die Anwendung in Azure Active Directory](https://github.com/jasonjoh/office365-azure-guides/blob/master/RegisterAnAppInAzure.md). Die App sollte als Web-App mit der Anmelde-URL `http://localhost/php-calendar` registriert werden und sollte die Berechtigung für Vollzugriff auf die Benutzerkalender haben, die im Dropdown „Delegierte Berechtigungen“ verfügbar ist.
+1. Bearbeiten Sie die Datei `.\o365\ClientReg.php`. 
+    1. Kopieren Sie die Client-ID für Ihre App, die Sie bei der App-Registrierung abgerufen haben, und kopieren Sie diese als den Wert für die `$clientId`-Variable. 
+    1. Kopieren Sie den bei der App-Registrierung erstellten Schlüssel, und kopieren Sie ihn als den Wert für die `$clientSecret`-Variable.
+    1. Speichern Sie die Datei.
+1. Wenn Ihre PHP-Installation nicht mit aktualisierten Zertifizierungsstellenzertifikaten zur Überprüfung von SSL konfiguriert ist, schlagen Anfragen fehlt, es sei denn, Sie führen Fiddler auf dem Server aus, und legen die `$enableFiddler`-Variable auf `true` in `Office365Service.php` fest. Alternativ können Sie die folgende Zeile unmittelbar vor dem Aufruf von `curl_exec` einfügen. Beachten Sie **jedoch**, dass dadurch alle SSL-Überprüfungen deaktiviert werden, was in der Produktion NICHT zu empfehlen ist.
 
-* Beim Ausführen einiger Codedateien außerhalb eines Add-In-Projekts wird ein JavaScript-Fehler ausgelöst. 
-	* Lösung: Stellen Sie sicher, dass Sie diese Dateien einem Office-Add-In-Projekt hinzugefügt haben. 
-* Nach der Konvertierung dieser Entwurfsmuster in eine Einzelseiten-App (SPA) werden alle Abschnitte der HTML-Seite oben ausgerichtet, sodass es zu einer Überschneidung kommt. 
-	* Lösung: Beim Konvertieren von HTML-Code werden möglicherweise zusätzliche Wrapper-DIV-Elemente hinzugefügt. Stellen Sie sicher, dass die Höhe dieser zusätzlichen DIV-Elemente ordnungsgemäß zurückgesetzt wird. Wenn ein übergeordnetes DIV-Element auf eine Höhe von 100 % festgelegt ist , ein untergeordnetes DIV-Element über keine Höhe verfügt und ein zwei Ebenen untergeordnetes DIV-Element auf 100 % festgelegt ist, müssen Sie das untergeordnete DIV-Element auf 100 % festlegen, damit die Abschnitte ordnungsgemäß angeordnet werden.    
-	
-## Zusätzliche Ressourcen
+    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
+1. Öffnen Sie einen Webbrowser, und navigieren Sie zu `http://localhost/php-calendar/home.php`.
+1. Es sollte eine Liste kommender Vorstellungen für verschiedene Shakespeare-Stücke zu sehen sein. Klicken Sie auf eine der Schaltflächen „Meinen Kalender verbinden“, um sich bei Office 365 anzumelden.
+1. Nach der Anmeldung sollten Sie zurück zur Startseite geleitet werden, und die Schaltflächen heißen nun „Zum Kalender hinzufügen“. Klicken Sie auf die Schaltfläche neben einer bestimmten Vorstellung, um diese zu Ihrem Kalender hinzuzufügen. Veranstaltungen, bei denen das Feld „Eintrittskarte erforderlich“ auf „Ja“ festgelegt ist, umfassen die Eintrittskarte als Anlage zu der Veranstaltung.
 
-* [Bewährte Designmethoden für Office Add-Ins](https://dev.office.com/docs/add-ins/overview/add-in-development-best-practices)
-* [Office-Benutzeroberfläche Fabric](http://dev.office.com/fabric/) Dieses Projekt verwendet Version 2.1.0 oder höher.
+## <a name="copyright"></a>Copyright ##
 
-In diesem Projekt wurden die [Microsoft Open Source-Verhaltensregeln](https://opensource.microsoft.com/codeofconduct/) übernommen. Weitere Informationen finden Sie unter [Häufig gestellte Fragen zu Verhaltensregeln](https://opensource.microsoft.com/codeofconduct/faq/), oder richten Sie Ihre Fragen oder Kommentare an [opencode@microsoft.com](mailto:opencode@microsoft.com).
+Copyright (c) Microsoft. Alle Rechte vorbehalten.
 
-Copyright (c) Microsoft Corporation 2016. Alle Rechte vorbehalten.
+----------
+Kontaktieren Sie mich auf Twitter unter [@JasonJohMSFT](https://twitter.com/JasonJohMSFT)
 
-
-
+Folgen Sie dem [Exchange Dev Blog](http://blogs.msdn.com/b/exchangedev/)
