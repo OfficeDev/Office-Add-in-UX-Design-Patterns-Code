@@ -1,3 +1,19 @@
+---
+topic: sample
+products:
+- Outlook
+- Excel
+- PowerPoint
+- Word
+- Office 365
+languages:
+- CSS
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 5/5/2016 2:01:42 PM
+---
 # UX design patterns for Office Add-ins 
 
 This repository provides sample implementations in HTML, CSS, and JavaScript of common UX design patterns for Office Add-ins.
