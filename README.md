@@ -1,17 +1,20 @@
 ---
 topic: sample
 products:
-- Outlook
-- Excel
-- PowerPoint
-- Word
-- Office 365
+- office-outlook
+- office-excel
+- office-powerpoint
+- office-word
+- office-365
 languages:
-- CSS
+- html
+- javascript
 extensions:
   contentType: samples
   technologies:
   - Add-ins
+  platforms:
+  - CSS
   createdDate: 5/5/2016 2:01:42 PM
 ---
 # UX design patterns for Office Add-ins 
