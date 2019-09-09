@@ -1,23 +1,6 @@
----
-page_type: sample
-products:
-- office-outlook
-- office-excel
-- office-powerpoint
-- office-word
-- office-365
-languages:
-- html
-- javascript
-extensions:
-  contentType: samples
-  technologies:
-  - Add-ins
-  platforms:
-  - CSS
-  createdDate: 5/5/2016 2:01:42 PM
----
-# UX design patterns for Office Add-ins 
+# [ARCHIVED] UX design patterns for Office Add-ins 
+
+**Note:** This repo is archived and no longer actively maintained. Security vulnerabilities may exist in the project, or its dependencies. If you plan to reuse or run any code from this repo, be sure to perform appropriate security checks on the code or dependencies first. Do not use this project as the starting point of a production Office Add-in. Always start your production code by using the Office/SharePoint development workload in Visual Studio, or the [Yeoman generator for Office Add-ins](https://github.com/OfficeDev/generator-office), and follow security best practices as you develop the add-in.
 
 This repository provides sample implementations in HTML, CSS, and JavaScript of common UX design patterns for Office Add-ins.
 
